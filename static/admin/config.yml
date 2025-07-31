@@ -1,24 +1,44 @@
 backend:
   name: git-gateway
-  branch: main        # ramo da aggiornare
-media_folder: static/img
-public_folder: /img
+  branch: main
+
+media_folder: "static/images/uploads"
+public_folder: "/images/uploads"
+
 collections:
-  - name: pages
-    label: Pagine
-    folder: content/pages
+  - name: "pages-en"
+    label: "Pages (English)"
+    folder: "content/english"
     create: true
     slug: "{{slug}}"
     fields:
-      - { label: Titolo, name: title, widget: string }
-      - { label: Corpo, name: body, widget: markdown }
-  - name: blog
-    label: Blog
-    folder: content/blog
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Content", name: "body", widget: "markdown" }
+
+  - name: "pages-fr"
+    label: "Pages (Francais)"
+    folder: "content/french"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{slug}}"
     fields:
-      - { label: Titolo, name: title, widget: string }
-      - { label: Data, name: date, widget: datetime }
-      - { label: Descrizione, name: description, widget: string }
-      - { label: Corpo, name: body, widget: markdown }
+      - { label: "Titolo", name: "title", widget: "string" }
+      - { label: "Contenuto", name: "body", widget: "markdown" }
+
+
+  - name: "blog-en"
+    label: "Blog (English)"
+    folder: "content/english/blog"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Content", name: "body", widget: "markdown" }
+
+  - name: "blog-fr"
+    label: "Blog (Francais)"
+    folder: "content/french/blog"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Titolo", name: "title", widget: "string" }
+      - { label: "Corpo", name: "body", widget: "markdown" }
