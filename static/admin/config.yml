@@ -8,52 +8,6 @@ public_folder: "/images/uploads"
 publish_mode: editorial_workflow
 
 collections:
-
-  - name: "how_it_works"
-    label: "How It Works Page"
-    files:
-      - label: "How It Works"
-        name: "how_it_works"
-        file: "content/english/how-it-works.md"
-        preview_path: "how-it-works/"
-        fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Description", name: "description", widget: "string" }
-          - { label: "Layout", name: "layout", widget: "hidden", default: "how-it-works" }
-          - { label: "Draft", name: "draft", widget: "boolean", default: false }
-
-          - label: "Banner"
-            name: "banner"
-            widget: "object"
-            fields:
-              - { label: "Subtitle", name: "subtitle", widget: "string" }
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "Description", name: "description", widget: "text" }
-              - label: "Button"
-                name: "button"
-                widget: "object"
-                fields:
-                  - { label: "Enable", name: "enable", widget: "boolean", default: true }
-                  - { label: "Label", name: "label", widget: "string" }
-                  - { label: "Icon", name: "icon", widget: "string" }
-                  - { label: "Link", name: "link", widget: "string" }
-              - { label: "Image", name: "image", widget: "image" }
-
-          - label: "Work Process"
-            name: "work_process"
-            widget: "object"
-            fields:
-              - { label: "Enable", name: "enable", widget: "boolean", default: true }
-              - { label: "Subtitle", name: "subtitle", widget: "string" }
-              - { label: "Title", name: "title", widget: "string" }
-              - label: "Process Items"
-                name: "process_item"
-                widget: "list"
-                fields:
-                  - { label: "Title", name: "title", widget: "string" }
-                  - { label: "Image", name: "image", widget: "image" }
-                  - { label: "Content", name: "content", widget: "text" }
-
   - name: "pages-en"
     label: "Pages (English)"
     folder: "content/english"
