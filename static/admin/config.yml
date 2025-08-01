@@ -13,6 +13,7 @@ collections:
     folder: "content/english"
     create: true
     slug: "{{slug}}"
+    preview_path: "{{slug}}/"
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Content", name: "body", widget: "markdown" }
