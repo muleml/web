@@ -296,18 +296,6 @@
                 href="http://localhost:1313/contact/"
                 />
   </url><url>
-    <loc>http://localhost:1313/home-2/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr-fr"
-                href="http://localhost:1313/fr/home-2/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="http://localhost:1313/home-2/"
-                />
-  </url><url>
     <loc>http://localhost:1313/elements/</loc>
     <xhtml:link
                 rel="alternate"
@@ -354,6 +342,18 @@
                 rel="alternate"
                 hreflang="en-us"
                 href="http://localhost:1313/author/joseph-gonzalez/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/home-2/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr-fr"
+                href="http://localhost:1313/fr/home-2/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="http://localhost:1313/home-2/"
                 />
   </url><url>
     <loc>http://localhost:1313/team/</loc>
