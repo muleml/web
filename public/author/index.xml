@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Authors on Delta - Software and SAAS landing Hugo Theme</title>
+    <title>Authors on muleML</title>
     <link>http://localhost:1313/author/</link>
-    <description>Recent content in Authors on Delta - Software and SAAS landing Hugo Theme</description>
+    <description>Recent content in Authors on muleML</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="http://localhost:1313/author/index.xml" rel="self" type="application/rss+xml" />

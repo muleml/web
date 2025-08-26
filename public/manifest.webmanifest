@@ -1,6 +1,6 @@
 {
-  "name": "Delta - Software and SAAS landing Hugo Theme",
-  "short_name": "Delta - Software and SAAS landing Hugo Theme",
+  "name": "muleML",
+  "short_name": "muleML",
   "lang": "en-us",
   "display": "fullscreen",
   "orientation" : "portrait",
@@ -20,33 +20,33 @@
   
   "icons": [
     {
-      "src": "/images/favicon_hu_da82ce0c3bcb540.png",
+      "src": "/images/favicon_hu_cc52ac6e510bb770.png",
       "sizes": "48x48",
       "type": "image/png"
     },
     {
-      "src": "/images/favicon_hu_378655dc9e9962a1.png",
+      "src": "/images/favicon_hu_57b2e0fece5f797d.png",
       "sizes": "72x72",
       "type": "image/png"
     },
     {
-      "src": "/images/favicon_hu_12dd6d3d573b85db.png",
+      "src": "/images/favicon_hu_429e297b054f30a.png",
       "sizes": "96x96",
       "type": "image/png"
     },
     {
-      "src": "/images/favicon_hu_37f1a94cf6e20db4.png",
+      "src": "/images/favicon_hu_d57dc01fc13614c.png",
       "sizes": "144x144",
       "type": "image/png"
     },
     {
-      "src": "/images/favicon_hu_7a8e8e14591ead65.png",
+      "src": "/images/favicon_hu_76b556969facbe50.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/images/favicon_hu_35f1ef5e122b4ad6.png",
+      "src": "/images/favicon_hu_717d33cb816987a3.png",
       "sizes": "512x512",
       "type": "image/png"
     }

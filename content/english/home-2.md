@@ -1,12 +1,12 @@
 ---
-title: "Delta - Software and SAAS landing Hugo Theme"
+title: "muleML - Works, Simply, With Purpose"
 draft: false
 layout: "home-2"
 
 # banner
 banner:
-  subtitle: "We Are Delta"
-  title: "get fastest loan with smart way A seating home"
+  subtitle: "We are muleML"
+  title: "Energy from your data"
   description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, diam nonumy eirmod tempor invidunt ut labore dolore magna"
   button:
     enable: true

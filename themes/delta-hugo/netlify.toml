@@ -6,3 +6,8 @@ command = "yarn project-setup && yarn build"
 HUGO_VERSION = "0.148.2"
 GO_VERSION = "1.20.5"
 HUGO_BASEURL = "/"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow, noarchive, nosnippet, noimageindex"

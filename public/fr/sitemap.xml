@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/fr/</loc>
-    <lastmod>2021-07-14T00:00:00-04:00</lastmod>
+    <lastmod>2021-07-14T00:00:00+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
@@ -16,7 +16,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/fr/blog/</loc>
-    <lastmod>2021-07-14T00:00:00-04:00</lastmod>
+    <lastmod>2021-07-14T00:00:00+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
@@ -29,7 +29,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/fr/career/</loc>
-    <lastmod>2021-07-14T00:00:00-04:00</lastmod>
+    <lastmod>2021-07-14T00:00:00+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
@@ -42,7 +42,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/fr/career/digital-marketing-paid-media-manager/</loc>
-    <lastmod>2021-07-14T00:00:00-04:00</lastmod>
+    <lastmod>2021-07-14T00:00:00+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
@@ -55,7 +55,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/fr/blog/post-1/</loc>
-    <lastmod>2021-07-14T00:00:00-04:00</lastmod>
+    <lastmod>2021-07-14T00:00:00+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
@@ -68,7 +68,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/fr/career/people-program-management-leader/</loc>
-    <lastmod>2021-07-13T00:00:00-04:00</lastmod>
+    <lastmod>2021-07-13T00:00:00+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
@@ -81,7 +81,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/fr/blog/post-2/</loc>
-    <lastmod>2021-07-13T00:00:00-04:00</lastmod>
+    <lastmod>2021-07-13T00:00:00+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
@@ -94,7 +94,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/fr/career/senior-compensation-programs-manager/</loc>
-    <lastmod>2021-07-12T00:00:00-04:00</lastmod>
+    <lastmod>2021-07-12T00:00:00+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
@@ -107,7 +107,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/fr/blog/post-3/</loc>
-    <lastmod>2021-07-12T00:00:00-04:00</lastmod>
+    <lastmod>2021-07-12T00:00:00+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
@@ -120,7 +120,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/fr/career/executive-sr-executive-service-assurance/</loc>
-    <lastmod>2021-07-11T00:00:00-04:00</lastmod>
+    <lastmod>2021-07-11T00:00:00+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
@@ -133,7 +133,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/fr/blog/post-4/</loc>
-    <lastmod>2021-07-11T00:00:00-04:00</lastmod>
+    <lastmod>2021-07-11T00:00:00+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
@@ -146,7 +146,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/fr/career/programmer-web-developer/</loc>
-    <lastmod>2021-07-10T00:00:00-04:00</lastmod>
+    <lastmod>2021-07-10T00:00:00+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
@@ -159,7 +159,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/fr/blog/post-5/</loc>
-    <lastmod>2021-07-10T00:00:00-04:00</lastmod>
+    <lastmod>2021-07-10T00:00:00+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
@@ -172,7 +172,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/fr/blog/post-6/</loc>
-    <lastmod>2021-07-09T00:00:00-04:00</lastmod>
+    <lastmod>2021-07-09T00:00:00+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
@@ -185,7 +185,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/fr/career/technology-integration-support/</loc>
-    <lastmod>2021-07-09T00:00:00-04:00</lastmod>
+    <lastmod>2021-07-09T00:00:00+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
@@ -198,7 +198,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/fr/career/asp-net-software-developer/</loc>
-    <lastmod>2021-07-08T00:00:00-04:00</lastmod>
+    <lastmod>2021-07-08T00:00:00+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
@@ -211,7 +211,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/fr/blog/post-7/</loc>
-    <lastmod>2021-07-08T00:00:00-04:00</lastmod>
+    <lastmod>2021-07-08T00:00:00+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
@@ -224,7 +224,7 @@
                 />
   </url><url>
     <loc>http://localhost:1313/fr/blog/post-8/</loc>
-    <lastmod>2021-07-07T00:00:00-04:00</lastmod>
+    <lastmod>2021-07-07T00:00:00+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"

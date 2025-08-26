@@ -1,8 +1,8 @@
 ---
 # banner
 banner:
-  subtitle: "We Are Delta"
-  title: "get fastest loan with <br> smart way A seating home"
+  subtitle: "We are muleML"
+  title: "Energy from your data"
   description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy <br> eirmod tempor invidunt ut labore et dolore magna aliquyam erat"
   button:
     enable: true
