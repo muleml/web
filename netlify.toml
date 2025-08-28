@@ -1,5 +1,11 @@
-
+# Aggiunge le intestazioni per impedire indicizzazione motori di ricerca
 [[headers]]
   for = "/*"
   [headers.values]
     X-Robots-Tag = "noindex, nofollow, noarchive, nosnippet, noimageindex"
+
+# Attiva l'Edge Function su tutto il sito
+[[edge_functions]]
+path = "/*"
+function = "basic-auth"
+
