@@ -15,31 +15,29 @@ features:
 
   # features_blocks
   features_blocks:
-  - title: "1 Scale Collaboration"
+  - title: "1 Advanced Sensors"
     icon: "fas fa-cubes"
-    content: "Lorem ipsum dolor sit amt ita hwrweet, conse ctetur adipsiscing elit. Purus, done rfec nunc eros"
+    content: "Fiber-optic sensors capturing high-resolution temperature and strain data"
 
-  - title: "2 Scale Collaboration"
-    icon: "far fa-lightbulb"
-    content: "Lorem ipsum dolor sit amt ita hwrweet, conse ctetur adipsiscing elit. Purus, done rfec nunc eros"
+  - title: "2 Edge Devices"
+    icon: "fa-solid fa-tachograph-digital"
+    content: "Smart gateways collecting and pre-processing field data in real time"
     
-  - title: "3 Scale Collaboration"
+  - title: "3 Edge Management"
     icon: "far fa-flag"
-    content: "Lorem ipsum dolor sit amt ita hwrweet, conse ctetur adipsiscing elit. Purus, done rfec nunc eros"
+    content: "Secure device control, local data buffering, and resilient connectivity"
     
-  - title: "4 Scale Collaboration"
+  - title: "4 Data Platform & Analytics"
     icon: "far fa-gem"
-    content: "Lorem ipsum dolor sit amt ita hwrweet, conse ctetur adipsiscing elit. Purus, done rfec nunc eros"
+    content: "Unified environment for data engineering, monitoring, and analytics service"
     
-  - title: "5 Scale Collaboration"
+  - title: "5 Lakehouse"
     icon: "fas fa-globe"
-    content: "Lorem ipsum dolor sit amt ita hwrweet, conse ctetur adipsiscing elit. Purus, done rfec nunc eros"
+    content: "Scalable storage unifying raw and curated data for advanced processing"
     
-  - title: "6 Scale Collaboration"
+  - title: "6 ML & Model Operations"
     icon: "fas fa-hourglass-start"
-    content: "Lorem ipsum dolor sit amt ita hwrweet, conse ctetur adipsiscing elit. Purus, done rfec nunc eros"
+    content: "End-to-end machine learning lifecycle: training, deployment, and monitorin"
     
-  - title: "7 Scale Collaboration"
-    icon: "fas fa-magic"
-    content: "Lorem ipsum dolor sit amt ita hwrweet, conse ctetur adipsiscing elit. Purus, done rfec nunc eros"
 ---
+

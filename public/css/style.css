@@ -16234,7 +16234,7 @@ textarea.form-control-lg {
 .text-uppercase {
   text-transform: uppercase !important; }
 
-.text-capitalize, .title, .subtitle {
+.text-capitalize, .title {
   text-transform: capitalize !important; }
 
 .text-wrap {

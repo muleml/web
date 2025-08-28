@@ -3,7 +3,7 @@
 favicon = "images/favicon.png"
 # logo
 logo = "images/logo.svg"
-logo_dark = "images/logo-light.png"
+logo_dark = "images/logo-light.svg"
 # use `x` with logo_width, example: "100x"
 # Note: logo_width is not work with .svg file
 logo_width = "300x"
