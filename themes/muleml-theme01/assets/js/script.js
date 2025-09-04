@@ -125,9 +125,6 @@ $(document).ready(function () {
 				},
 				767: {
 					slidesPerView: 4
-				},
-				991: {
-					slidesPerView: 5
 				}
 			}
 		});

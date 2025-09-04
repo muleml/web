@@ -20,24 +20,26 @@ banner:
 # work_process
 work_process:
   enable: false
-  subtitle: "Work process of Delta"
-  title: "The process of how Delta works"
+  subtitle: "Our key advantages"
+  title: "What makes BESS INSIGHT stand out"
   process_item:
-  - title: "Ultimate Guide"
+  - title: "Proven predictive models"
     image: "images/process/01.jpg"
-    content: "Lorem ipsum dolor amet cosne adipis scing elit. Purus donec nunc eros ullamcorper fegiat."
+    content: "Best-in-class SOC and SOH prediction, proven by evidence and with economic impact."
 
-  - title: "How to webinar"
+  - title: "Fully managed delivery"
     image: "images/process/02.jpg"
-    content: "Lorem ipsum dolor amet cosne adipis scing elit. Purus donec nunc eros ullamcorper fegiat."
+    content: "No operational risks: we handle everything, from data collection to output delivery."
     
-  - title: "workshop & FAQ"
+  - title: "Integrated data platform"
     image: "images/process/03.jpg"
-    content: "Lorem ipsum dolor amet cosne adipis scing elit. Purus donec nunc eros ullamcorper fegiat."
+    content: "Unified environment for data engineering and analytics, powered by open-source tech."
     
-  - title: "Collaboration"
+  - title: "EU-based and compliant"
     image: "images/process/04.jpg"
-    content: "Lorem ipsum dolor amet cosne adipis scing elit. Purus donec nunc eros ullamcorper fegiat."
+    content: "Full compliance with European regulations, including the AI Act, with data managed in the EU."
+
+    Mini-header: Our key advantages
 
 
 ---

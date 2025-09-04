@@ -4,19 +4,7 @@
 [[main]]
 weight = 1
 name = "Home"
-hasChildren = true
-
-  [[main]]
-  parent = "Home"
-  name = "Home 1"
-  url = "/"
-  weight = 1
-
-  [[main]]
-  parent = "Home"
-  name = "Home 2"
-  url = "home-2/"
-  weight = 2
+url = "/"
 
 [[main]]
 name = "About"
@@ -24,61 +12,10 @@ url = "about/"
 weight = 2
 
 [[main]]
-name = "How It Works"
-url = "how-it-works/"
-weight = 4
-
-[[main]]
 name = "Blog"
 url = "blog/"
 weight = 5
 
-[[main]]
-weight = 7
-name = "Pages"
-hasChildren = true
-
-  [[main]]
-  parent = "Pages"
-  name = "Pricing"
-  url = "pricing/"
-  weight = 7
-
-  [[main]]
-  parent = "Pages"
-  name = "Team"
-  url = "team/"
-  weight = 11
-
-  [[main]]
-  parent = "Pages"
-  name = "Career"
-  url = "career/"
-  weight = 13
-
-  [[main]]
-  parent = "Pages"
-  name = "Career Single"
-  url = "career/digital-marketing-paid-media-manager/"
-  weight = 15
-
-  [[main]]
-  parent = "Pages"
-  name = "Blog Details"
-  url = "blog/post-5/"
-  weight = 17
-
-  [[main]]
-  parent = "Pages"
-  name = "Author Single"
-  url = "author/awab-husameldin/"
-  weight = 18
-
-  [[main]]
-  parent = "Pages"
-  name = "Elements"
-  url = "elements/"
-  weight = 19
   
 [[main]]
 name = "Contact"

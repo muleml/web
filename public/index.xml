@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>muleML</title>
+    <title>muleML - Works, Simply, With Purpose on muleML</title>
     <link>http://localhost:1313/</link>
-    <description>Recent content on muleML</description>
+    <description>Recent content in muleML - Works, Simply, With Purpose on muleML</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 14 Jul 2021 00:00:00 +0200</lastBuildDate>
@@ -114,6 +114,13 @@
       <description>&lt;p&gt;Laoreet mauris odio ut nec. Nisl, sed adipiscing dignissim arcu placerat ornare pharetra nec in. Ultrices in nisl potenti vitae tempus. Auctor consectetur luctus eu in amet sagittis. Dis urna, vel hendrerit convallis Senectus feugiat faucibus commodo egestas leo vitae in morbi. Enim arcu dignissim mauris, eu, eget&lt;/p&gt;</description>
     </item>
     <item>
+      <title></title>
+      <link>http://localhost:1313/_index_copia/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/_index_copia/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>About</title>
       <link>http://localhost:1313/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -167,6 +174,13 @@
       <link>http://localhost:1313/home-2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/home-2/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>muleML - Works, Simply, With Purpose</title>
+      <link>http://localhost:1313/home-2_copia/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/home-2_copia/</guid>
       <description></description>
     </item>
     <item>

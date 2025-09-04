@@ -7,7 +7,7 @@ layout: "home-2"
 banner:
   subtitle: "We are muleML"
   title: "Energy from your data"
-  description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, diam nonumy eirmod tempor invidunt ut labore dolore magna"
+  description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy <br> eirmod tempor invidunt ut labore et dolore magna aliquyam erat"
   button:
     enable: true
     label: "Get started now"
@@ -29,7 +29,6 @@ brands:
   - "images/clients/02.png"
   - "images/clients/03.png"
   - "images/clients/04.png"
-  - "images/clients/05.png"
 
 # features
 features:
@@ -105,23 +104,22 @@ testimonials:
   enable: true
   subtitle: "People Say's"
   title: "about Three million users <br> Testimonial Together"
-  image_1: "images/testimonials-group-1.png"
-  image_2: "images/testimonials-group-2.png"
+  image: "images/testimonials-group.png"
   reviews:
     - name: "Erica Carlina"
       designation: "CEO & Founder, Ammarait"
-      image: "images/avatar/04.jpg"
-      content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"
+      rating: "5.0" # ex: "3", "3.8"
+      content: "Consectetur adipisicing elit. Cum voluptates odio nostrum impedit deleniti cupiditate deserunt harum doloremque veritatis accusantium, unde sint, laudantium distinctio, velit atque asperiores aspernatur laboriosam officiis obcaecati molestias laudantium corporis doloremque qui, voluptate minus?"
 
     - name: "Justin Rubela"
       designation: "Founder, Justin Inc."
-      image: "images/avatar/02.jpg"
-      content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"
+      rating: "4.5" # ex: "3", "3.8"
+      content: "Dolorsit amet consectetur, adipisicing elit. Expedita repellendus optio quaerat iste aliquam, rerum quas ab? Adipisci maxime tempore doloremque laborum suscipit debitis autem ducimus dicta delectus, atque abofficiis obcaecati molestias laudantium corporis doloremque qui, voluptate minus?"
       
     - name: "William Broke"
       designation: "Developer, Ammarait"
-      image: "images/avatar/07.jpg"
-      content: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"
+      rating: "4.2" # ex: "3", "3.8"
+      content: "Amet consectetur adipisicing elit. Voluptates, suscipit dolorum! Quis explicabo quibusdam error expedita dolore veritatis magni fugiat rem provident qui, in dolorem quo laboriosam modi tenetur aperiam. obcaecati molestias laudantium corporis doloremque qui, voluptate minus?"
 
 
 # blog
