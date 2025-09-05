@@ -6,7 +6,7 @@ layout: "features"
 
 features:
   subtitle: "Our solution BESS INSIGHT"
-  title: "An integrated architecture for energy storage data: <br>sensors, edge devices, secure management, <br>analytics, and ML in one solution"
+  title: "An integrated architecture for energy storage data: <br>sensors, edge devices, analytics and ML"
   button:
     enable: true
     label: "View All Features"

@@ -19,8 +19,8 @@ custom_script= ""
 # Main Sections
 mainSections= ["blog"]
 
-# copyright
-theme_copyright = true
+# footer bottom
+footer_bottom = true
 
 # career form action
 career_form_action = "#!" # career form works with https://formspree.io or any formspree-alternatives
@@ -108,20 +108,6 @@ content = "This site uses cookies. By continuing to use this website, you agree 
 button = "I Accept"
 
 ############################# social site ########################
-[[social]]
-title = "facebook"
-icon = "fab fa-facebook" # fontawesome icon pack : https://fontawesome.com/icons/
-link = "#!"
-
-[[social]]
-title = "twitter"
-icon = "fab fa-twitter" # fontawesome icon pack : https://fontawesome.com/icons/
-link = "#!"
-
-[[social]]
-title = "instagram"
-icon = "fab fa-instagram" # fontawesome icon pack : https://fontawesome.com/icons/
-link = "#!"
 
 [[social]]
 title = "github"

@@ -68,10 +68,10 @@ work_process:
 image_and_content_block:
   enable: true
   subtitle: "We Are muleML"
-  title: "Lots of people love us, <br> and we're also."
+  title: "Where science meets industry."
   image: "images/block-image-01.png"
   content_position: "left" # Value will be - "left/right"
-  content: "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Vestibulum
+  content: "The company is young, but the team brings a long professional history. Born from the initiative of former MIT researchers with the goal of transferring cutting-edge expertise into the European innovation landscape, we combine strong academic credentials with industry experience in IT consulting, analytics, and project management—creating a unique profile for technology transfer and applied research that bridges scientific knowledge with industrial applications.
   "
   button:
     enable: true

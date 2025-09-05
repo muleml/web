@@ -322,6 +322,8 @@
                 href="http://localhost:1313/features/"
                 />
   </url><url>
+    <loc>http://localhost:1313/footer-bottom/</loc>
+  </url><url>
     <loc>http://localhost:1313/how-it-works/</loc>
     <xhtml:link
                 rel="alternate"
