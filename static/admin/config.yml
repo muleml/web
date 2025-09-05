@@ -16,7 +16,7 @@ collections:
     preview_path: "{{slug}}/"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Content", name: "body", widget: "markdown" }
+      - { label: "Content", name: "body", widget: "markdown", choose_url: false }
 
   - name: "pages-fr"
     label: "Pages (Francais)"
