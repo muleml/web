@@ -10,11 +10,11 @@ const EXCLUSIONS = [
 /^\/sitemap\.xml$/i,
 
 // Se vuoi lasciare pubbliche alcune directory (commenta se vuoi bloccare tutto)
-/ /^\/assets\//i,
-/ /^\/images\//i,
-/ /^\/css\//i,
-/ /^\/js\//i,
-/ /^\/fonts\//i,
+// /^\/assets\//i,
+// /^\/images\//i,
+// /^\/css\//i,
+// /^\/js\//i,
+// /^\/fonts\//i,
 ];
 
 function isExcluded(pathname) {
