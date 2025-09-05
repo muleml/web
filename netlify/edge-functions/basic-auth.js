@@ -3,23 +3,19 @@
 // USERNAME è opzionale; se non definita, accettiamo qualunque username purché la password sia corretta.
 
 const EXCLUSIONS = [
-    /^\/\.netlify\//i,
+    // ---- ESCLUSIONI CONSIGLIATE (modifica a piacere) ----
+    /^\/\.netlify\//i,     // endpoint interni Netlify
 /^\/favicon\.ico$/i,
 /^\/robots\.txt$/i,
 /^\/sitemap\.xml$/i,
 
-+ // Lascia pubbliche le risorse statiche
-+ /^\/images\//i,
-+ /^\/assets\//i,
-+ /^\/css\//i,
-+ /^\/js\//i,
-+ /^\/fonts\//i,
-
-+ // (Opzionale) Lascia pubblico anche il pannello CMS
-+ // ^ Se vuoi poterci entrare senza doppio prompt Basic Auth
-+ /^\/admin\//i,
+// Se vuoi lasciare pubbliche alcune directory (commenta se vuoi bloccare tutto)
+/ /^\/assets\//i,
+/ /^\/images\//i,
+/ /^\/css\//i,
+/ /^\/js\//i,
+/ /^\/fonts\//i,
 ];
-
 
 function isExcluded(pathname) {
     return EXCLUSIONS.some((re) => re.test(pathname));
