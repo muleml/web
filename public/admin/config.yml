@@ -28,21 +28,39 @@ collections:
       - { label: "Contenuto", name: "body", widget: "markdown" }
 
 
+
   - name: "blog-en"
     label: "Blog (English)"
     folder: "content/english/blog"
     create: true
     slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    media_folder: "static/images/blog"   # dove salvare i file caricati
+    public_folder: "/images/blog"        # percorso usato nel front matter
     fields:
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DD", time_format: false }
+      - { label: "Cover Image", name: "image", widget: "image", choose_url: true }
+      - { label: "Author", name: "author", widget: "string" }
+      - { label: "Draft", name: "draft", widget: "boolean", default: false }
       - { label: "Content", name: "body", widget: "markdown" }
 
+
   - name: "blog-fr"
-    label: "Blog (Francais)"
+    label: "Blog (Français)"
     folder: "content/french/blog"
     create: true
     slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    media_folder: "static/images/blog"
+    public_folder: "/images/blog"
     fields:
-      - { label: "Titolo", name: "title", widget: "string" }
-      - { label: "Corpo", name: "body", widget: "markdown" }
+      - { label: "Titre", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DD", time_format: false }
+      - { label: "Image de couverture", name: "image", widget: "image", choose_url: true }
+      - { label: "Auteur", name: "author", widget: "string" }
+      - { label: "Brouillon", name: "draft", widget: "boolean", default: false }
+      - { label: "Contenu", name: "body", widget: "markdown" }
 
