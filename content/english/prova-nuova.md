@@ -9,4 +9,4 @@ dfddf fdfdfdf dfdfdf
 
 ![](/images/uploads/500px-happy_smiley_face.png)
 
-![](/images/uploads/20250905_0924_piattaforma-dati-integrata_simple_compose_01k4cc36chftx8z9b7naavhcx4.png)
+![](/uploads/20250826_1002_impianto-solare-compatto_remix_01k3jp8drcfb7bpzhtmtad38gk.png)
