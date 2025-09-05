@@ -28,6 +28,22 @@
                 href="http://localhost:1313/career/"
                 />
   </url><url>
+    <loc>http://localhost:1313/categories/cat1/</loc>
+    <lastmod>2021-07-14T00:00:00+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2021-07-14T00:00:00+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr-fr"
+                href="http://localhost:1313/fr/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="http://localhost:1313/categories/"
+                />
+  </url><url>
     <loc>http://localhost:1313/career/digital-marketing-paid-media-manager/</loc>
     <lastmod>2021-07-14T00:00:00+02:00</lastmod>
     <xhtml:link
@@ -52,6 +68,22 @@
                 rel="alternate"
                 hreflang="en-us"
                 href="http://localhost:1313/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/tags/tag1tag2tag3/</loc>
+    <lastmod>2021-07-14T00:00:00+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2021-07-14T00:00:00+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr-fr"
+                href="http://localhost:1313/fr/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="http://localhost:1313/tags/"
                 />
   </url><url>
     <loc>http://localhost:1313/blog/post-1/</loc>
@@ -274,18 +306,6 @@
                 href="http://localhost:1313/author/awab-husameldin/"
                 />
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr-fr"
-                href="http://localhost:1313/fr/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="http://localhost:1313/categories/"
-                />
-  </url><url>
     <loc>http://localhost:1313/contact/</loc>
     <xhtml:link
                 rel="alternate"
@@ -387,17 +407,5 @@
                 />
   </url><url>
     <loc>http://localhost:1313/prova-2/</loc>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr-fr"
-                href="http://localhost:1313/fr/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="http://localhost:1313/tags/"
-                />
   </url>
 </urlset>

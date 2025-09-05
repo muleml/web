@@ -23,6 +23,7 @@ collections:
     folder: "content/french"
     create: true
     slug: "{{slug}}"
+    preview_path: "fr/{{slug}}/"
     fields:
       - { label: "Titolo", name: "title", widget: "string" }
       - { label: "Contenuto", name: "body", widget: "markdown" }
