@@ -14,9 +14,12 @@ collections:
     create: true
     slug: "{{slug}}"
     preview_path: "{{slug}}/"
+    choose_url: false
+    media_folder: "static/images/uploads"
+    public_folder: "/images/uploads"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Content", name: "body", widget: "markdown", choose_url: false }
+      - { label: "Content", name: "body", widget: "markdown"}
 
   - name: "pages-fr"
     label: "Pages (Francais)"
