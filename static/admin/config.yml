@@ -9,6 +9,20 @@ publish_mode: editorial_workflow
 
 collections:
 
+  - name: "pages-en"
+    label: "Pages (English)"
+    folder: "content/english"
+    create: true
+    slug: "{{slug}}"
+    preview_path: "{{slug}}/"
+    choose_url: false
+    media_folder: "static/images/uploads"
+    public_folder: "/images/uploads"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Content", name: "body", widget: "markdown"}
+
+
   - name: "blog-en"
     label: "Blog (English)"
     folder: "content/english/blog"
