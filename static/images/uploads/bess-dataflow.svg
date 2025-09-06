@@ -1,0 +1,125 @@
+<svg width="600" height="300" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg" aria-label="BESS dataflow animated">
+  <defs>
+    <style>
+      :root { --b: #0D6EFD; --y: #FFD54A; }
+      .line { fill: none; stroke: var(--b); stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; }
+      .thin { stroke-width: 3; }
+      .hair { stroke-width: 2; }
+    </style>
+
+    <!-- Soft glow used during the energy burst -->
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="0" result="blur">
+        <animate attributeName="stdDeviation"
+                 dur="6s" repeatCount="indefinite"
+                 values="0;0;3;0" keyTimes="0;0.67;0.83;1"/>
+      </feGaussianBlur>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Path the dots will follow: starts at charts area, enters top, then around the box -->
+    <path id="flowPath" d="
+      M 360 78          /* from charts */
+      L 360 120
+      L 400 160         /* hit top edge */
+      L 600 160         /* back-top edge */
+      L 560 180         /* top-right corner */
+      L 560 300         /* right face down */
+      L 240 300         /* front base to left */
+      L 240 180         /* left face up */
+      L 280 160         /* top-left corner */
+      L 400 160         /* close loop on top */
+    " fill="none"/>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="300" fill="#ffffff"/>
+
+  <!-- ===== Charts (pie, line, bars) ===== -->
+  <!-- Pie -->
+  <circle cx="300" cy="90" r="30" class="line thin"/>
+  <path d="M300,90 L300,60 A30,30 0 0 1 330,90 Z" fill="none" stroke="var(--b)" stroke-width="3"/>
+  <!-- Line chart -->
+  <polyline points="350,100 370,85 390,98 410,78" class="line thin"/>
+  <circle cx="350" cy="100" r="4" fill="var(--b)"/>
+  <circle cx="370" cy="85"  r="4" fill="var(--b)"/>
+  <circle cx="390" cy="98"  r="4" fill="var(--b)"/>
+  <circle cx="410" cy="78"  r="4" fill="var(--b)"/>
+  <!-- Bars -->
+  <rect x="430" y="92" width="12" height="18" class="line thin" />
+  <rect x="448" y="84" width="12" height="26" class="line thin" />
+  <rect x="466" y="70" width="12" height="40" class="line thin" />
+
+  <!-- Dotted guides from charts to top -->
+  <path d="M 370 105 L 370 140 M 300 110 L 300 150"
+        stroke="var(--b)" stroke-width="3" stroke-dasharray="0 10" stroke-linecap="round" fill="none">
+    <animate attributeName="stroke-dashoffset" values="0;-100" dur="2s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- ===== BESS container wireframe ===== -->
+  <!-- Top face -->
+  <polygon points="240,180 280,160 600,160 560,180" class="line"/>
+  <!-- Right face -->
+  <polygon points="560,180 600,160 600,280 560,300" class="line"/>
+  <!-- Front face -->
+  <rect x="240" y="180" width="320" height="120" class="line"/>
+  <!-- Front door panel -->
+  <rect x="255" y="195" width="90" height="95" class="line hair"/>
+  <path d="M 282 212 L 310 212" class="line hair"/>
+  <!-- Vertical ribs center -->
+  <g class="line hair">
+    <path d="M 360 185 V 295"/>
+    <path d="M 372 185 V 295"/>
+    <path d="M 384 185 V 295"/>
+    <path d="M 396 185 V 295"/>
+    <path d="M 408 185 V 295"/>
+  </g>
+
+  <!-- Lightning mark (stroke animates color/scale/jitter during burst) -->
+  <g id="bolt">
+    <!-- Glow fill underneath (appears during 4–5s) -->
+    <path id="boltGlow" d="M 425 205 L 395 255 L 416 255 L 400 295 L 445 230 L 422 230 Z"
+          fill="var(--y)" opacity="0" filter="url(#glow)">
+      <animate attributeName="opacity" dur="6s" repeatCount="indefinite"
+               values="0;0;1;0" keyTimes="0;0.67;0.83;1"/>
+    </path>
+
+    <!-- Main stroke -->
+    <path id="boltStroke"
+          d="M 425 205 L 395 255 L 416 255 L 400 295 L 445 230 L 422 230 Z"
+          fill="none" stroke-linejoin="round" stroke-linecap="round" stroke="var(--b)" stroke-width="6">
+      <animate attributeName="stroke" dur="6s" repeatCount="indefinite"
+               values="#0D6EFD;#0D6EFD;#FFD54A;#0D6EFD"
+               keyTimes="0;0.67;0.83;1"/>
+      <!-- scale up during burst -->
+      <animateTransform attributeName="transform" type="scale"
+                        values="1;1;1.18;1" keyTimes="0;0.67;0.83;1"
+                        dur="6s" repeatCount="indefinite" additive="sum"/>
+      <!-- jitter (shake) during burst -->
+      <animateTransform attributeName="transform" type="translate"
+                        values="0 0;0 0;-2 -1;2 1;-1 2;0 0"
+                        keyTimes="0;0.67;0.72;0.78;0.83;1"
+                        dur="6s" repeatCount="indefinite" additive="sum"/>
+    </path>
+  </g>
+
+  <!-- ===== Flow of blue dots along all edges (loop) ===== -->
+  <g fill="#0D6EFD">
+    <!-- Create a train of dots with slight delays -->
+    <circle r="4"><animateMotion dur="6s" repeatCount="indefinite" rotate="auto"><mpath href="#flowPath"/></animateMotion></circle>
+    <circle r="4"><animateMotion dur="6s" begin="0.15s" repeatCount="indefinite" rotate="auto"><mpath href="#flowPath"/></animateMotion></circle>
+    <circle r="4"><animateMotion dur="6s" begin="0.30s" repeatCount="indefinite" rotate="auto"><mpath href="#flowPath"/></animateMotion></circle>
+    <circle r="4"><animateMotion dur="6s" begin="0.45s" repeatCount="indefinite" rotate="auto"><mpath href="#flowPath"/></animateMotion></circle>
+    <circle r="4"><animateMotion dur="6s" begin="0.60s" repeatCount="indefinite" rotate="auto"><mpath href="#flowPath"/></animateMotion></circle>
+    <circle r="4"><animateMotion dur="6s" begin="0.75s" repeatCount="indefinite" rotate="auto"><mpath href="#flowPath"/></animateMotion></circle>
+    <circle r="4"><animateMotion dur="6s" begin="0.90s" repeatCount="indefinite" rotate="auto"><mpath href="#flowPath"/></animateMotion></circle>
+    <circle r="4"><animateMotion dur="6s" begin="1.05s" repeatCount="indefinite" rotate="auto"><mpath href="#flowPath"/></animateMotion></circle>
+    <circle r="4"><animateMotion dur="6s" begin="1.20s" repeatCount="indefinite" rotate="auto"><mpath href="#flowPath"/></animateMotion></circle>
+    <circle r="4"><animateMotion dur="6s" begin="1.35s" repeatCount="indefinite" rotate="auto"><mpath href="#flowPath"/></animateMotion></circle>
+    <circle r="4"><animateMotion dur="6s" begin="1.50s" repeatCount="indefinite" rotate="auto"><mpath href="#flowPath"/></animateMotion></circle>
+    <circle r="4"><animateMotion dur="6s" begin="1.65s" repeatCount="indefinite" rotate="auto"><mpath href="#flowPath"/></animateMotion></circle>
+  </g>
+</svg>
