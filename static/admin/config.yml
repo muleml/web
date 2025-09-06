@@ -9,6 +9,39 @@ publish_mode: editorial_workflow
 
 collections:
 
+  - name: "authors-en"
+    label: "Authors (English)"
+    folder: "content/english/author"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    preview_path: "author/{{slug}}/"
+
+    fields:
+      - { label: "Name", name: "title", widget: "string" }
+
+      # Foto autore
+      - label: "Photo"
+        name: "image"
+        widget: "image"
+        choose_url: false
+        media_folder: "static/images/avatars"
+        public_folder: "/images/avatars"
+
+      # Social: 
+      - label: "Social links"
+        name: "social"
+        widget: "list"
+        collapsed: true
+        summary: "{{fields.name}} → {{fields.link}}"
+        fields:
+          - { label: "Icon (class)", name: "icon", widget: "string", hint: "Esempio: fab fa-linkedin-in" }
+          - { label: "Name", name: "name", widget: "select", options: ["linkedin", "facebook", "twitter", "x", "instagram", "github", "website"] }
+          - { label: "Link (URL)", name: "link", widget: "string" }
+
+      - { label: "Bio", name: "body", widget: "markdown", hint: "Breve descrizione/bio dell'autore" }
+
   - name: "blog-en"
     label: "Blog (English)"
     folder: "content/english/blog"
