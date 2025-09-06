@@ -14,7 +14,7 @@ collections:
     folder: "content/english/blog"
     create: true
     slug: "{{slug}}"
-    preview_path: "{{slug}}/blog/"
+    preview_path: "blog/{{slug}}/"
     extension: "md"
     format: "frontmatter"
 
@@ -31,7 +31,7 @@ collections:
     folder: "content/french/blog"
     create: true
     slug: "{{slug}}"
-    preview_path: "{{slug}}/blog/"
+    preview_path: "{{slug}}/"
     extension: "md"
     format: "frontmatter"
 
