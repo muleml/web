@@ -1,6 +1,6 @@
 ---
 title: francesco
-image: 01.jpg
+image: '"images/avatar/03.jpg"'
 social:
   - icon: fab fa-linkedin-in
     name: linkedin
