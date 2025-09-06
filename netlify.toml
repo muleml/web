@@ -9,3 +9,9 @@
 path = "/*"
 function = "basic-auth"
 
+[context.deploy-preview.environment]
+  HUGO_BASEURL = "$DEPLOY_PRIME_URL"
+
+[context.branch-deploy.environment]
+  HUGO_BASEURL = "$DEPLOY_PRIME_URL"
+
