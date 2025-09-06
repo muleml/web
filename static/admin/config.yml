@@ -22,13 +22,12 @@ collections:
       - { label: "Name", name: "title", widget: "string" }
 
       # Foto autore
-      - label: "Photo"
+      - label: "Photo (optional)"
         name: "image"
-        widget: "image"
-        choose_url: false
-        media_folder: "static/images/avatars"
-        public_folder: "/images/avatars"
-
+        widget: "string"
+        required: false
+        hint: "Il file deve esistere in assets/images/avatars/"
+        
       # Social: 
       - label: "Social links"
         name: "social"
