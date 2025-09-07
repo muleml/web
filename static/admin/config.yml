@@ -21,12 +21,12 @@ collections:
     fields:
       - { label: "Name", name: "title", widget: "string" }
 
-      # Foto autore
-      - label: "Photo (optional)"
-        name: "image"
-        widget: "string"
-        required: false
-        hint: "Il file deve esistere in assets/images/avatars/"
+      - label: "Photo (optional)" 
+        name: "image" 
+        widget: "image" 
+        choose_url: false 
+        media_folder: "assets/images/avatars" 
+        public_folder: "/images/avatars"
         
       # Social: 
       - label: "Social links"
