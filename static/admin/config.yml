@@ -21,12 +21,14 @@ collections:
     fields:
       - { label: "Name", name: "title", widget: "string" }
 
-      - label: "Photo (optional)" 
-        name: "image" 
-        widget: "image" 
-        choose_url: false 
-        media_folder: "assets/images/avatars" 
-        public_folder: "/images/avatars"
+      - label: "Photo (optional)"
+        name: "image"
+        widget: "string"
+        required: false
+        hint: "Inserisci solo il nome file (es. 02.jpg) presente in assets/images/avatars/"
+        pattern:
+          - "^(?:|[A-Za-z0-9._-]+\\.(?:jpg|jpeg|png|webp|gif))$"
+          - "Lascia vuoto oppure inserisci un nome file valido (es. 02.jpg)"
         
       # Social: 
       - label: "Social links"
