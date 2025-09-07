@@ -55,6 +55,16 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DD", time_format: false }
       - { label: "Cover Image", name: "image", widget: "image", choose_url: false }
+      - label: "Author"
+        name: "author"
+        widget: "relation"
+        collection: "authors-en"          # pesca dalla collezione autori
+        search_fields: ["title"]          # ricerca per titolo dell’autore
+        display_fields: ["title"]         # cosa mostra nel menu
+        value_field: "{{slug}}"           # cosa salva nel post (es. joseph-gonzalez)
+        multiple: false
+        required: true
+        allow_add: true                   # opzionale: consenti creare un autore al volo
       - { label: "Author", name: "author", widget: "string" }
       - { label: "Content", name: "body", widget: "markdown" }
 
