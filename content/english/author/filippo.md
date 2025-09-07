@@ -1,6 +1,6 @@
 ---
 title: Filippo
-image: 03.jpg
+image: "03.jpg"
 social:
   - icon: fab fa-linkedin-in
     name: linkedin
