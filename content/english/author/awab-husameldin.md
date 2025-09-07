@@ -7,7 +7,7 @@ social:
     link : "#!"
   - icon : "fab fa-linkedin-in"
     name: "linkedin"
-    link : "#!"
+    link : "www.repubblica.it"
   - icon : "fab fa-twitter"
     name: "twitter"
     link : "#!"
