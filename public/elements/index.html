@@ -92,6 +92,13 @@
 
 
 
+  
+    <link rel="alternate" hreflang="en" href="http://localhost:1313/elements/" />
+  
+    <link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/elements/" />
+  
+  <link rel="alternate" hreflang="x-default" href="http://localhost:1313/elements/" />
+
 
 
 
@@ -352,6 +359,37 @@
       <div class="navbar-actions">
         
         
+        <select class="border-0 d-inline d-xl-none" onchange="location = this.value;">
+          
+          
+          
+          
+          
+          
+          
+          
+          <option id="en" value="/elements/" selected>En
+          </option>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <option id="fr" value="/fr/elements/">Fr</option>
+          
+          
+          
+          
+        </select>
+        
 
         <button aria-label="navbar toggler" class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
           data-bs-target="#navigation">
@@ -407,6 +445,37 @@
           
           <li class="nav-item d-none d-xl-block">
             
+            
+            <select class="border-0" id="select-language" onchange="location = this.value;">
+              
+              
+              
+              
+              
+              
+              
+              
+              <option id="en" value="/elements/" selected>En
+              </option>
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              <option id="fr" value="/fr/elements/">Fr</option>
+              
+              
+              
+              
+            </select>
             
           </li>
         </ul>
