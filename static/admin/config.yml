@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   branch: main
 
-media_folder: "assets/images/uploads"
+media_folder: "static/images/uploads"
 public_folder: "/images/uploads"
 
 publish_mode: editorial_workflow
@@ -15,21 +15,19 @@ collections:
     create: true
     slug: "{{slug}}"
     extension: "md"
-    format: "frontmatter" 
+    format: "frontmatter"
     preview_path: "author/{{slug}}/"
- 
+
     fields:
       - { label: "Name", name: "title", widget: "string" }
 
-      # Immagine avatar:
       - label: "Photo (optional)"
         name: "image"
-        widget: "image"
-        choose_url: true
+        widget: "string"
         required: false
-        media_folder: "assets/images/avatar"   
-        public_folder: "/images/avatar"
-        hint: "Immagine avatar del profilo dell'autore"
+        default: "images/avatar/"   # precompila la radice
+        hint: "Completa con il file, es. images/avatar/02.jpg"
+        pattern: ['^(|images/avatar/[A-Za-z0-9._-]+\.(jpg|jpeg|png|webp|gif))$', 'Lascia vuoto oppure es. images/avatar/02.jpg']
           
       # Social: 
       - label: "Social links"
@@ -38,7 +36,7 @@ collections:
         collapsed: true
         summary: "{{fields.name}} → {{fields.link}}"
         fields:
-          - { label: "Icon (class)", name: "icon", widget: "string", hint: "Scegliere da qui: https://fontawesome.com/search - Esempio: fab fa-linkedin-in" }
+          - { label: "Icon (class)", name: "icon", widget: "string", hint: "Prendere da https://fontawesome.com/search - Esempio: fab fa-linkedin-in" }
           - { label: "Name", name: "name", widget: "select", options: ["linkedin", "facebook", "twitter", "x", "instagram", "github", "website"] }
           - { label: "Link (URL)", name: "link", widget: "string" }
 
@@ -85,4 +83,3 @@ collections:
       - { label: "Image de couverture", name: "image", widget: "image", choose_url: true }
       - { label: "Auteur", name: "author", widget: "string" }
       - { label: "Contenu", name: "body", widget: "markdown" }
-
