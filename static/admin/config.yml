@@ -27,8 +27,8 @@ collections:
         widget: "image"
         choose_url: false
         required: false
-        media_folder: "assets/images/avatars"   # dove viene salvato il file nel repo
-        public_folder: "/images/avatars"        # che stringa scrive nel front matter
+        media_folder: "assets/images/avatar"   
+        public_folder: "/images/avatar"        
         hint: "Immagine avatar del profilo dell'autore"
           
       # Social: 
@@ -38,7 +38,7 @@ collections:
         collapsed: true
         summary: "{{fields.name}} → {{fields.link}}"
         fields:
-          - { label: "Icon (class)", name: "icon", widget: "string", hint: "Esempio: fab fa-linkedin-in" }
+          - { label: "Icon (class)", name: "icon", widget: "string", hint: "Scegliere da qui: https://fontawesome.com/search - Esempio: fab fa-linkedin-in" }
           - { label: "Name", name: "name", widget: "select", options: ["linkedin", "facebook", "twitter", "x", "instagram", "github", "website"] }
           - { label: "Link (URL)", name: "link", widget: "string" }
 
