@@ -8,7 +8,7 @@ features:
   subtitle: "Our solution BESS INSIGHT"
   title: "An integrated architecture for energy storage data: <br>sensors, edge devices, analytics and ML"
   button:
-    enable: true
+    enable: false
     label: "View All Features"
     icon: "fas fa-arrow-right"
     link: "#!"

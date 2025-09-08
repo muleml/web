@@ -18715,7 +18715,7 @@ strong {
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   color: #000;
-  font-family: "Catamaran", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 900; }
 
 .text-xl {
@@ -19379,7 +19379,7 @@ body .only-light {
     .rounded-lg {
       border-radius: 6px; } }
 .font-primary {
-  font-family: "Catamaran", sans-serif; }
+  font-family: "Roboto", sans-serif; }
 
 .font-secondary, .subtitle {
   font-family: "Rubik", sans-serif; }
@@ -21163,7 +21163,7 @@ main:empty {
     width: 50px;
     line-height: 50px;
     font-size: 25px;
-    font-family: "Catamaran", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 900;
     top: 0;
     left: calc(50% - 25px);

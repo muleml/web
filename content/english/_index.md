@@ -12,7 +12,7 @@ banner:
     icon: "fas fa-arrow-right"
     link: "contact/"
   video_button:
-    enable: true
+    enable: false
     label: "Watch demo"
     video_url: "https://www.youtube.com/embed/dyZcRRWiuuw"
   
@@ -68,7 +68,7 @@ work_process:
 image_and_content_block:
   enable: true
   subtitle: "We Are muleML"
-  title: "Where science meets industry."
+  title: "Where science meets industry"
   image: "images/block-image-01.png"
   content_position: "left" # Value will be - "left/right"
   content: "The company is young, but the team brings a long professional history. Born from the initiative of former MIT researchers with the goal of transferring cutting-edge expertise into the European innovation landscape, we combine strong academic credentials with industry experience in IT consulting, analytics, and project management—creating a unique profile for technology transfer and applied research that bridges scientific knowledge with industrial applications.
@@ -83,9 +83,9 @@ image_and_content_block:
 # blog
 blog:
   enable: true
-  subtitle: "Recent Articles"
-  title: "Recent Posts to serve better"
-  description: "Vestibulum ante ipsum primis in faucibus  luctus et ultrices posuere <br> cubilia Curae; Donec velit neque, auctor sit amet aliquamvel, ullamsw rfgws ercor"
+  subtitle: "Insights & updates"
+  title: "Latest from our blog"
+  description: "Explore fresh perspectives on energy storage, data, and machine learning shaping the future"
 
   button:
     enable: true

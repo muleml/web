@@ -8,42 +8,63 @@ public_folder: "/images/uploads"
 publish_mode: editorial_workflow
 
 collections:
-  - name: "pages-en"
-    label: "Pages (English)"
-    folder: "content/english"
+
+  - name: "authors-en"
+    label: "Authors (English)"
+    folder: "content/english/author"
     create: true
     slug: "{{slug}}"
-    preview_path: "{{slug}}/"
+    extension: "md"
+    format: "frontmatter"
+    preview_path: "author/{{slug}}/"
+
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Content", name: "body", widget: "markdown" }
+      - { label: "Name", name: "title", widget: "string" }
 
-  - name: "pages-fr"
-    label: "Pages (Francais)"
-    folder: "content/french"
-    create: true
-    slug: "{{slug}}"
-    preview_path: "fr/{{slug}}/"
-    fields:
-      - { label: "Titolo", name: "title", widget: "string" }
-      - { label: "Contenuto", name: "body", widget: "markdown" }
+      - label: "Photo"
+        name: "image"
+        widget: "string"
+        required: false
+        default: "images/avatar/"   # precompila la radice
+        hint: "Completa con il file, es. images/avatar/02.jpg"
+        pattern: ['^(|images/avatar/[A-Za-z0-9._-]+\.(jpg|jpeg|png|webp|gif))$', 'Lascia vuoto oppure es. images/avatar/02.jpg']
 
+      # Social:
+      - label: "Social links"
+        name: "social"
+        widget: "list"
+        collapsed: true
+        summary: "{{fields.name}} → {{fields.link}}"
+        fields:
+          - { label: "Icon (class)", name: "icon", widget: "string", hint: "Prendere da https://fontawesome.com/search - Esempio: fab fa-linkedin-in" }
+          - { label: "Name", name: "name", widget: "select", options: ["linkedin", "facebook", "twitter", "x", "instagram", "github", "website"] }
+          - { label: "Link (URL)", name: "link", widget: "string" }
 
+      - { label: "Bio", name: "body", widget: "markdown", hint: "Breve descrizione/bio dell'autore" }
 
   - name: "blog-en"
     label: "Blog (English)"
     folder: "content/english/blog"
     create: true
     slug: "{{slug}}"
+    preview_path: "blog/{{slug}}/"
     extension: "md"
     format: "frontmatter"
-    media_folder: "static/images/blog"   # dove salvare i file caricati
-    public_folder: "/images/blog"        # percorso usato nel front matter
+
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DD", time_format: false }
-      - { label: "Cover Image", name: "image", widget: "image", choose_url: true }
-      - { label: "Author", name: "author", widget: "string" }
+      - { label: "Cover Image", name: "image", widget: "image", choose_url: false }
+      - label: "Author"
+        name: "author"
+        widget: "relation"
+        collection: "authors-en"          # pesca dalla collezione autori
+        search_fields: ["title"]          # ricerca per titolo dell’autore
+        display_fields: ["title"]         # cosa mostra nel menu
+        value_field: "{{slug}}"           # cosa salva nel post (es. joseph-gonzalez)
+        multiple: false
+        required: true
+        allow_add: true                   # opzionale: consenti creare un autore al volo
       - { label: "Content", name: "body", widget: "markdown" }
 
 
@@ -52,14 +73,13 @@ collections:
     folder: "content/french/blog"
     create: true
     slug: "{{slug}}"
+    preview_path: "{{slug}}/"
     extension: "md"
     format: "frontmatter"
-    media_folder: "static/images/blog"
-    public_folder: "/images/blog"
+
     fields:
       - { label: "Titre", name: "title", widget: "string" }
       - { label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DD", time_format: false }
       - { label: "Image de couverture", name: "image", widget: "image", choose_url: true }
       - { label: "Auteur", name: "author", widget: "string" }
       - { label: "Contenu", name: "body", widget: "markdown" }
-

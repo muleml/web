@@ -45,20 +45,20 @@ contact_form_action = "#!" # contact form works with https://formspree.io or any
 
 # Navigation buttons
 [navigation_button]
-enable = true
+enable = false
 label = "Log In"
 link = "#!"
 icon = "far fa-user"
 
 [navigation_button_two]
-enable = true
+enable = false
 label = "Sign Up Now"
 link = "#!"
 
 # Call to action
 [call_to_action]
 enable = true
-title = "Shape the future of energy with us."
+title = "Shape the future of energy with us"
 subtitle = "Get in touch to discover our solutions, book a demo, or start a conversation about your next project. At muleML, we believe in democratizing data and machine learning, making complex technologies simple and accessible. Our approach is gradual and pragmatic: we start with quick wins within everyone’s reach, while building a path toward long-term transformation."
 button_label = "Contact Us"
 button_link = "contact/"
