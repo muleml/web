@@ -16,8 +16,9 @@ collections:
     slug: "{{slug}}"
     extension: "md"
     format: "frontmatter"
+    media_folder_relative: false 
     preview_path: "author/{{slug}}/"
-
+ 
     fields:
       - { label: "Name", name: "title", widget: "string" }
 
