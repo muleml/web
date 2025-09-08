@@ -21,13 +21,15 @@ collections:
     fields:
       - { label: "Name", name: "title", widget: "string" }
 
+      # Immagine avatar:
       - label: "Photo (optional)"
         name: "image"
-        widget: "string"
+        widget: "image"
+        choose_url: false
         required: false
-        default: "images/avatar/"   # precompila la radice
-        hint: "Completa con il file, es. images/avatar/02.jpg"
-        pattern: ['^(|images/avatar/[A-Za-z0-9._-]+\.(jpg|jpeg|png|webp|gif))$', 'Lascia vuoto oppure es. images/avatar/02.jpg']
+        media_folder: "assets/images/avatars"   # dove viene salvato il file nel repo
+        public_folder: "/images/avatars"        # che stringa scrive nel front matter
+        hint: "Immagine avatar del profilo dell'autore"
           
       # Social: 
       - label: "Social links"
