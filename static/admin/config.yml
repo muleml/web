@@ -15,8 +15,7 @@ collections:
     create: true
     slug: "{{slug}}"
     extension: "md"
-    format: "frontmatter"
-    media_folder_relative: false 
+    format: "frontmatter" 
     preview_path: "author/{{slug}}/"
  
     fields:
@@ -29,7 +28,8 @@ collections:
         choose_url: false
         required: false
         media_folder: "assets/images/avatar"   
-        public_folder: "/images/avatar"        
+        public_folder: "/images/avatar"
+        media_folder_relative: false        
         hint: "Immagine avatar del profilo dell'autore"
           
       # Social: 
