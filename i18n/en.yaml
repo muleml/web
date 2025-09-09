@@ -72,3 +72,43 @@
 
 - id: footer_menu_5_title
   translation: Other Pages
+
+- id: contact_interest_label
+  translation: What are you interested in
+- id: contact_interest_placeholder
+  translation: Select…
+- id: contact_interest_demo
+  translation: Demo
+- id: contact_interest_product
+  translation: Product information
+- id: contact_interest_partner
+  translation: Partnership opportunity
+- id: contact_interest_media
+  translation: Media inquiry
+- id: contact_interest_academic
+  translation: Academic collaboration
+- id: contact_interest_other
+  translation: Other
+
+- id: contact_fname
+  translation: First name
+- id: contact_lname
+  translation: Last name
+- id: contact_company
+  translation: Company
+- id: contact_email
+  translation: Email
+- id: contact_phone
+  translation: Phone (optional)
+- id: contact_phone_placeholder
+  translation: +39 333 123 4567
+- id: contact_message
+  translation: Message
+- id: contact_submit
+  translation: Submit
+
+- id: contact_privacy_label_html
+  translation: I have read and accept the
+
+- id: contact_captcha_alert
+  translation: Please complete the captcha.

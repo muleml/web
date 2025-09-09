@@ -534,169 +534,143 @@
       </div>
     </div>
     
+
     <div class="row justify-content-center">
       <div class="col-xl-8 col-lg-9 mx-auto order-1 order-lg-0">
 
-            <form id="contact-form" method="POST"
-                class="rounded-md shadow-md p-4 p-md-5"
-                action="https://api.web3forms.com/submit">
-
-            
-            <input type="hidden" name="access_key" value="a66be1cc-5738-4d70-93a5-747110165ab5">
-            <input type="hidden" name="redirect"   value="http://localhost:1313/thanks/">
-            <input type="hidden" name="subject"    value="[Contact] Website inquiry">
-
-            
-            <input type="checkbox" name="botcheck" class="d-none" tabindex="-1" autocomplete="off" style="display:none">
-
-            
-            <div class="form-group mb-3">
-              <label class="fw-600 text-dark mb-1" for="interest">What are you interested in</label>
-              <select class="form-control text-dark shadow-none" id="interest" name="interest" required>
-                <option value="" selected disabled>Select…</option>
-                <option>Demo</option>
-                <option>Product information</option>
-                <option>Partnership opportunity</option>
-                <option>Media inquiry</option>
-                <option>Academic collaboration</option>
-                <option>Other</option>
-              </select>
-            </div>
-
-            
-            <div class="form-group mb-3">
-              <label class="fw-600 text-dark mb-1" for="fname">First name</label>
-              <input class="form-control text-dark shadow-none" type="text" placeholder="Jack"
-                    id="fname" name="first_name" required>
-            </div>
-
-            
-            <div class="form-group mb-3">
-              <label class="fw-600 text-dark mb-1" for="lname">Last name</label>
-              <input class="form-control text-dark shadow-none" type="text" placeholder="Barker"
-                    id="lname" name="last_name" required>
-            </div>
-
-            
-            <div class="form-group mb-3">
-              <label class="fw-600 text-dark mb-1" for="company">Company</label>
-              <input class="form-control text-dark shadow-none" type="text" placeholder="Acme S.p.A."
-                    id="company" name="company" required>
-            </div>
-
-            
-            <div class="form-group mb-3">
-              <label class="fw-600 text-dark mb-1" for="email">Email</label>
-              <input class="form-control text-dark shadow-none" type="email" placeholder="example@domain.io"
-                    id="email" name="email" required>
-            </div>
-
-            
-            <div class="form-group mb-3">
-              <label class="fw-600 text-dark mb-1" for="phone">Phone (optional)</label>
-              <input class="form-control text-dark shadow-none" type="tel" id="phone" name="phone"
-                    inputmode="tel" placeholder="+39 333 123 4567"
-                    pattern="^\+?[0-9\s\-\(\)]{7,}$"
-                    title="Enter a valid phone number (min. 7 digits; +, spaces, dashes and parentheses allowed)">
-            </div>
-
-            
-            <div class="form-group mb-3">
-              <label class="fw-600 text-dark mb-1" for="message">Message</label>
-              <textarea class="form-control text-dark shadow-none" rows="5" id="message" name="message"
-                        required placeholder="Write your message…"></textarea>
-            </div>
-
-            
-            <div class="form-group mb-3 form-check">
-              <input class="form-check-input" type="checkbox" id="privacy" required>
-              <label class="form-check-label" for="privacy">
-                I have read and accept the <a href="/privacy/" target="_blank" rel="noopener">privacy policy</a>.
-              </label>
-            </div>
-
-            
-            <div class="form-group mb-3">
-              <div class="h-captcha" data-captcha="true" data-lang="en"></div>
-            </div>
-
-            
-            <button class="btn btn-primary w-100" type="submit">Submit</button>
-
-            
-          </form>
+        <form id="contact-form" method="POST"
+              class="rounded-md shadow-md p-4 p-md-5"
+              action="https://api.web3forms.com/submit">
 
           
-          <script src="https://web3forms.com/client/script.js" async defer></script>
+          <input type="hidden" name="access_key" value="a66be1cc-5738-4d70-93a5-747110165ab5">
+          
+          <input type="hidden" name="redirect" value="http://localhost:1313/it/thanks/">
+          <input type="hidden" name="subject"  value="[Contact] Website inquiry">
 
-          <script>
-          (function () {
-            const form = document.getElementById('contact-form');
-            const btn  = document.getElementById('submit-btn');
-            let submitting = false;
+          
+          <input type="checkbox" name="botcheck" class="d-none" tabindex="-1" autocomplete="off" style="display:none">
 
-            form.addEventListener('submit', function (e) {
+          
+          <div class="form-group mb-3">
+            <label class="fw-600 text-dark mb-1" for="interest">Motivo del contatto</label>
+            <select class="form-control text-dark shadow-none" id="interest" name="interest" required>
+              <option value="" selected disabled>Seleziona…</option>
+              <option>Demo</option>
+              <option>Informazioni sul prodotto</option>
+              <option>Opportunità di partnership</option>
+              <option>Indagine mediatica</option>
+              <option>Collaborazione accademica</option>
+              <option>Altro</option>
+            </select>
+          </div>
 
-              
+          
+          <div class="form-group mb-3">
+            <label class="fw-600 text-dark mb-1" for="fname">Nome</label>
+            <input class="form-control text-dark shadow-none" type="text" placeholder="Nome"
+                   id="fname" name="first_name" required>
+          </div>
 
-              const cap = form.querySelector('input[name="h-captcha-response"], textarea[name="h-captcha-response"]');
-              if (!cap || !cap.value) {
-                e.preventDefault();
-                alert('Please complete the captcha.');
-                return false;
-              }
+          
+          <div class="form-group mb-3">
+            <label class="fw-600 text-dark mb-1" for="lname">Cognome</label>
+            <input class="form-control text-dark shadow-none" type="text" placeholder="Cognome"
+                   id="lname" name="last_name" required>
+          </div>
+
+          
+          <div class="form-group mb-3">
+            <label class="fw-600 text-dark mb-1" for="company">Azienda</label>
+            <input class="form-control text-dark shadow-none" type="text" placeholder="Acme S.p.A."
+                   id="company" name="company" required>
+          </div>
+
+          
+          <div class="form-group mb-3">
+            <label class="fw-600 text-dark mb-1" for="email">Email</label>
+            <input class="form-control text-dark shadow-none" type="email" placeholder="example@domain.io"
+                   id="email" name="email" required>
+          </div>
+
+          
+          <div class="form-group mb-3">
+            <label class="fw-600 text-dark mb-1" for="phone">Telefono (opzionale)</label>
+            <input class="form-control text-dark shadow-none" type="tel" id="phone" name="phone"
+                   inputmode="tel" placeholder="&#43;39 333 123 4567"
+                   pattern="^\+?[0-9\s\-\(\)]{7,}$"
+                   title="Enter a valid phone number (min. 7 digits; +, spaces, dashes and parentheses allowed)">
+          </div>
+
+          
+          <div class="form-group mb-3">
+            <label class="fw-600 text-dark mb-1" for="message">Messaggio</label>
+            <textarea class="form-control text-dark shadow-none" rows="5" id="message" name="message"
+                      required placeholder="Messaggio…"></textarea>
+          </div>
+
+          
+          <div class="form-group mb-3 form-check">
+            <input class="form-check-input" type="checkbox" id="privacy" required>
+            <label class="form-check-label" for="privacy">
+              Ho letto e accetto la
+              <a href="/it/privacy/"
+                target="_blank" rel="noopener">privacy policy</a>.
+            </label>
+          </div>
 
 
-              
-              const now = Date.now();
-              const last = Number(localStorage.getItem('contact_last_submit') || 0);
-              if (now - last < 15000) {
-                e.preventDefault();
-                return false;
-              }
-              localStorage.setItem('contact_last_submit', String(now));
+          
+          <div class="form-group mb-3">
+            <div class="h-captcha" data-captcha="true" data-lang="it"></div>
+          </div>
 
-              
-              if (submitting) {
-                e.preventDefault();
-                return false;
-              }
-              submitting = true;
+          
+          <button class="btn btn-primary w-100" id="submit-btn" type="submit">Invia</button>
 
-              
-              btn.disabled = true;
-              btn.setAttribute('aria-busy', 'true');
-              btn.classList.add('disabled');           
-              btn.textContent = 'Sending…';
+        </form>
 
-              
-              const ts = document.createElement('input');
-              ts.type = 'hidden';
-              ts.name = 'submitted_at';
-              ts.value = new Date().toISOString();
-              form.appendChild(ts);
+        
+        <script src="https://web3forms.com/client/script.js" async defer></script>
 
-              
-            }, { capture: true });
-          })();
-          </script>
+        <script>
+        (function () {
+          const form = document.getElementById('contact-form');
+          const btn  = document.getElementById('submit-btn');
+          let submitting = false;
 
+          form.addEventListener('submit', function (e) {
+            const cap = form.querySelector('input[name="h-captcha-response"], textarea[name="h-captcha-response"]');
+            if (!cap || !cap.value) {
+              e.preventDefault();
+              alert('Completa il captcha, per favore.');
+              return false;
+            }
+            const now  = Date.now();
+            const last = Number(localStorage.getItem('contact_last_submit') || 0);
+            if (now - last < 15000) { e.preventDefault(); return false; }
+            localStorage.setItem('contact_last_submit', String(now));
+            if (submitting) { e.preventDefault(); return false; }
+            submitting = true;
+            btn.disabled = true;
+            btn.setAttribute('aria-busy', 'true');
+            btn.classList.add('disabled');
+            btn.textContent = 'Invia…';
+            const ts = document.createElement('input');
+            ts.type = 'hidden'; ts.name = 'submitted_at'; ts.value = new Date().toISOString();
+            form.appendChild(ts);
+          }, { capture: true });
+        })();
+        </script>
 
       </div>
-
-
     </div>
   </div>
 
-<style>
-  .form-control {
-    padding-bottom: 0rem;
-    padding-top: 0rem;  
-  }
-</style>
-
+  <style>
+    .form-control { padding-bottom: 0rem; padding-top: 0rem; }
+  </style>
 </section>
-
 
 
     </main>

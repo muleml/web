@@ -37,7 +37,7 @@ features:
     
   - title: "ML & Model Operations"
     icon: "fas fa-brain"
-    content: "End-to-end machine learning lifecycle: training, deployment, and monitorin"
+    content: "End-to-end machine learning lifecycle: training, deployment, and monitoring"
     
 ---
 

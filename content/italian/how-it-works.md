@@ -20,26 +20,27 @@ banner:
 # work_process
 work_process:
   enable: false
-  subtitle: "Our key advantages"
-  title: "What makes BESS INSIGHT stand out"
+  subtitle: "I nostri vantaggi chiave"
+  title: "Cosa rende BESS INSIGHT unico"
   process_item:
-  - title: "Proven predictive models"
+  - title: "Modelli predittivi comprovati"
     image: "images/process/01.jpg"
-    content: "Best-in-class SOC and SOH prediction, proven by evidence and with economic impact."
+    content: "Previsioni SOC e SOH avanzate, comprovate da evidenze e con impatto economico."
 
-  - title: "Fully managed delivery"
+  - title: "Gestione <br>end-to-end"
     image: "images/process/02.jpg"
-    content: "No operational risks: we handle everything, from data collection to output delivery."
+    content: "Nessun rischio operativo: gestiamo tutto, dalla raccolta dati alla consegna dei risultati."
     
-  - title: "Integrated data platform"
+  - title: "Piattaforma dati integrata"
     image: "images/process/03.jpg"
-    content: "Unified environment for data engineering and analytics, powered by open-source tech."
+    content: "Ambiente unificato per data engineering e analytics, basato su tecnologie open source."
     
-  - title: "EU-based and compliant"
+  - title: "Basato nell’UE e conforme"
     image: "images/process/04.jpg"
-    content: "Full compliance with European regulations, including the AI Act, with data managed in the EU."
+    content: "Piena conformità alle normative europee, incluso l’AI Act, con dati gestiti all’interno dell’UE."
 
-    Mini-header: Our key advantages
+    Mini-header: "I nostri vantaggi chiave"
+
 
 
 ---

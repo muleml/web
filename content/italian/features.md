@@ -5,39 +5,40 @@ draft: false
 layout: "features"
 
 features:
-  subtitle: "Our solution BESS INSIGHT"
-  title: "An integrated architecture for energy storage data: <br>sensors, edge devices, analytics and ML"
+  subtitle: "La nostra soluzione BESS INSIGHT"
+  title: "Un’architettura integrata <br>per i dati di accumulo energetico: <br>sensori, dispositivi edge, analytics e ML"
   button:
     enable: false
-    label: "View All Features"
+    label: "Visualizza tutte le funzionalità"
     icon: "fas fa-arrow-right"
     link: "#!"
 
   # features_blocks
   features_blocks:
-  - title: "Advanced Sensors"
+  - title: "Sensori avanzati"
     icon: "fas fa-temperature-high"
-    content: "Fiber-optic sensors capturing high-resolution temperature and strain data"
+    content: "Sensori in fibra ottica per dati ad alta risoluzione su temperatura e sollecitazioni"
 
-  - title: "Edge Devices"
+  - title: "Dispositivi edge"
     icon: "fa-solid fa-tachograph-digital"
-    content: "Smart gateways collecting and pre-processing field data in real time"
+    content: "Gateway intelligenti che raccolgono ed elaborano i dati di campo in tempo reale"
     
-  - title: "Device Connectivity"
+  - title: "Gestione dispositivi"
     icon: "far fa-circle-nodes"
-    content: "Secure device control, local data buffering, and resilient connectivity"
+    content: "Controllo sicuro dei dispositivi, buffering locale dei dati e connettività resiliente"
     
-  - title: "Data Platform & Analytics"
+  - title: "Gestione dati & Analytics"
     icon: "far fa-chart-line"
-    content: "Unified environment for data engineering, monitoring, and analytics service"
+    content: "Ambiente unificato per data engineering, monitoraggio e servizi di analisi"
     
-  - title: "Unified Lakehouse Architecture"
+  - title: "Architettura lakehouse unificata"
     icon: "fas fa-water"
-    content: "Scalable storage unifying raw and curated data for advanced processing"
+    content: "Archiviazione scalabile che unifica dati grezzi e curati per elaborazioni avanzate"
     
-  - title: "ML & Model Operations"
+  - title: "ML & operazioni sui modelli"
     icon: "fas fa-brain"
-    content: "End-to-end machine learning lifecycle: training, deployment, and monitorin"
+    content: "Ciclo di vita completo del machine learning: training, deployment e monitoraggio"
+
     
 ---
 

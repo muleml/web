@@ -334,7 +334,10 @@
 {{end}}
 
 {{if .Params.call_to_action.enable}}
-{{ partial "call-to-action-2.html" . }}
+{{ with site.GetPage "call-to-action" }}
+  {{ partial "call-to-action-2.html" . }}
+{{ end }}
 {{end}}
+
 
 {{ end }}

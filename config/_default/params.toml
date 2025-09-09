@@ -64,6 +64,9 @@ button_label = "Contact Us"
 button_link = "contact/"
 image = "images/cta.png"
 
+# Privacy policy page
+[privacy_page]
+url = "/privacy/"
 
 # seo meta data for OpenGraph / Twitter Card
 [metadata]

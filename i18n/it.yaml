@@ -72,3 +72,44 @@
 
 - id: footer_menu_5_title
   translation: Altre pagine
+
+- id: contact_interest_label
+  translation: Motivo del contatto
+- id: contact_interest_placeholder
+  translation: Seleziona…
+- id: contact_interest_demo
+  translation: Demo
+- id: contact_interest_product
+  translation: Informazioni sul prodotto
+- id: contact_interest_partner
+  translation: Opportunità di partnership
+- id: contact_interest_media
+  translation: Indagine mediatica
+- id: contact_interest_academic
+  translation: Collaborazione accademica
+- id: contact_interest_other
+  translation: Altro
+
+- id: contact_fname
+  translation: Nome
+- id: contact_lname
+  translation: Cognome
+- id: contact_company
+  translation: Azienda
+- id: contact_email
+  translation: Email
+- id: contact_phone
+  translation: Telefono (opzionale)
+- id: contact_phone_placeholder
+  translation: +39 333 123 4567
+- id: contact_message
+  translation: Messaggio
+- id: contact_submit
+  translation: Invia
+
+- id: contact_privacy_label_html
+  translation: Ho letto e accetto la
+
+- id: contact_captcha_alert
+  translation: Completa il captcha, per favore.
+
