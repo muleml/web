@@ -50,8 +50,6 @@ collections:
     preview_path: "blog/{{slug}}/"
     extension: "md"
     format: "frontmatter"
-    media_folder: "static/images/blog"
-    public_folder: "/images/blog"
 
     fields:
       - { label: "Title", name: "title", widget: "string" }
