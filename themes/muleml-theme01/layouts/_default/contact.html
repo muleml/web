@@ -2,7 +2,7 @@
 
 {{ partial "components/page-header.html" . }}
 
-<section class="section pb-0">
+<section class="section pb-5">
   <div class="container container-delta">
     {{with .Params.contact}}
     <div class="row mb-5">
@@ -16,66 +16,167 @@
     </div>
     {{end}}
     <div class="row justify-content-center">
-      <div class="col-xl-6 col-lg-7 order-1 order-lg-0">
-        <form method="POST" class="rounded-md shadow-md p-4 p-md-5" action="{{site.Params.contact_info.contact_form_action}}">
-          <div class="form-group mb-3">
-            <label class="fw-600 text-dark mb-1" for="fname">{{ i18n "full_name"}}</label>
-            <input class="form-control text-dark shadow-none" type="text" placeholder="Jack Barker" id="fname" required>
-          </div>
-          <div class="form-group mb-3">
-            <label class="fw-600 text-dark mb-1" for="email">{{i18n "email"}}</label>
-            <input class="form-control text-dark shadow-none" type="email" placeholder="example@domain.io" id="email" required>
-          </div>
-          <div class="form-group mb-3">
-            <label class="fw-600 text-dark mb-1" for="website">{{i18n "website"}}</label>
-            <input class="form-control text-dark shadow-none" type="url" placeholder="{{i18n `website`}}">
-          </div>
-          <div class="form-group mb-3">
-            <label class="fw-600 text-dark mb-1" for="message">{{ i18n "message"}}</label>
-            <textarea class="form-control text-dark shadow-none" name="comment" rows="5" id="message" required placeholder="{{ i18n `message`}}"></textarea>
-          </div>
-          <button class="btn btn-primary w-100" type="submit">{{ i18n "submit_now"}}</button>
-        </form>
+      <div class="col-xl-8 col-lg-9 mx-auto order-1 order-lg-0">
+
+            <form id="contact-form" method="POST"
+                class="rounded-md shadow-md p-4 p-md-5"
+                action="https://api.web3forms.com/submit">
+
+            <!-- Web3Forms -->
+            <input type="hidden" name="access_key" value="a66be1cc-5738-4d70-93a5-747110165ab5">
+            <input type="hidden" name="redirect"   value="{{ .Site.BaseURL }}thanks/">
+            <input type="hidden" name="subject"    value="[Contact] Website inquiry">
+
+            <!-- Honeypot (anti-bot) -->
+            <input type="checkbox" name="botcheck" class="d-none" tabindex="-1" autocomplete="off" style="display:none">
+
+            <!-- What are you interested in -->
+            <div class="form-group mb-3">
+              <label class="fw-600 text-dark mb-1" for="interest">What are you interested in</label>
+              <select class="form-control text-dark shadow-none" id="interest" name="interest" required>
+                <option value="" selected disabled>Select…</option>
+                <option>Demo</option>
+                <option>Product information</option>
+                <option>Partnership opportunity</option>
+                <option>Media inquiry</option>
+                <option>Academic collaboration</option>
+                <option>Other</option>
+              </select>
+            </div>
+
+            <!-- First name -->
+            <div class="form-group mb-3">
+              <label class="fw-600 text-dark mb-1" for="fname">First name</label>
+              <input class="form-control text-dark shadow-none" type="text" placeholder="Jack"
+                    id="fname" name="first_name" required>
+            </div>
+
+            <!-- Last name -->
+            <div class="form-group mb-3">
+              <label class="fw-600 text-dark mb-1" for="lname">Last name</label>
+              <input class="form-control text-dark shadow-none" type="text" placeholder="Barker"
+                    id="lname" name="last_name" required>
+            </div>
+
+            <!-- Company -->
+            <div class="form-group mb-3">
+              <label class="fw-600 text-dark mb-1" for="company">Company</label>
+              <input class="form-control text-dark shadow-none" type="text" placeholder="Acme S.p.A."
+                    id="company" name="company" required>
+            </div>
+
+            <!-- Email -->
+            <div class="form-group mb-3">
+              <label class="fw-600 text-dark mb-1" for="email">Email</label>
+              <input class="form-control text-dark shadow-none" type="email" placeholder="example@domain.io"
+                    id="email" name="email" required>
+            </div>
+
+            <!-- Phone (optional) -->
+            <div class="form-group mb-3">
+              <label class="fw-600 text-dark mb-1" for="phone">Phone (optional)</label>
+              <input class="form-control text-dark shadow-none" type="tel" id="phone" name="phone"
+                    inputmode="tel" placeholder="+39 333 123 4567"
+                    pattern="^\+?[0-9\s\-\(\)]{7,}$"
+                    title="Enter a valid phone number (min. 7 digits; +, spaces, dashes and parentheses allowed)">
+            </div>
+
+            <!-- Message -->
+            <div class="form-group mb-3">
+              <label class="fw-600 text-dark mb-1" for="message">Message</label>
+              <textarea class="form-control text-dark shadow-none" rows="5" id="message" name="message"
+                        required placeholder="Write your message…"></textarea>
+            </div>
+
+            <!-- Privacy consent -->
+            <div class="form-group mb-3 form-check">
+              <input class="form-check-input" type="checkbox" id="privacy" required>
+              <label class="form-check-label" for="privacy">
+                I have read and accept the <a href="/privacy/" target="_blank" rel="noopener">privacy policy</a>.
+              </label>
+            </div>
+
+            <!-- hCaptcha (Web3Forms zero-config) -->
+            <div class="form-group mb-3">
+              <div class="h-captcha" data-captcha="true" data-lang="en"></div>
+            </div>
+
+            <!-- Submit -->
+            <button class="btn btn-primary w-100" type="submit">Submit</button>
+
+            <!-- (Optional) inline messages are handled by the /thanks/ page via redirect -->
+          </form>
+
+          <!-- Web3Forms client script to load hCaptcha -->
+          <script src="https://web3forms.com/client/script.js" async defer></script>
+
+          <script>
+          (function () {
+            const form = document.getElementById('contact-form');
+            const btn  = document.getElementById('submit-btn');
+            let submitting = false;
+
+            form.addEventListener('submit', function (e) {
+
+              /* ✅ CHECK CAPTCHA: hCaptcha aggiunge automaticamente
+                un campo hidden 'h-captcha-response' quando l'utente completa il captcha */
+              const cap = form.querySelector('input[name="h-captcha-response"], textarea[name="h-captcha-response"]');
+              if (!cap || !cap.value) {
+                e.preventDefault();
+                alert('Please complete the captcha.');
+                return false;
+              }
+
+
+              // throttle: blocca invii entro 15s dallo stesso browser
+              const now = Date.now();
+              const last = Number(localStorage.getItem('contact_last_submit') || 0);
+              if (now - last < 15000) {
+                e.preventDefault();
+                return false;
+              }
+              localStorage.setItem('contact_last_submit', String(now));
+
+              // anti double-click
+              if (submitting) {
+                e.preventDefault();
+                return false;
+              }
+              submitting = true;
+
+              // disabilita bottone e mostra stato
+              btn.disabled = true;
+              btn.setAttribute('aria-busy', 'true');
+              btn.classList.add('disabled');           // opzionale (Bootstrap)
+              btn.textContent = 'Sending…';
+
+              // (facoltativo) metti un timestamp nella submission
+              const ts = document.createElement('input');
+              ts.type = 'hidden';
+              ts.name = 'submitted_at';
+              ts.value = new Date().toISOString();
+              form.appendChild(ts);
+
+              // nessun preventDefault: lasciamo proseguire la submit con redirect
+            }, { capture: true });
+          })();
+          </script>
+
+
       </div>
-      <div class="col-xl-4 col-lg-5 mb-5 mb-lg-0 order-0 order-lg-1">
-        <div class="ps-lg-4">
-          {{ if .Params.contact_info.enable }}
-          {{ with .Params.contact_info }}
-          <div class="mb-4">
-            <h5 class="font-secondary"><i class="fas fa-info-circle text-primary"></i>&nbsp; {{ .title | markdownify }}</h5>
 
-            <ul class="list-unstyled check-list mb-0">
-              {{ range .address_list }}
-              <li class="position-relative">
-                <i class="fas fa-check"></i>{{ . | markdownify }}
-              </li>
-              {{ end }}
-            </ul>
-          </div>
-          {{ end }}
-          {{ end }}
 
-          {{ if .Params.services.enable }}
-          {{ with .Params.services }}
-          <div>
-            <h5 class="font-secondary"><i class="fas fa-info-circle text-primary"></i>&nbsp; {{ .title | markdownify }}</h5>
-
-            <ul class="list-unstyled check-list mb-0">
-              {{ range .service_list }}
-              <li class="position-relative">
-                <i class="fas fa-check-circle"></i>{{ . | markdownify }}
-              </li>
-              {{ end }}
-            </ul>
-          </div>
-          {{ end }}
-          {{ end }}
-        </div>
-      </div>
     </div>
   </div>
+
+<style>
+  .form-control {
+    padding-bottom: 0rem;
+    padding-top: 0rem; /* solo qui */
+  }
+</style>
+
 </section>
 
-{{ partial "call-to-action-2.html" . }}
 
 {{ end }}

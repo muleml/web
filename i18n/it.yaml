@@ -1,0 +1,74 @@
+- id: by
+  translation: di
+
+- id: admin
+  translation: Admin
+
+- id: most_popular
+  translation: più popolari
+
+- id: recent_posts_of
+  translation: Post recenti di
+
+- id: related_posts
+  translation: Post correlati
+
+- id: min_read
+  translation: Minuti di lettura
+
+- id: view_all_positions
+  translation: Vedi tutte le posizioni
+
+- id: apply_now
+  translation: Candidati ora
+
+- id: share_this_job
+  translation: "Condividi questo lavoro:"
+
+- id: other_jobs
+  translation: Altri lavori
+
+- id: all_jobs
+  translation: Tutti i lavori
+
+- id: fname
+  translation: Nome
+
+- id: full_name
+  translation: Nome completo
+
+- id: lname
+  translation: Cognome
+
+- id: email
+  translation: Indirizzo email
+
+- id: website
+  translation: Sito web
+
+- id: message
+  translation: Messaggio
+
+- id: submit_now
+  translation: Invia ora
+
+- id: cv_note
+  translation: solo file doc, pdf consentiti &amp; dimensione file inferiore a 2MB
+
+- id: upload_cv
+  translation: Carica CV
+
+- id: footer_menu_1_title
+  translation: Prodotti
+
+- id: footer_menu_2_title
+  translation: Servizi
+
+- id: footer_menu_3_title
+  translation: Supporto
+
+- id: footer_menu_4_title
+  translation: Risorse
+
+- id: footer_menu_5_title
+  translation: Altre pagine

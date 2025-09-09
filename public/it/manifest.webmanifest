@@ -1,0 +1,56 @@
+{
+  "name": "muleML",
+  "short_name": "muleML",
+  "lang": "it-it",
+  "display": "fullscreen",
+  "orientation" : "portrait",
+  "start_url": "http://localhost:1313/?utm_source=web_app_manifest",
+  "background_color": "#fff",
+  "theme_color": "#4262FF",
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  "icons": [
+    {
+      "src": "/images/favicon_hu_cc52ac6e510bb770.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/favicon_hu_57b2e0fece5f797d.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/favicon_hu_429e297b054f30a.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/favicon_hu_d57dc01fc13614c.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/favicon_hu_76b556969facbe50.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/favicon_hu_717d33cb816987a3.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+  
+  
+}

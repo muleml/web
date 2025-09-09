@@ -95,7 +95,7 @@
   
     <link rel="alternate" hreflang="en" href="http://localhost:1313/contact/" />
   
-    <link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/contact/" />
+    <link rel="alternate" hreflang="it" href="http://localhost:1313/it/contact/" />
   
   <link rel="alternate" hreflang="x-default" href="http://localhost:1313/contact/" />
 
@@ -384,7 +384,7 @@
           
           
           
-          <option id="fr" value="/fr/contact/">Fr</option>
+          <option id="it" value="/it/contact/">It</option>
           
           
           
@@ -471,7 +471,7 @@
               
               
               
-              <option id="fr" value="/fr/contact/">Fr</option>
+              <option id="it" value="/it/contact/">It</option>
               
               
               
@@ -521,7 +521,7 @@
   </div>
 </section>
 
-<section class="section pb-0">
+<section class="section pb-5">
   <div class="container container-delta">
     
     <div class="row mb-5">
@@ -535,118 +535,166 @@
     </div>
     
     <div class="row justify-content-center">
-      <div class="col-xl-6 col-lg-7 order-1 order-lg-0">
-        <form method="POST" class="rounded-md shadow-md p-4 p-md-5" action="#!">
-          <div class="form-group mb-3">
-            <label class="fw-600 text-dark mb-1" for="fname">Full Name</label>
-            <input class="form-control text-dark shadow-none" type="text" placeholder="Jack Barker" id="fname" required>
-          </div>
-          <div class="form-group mb-3">
-            <label class="fw-600 text-dark mb-1" for="email">Email Address</label>
-            <input class="form-control text-dark shadow-none" type="email" placeholder="example@domain.io" id="email" required>
-          </div>
-          <div class="form-group mb-3">
-            <label class="fw-600 text-dark mb-1" for="website">Website</label>
-            <input class="form-control text-dark shadow-none" type="url" placeholder="Website">
-          </div>
-          <div class="form-group mb-3">
-            <label class="fw-600 text-dark mb-1" for="message">Message</label>
-            <textarea class="form-control text-dark shadow-none" name="comment" rows="5" id="message" required placeholder="Message"></textarea>
-          </div>
-          <button class="btn btn-primary w-100" type="submit">Submit Now</button>
-        </form>
+      <div class="col-xl-8 col-lg-9 mx-auto order-1 order-lg-0">
+
+            <form id="contact-form" method="POST"
+                class="rounded-md shadow-md p-4 p-md-5"
+                action="https://api.web3forms.com/submit">
+
+            
+            <input type="hidden" name="access_key" value="a66be1cc-5738-4d70-93a5-747110165ab5">
+            <input type="hidden" name="redirect"   value="http://localhost:1313/thanks/">
+            <input type="hidden" name="subject"    value="[Contact] Website inquiry">
+
+            
+            <input type="checkbox" name="botcheck" class="d-none" tabindex="-1" autocomplete="off" style="display:none">
+
+            
+            <div class="form-group mb-3">
+              <label class="fw-600 text-dark mb-1" for="interest">What are you interested in</label>
+              <select class="form-control text-dark shadow-none" id="interest" name="interest" required>
+                <option value="" selected disabled>Select…</option>
+                <option>Demo</option>
+                <option>Product information</option>
+                <option>Partnership opportunity</option>
+                <option>Media inquiry</option>
+                <option>Academic collaboration</option>
+                <option>Other</option>
+              </select>
+            </div>
+
+            
+            <div class="form-group mb-3">
+              <label class="fw-600 text-dark mb-1" for="fname">First name</label>
+              <input class="form-control text-dark shadow-none" type="text" placeholder="Jack"
+                    id="fname" name="first_name" required>
+            </div>
+
+            
+            <div class="form-group mb-3">
+              <label class="fw-600 text-dark mb-1" for="lname">Last name</label>
+              <input class="form-control text-dark shadow-none" type="text" placeholder="Barker"
+                    id="lname" name="last_name" required>
+            </div>
+
+            
+            <div class="form-group mb-3">
+              <label class="fw-600 text-dark mb-1" for="company">Company</label>
+              <input class="form-control text-dark shadow-none" type="text" placeholder="Acme S.p.A."
+                    id="company" name="company" required>
+            </div>
+
+            
+            <div class="form-group mb-3">
+              <label class="fw-600 text-dark mb-1" for="email">Email</label>
+              <input class="form-control text-dark shadow-none" type="email" placeholder="example@domain.io"
+                    id="email" name="email" required>
+            </div>
+
+            
+            <div class="form-group mb-3">
+              <label class="fw-600 text-dark mb-1" for="phone">Phone (optional)</label>
+              <input class="form-control text-dark shadow-none" type="tel" id="phone" name="phone"
+                    inputmode="tel" placeholder="+39 333 123 4567"
+                    pattern="^\+?[0-9\s\-\(\)]{7,}$"
+                    title="Enter a valid phone number (min. 7 digits; +, spaces, dashes and parentheses allowed)">
+            </div>
+
+            
+            <div class="form-group mb-3">
+              <label class="fw-600 text-dark mb-1" for="message">Message</label>
+              <textarea class="form-control text-dark shadow-none" rows="5" id="message" name="message"
+                        required placeholder="Write your message…"></textarea>
+            </div>
+
+            
+            <div class="form-group mb-3 form-check">
+              <input class="form-check-input" type="checkbox" id="privacy" required>
+              <label class="form-check-label" for="privacy">
+                I have read and accept the <a href="/privacy/" target="_blank" rel="noopener">privacy policy</a>.
+              </label>
+            </div>
+
+            
+            <div class="form-group mb-3">
+              <div class="h-captcha" data-captcha="true" data-lang="en"></div>
+            </div>
+
+            
+            <button class="btn btn-primary w-100" type="submit">Submit</button>
+
+            
+          </form>
+
+          
+          <script src="https://web3forms.com/client/script.js" async defer></script>
+
+          <script>
+          (function () {
+            const form = document.getElementById('contact-form');
+            const btn  = document.getElementById('submit-btn');
+            let submitting = false;
+
+            form.addEventListener('submit', function (e) {
+
+              
+
+              const cap = form.querySelector('input[name="h-captcha-response"], textarea[name="h-captcha-response"]');
+              if (!cap || !cap.value) {
+                e.preventDefault();
+                alert('Please complete the captcha.');
+                return false;
+              }
+
+
+              
+              const now = Date.now();
+              const last = Number(localStorage.getItem('contact_last_submit') || 0);
+              if (now - last < 15000) {
+                e.preventDefault();
+                return false;
+              }
+              localStorage.setItem('contact_last_submit', String(now));
+
+              
+              if (submitting) {
+                e.preventDefault();
+                return false;
+              }
+              submitting = true;
+
+              
+              btn.disabled = true;
+              btn.setAttribute('aria-busy', 'true');
+              btn.classList.add('disabled');           
+              btn.textContent = 'Sending…';
+
+              
+              const ts = document.createElement('input');
+              ts.type = 'hidden';
+              ts.name = 'submitted_at';
+              ts.value = new Date().toISOString();
+              form.appendChild(ts);
+
+              
+            }, { capture: true });
+          })();
+          </script>
+
+
       </div>
-      <div class="col-xl-4 col-lg-5 mb-5 mb-lg-0 order-0 order-lg-1">
-        <div class="ps-lg-4">
-          
-          
-          <div class="mb-4">
-            <h5 class="font-secondary"><i class="fas fa-info-circle text-primary"></i>&nbsp; Our Contact Info</h5>
-
-            <ul class="list-unstyled check-list mb-0">
-              
-              <li class="position-relative">
-                <i class="fas fa-check"></i><a href="mailto:thedelta@gmail.com"
 
 
-
- 
-
-
->thedelta@gmail.com</a>
-              </li>
-              
-              <li class="position-relative">
-                <i class="fas fa-check"></i>(207) 555-0119
-              </li>
-              
-              <li class="position-relative">
-                <i class="fas fa-check"></i>3891 Ranchview Dr. Richardson Main Road Near Amazon, California 62639
-              </li>
-              
-            </ul>
-          </div>
-          
-          
-
-          
-          
-          <div>
-            <h5 class="font-secondary"><i class="fas fa-info-circle text-primary"></i>&nbsp; Why Delta?</h5>
-
-            <ul class="list-unstyled check-list mb-0">
-              
-              <li class="position-relative">
-                <i class="fas fa-check-circle"></i>Focus critical developer resources on your core business
-              </li>
-              
-              <li class="position-relative">
-                <i class="fas fa-check-circle"></i>Launch new products faster with less payments code
-              </li>
-              
-              <li class="position-relative">
-                <i class="fas fa-check-circle"></i>Improve conversion from international customers
-              </li>
-              
-            </ul>
-          </div>
-          
-          
-        </div>
-      </div>
     </div>
   </div>
-</section>
 
+<style>
+  .form-control {
+    padding-bottom: 0rem;
+    padding-top: 0rem;  
+  }
+</style>
 
-<section class="section pb-0 call-to-action call-to-action-2">
-  <div class="container container-delta">
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="block bg-white rounded-lg shadow">
-          <div class="row g-0 align-items-center">
-            <div class="col-lg-8">
-              <div class="content-block">
-                <h3 class="text-capitalize mb-2">Shape the future of energy with us</h3>
-                <p class="mb-4">Get in touch to discover our solutions, book a demo, or start a conversation about your next project. At muleML, we believe in democratizing data and machine learning, making complex technologies simple and accessible. Our approach is gradual and pragmatic: we start with quick wins within everyone’s reach, while building a path toward long-term transformation.</p>
-                
-                <a href="/contact/" class="btn btn-primary">Contact Us <i class="arrow-right fas fa-arrow-right"></i></a>
-                
-              </div>
-            </div>
-            
-            <div class="col-lg-4">
-              
-              
-              
-              <img loading="lazy" decoding="async" class="rounded-lg img-fluid" width="425" height="283" src="/images/cta_hu_cbffd9f6d6f8cb2b.webp" alt="cta Image" onerror="this.onerror=null;this.src='\/images\/cta_hu_3e59b1af86929f6f.png'">
-            </div>
-            
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 </section>
 
 

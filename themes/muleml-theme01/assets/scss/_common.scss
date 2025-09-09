@@ -170,7 +170,7 @@ body {
 }
 
 .title {
-  @extend .text-capitalize;
+//  @extend .text-capitalize;
 }
 
 .container-delta {
@@ -408,7 +408,7 @@ body {
 // form-control
 
 .form-control {
-  padding: 1.25rem;
+  // padding: 1.25rem;
   border: 1px solid rgba($black, 0.1);
   height: 56px;
   transition: .3s ease;

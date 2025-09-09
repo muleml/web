@@ -7,18 +7,29 @@ weight = 1
 
 [en.params]
 # copyright
-copyright = "Copyright by your company"
+copyright = "muleML"
 
 # <a target="_blank" rel="noopener noreferrer" href="">
+
+################################### Italian language #####################################
+[it]
+languageName = "It"
+languageCode = "it-it"
+contentDir = "content/italian"
+weight = 2
+
+[it.params]
+# copyright
+copyright = "muleML"
 
 ################################### French language #####################################
 [fr]
 languageName = "Fr"
 languageCode = "fr-fr"
 contentDir = "content/french"
-weight = 2
+weight = 3
 
 [fr.params]
 # copyright
 home = "Accueil"
-copyright = "Copyright by your company"
+copyright = "muleML"

@@ -6800,7 +6800,7 @@ textarea.form-control-lg {
 .text-uppercase {
   text-transform: uppercase !important; }
 
-.text-capitalize, .title {
+.text-capitalize {
   text-transform: capitalize !important; }
 
 .text-wrap {
@@ -10012,7 +10012,6 @@ body .only-light {
   color: #555; }
 
 .form-control {
-  padding: 1.25rem;
   border: 1px solid rgba(0, 0, 0, 0.1);
   height: 56px;
   transition: .3s ease; }

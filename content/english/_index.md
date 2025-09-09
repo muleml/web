@@ -4,7 +4,7 @@ title: "muleML - Works, Simply, With Purpose"
 # banner
 banner:
   subtitle: "Shaping the intelligence of energy"
-  title: "Energy from your data"
+  title: "Energy <br>from your data"
   description: "We believe the future of energy lies in data-driven insights. <br>That’s why we democratize machine learning and data engineering in energy storage, helping the world build more sustainable and resilient energy systems."
   button:
     enable: true

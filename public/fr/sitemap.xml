@@ -11,6 +11,11 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="it-it"
+                href="http://localhost:1313/it/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="fr-fr"
                 href="http://localhost:1313/fr/"
                 />
@@ -21,6 +26,11 @@
                 rel="alternate"
                 hreflang="en-us"
                 href="http://localhost:1313/blog/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it-it"
+                href="http://localhost:1313/it/blog/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -37,6 +47,11 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="it-it"
+                href="http://localhost:1313/it/career/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="fr-fr"
                 href="http://localhost:1313/fr/career/"
                 />
@@ -47,6 +62,11 @@
                 rel="alternate"
                 hreflang="en-us"
                 href="http://localhost:1313/career/digital-marketing-paid-media-manager/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it-it"
+                href="http://localhost:1313/it/career/digital-marketing-paid-media-manager/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -63,6 +83,11 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="it-it"
+                href="http://localhost:1313/it/blog/post-1/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="fr-fr"
                 href="http://localhost:1313/fr/blog/post-1/"
                 />
@@ -73,6 +98,11 @@
                 rel="alternate"
                 hreflang="en-us"
                 href="http://localhost:1313/career/people-program-management-leader/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it-it"
+                href="http://localhost:1313/it/career/people-program-management-leader/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -89,6 +119,11 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="it-it"
+                href="http://localhost:1313/it/blog/post-2/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="fr-fr"
                 href="http://localhost:1313/fr/blog/post-2/"
                 />
@@ -99,6 +134,11 @@
                 rel="alternate"
                 hreflang="en-us"
                 href="http://localhost:1313/career/senior-compensation-programs-manager/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it-it"
+                href="http://localhost:1313/it/career/senior-compensation-programs-manager/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -115,6 +155,11 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="it-it"
+                href="http://localhost:1313/it/blog/post-3/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="fr-fr"
                 href="http://localhost:1313/fr/blog/post-3/"
                 />
@@ -125,6 +170,11 @@
                 rel="alternate"
                 hreflang="en-us"
                 href="http://localhost:1313/career/executive-sr-executive-service-assurance/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it-it"
+                href="http://localhost:1313/it/career/executive-sr-executive-service-assurance/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -141,6 +191,11 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="it-it"
+                href="http://localhost:1313/it/blog/post-4/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="fr-fr"
                 href="http://localhost:1313/fr/blog/post-4/"
                 />
@@ -151,6 +206,11 @@
                 rel="alternate"
                 hreflang="en-us"
                 href="http://localhost:1313/career/programmer-web-developer/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it-it"
+                href="http://localhost:1313/it/career/programmer-web-developer/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -167,6 +227,11 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="it-it"
+                href="http://localhost:1313/it/blog/post-5/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="fr-fr"
                 href="http://localhost:1313/fr/blog/post-5/"
                 />
@@ -177,6 +242,11 @@
                 rel="alternate"
                 hreflang="en-us"
                 href="http://localhost:1313/blog/post-6/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it-it"
+                href="http://localhost:1313/it/blog/post-6/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -193,6 +263,11 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="it-it"
+                href="http://localhost:1313/it/career/technology-integration-support/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="fr-fr"
                 href="http://localhost:1313/fr/career/technology-integration-support/"
                 />
@@ -203,6 +278,11 @@
                 rel="alternate"
                 hreflang="en-us"
                 href="http://localhost:1313/career/asp-net-software-developer/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it-it"
+                href="http://localhost:1313/it/career/asp-net-software-developer/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -219,6 +299,11 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="it-it"
+                href="http://localhost:1313/it/blog/post-7/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="fr-fr"
                 href="http://localhost:1313/fr/blog/post-7/"
                 />
@@ -229,6 +314,11 @@
                 rel="alternate"
                 hreflang="en-us"
                 href="http://localhost:1313/blog/post-8/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it-it"
+                href="http://localhost:1313/it/blog/post-8/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -244,6 +334,11 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="it-it"
+                href="http://localhost:1313/it/about/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="fr-fr"
                 href="http://localhost:1313/fr/about/"
                 />
@@ -253,6 +348,11 @@
                 rel="alternate"
                 hreflang="en-us"
                 href="http://localhost:1313/author/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it-it"
+                href="http://localhost:1313/it/author/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -268,6 +368,11 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="it-it"
+                href="http://localhost:1313/it/author/awab-husameldin/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="fr-fr"
                 href="http://localhost:1313/fr/author/awab-husameldin/"
                 />
@@ -280,6 +385,11 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="it-it"
+                href="http://localhost:1313/it/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="fr-fr"
                 href="http://localhost:1313/fr/categories/"
                 />
@@ -289,6 +399,11 @@
                 rel="alternate"
                 hreflang="en-us"
                 href="http://localhost:1313/contact/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it-it"
+                href="http://localhost:1313/it/contact/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -316,6 +431,11 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="it-it"
+                href="http://localhost:1313/it/elements/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="fr-fr"
                 href="http://localhost:1313/fr/elements/"
                 />
@@ -325,6 +445,11 @@
                 rel="alternate"
                 hreflang="en-us"
                 href="http://localhost:1313/features/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it-it"
+                href="http://localhost:1313/it/features/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -340,6 +465,11 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="it-it"
+                href="http://localhost:1313/it/how-it-works/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="fr-fr"
                 href="http://localhost:1313/fr/how-it-works/"
                 />
@@ -349,6 +479,11 @@
                 rel="alternate"
                 hreflang="en-us"
                 href="http://localhost:1313/author/joseph-gonzalez/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it-it"
+                href="http://localhost:1313/it/author/joseph-gonzalez/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -364,6 +499,11 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="it-it"
+                href="http://localhost:1313/it/team/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="fr-fr"
                 href="http://localhost:1313/fr/team/"
                 />
@@ -376,6 +516,11 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="it-it"
+                href="http://localhost:1313/it/pricing/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="fr-fr"
                 href="http://localhost:1313/fr/pricing/"
                 />
@@ -385,6 +530,11 @@
                 rel="alternate"
                 hreflang="en-us"
                 href="http://localhost:1313/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it-it"
+                href="http://localhost:1313/it/tags/"
                 />
     <xhtml:link
                 rel="alternate"
