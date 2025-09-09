@@ -2,7 +2,7 @@
 title: Nuovo articolo
 date: 2025-09-10
 image: /images/uploads/boston-water-front-city-preview.jpg
-author: awab-husameldin
+author: francesco
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed rhoncus augue. Nam eu tortor aliquam, sollicitudin mi sed, ullamcorper eros. Integer convallis aliquam ante non dignissim. Nam elementum justo eget magna facilisis, a lacinia mi pretium. Duis orci leo, mattis commodo sapien ac, imperdiet volutpat lorem. Suspendisse vehicula eros eros, eu lacinia augue posuere ac. Nulla facilisis vestibulum leo eu consequat. Donec venenatis vel urna vel posuere. Fusce pulvinar elit vel massa auctor, vitae finibus velit volutpat. Morbi eleifend, magna sit amet varius viverra, risus augue rutrum lectus, ut lobortis lorem ipsum eleifend ex. Fusce in nisl a ligula consectetur malesuada. Aenean rutrum in lectus mattis vulputate. Vestibulum ut tellus finibus, accumsan risus a, lacinia metus. Proin iaculis felis sed elit rhoncus volutpat. Vestibulum sagittis, nunc aliquam rutrum bibendum, felis odio dignissim lacus, ac finibus mi ligula vitae lectus.
 
