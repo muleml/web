@@ -9,3 +9,9 @@
 path = "/*"
 function = "basic-auth"
 
+# Impostazioni che servono per la preview
+[context.deploy-preview.environment]
+  HUGO_BASEURL = "/"
+
+[context.branch-deploy.environment]
+  HUGO_BASEURL = "/"
