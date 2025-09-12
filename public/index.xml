@@ -211,5 +211,12 @@
       <guid>http://localhost:1313/prova-2/</guid>
       <description>&lt;p&gt;Prova 2&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/uploads/500px-happy_smiley_face.png&#34; alt=&#34;face&#34; title=&#34;face&#34;&gt;&lt;/p&gt;</description>
     </item>
+    <item>
+      <title>Thanks!</title>
+      <link>http://localhost:1313/thanks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/thanks/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

@@ -1,0 +1,16 @@
+---
+
+title: "Thanks!"
+draft: false
+layout: "thanks"
+
+# banner
+banner:
+# subtitle: "Shaping the intelligence of energy"
+  title: "Thanks!<br>We will get back to you as soon as possible."
+#  description: "We believe the future of energy lies in data-driven insights. <br>That’s why we democratize machine learning and data engineering in energy storage, helping the world build #  more sustainable and resilient energy systems."
+ 
+  image: "images/banner-home.png"
+
+  
+---

@@ -332,6 +332,18 @@
                 href="http://localhost:1313/it/footer-bottom/"
                 />
   </url><url>
+    <loc>http://localhost:1313/it/thanks/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="http://localhost:1313/thanks/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it-it"
+                href="http://localhost:1313/it/thanks/"
+                />
+  </url><url>
     <loc>http://localhost:1313/it/how-it-works/</loc>
     <xhtml:link
                 rel="alternate"
