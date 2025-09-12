@@ -5,7 +5,8 @@ title: "muleML - Works, Simply, With Purpose"
 banner:
   subtitle: "Per un futuro migliore"
   title: "Energia <br>dai tuoi dati"
-  description: "Crediamo che insight generati dai dati siano alla base del futuro dell’energia. Per questo motivo democratizziamo il machine learning e l’ingegneria del dato nell’accumulo energetico, contribuendo alla creazione di sistemi più sostenibili, intelligenti e resilienti."
+  description: "Crediamo che il futuro dell’energia si costruisca su insight generati dai dati. Ecco perché democratizziamo machine learning e ingegneria del dato nell’accumulo energetico, contribuendo alla creazione di sistemi più sostenibili, intelligenti e resilienti."
+  
   button:
     enable: true
     label: "Inizia ora"

@@ -2,8 +2,9 @@
 
 {{ partial "components/page-header.html" . }}
 
-<section class="section pb-5">
+<section class="section pb-7">
   <div class="container container-delta">
+
     {{ with .Params.contact }}
     <div class="row mb-5">
       <div class="col-xl-6 col-lg-8 mx-auto text-start text-lg-center">
@@ -16,8 +17,11 @@
     </div>
     {{ end }}
 
-    <div class="row justify-content-center">
-      <div class="col-xl-8 col-lg-9 mx-auto order-1 order-lg-0">
+    <!-- ROW A DUE COLONNE -->
+    <div class="row g-4">
+
+      <!-- COLONNA SINISTRA: FORM -->
+      <div class="col-lg-7 col-xl-8">
 
         <form id="contact-form" method="POST"
               class="rounded-md shadow-md p-4 p-md-5"
@@ -25,11 +29,10 @@
 
           <!-- Web3Forms -->
           <input type="hidden" name="access_key" value="a66be1cc-5738-4d70-93a5-747110165ab5">
-          <!-- redirect localizzato -->
           <input type="hidden" name="redirect" value="{{ "thanks/" | relLangURL | absURL }}">
           <input type="hidden" name="subject"  value="[Contact] Website inquiry">
 
-          <!-- Honeypot (anti-bot) -->
+          <!-- Honeypot -->
           <input type="checkbox" name="botcheck" class="d-none" tabindex="-1" autocomplete="off" style="display:none">
 
           <!-- What are you interested in -->
@@ -96,10 +99,9 @@
             <label class="form-check-label" for="privacy">
               {{ i18n "contact_privacy_label_html" }}
               <a href="{{ (or .Site.Params.privacy_page.url "/privacy/") | relLangURL }}"
-                target="_blank" rel="noopener">privacy policy</a>.
+                 target="_blank" rel="noopener">privacy policy</a>.
             </label>
           </div>
-
 
           <!-- hCaptcha -->
           <div class="form-group mb-3">
@@ -111,46 +113,67 @@
 
         </form>
 
-        <!-- Web3Forms client script to load hCaptcha -->
         <script src="https://web3forms.com/client/script.js" async defer></script>
-
         <script>
-        (function () {
-          const form = document.getElementById('contact-form');
-          const btn  = document.getElementById('submit-btn');
-          let submitting = false;
-
-          form.addEventListener('submit', function (e) {
-            const cap = form.querySelector('input[name="h-captcha-response"], textarea[name="h-captcha-response"]');
-            if (!cap || !cap.value) {
-              e.preventDefault();
-              alert('{{ i18n "contact_captcha_alert" }}');
-              return false;
-            }
-            const now  = Date.now();
-            const last = Number(localStorage.getItem('contact_last_submit') || 0);
-            if (now - last < 15000) { e.preventDefault(); return false; }
-            localStorage.setItem('contact_last_submit', String(now));
-            if (submitting) { e.preventDefault(); return false; }
-            submitting = true;
-            btn.disabled = true;
-            btn.setAttribute('aria-busy', 'true');
-            btn.classList.add('disabled');
-            btn.textContent = '{{ i18n "contact_submit" }}…';
-            const ts = document.createElement('input');
-            ts.type = 'hidden'; ts.name = 'submitted_at'; ts.value = new Date().toISOString();
-            form.appendChild(ts);
-          }, { capture: true });
-        })();
+          (function () {
+            const form = document.getElementById('contact-form');
+            const btn  = document.getElementById('submit-btn');
+            let submitting = false;
+            form.addEventListener('submit', function (e) {
+              const cap = form.querySelector('input[name="h-captcha-response"], textarea[name="h-captcha-response"]');
+              if (!cap || !cap.value) { e.preventDefault(); alert('{{ i18n "contact_captcha_alert" }}'); return false; }
+              const now=Date.now(), last=Number(localStorage.getItem('contact_last_submit')||0);
+              if (now-last<15000) { e.preventDefault(); return false; }
+              localStorage.setItem('contact_last_submit', String(now));
+              if (submitting) { e.preventDefault(); return false; }
+              submitting = true;
+              btn.disabled = true; btn.setAttribute('aria-busy','true'); btn.classList.add('disabled');
+              btn.textContent = '{{ i18n "contact_submit" }}…';
+              const ts=document.createElement('input'); ts.type='hidden'; ts.name='submitted_at'; ts.value=new Date().toISOString();
+              form.appendChild(ts);
+            }, { capture: true });
+          })();
         </script>
 
-      </div>
-    </div>
+      </div><!-- /col form -->
+
+       {{ with .Params.sidebar.items }}
+        <!-- COLONNA DESTRA: SIDEBAR -->
+        <div class="col-lg-5 col-xl-4">
+          <div class="row gy-4">
+            {{ range . }}
+              <div class="col-12">
+                <div class="card h-100 shadow-sm border-0 rounded-md">
+                  <div class="card-body text-center">
+
+                    <h5 class="mb-3">{{ .title }}</h5>
+
+                    {{ with resources.Get .image }}
+                      {{ $img := .Resize "600x" }}
+                      <img class="img-fluid rounded mb-3"
+                          src="{{ $img.RelPermalink }}"
+                          width="{{ $img.Width }}" height="{{ $img.Height }}"
+                          alt="">
+                    {{ end }}
+
+                    <p class="mb-0 text-muted">{{ .description | safeHTML }}</p>
+
+                  </div>
+                </div>
+              </div>
+            {{ end }}
+          </div>
+        </div>
+      {{ end }}
+
+    </div><!-- /row -->
+
   </div>
 
   <style>
     .form-control { padding-bottom: 0rem; padding-top: 0rem; }
   </style>
 </section>
+
 
 {{ end }}

@@ -6,7 +6,7 @@
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     
     <meta charset="utf-8" />
-<title>Contact</title>
+<title>Contatti</title>
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
@@ -80,7 +80,7 @@
   
 
 
-<title>Contact</title>
+<title>Contatti</title>
 
 
 
@@ -154,13 +154,13 @@
 
 
 
-<meta property="og:title" content="Contact" />
+<meta property="og:title" content="Contatti" />
 <meta property="og:description" content="Libero consequuntur doloremque amet, cum fugiat ipsam blanditiis corrupti praesentium quis." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://localhost:1313/it/contact/" />
 
 
-<meta name="twitter:title" content="Contact" />
+<meta name="twitter:title" content="Contatti" />
 <meta name="twitter:description" content="Libero consequuntur doloremque amet, cum fugiat ipsam blanditiis corrupti praesentium quis." />
 
 
@@ -496,14 +496,15 @@
 </header>
 
 
+
   <div class="container container-delta">
     <div class="row">
       <div class="block col-12 text-center">
-        <h1 class="title">Contact</h1>
+        <h1 class="title">Contatti</h1>
         <nav aria-label="breadcrumb" data-aos="fade-up" data-aos-delay="200">
           <ol class="breadcrumb justify-content-center bg-transparent p-0 mb-0">
             <li class="breadcrumb-item"><a class="text-muted" href="/it/">Home</a></li>
-            <li class="breadcrumb-item text-muted" aria-current="page">Contact</li>
+            <li class="breadcrumb-item text-muted" aria-current="page">Contatti</li>
           </ol>
         </nav>
       </div>
@@ -521,22 +522,16 @@
   </div>
 </section>
 
-<section class="section pb-5">
+<section class="section pb-7">
   <div class="container container-delta">
-    
-    <div class="row mb-5">
-      <div class="col-xl-6 col-lg-8 mx-auto text-start text-lg-center">
-        <div class="section-title mb-0">
-          <p class="subtitle">We Are the pioneer</p>
-          <h1 class="title text-xl mb-3">Schedule a Demo</h1>
-          <p>Please note: If you need to make a payment or need a copy of a receipt, please call 877-735-2910 and select Option 1.</p>
-        </div>
-      </div>
-    </div>
+
     
 
-    <div class="row justify-content-center">
-      <div class="col-xl-8 col-lg-9 mx-auto order-1 order-lg-0">
+    
+    <div class="row g-4">
+
+      
+      <div class="col-lg-7 col-xl-8">
 
         <form id="contact-form" method="POST"
               class="rounded-md shadow-md p-4 p-md-5"
@@ -544,7 +539,6 @@
 
           
           <input type="hidden" name="access_key" value="a66be1cc-5738-4d70-93a5-747110165ab5">
-          
           <input type="hidden" name="redirect" value="http://localhost:1313/it/thanks/">
           <input type="hidden" name="subject"  value="[Contact] Website inquiry">
 
@@ -615,10 +609,9 @@
             <label class="form-check-label" for="privacy">
               Ho letto e accetto la
               <a href="/it/privacy/"
-                target="_blank" rel="noopener">privacy policy</a>.
+                 target="_blank" rel="noopener">privacy policy</a>.
             </label>
           </div>
-
 
           
           <div class="form-group mb-3">
@@ -630,47 +623,88 @@
 
         </form>
 
-        
         <script src="https://web3forms.com/client/script.js" async defer></script>
-
         <script>
-        (function () {
-          const form = document.getElementById('contact-form');
-          const btn  = document.getElementById('submit-btn');
-          let submitting = false;
-
-          form.addEventListener('submit', function (e) {
-            const cap = form.querySelector('input[name="h-captcha-response"], textarea[name="h-captcha-response"]');
-            if (!cap || !cap.value) {
-              e.preventDefault();
-              alert('Completa il captcha, per favore.');
-              return false;
-            }
-            const now  = Date.now();
-            const last = Number(localStorage.getItem('contact_last_submit') || 0);
-            if (now - last < 15000) { e.preventDefault(); return false; }
-            localStorage.setItem('contact_last_submit', String(now));
-            if (submitting) { e.preventDefault(); return false; }
-            submitting = true;
-            btn.disabled = true;
-            btn.setAttribute('aria-busy', 'true');
-            btn.classList.add('disabled');
-            btn.textContent = 'Invia…';
-            const ts = document.createElement('input');
-            ts.type = 'hidden'; ts.name = 'submitted_at'; ts.value = new Date().toISOString();
-            form.appendChild(ts);
-          }, { capture: true });
-        })();
+          (function () {
+            const form = document.getElementById('contact-form');
+            const btn  = document.getElementById('submit-btn');
+            let submitting = false;
+            form.addEventListener('submit', function (e) {
+              const cap = form.querySelector('input[name="h-captcha-response"], textarea[name="h-captcha-response"]');
+              if (!cap || !cap.value) { e.preventDefault(); alert('Completa il captcha, per favore.'); return false; }
+              const now=Date.now(), last=Number(localStorage.getItem('contact_last_submit')||0);
+              if (now-last<15000) { e.preventDefault(); return false; }
+              localStorage.setItem('contact_last_submit', String(now));
+              if (submitting) { e.preventDefault(); return false; }
+              submitting = true;
+              btn.disabled = true; btn.setAttribute('aria-busy','true'); btn.classList.add('disabled');
+              btn.textContent = 'Invia…';
+              const ts=document.createElement('input'); ts.type='hidden'; ts.name='submitted_at'; ts.value=new Date().toISOString();
+              form.appendChild(ts);
+            }, { capture: true });
+          })();
         </script>
 
       </div>
+
+       
+        
+        <div class="col-lg-5 col-xl-4">
+          <div class="row gy-4">
+            
+              <div class="col-12">
+                <div class="card h-100 shadow-sm border-0 rounded-md">
+                  <div class="card-body text-center">
+
+                    <h5 class="mb-3">Trieste, città di scienza e di mare</h5>
+
+                    
+                      
+                      <img class="img-fluid rounded mb-3"
+                          src="/images/trieste_hu_a8959dc7101fd7ac.jpg"
+                          width="600" height="400"
+                          alt="">
+                    
+
+                    <p class="mb-0 text-muted">Crocevia di culture e centro internazionale della ricerca, Trieste è il luogo ideale per far incontrare le esperienze e le visioni che hanno dato vita a muleML.</p>
+
+                  </div>
+                </div>
+              </div>
+            
+              <div class="col-12">
+                <div class="card h-100 shadow-sm border-0 rounded-md">
+                  <div class="card-body text-center">
+
+                    <h5 class="mb-3">Il nostro ufficio</h5>
+
+                    
+                      
+                      <img class="img-fluid rounded mb-3"
+                          src="/images/sede_hu_396813f4c9522b9f.png"
+                          width="600" height="338"
+                          alt="">
+                    
+
+                    <p class="mb-0 text-muted">Siamo sulle Rive, il lungomare che racconta l’anima della città, a pochi metri da Piazza Unità d’Italia. Venite a trovarci!</p>
+
+                  </div>
+                </div>
+              </div>
+            
+          </div>
+        </div>
+      
+
     </div>
+
   </div>
 
   <style>
     .form-control { padding-bottom: 0rem; padding-top: 0rem; }
   </style>
 </section>
+
 
 
     </main>
