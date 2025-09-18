@@ -27,7 +27,7 @@ career_form_action = "#!" # career form works with https://formspree.io or any f
 
 # OpenGraph / Twitter Card metadata
 description = "This is meta description"
-author = "Themefisher"
+author = "muleML"
 image = "images/logo.png" # this image will be used as fallback if a page has no image of its own
 
 # Preloader

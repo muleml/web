@@ -41,22 +41,22 @@ fun_facts:
   enable: true
   title: "fun facts about okta Millions <br> trusted use worldwide"
   fact_item:
-  - icon: "fas fa-fighter-jet"
+  - icon: "fas fa-battery-full"
     counter: "80"
     counter_suffix: "%"
     content: "Spend 80% less time <br> on admin"
 
-  - icon: "far fa-dot-circle"
+  - icon: "fas fa-user-graduate"
     counter: "40"
     counter_suffix: "x"
     content: "Attract 40x more <br> the candidate"
-
-  - icon: "fas fa-dice"
+    
+  - icon: "fas fa-network-wired"
     counter: "83"
     counter_suffix: "%"
     content: "Reduce recruitment <br> agency spend"
-
-  - icon: "fas fa-dice-d6"
+    
+  - icon: "fab fa-pagelines"
     counter: "40"
     counter_suffix: "%"
     content: "Make hires 40% <br> faster"

@@ -11,6 +11,13 @@
   <sitemap>
     <loc>http://localhost:1313/it/sitemap.xml</loc>
     
+      <lastmod>2025-09-10T00:00:00+02:00</lastmod>
+    
+  </sitemap>
+  
+  <sitemap>
+    <loc>http://localhost:1313/fr/sitemap.xml</loc>
+    
       <lastmod>2021-07-14T00:00:00+02:00</lastmod>
     
   </sitemap>

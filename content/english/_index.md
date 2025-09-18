@@ -38,27 +38,27 @@ fun_facts:
   enable: true
   title: "A mature and effective technology, <br>proven by numbers"
   fact_item:
-  - icon: "fas fa-fighter-jet"
+  - icon: "fas fa-battery-full"
     counter: "800"
     counter_suffix: "MWh"
     content: "Battery capacity <br>under active management"
 
-  - icon: "far fa-dot-circle"
+  - icon: "fas fa-user-graduate"
     counter: "8"
     counter_suffix: "yrs"
     content: "Real-world operating <br>experience in energy storage"
 
-  - icon: "fas fa-dice"
+  - icon: "fas fa-network-wired"
     counter: "80"
     counter_suffix: "%"
     content: "Integration with Tier 1 OEMs <br>for lower system cost"
 
-  - icon: "fas fa-dice-d6"
+  - icon: "fab fa-pagelines"
     counter: "6"
     counter_suffix: "yrs"
     content: "Battery lifetime extension <br>enabled by our technology"
     
-    
+
 # work_process
 work_process:
   enable: true

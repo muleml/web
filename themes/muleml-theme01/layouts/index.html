@@ -127,9 +127,10 @@
       <div class="col-lg-12">
         <div class="row gy-3">
           {{range .fact_item}}
-          <div class="col-lg-3 col-sm-6 fact-item-alt">
+          <div class="col-lg-3 col-6 fact-item">
             <div class="block">
-              <h4 class="title h1"><span class="counter" data-count="{{.counter}}">0</span>{{.counter_suffix}}</h4>
+              <i class="icon {{.icon}}"></i>
+              <h4 class="text-xl"><span class="counter" data-count="{{.counter}}">0</span>{{.counter_suffix}}</h4>
               <p class="mb-0">{{.content | markdownify}}</p>
             </div>
           </div>

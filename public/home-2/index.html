@@ -12,8 +12,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
 
 
-<meta name="theme-name" content="delta-hugo" />
-
 
 
 
@@ -91,6 +89,13 @@
 
 
 
+
+  
+    <link rel="alternate" hreflang="en" href="http://localhost:1313/home-2/" />
+  
+    <link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/home-2/" />
+  
+  <link rel="alternate" hreflang="x-default" href="http://localhost:1313/home-2/" />
 
 
 
@@ -182,6 +187,7 @@
           gtag('config', 'G-MEASUREMENT_ID');
         }
       </script>
+
 
 
 
@@ -352,6 +358,41 @@
       <div class="navbar-actions">
         
         
+        <select class="border-0 d-inline d-xl-none" onchange="location = this.value;">
+          
+          
+          
+          
+          
+          
+          
+          
+          <option id="en" value="/home-2/" selected>En
+          </option>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <option id="fr" value="/fr/home-2/">Fr</option>
+          
+          
+          
+          
+        </select>
+        
 
         <button aria-label="navbar toggler" class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
           data-bs-target="#navigation">
@@ -407,6 +448,41 @@
           
           <li class="nav-item d-none d-xl-block">
             
+            
+            <select class="border-0" id="select-language" onchange="location = this.value;">
+              
+              
+              
+              
+              
+              
+              
+              
+              <option id="en" value="/home-2/" selected>En
+              </option>
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              <option id="fr" value="/fr/home-2/">Fr</option>
+              
+              
+              
+              
+            </select>
             
           </li>
         </ul>

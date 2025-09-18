@@ -1,135 +1,127 @@
 ---
-title: "About"
+title: "About us"
 description: "Get fastest loan with smart way a seating home"
 draft: false
 layout: "about"
 
 # banner
 banner:
-  subtitle: "We Are Delta"
-  title: "Give your team the design mindset & design tools"
-  description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, diam nonumy eirmod tempor invidunt ut labore dolore magna"
+  subtitle: "Our identity"
+  title: "Works, simply, with purpose"
+  description: "We are people with diverse experiences, united by a common vision: building technologies that truly work, in a simple way and with a clear purpose.<br>We are committed to turning data into tools that serve businesses, communities, and the environment."
   button:
-    enable: true
+    enable: false
     label: "Get started now"
     icon: "fas fa-arrow-right"
     link: "contact/"
   
   image: "images/banner-about.png"
 
-# brands
-brands:
+
+# benefit_info
+benefit_info:
   enable: true
+  subtitle: "Responsible, sustainable, and shared innovation"
+  title: "We are a Benefit Corporation"
+  description: "Pursuant to Italian law, we are a Benefit Corporation. <br>In addition to profit, we pursue common benefit goals with a concrete commitment toward society, the environment<br> and the communities in which we operate. Here are our main commitments:"
 
-# featured_testimonial
-featured_testimonial:
-  enable: true
-  author_image: "images/avatar/invision.jpg"
-  review: "“ Companies with high design maturity see cost saving (x4), Revenue gains (x5), and brand and market position improvements to their design. ”"
-  author_info: '"Design Frontier" from InVision'
-
-# about_info
-about_info:
-  enable: true
-  image: "images/team-group.jpg"
-  subtitle: "We Are Delta"
-  title: "eaving them less time to The <br> check out competitors into."
-
-# features_box
-features_box:
-  enable: true
-  features_box_item:
-    - icon: "fas fa-file-signature"
-      title: "Ultimate Guide"
-      content: "Curabitur aliquet quam id dui posuere blandit. Donec sollicitudin molestie malesuada. Praesent sapien madssa, convallis a pellentesque nec, egestas in faucibus orci luctus et ultrices"
-
-    - icon: "fas fa-signature"
-      title: "How-to Webinars"
-      content: "Curabitur aliquet quam id dui posuere blandit. Donec sollicitudin molestie malesuada. Praesent sapien madssa, convallis a pellentesque nec, egestas in faucibus orci luctus et ultrices"
-      
-    - icon: "fas fa-bullhorn"
-      title: "workshops & FAQ"
-      content: "Curabitur aliquet quam id dui posuere blandit. Donec sollicitudin molestie malesuada. Praesent sapien madssa, convallis a pellentesque nec, egestas in faucibus orci luctus et ultrices"
-
-# image_and_content_block
-image_and_content_block:
-  enable: true
-  subtitle: "We Are Delta"
-  title: "Lots of people love us, <br> and we're also."
-  image: "images/block-image-03.png"
-  content_position: "left" # Value will be - "left/right"
-  content: "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Vestibulum 
-
-  
-  * luctus et ultrices uere cubia Curae Donec verglit
-
-  * Neque auctor congue leo eget malesuada Vivamus
-
-  * Sit amet dui Nulla quis lorem ut libero malesuada feugiat
-
-  * Donec verglit neque, auctor congue leo  malesuada.
-  "
-
-# customer_info
-customer_info:
-  enable: true
-  subtitle: "We Are Delta"
-  title: "We care about customers"
   block:
-  - icon: "fas fa-hands-helping"
-    title: "Your design partner now <br> and in the future"
-    content: "Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar."
+  - icon: "fa-solid fa-magnifying-glass-chart"
+    title: "Transparency and <br>scientific validation"
+    content: "We promote open, understandable, and verifiable machine learning models, so they can be adopted ethically and responsibly in high-impact contexts. We encourage sharing with the scientific community and independent bodies to ensure rigor and reliability."
 
-  - icon: "fas fa-headset"
-    title: "Around the clock <br> support from day one"
-    content: "Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar."
+  - icon: "fa-solid fa-people-pulling"
+    title: "Education and <br>awareness"
+    content: "We support businesses, institutions, and citizens in adopting AI responsibly, helping them understand both opportunities and limits. We pay particular attention to SMEs, guiding them toward concrete and sustainable choices, far from hype and close to real needs."
+    
+  - icon: "fa-solid fa-seedling"
+    title: "Sustainable and <br>inclusive innovation"
+    content: "We design lightweight, efficient, and low-impact technological solutions, reducing consumption and costs. In this way we make innovation accessible even to those with limited resources, helping bridge the technological divide and promoting social equity."
 
-# our_peoples
-our_peoples:
+  - icon: "fa-solid fa-flask-vial"
+    title: "Research and <br>social impact"
+    content: "We strengthen the link between science and society by investing in research and collaborations with universities and local institutions. We work in high-impact sectors, such as energy, contributing to a fairer, more sustainable, and resilient ecological transition."
+    
+
+# skills_box
+skills_box:
   enable: true
-  subtitle: "We Are Delta"
-  title: "Some of our investors advisors"
-  lists:
-  - image: "images/avatar/01.jpg"
-    name: "Dianne Russell"
-    designation: "Binford Ltd."
+  subtitle: "Skills at the service of your projects"
+  title: "What we do best"
+  description: "From raw data to strategic decisions, from predictive models to smart batteries: our expertise covers every aspect of data engineering, artificial intelligence, and advanced energy systems, for reliable and sustainable solutions."
+  
+  
+  skills_box_item:
+    - title: "Data Engineering"
+      content: "We design and manage data engineering systems: scalable pipelines, data quality and validation, profiling tools, and modern on-premise and cloud architectures. We deliver reliable, accessible, and ready-to-use data."
 
-  - image: "images/avatar/02.jpg"
-    name: "Guy Hawkins"
-    designation: "Big Kahuna Burger Ltd."
+    - title: "Machine Learning"
+      content: "We build and manage predictive models across their entire lifecycle: from the collection and transformation of data, to feature selection, training, validation, continuous monitoring and integration into systems."
+      
+    - title: "AI&Data Compliance"
+      content: "We provide specialist consulting in AI governance and regulatory compliance (AI Act, GDPR, DORA, NIS2), supporting impact assessments, technical and organizational measures, and certification processes."
+      
+    - title: "IoT & Edge"
+      content: "We design IoT devices and solutions for data collection and pre-processing, with distributed computing on edge devices. We integrate systems with analytics platforms, ML models, and automated controls."
 
-  - image: "images/avatar/03.jpg"
-    name: "Jerome Bell"
-    designation: "Abstergo Ltd."
+    - title: "Battery Analytics"
+      content: "We design advanced AI/ML-based energy management systems (EMS). We deliver accurate and detailed analysis of battery state of charge and health, ensuring safety, reliability and superior economic returns."
+      
+    - title: "Materials Engineering"
+      content: "We provide unique know-how in electrochemical materials and next-generation batteries. We combine numerical modeling, electrode design, and experimental analysis for high-performance, scalable solutions."  
+  
 
-  - image: "images/avatar/04.jpg"
-    name: "Marvin McKinney"
-    designation: "Barone LLC."
 
-  - image: "images/avatar/05.jpg"
-    name: "Eleanor Pena"
-    designation: "Acme Co."
+# approach_box
+approach_box:
+  enable: true
+  subtitle: "How we work"
+  title: "Our approach"
+  approach_box_item:
+  - title: "Measurable goals"
+    image: "images/approach/01.png"
+    content: "Clear and shared metrics, so every project achieves <br>tangible and quantifiable results."
 
-  - image: "images/avatar/06.jpg"
-    name: "Jacob Jones"
-    designation: "Abstergo Ltd."
+  - title: "Open Source"
+    image: "images/approach/02.png"
+    content: "For us, the best way to build robust and truly innovative solutions."
+    
+  - title: "No lock-in"
+    image: "images/approach/03.png"
+    content: "Clients stay with us for results, not because they are blocked by artificial barriers."
+    
+  - title: "Strategic compliance"
+    image: "images/approach/04.png"
+    content: "We turn compliance from a burden into an opportunity <br>for trust and growth."
+  
 
-  - image: "images/avatar/07.jpg"
-    name: "Guy Hawkins"
-    designation: "Binford Ltd."
+# why_mule
+why_mule:
+  enable: true
+  subtitle: "Our logo"
+  title: "Why a mule?"
+  image: "images/mulo.png"
+  content_position: "left"
+  content: "Choosing our logo was immediate: we wanted a symbol that truly represents us. Our logo is a mule, and not by chance. <br>The reasons are simple yet profound:  
 
-  - image: "images/avatar/08.jpg"
-    name: "Devon Lane"
-    designation: "Biffco Enterprises Ltd."
+  * it recalls the founders’ roots and hometowns  
+
+  * it embodies solidity, resilience, and concreteness, the same qualities we put into our projects  
+
+  * it carries a touch of sympathy and humanity, because technology can be serious while still staying close to people  
+
+  * once a great source of energy, just as today we want data to be  
+
+  "  
 
 
 # career
 career:
   enable: true
-  subtitle: "We Are Delta"
-  title: "Delta’s Latest opportunities"
-  content: "Curabitur arcu erat, accumsan id imperdiet et, lacinia in, elementum id enim. Curasfrbitur non nulla sit amet nisl tempus consr fwsrf wvallis "
-  section: "career" # career data comming form "career.md" page
+  subtitle: "Work with us"
+  title: "Building the future together"
+  content: "We are a Benefit Corporation that believes in useful, ethical, and sustainable technology. We look for people who are skilled and eager to keep learning. <br>We will never ask you to *follow the hype*, but to share our drive to build real solutions that bring impact and value to businesses and communities. <br>If you see yourself in these words, there is a place for you on our team."
+  section: "career" # career data coming from "career.md" page
 
 
 # call_to_action
