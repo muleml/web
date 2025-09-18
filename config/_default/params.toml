@@ -81,6 +81,11 @@ enable = false
 url = "" # your matomo url
 id = "" # your matomo id
 
+# goatcounter tracking: see https://goatcounter.com
+[goatcounter]
+enable = true
+url = "https://muleml.goatcounter.com/count" # your goatcounter url
+
 # baidu analytics: see https://tongji.baidu.com/
 [baidu]
 enable = false
@@ -102,6 +107,7 @@ google = "" # Your verification code
 bing = "" # Your verification code
 baidu = "" # Your verification code
 facebook = "" # Your verification code
+
 
 # cookies
 [cookies]

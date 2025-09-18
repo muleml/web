@@ -48,6 +48,16 @@
 <!-- Counter Analytics -->
 {{/*  {{ partialCached "counter-analytics.html" . }}  */}}
 
+{{ with site.Params.goatcounter }}
+  {{ if .enable }}
+      <!-- Statistiche di accesso con goatcounter attive solo online -->
+      {{ if not hugo.IsServer }}
+      <script data-goatcounter="{{.url|safeURL}}"
+              async src="//gc.zgo.at/count.js"></script>
+      {{ end }}
+  {{ end }}
+{{ end }}
+
 
 <!-- Crisp Chat -->
 {{ partialCached "crisp-chat.html" . }}
