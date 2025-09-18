@@ -11,17 +11,22 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="fr-fr"
-                href="http://localhost:1313/fr/career/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="it-it"
                 href="http://localhost:1313/it/career/"
                 />
   </url><url>
     <loc>http://localhost:1313/it/career/data-software-engineer/</loc>
     <lastmod>2025-09-10T00:00:00+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="http://localhost:1313/career/data-software-engineer/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it-it"
+                href="http://localhost:1313/it/career/data-software-engineer/"
+                />
   </url><url>
     <loc>http://localhost:1313/it/</loc>
     <lastmod>2025-09-10T00:00:00+02:00</lastmod>
@@ -29,11 +34,6 @@
                 rel="alternate"
                 hreflang="en-us"
                 href="http://localhost:1313/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr-fr"
-                href="http://localhost:1313/fr/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -50,11 +50,6 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="fr-fr"
-                href="http://localhost:1313/fr/blog/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="it-it"
                 href="http://localhost:1313/it/blog/"
                 />
@@ -65,11 +60,6 @@
                 rel="alternate"
                 hreflang="en-us"
                 href="http://localhost:1313/blog/post-1/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr-fr"
-                href="http://localhost:1313/fr/blog/post-1/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -86,11 +76,6 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="fr-fr"
-                href="http://localhost:1313/fr/blog/post-2/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="it-it"
                 href="http://localhost:1313/it/blog/post-2/"
                 />
@@ -101,11 +86,6 @@
                 rel="alternate"
                 hreflang="en-us"
                 href="http://localhost:1313/blog/post-3/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr-fr"
-                href="http://localhost:1313/fr/blog/post-3/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -122,11 +102,6 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="fr-fr"
-                href="http://localhost:1313/fr/blog/post-4/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="it-it"
                 href="http://localhost:1313/it/blog/post-4/"
                 />
@@ -137,11 +112,6 @@
                 rel="alternate"
                 hreflang="en-us"
                 href="http://localhost:1313/blog/post-5/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr-fr"
-                href="http://localhost:1313/fr/blog/post-5/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -158,11 +128,6 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="fr-fr"
-                href="http://localhost:1313/fr/blog/post-6/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="it-it"
                 href="http://localhost:1313/it/blog/post-6/"
                 />
@@ -173,11 +138,6 @@
                 rel="alternate"
                 hreflang="en-us"
                 href="http://localhost:1313/blog/post-7/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr-fr"
-                href="http://localhost:1313/fr/blog/post-7/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -194,11 +154,6 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="fr-fr"
-                href="http://localhost:1313/fr/blog/post-8/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="it-it"
                 href="http://localhost:1313/it/blog/post-8/"
                 />
@@ -208,11 +163,6 @@
                 rel="alternate"
                 hreflang="en-us"
                 href="http://localhost:1313/author/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr-fr"
-                href="http://localhost:1313/fr/author/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -228,11 +178,6 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="fr-fr"
-                href="http://localhost:1313/fr/author/awab-husameldin/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="it-it"
                 href="http://localhost:1313/it/author/awab-husameldin/"
                 />
@@ -242,11 +187,6 @@
                 rel="alternate"
                 hreflang="en-us"
                 href="http://localhost:1313/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr-fr"
-                href="http://localhost:1313/fr/categories/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -262,11 +202,6 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="fr-fr"
-                href="http://localhost:1313/fr/about/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="it-it"
                 href="http://localhost:1313/it/about/"
                 />
@@ -276,11 +211,6 @@
                 rel="alternate"
                 hreflang="en-us"
                 href="http://localhost:1313/contact/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr-fr"
-                href="http://localhost:1313/fr/contact/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -296,11 +226,6 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="fr-fr"
-                href="http://localhost:1313/fr/elements/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="it-it"
                 href="http://localhost:1313/it/elements/"
                 />
@@ -310,11 +235,6 @@
                 rel="alternate"
                 hreflang="en-us"
                 href="http://localhost:1313/features/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr-fr"
-                href="http://localhost:1313/fr/features/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -354,11 +274,6 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="fr-fr"
-                href="http://localhost:1313/fr/how-it-works/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="it-it"
                 href="http://localhost:1313/it/how-it-works/"
                 />
@@ -368,11 +283,6 @@
                 rel="alternate"
                 hreflang="en-us"
                 href="http://localhost:1313/author/joseph-gonzalez/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr-fr"
-                href="http://localhost:1313/fr/author/joseph-gonzalez/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -388,11 +298,6 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="fr-fr"
-                href="http://localhost:1313/fr/team/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="it-it"
                 href="http://localhost:1313/it/team/"
                 />
@@ -405,11 +310,6 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="fr-fr"
-                href="http://localhost:1313/fr/pricing/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="it-it"
                 href="http://localhost:1313/it/pricing/"
                 />
@@ -419,11 +319,6 @@
                 rel="alternate"
                 hreflang="en-us"
                 href="http://localhost:1313/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr-fr"
-                href="http://localhost:1313/fr/tags/"
                 />
     <xhtml:link
                 rel="alternate"
