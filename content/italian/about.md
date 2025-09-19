@@ -8,7 +8,7 @@ layout: "about"
 banner:
   subtitle: "La nostra identità"
   title: "Works, simply, with purpose"
-  description: "Siamo persone con esperienze diverse, unite da una visione comune: costruire tecnologie che funzionano davvero, in modo semplice e con uno scopo chiaro.<br>Ci impegniamo a trasformare i dati in strumenti al servizio delle imprese, delle comunità e dell’ambiente."
+  description: "Persone con esperienze diverse, unite da una visione comune: costruire tecnologie che funzionano davvero, in modo semplice e con uno scopo chiaro.<br>Ci impegniamo a trasformare i dati in strumenti al servizio delle imprese, delle comunità e dell’ambiente."
   button:
     enable: false
     label: "Get started now"

@@ -16,6 +16,13 @@
       <description>&lt;h3 id=&#34;about-us&#34;&gt;About us&lt;/h3&gt;&#xA;&lt;p&gt;We are an innovative company developing advanced solutions for the intelligent management of energy storage systems (BESS). We work at the intersection of energy, data, and artificial intelligence, with an open-source, scalable, and sustainable approach.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Why uncertainty matters: the true value of Machine Learning predictions</title>
+      <link>http://localhost:1313/blog/incertezze-previsioni/</link>
+      <pubDate>Wed, 10 Sep 2025 00:00:00 +0200</pubDate>
+      <guid>http://localhost:1313/blog/incertezze-previsioni/</guid>
+      <description>&lt;p&gt;Machine Learning is increasingly used in business and in the management of complex systems such as energy, finance, or healthcare. Yet there is one element that is often overlooked: the uncertainty of predictions.&lt;br&gt;&#xA;A model may seem accurate, but without a measure of confidence in its estimates, it risks turning into a black box that is of little use, if not downright dangerous.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>The Real Product From the Buyers improvements in Overflow basis.</title>
       <link>http://localhost:1313/blog/post-1/</link>
       <pubDate>Wed, 14 Jul 2021 00:00:00 +0200</pubDate>
@@ -27,48 +34,6 @@
       <link>http://localhost:1313/blog/post-2/</link>
       <pubDate>Tue, 13 Jul 2021 00:00:00 +0200</pubDate>
       <guid>http://localhost:1313/blog/post-2/</guid>
-      <description>&lt;p&gt;Laoreet mauris odio ut nec. Nisl, sed adipiscing dignissim arcu placerat ornare pharetra nec in. Ultrices in nisl potenti vitae tempus. Auctor consectetur luctus eu in amet sagittis. Dis urna, vel hendrerit convallis Senectus feugiat faucibus commodo egestas leo vitae in morbi. Enim arcu dignissim mauris, eu, eget&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Three reasons you DON’T need an app on the App Store</title>
-      <link>http://localhost:1313/blog/post-3/</link>
-      <pubDate>Mon, 12 Jul 2021 00:00:00 +0200</pubDate>
-      <guid>http://localhost:1313/blog/post-3/</guid>
-      <description>&lt;p&gt;Laoreet mauris odio ut nec. Nisl, sed adipiscing dignissim arcu placerat ornare pharetra nec in. Ultrices in nisl potenti vitae tempus. Auctor consectetur luctus eu in amet sagittis. Dis urna, vel hendrerit convallis Senectus feugiat faucibus commodo egestas leo vitae in morbi. Enim arcu dignissim mauris, eu, eget&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Five eCommerce lessons to learn from Bloom &amp; Wild</title>
-      <link>http://localhost:1313/blog/post-4/</link>
-      <pubDate>Sun, 11 Jul 2021 00:00:00 +0200</pubDate>
-      <guid>http://localhost:1313/blog/post-4/</guid>
-      <description>&lt;p&gt;Laoreet mauris odio ut nec. Nisl, sed adipiscing dignissim arcu placerat ornare pharetra nec in. Ultrices in nisl potenti vitae tempus. Auctor consectetur luctus eu in amet sagittis. Dis urna, vel hendrerit convallis Senectus feugiat faucibus commodo egestas leo vitae in morbi. Enim arcu dignissim mauris, eu, eget&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Using Wakanda for project management when working remote</title>
-      <link>http://localhost:1313/blog/post-5/</link>
-      <pubDate>Sat, 10 Jul 2021 00:00:00 +0200</pubDate>
-      <guid>http://localhost:1313/blog/post-5/</guid>
-      <description>&lt;p&gt;Laoreet mauris odio ut nec. Nisl, sed adipiscing dignissim arcu placerat ornare pharetra nec in. Ultrices in nisl potenti vitae tempus. Auctor consectetur luctus eu in amet sagittis. Dis urna, vel hendrerit convallis Senectus feugiat faucibus commodo egestas leo vitae in morbi. Enim arcu dignissim mauris, eu, eget&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>How to write a brief for a new website or app.</title>
-      <link>http://localhost:1313/blog/post-6/</link>
-      <pubDate>Fri, 09 Jul 2021 00:00:00 +0200</pubDate>
-      <guid>http://localhost:1313/blog/post-6/</guid>
-      <description>&lt;p&gt;Laoreet mauris odio ut nec. Nisl, sed adipiscing dignissim arcu placerat ornare pharetra nec in. Ultrices in nisl potenti vitae tempus. Auctor consectetur luctus eu in amet sagittis. Dis urna, vel hendrerit convallis Senectus feugiat faucibus commodo egestas leo vitae in morbi. Enim arcu dignissim mauris, eu, eget&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>How and why we decided to launch an EMI scheme for our employees.</title>
-      <link>http://localhost:1313/blog/post-7/</link>
-      <pubDate>Thu, 08 Jul 2021 00:00:00 +0200</pubDate>
-      <guid>http://localhost:1313/blog/post-7/</guid>
-      <description>&lt;p&gt;Laoreet mauris odio ut nec. Nisl, sed adipiscing dignissim arcu placerat ornare pharetra nec in. Ultrices in nisl potenti vitae tempus. Auctor consectetur luctus eu in amet sagittis. Dis urna, vel hendrerit convallis Senectus feugiat faucibus commodo egestas leo vitae in morbi. Enim arcu dignissim mauris, eu, eget&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>What to consider before starting a business – Inside The Studio</title>
-      <link>http://localhost:1313/blog/post-8/</link>
-      <pubDate>Wed, 07 Jul 2021 00:00:00 +0200</pubDate>
-      <guid>http://localhost:1313/blog/post-8/</guid>
       <description>&lt;p&gt;Laoreet mauris odio ut nec. Nisl, sed adipiscing dignissim arcu placerat ornare pharetra nec in. Ultrices in nisl potenti vitae tempus. Auctor consectetur luctus eu in amet sagittis. Dis urna, vel hendrerit convallis Senectus feugiat faucibus commodo egestas leo vitae in morbi. Enim arcu dignissim mauris, eu, eget&lt;/p&gt;</description>
     </item>
     <item>
@@ -119,6 +84,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/footer-bottom/</guid>
       <description></description>
+    </item>
+    <item>
+      <title>Francesco Falcolini</title>
+      <link>http://localhost:1313/author/francesco-falcolini/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/author/francesco-falcolini/</guid>
+      <description>&lt;p&gt;Physicist, with his head always among data, algorithms, and batteries. After a long career leading projects in banking, business, healthcare, and public administration, he founded muleML, where he serves as CEO. He believes predictive models should be explainable, useful, and sustainable — and when in doubt, he always prefers a concrete approach over a trendy buzzword.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How It Works</title>
