@@ -2,277 +2,287 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/it/blog/</loc>
+    <loc>http://localhost:1313/blog/</loc>
     <lastmod>2025-09-10T00:00:00+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
+                href="http://localhost:1313/en/blog/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it-it"
                 href="http://localhost:1313/blog/"
                 />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it-it"
-                href="http://localhost:1313/it/blog/"
-                />
   </url><url>
-    <loc>http://localhost:1313/it/career/</loc>
+    <loc>http://localhost:1313/career/data-software-engineer/</loc>
     <lastmod>2025-09-10T00:00:00+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="http://localhost:1313/career/"
+                href="http://localhost:1313/en/career/data-software-engineer/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="it-it"
-                href="http://localhost:1313/it/career/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/it/career/data-software-engineer/</loc>
-    <lastmod>2025-09-10T00:00:00+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
                 href="http://localhost:1313/career/data-software-engineer/"
                 />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it-it"
-                href="http://localhost:1313/it/career/data-software-engineer/"
-                />
   </url><url>
-    <loc>http://localhost:1313/it/</loc>
+    <loc>http://localhost:1313/career/</loc>
     <lastmod>2025-09-10T00:00:00+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
+                href="http://localhost:1313/en/career/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it-it"
+                href="http://localhost:1313/career/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-09-10T00:00:00+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="http://localhost:1313/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it-it"
                 href="http://localhost:1313/"
                 />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it-it"
-                href="http://localhost:1313/it/"
-                />
   </url><url>
-    <loc>http://localhost:1313/it/blog/incertezze-previsioni/</loc>
+    <loc>http://localhost:1313/blog/incertezze-previsioni/</loc>
     <lastmod>2025-09-10T00:00:00+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="http://localhost:1313/blog/incertezze-previsioni/"
+                href="http://localhost:1313/en/blog/incertezze-previsioni/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="it-it"
-                href="http://localhost:1313/it/blog/incertezze-previsioni/"
+                href="http://localhost:1313/blog/incertezze-previsioni/"
                 />
   </url><url>
-    <loc>http://localhost:1313/it/blog/post-1/</loc>
+    <loc>http://localhost:1313/blog/post-1/</loc>
     <lastmod>2021-07-14T00:00:00+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="http://localhost:1313/blog/post-1/"
+                href="http://localhost:1313/en/blog/post-1/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="it-it"
-                href="http://localhost:1313/it/blog/post-1/"
+                href="http://localhost:1313/blog/post-1/"
                 />
   </url><url>
-    <loc>http://localhost:1313/it/blog/post-2/</loc>
+    <loc>http://localhost:1313/blog/post-2/</loc>
     <lastmod>2021-07-13T00:00:00+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
+                href="http://localhost:1313/en/blog/post-2/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it-it"
                 href="http://localhost:1313/blog/post-2/"
                 />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it-it"
-                href="http://localhost:1313/it/blog/post-2/"
-                />
   </url><url>
-    <loc>http://localhost:1313/it/author/</loc>
+    <loc>http://localhost:1313/author/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
+                href="http://localhost:1313/en/author/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it-it"
                 href="http://localhost:1313/author/"
                 />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it-it"
-                href="http://localhost:1313/it/author/"
-                />
   </url><url>
-    <loc>http://localhost:1313/it/author/awab-husameldin/</loc>
+    <loc>http://localhost:1313/author/awab-husameldin/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
+                href="http://localhost:1313/en/author/awab-husameldin/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it-it"
                 href="http://localhost:1313/author/awab-husameldin/"
                 />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it-it"
-                href="http://localhost:1313/it/author/awab-husameldin/"
-                />
   </url><url>
-    <loc>http://localhost:1313/it/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
+                href="http://localhost:1313/en/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it-it"
                 href="http://localhost:1313/categories/"
                 />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it-it"
-                href="http://localhost:1313/it/categories/"
-                />
   </url><url>
-    <loc>http://localhost:1313/it/about/</loc>
+    <loc>http://localhost:1313/about/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
+                href="http://localhost:1313/en/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it-it"
                 href="http://localhost:1313/about/"
                 />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it-it"
-                href="http://localhost:1313/it/about/"
-                />
   </url><url>
-    <loc>http://localhost:1313/it/contact/</loc>
+    <loc>http://localhost:1313/contact/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
+                href="http://localhost:1313/en/contact/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it-it"
                 href="http://localhost:1313/contact/"
                 />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it-it"
-                href="http://localhost:1313/it/contact/"
-                />
   </url><url>
-    <loc>http://localhost:1313/it/elements/</loc>
+    <loc>http://localhost:1313/elements/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
+                href="http://localhost:1313/en/elements/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it-it"
                 href="http://localhost:1313/elements/"
                 />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it-it"
-                href="http://localhost:1313/it/elements/"
-                />
   </url><url>
-    <loc>http://localhost:1313/it/features/</loc>
+    <loc>http://localhost:1313/features/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
+                href="http://localhost:1313/en/features/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it-it"
                 href="http://localhost:1313/features/"
                 />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it-it"
-                href="http://localhost:1313/it/features/"
-                />
   </url><url>
-    <loc>http://localhost:1313/it/footer-bottom/</loc>
+    <loc>http://localhost:1313/footer-bottom/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
+                href="http://localhost:1313/en/footer-bottom/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it-it"
                 href="http://localhost:1313/footer-bottom/"
                 />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it-it"
-                href="http://localhost:1313/it/footer-bottom/"
-                />
   </url><url>
-    <loc>http://localhost:1313/it/author/francesco-falcolini/</loc>
+    <loc>http://localhost:1313/author/francesco-falcolini/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
+                href="http://localhost:1313/en/author/francesco-falcolini/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it-it"
                 href="http://localhost:1313/author/francesco-falcolini/"
                 />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it-it"
-                href="http://localhost:1313/it/author/francesco-falcolini/"
-                />
   </url><url>
-    <loc>http://localhost:1313/it/thanks/</loc>
+    <loc>http://localhost:1313/thanks/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
+                href="http://localhost:1313/en/thanks/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it-it"
                 href="http://localhost:1313/thanks/"
                 />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it-it"
-                href="http://localhost:1313/it/thanks/"
-                />
   </url><url>
-    <loc>http://localhost:1313/it/how-it-works/</loc>
+    <loc>http://localhost:1313/how-it-works/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
+                href="http://localhost:1313/en/how-it-works/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it-it"
                 href="http://localhost:1313/how-it-works/"
                 />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it-it"
-                href="http://localhost:1313/it/how-it-works/"
-                />
   </url><url>
-    <loc>http://localhost:1313/it/privacy/</loc>
-  </url><url>
-    <loc>http://localhost:1313/it/author/joseph-gonzalez/</loc>
+    <loc>http://localhost:1313/privacy/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
+                href="http://localhost:1313/en/privacy/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it-it"
+                href="http://localhost:1313/privacy/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/author/joseph-gonzalez/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="http://localhost:1313/en/author/joseph-gonzalez/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it-it"
                 href="http://localhost:1313/author/joseph-gonzalez/"
                 />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it-it"
-                href="http://localhost:1313/it/author/joseph-gonzalez/"
-                />
   </url><url>
-    <loc>http://localhost:1313/it/team/</loc>
+    <loc>http://localhost:1313/team/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
+                href="http://localhost:1313/en/team/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it-it"
                 href="http://localhost:1313/team/"
                 />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it-it"
-                href="http://localhost:1313/it/team/"
-                />
   </url><url>
-    <loc>http://localhost:1313/it/pricing/</loc>
+    <loc>http://localhost:1313/pricing/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
+                href="http://localhost:1313/en/pricing/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it-it"
                 href="http://localhost:1313/pricing/"
                 />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it-it"
-                href="http://localhost:1313/it/pricing/"
-                />
   </url><url>
-    <loc>http://localhost:1313/it/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="http://localhost:1313/tags/"
+                href="http://localhost:1313/en/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="it-it"
-                href="http://localhost:1313/it/tags/"
+                href="http://localhost:1313/tags/"
                 />
   </url>
 </urlset>

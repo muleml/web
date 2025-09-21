@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Career on muleML</title>
+    <title>Lavora con noi on muleML</title>
     <link>http://localhost:1313/career/</link>
-    <description>Recent content in Career on muleML</description>
+    <description>Recent content in Lavora con noi on muleML</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>it-it</language>
     <lastBuildDate>Wed, 10 Sep 2025 00:00:00 +0200</lastBuildDate>
     <atom:link href="http://localhost:1313/career/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Data &amp; Software Engineer for Battery Intelligence</title>
+      <title>Data &amp; Software Engineer per Battery Intelligence</title>
       <link>http://localhost:1313/career/data-software-engineer/</link>
       <pubDate>Wed, 10 Sep 2025 00:00:00 +0200</pubDate>
       <guid>http://localhost:1313/career/data-software-engineer/</guid>
-      <description>&lt;h3 id=&#34;about-us&#34;&gt;About us&lt;/h3&gt;&#xA;&lt;p&gt;We are an innovative company developing advanced solutions for the intelligent management of energy storage systems (BESS). We work at the intersection of energy, data, and artificial intelligence, with an open-source, scalable, and sustainable approach.&lt;/p&gt;</description>
+      <description>&lt;h3 id=&#34;chi-siamo&#34;&gt;Chi siamo&lt;/h3&gt;&#xA;&lt;p&gt;Siamo una realtà innovativa che sviluppa soluzioni avanzate per la gestione intelligente dei sistemi di accumulo energetico (BESS). Lavoriamo all’intersezione tra energia, dati e intelligenza artificiale, con un approccio open-source, scalabile e sostenibile.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

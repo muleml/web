@@ -1,9 +1,10 @@
+
 ################################### English language #####################################
 [en]
 languageName = "En"
 languageCode = "en-us"
 contentDir = "content/english"
-weight = 1
+weight = 2
 
 [en.params]
 # copyright
@@ -16,7 +17,7 @@ copyright = "muleML"
 languageName = "It"
 languageCode = "it-it"
 contentDir = "content/italian"
-weight = 2
+weight = 1
 
 [it.params]
 # copyright

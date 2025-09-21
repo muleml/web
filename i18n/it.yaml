@@ -29,7 +29,7 @@
   translation: Altri lavori
 
 - id: all_jobs
-  translation: Tutti i lavori
+  translation: Tutte le posizioni disponibili
 
 - id: fname
   translation: Nome
@@ -112,4 +112,7 @@
 
 - id: contact_captcha_alert
   translation: Completa il captcha, per favore.
+
+- id: career_side
+  translation: Mandaci il tuo **CV** e una **lettera motivazionale**. <br>Ci farà piacere conoscere meglio la tua storia, le tue aspirazioni e le ragioni che ti hanno portato a candidarti.
 

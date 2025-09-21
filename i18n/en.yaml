@@ -112,3 +112,6 @@
 
 - id: contact_captcha_alert
   translation: Please complete the captcha.
+
+- id: career_side
+  translation: Send us your **CV** and a **cover letter**. <br>We’d love to learn more about your story, your aspirations, and the reasons that led you to apply.

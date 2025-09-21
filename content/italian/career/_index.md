@@ -1,13 +1,13 @@
 ---
-title: "Career"
-description: "Give your team the design mindset & design tools"
+title: "Lavora con noi"
+description: "Lavora con noi"
 draft: false
 
 # banner
 banner:
-  subtitle: "We Are Delta"
-  title: "Give your team the design mindset & design tools"
-  description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, diam nonumy eirmod tempor invidunt ut labore dolore magna."
+  subtitle: "Lavora con noi"
+  title: "Le nostre opportunità"
+  description: "Siamo sempre alla ricerca di persone curiose e preparate, pronte a crescere insieme a noi. Scopri le posizioni aperte e trova quella che meglio rispecchia le tue competenze e aspirazioni."
   
   image: "images/banner-career.png"
 
@@ -21,7 +21,7 @@ why_join_us:
   button_link: "/it/about"
   button_label: "Scopri di più su di noi"
 
-  image: "images/video-thumb.jpg"
+  image: "images/work.png"
 
 ---
 

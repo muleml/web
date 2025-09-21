@@ -23,7 +23,7 @@ mainSections= ["blog"]
 footer_bottom = true
 
 # career form action
-career_form_action = "#!" # career form works with https://formspree.io or any formspree-alternatives
+career_form_action = "mailto:?to=careers@muleml.com" # career form works with https://formspree.io or any formspree-alternatives
 
 # OpenGraph / Twitter Card metadata
 description = "This is meta description"

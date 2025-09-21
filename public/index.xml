@@ -5,22 +5,22 @@
     <link>http://localhost:1313/</link>
     <description>Recent content in muleML - Works, Simply, With Purpose on muleML</description>
     <generator>Hugo</generator>
-    <language>en-us</language>
+    <language>it-it</language>
     <lastBuildDate>Wed, 10 Sep 2025 00:00:00 +0200</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Data &amp; Software Engineer for Battery Intelligence</title>
+      <title>Data &amp; Software Engineer per Battery Intelligence</title>
       <link>http://localhost:1313/career/data-software-engineer/</link>
       <pubDate>Wed, 10 Sep 2025 00:00:00 +0200</pubDate>
       <guid>http://localhost:1313/career/data-software-engineer/</guid>
-      <description>&lt;h3 id=&#34;about-us&#34;&gt;About us&lt;/h3&gt;&#xA;&lt;p&gt;We are an innovative company developing advanced solutions for the intelligent management of energy storage systems (BESS). We work at the intersection of energy, data, and artificial intelligence, with an open-source, scalable, and sustainable approach.&lt;/p&gt;</description>
+      <description>&lt;h3 id=&#34;chi-siamo&#34;&gt;Chi siamo&lt;/h3&gt;&#xA;&lt;p&gt;Siamo una realtà innovativa che sviluppa soluzioni avanzate per la gestione intelligente dei sistemi di accumulo energetico (BESS). Lavoriamo all’intersezione tra energia, dati e intelligenza artificiale, con un approccio open-source, scalabile e sostenibile.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Why uncertainty matters: the true value of Machine Learning predictions</title>
+      <title>Perché l’incertezza conta: il vero valore delle previsioni di Machine Learning</title>
       <link>http://localhost:1313/blog/incertezze-previsioni/</link>
       <pubDate>Wed, 10 Sep 2025 00:00:00 +0200</pubDate>
       <guid>http://localhost:1313/blog/incertezze-previsioni/</guid>
-      <description>&lt;p&gt;Machine Learning is increasingly used in business and in the management of complex systems such as energy, finance, or healthcare. Yet there is one element that is often overlooked: the uncertainty of predictions.&lt;br&gt;&#xA;A model may seem accurate, but without a measure of confidence in its estimates, it risks turning into a black box that is of little use, if not downright dangerous.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Il Machine Learning è sempre più diffuso in ambito aziendale e nella gestione di sistemi complessi come energia, finanza o sanità. Ma c’è un elemento che spesso viene sottovalutato: l’incertezza delle previsioni.&#xA;Un modello può sembrare accurato, ma senza una misura della fiducia nelle sue stime, rischia di trasformarsi in una scatola nera poco utile, se non addirittura pericolosa.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Real Product From the Buyers improvements in Overflow basis.</title>
@@ -37,20 +37,6 @@
       <description>&lt;p&gt;Laoreet mauris odio ut nec. Nisl, sed adipiscing dignissim arcu placerat ornare pharetra nec in. Ultrices in nisl potenti vitae tempus. Auctor consectetur luctus eu in amet sagittis. Dis urna, vel hendrerit convallis Senectus feugiat faucibus commodo egestas leo vitae in morbi. Enim arcu dignissim mauris, eu, eget&lt;/p&gt;</description>
     </item>
     <item>
-      <title></title>
-      <link>http://localhost:1313/_index_copia/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/_index_copia/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>About us</title>
-      <link>http://localhost:1313/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Awab Husameldin</title>
       <link>http://localhost:1313/author/awab-husameldin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -58,7 +44,14 @@
       <description>&lt;p&gt;Hic dolor cumque quod quas pariatur modi rerum qui consequatur, iusto inventore necessitatibus. Facilis quisquam magni, autem deleniti nobis repellat excepturi id.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Contact</title>
+      <title>Chi siamo</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Contatti</title>
       <link>http://localhost:1313/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/contact/</guid>
@@ -90,7 +83,14 @@
       <link>http://localhost:1313/author/francesco-falcolini/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/author/francesco-falcolini/</guid>
-      <description>&lt;p&gt;Physicist, with his head always among data, algorithms, and batteries. After a long career leading projects in banking, business, healthcare, and public administration, he founded muleML, where he serves as CEO. He believes predictive models should be explainable, useful, and sustainable — and when in doubt, he always prefers a concrete approach over a trendy buzzword.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Fisico, con la testa sempre tra dati, algoritmi e batterie. Dopo una lunga carriera alla guida di progetti in banche, imprese, sanità e pubblica amministrazione, ha fondato muleML, di cui è Amministratore Unico. Crede che i modelli predittivi debbano essere spiegabili, utili e sostenibili — e nel dubbio, preferisce sempre un approccio concreto a una buzzword di moda.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Grazie!</title>
+      <link>http://localhost:1313/thanks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/thanks/</guid>
+      <description></description>
     </item>
     <item>
       <title>How It Works</title>
@@ -100,25 +100,18 @@
       <description></description>
     </item>
     <item>
+      <title>Informativa sulla privacy</title>
+      <link>http://localhost:1313/privacy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/privacy/</guid>
+      <description>&lt;p&gt;Ai sensi dell’art.13 del Regolamento (UE) 2016/679, questa pagina descrive le modalità di trattamento dei dati personali degli utenti che consultano il sito web &lt;a href=&#34;https://www.muleml.com&#34;&#xA;&#xA;&#xA;&#xA;&#xA; target=&#34;_blank&#34;&#xA; &#xA;&#xA;&#xA;&gt;www.muleml.com&lt;/a&gt; di muleML S.r.l. Società Benefit. Le presenti informazioni non riguardano altri siti, pagine o servizi online raggiungibili tramite link ipertestuali eventualmente pubblicati nel sito ma riferiti a risorse esterne al dominio muleml.com&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Joseph Gonzalez</title>
       <link>http://localhost:1313/author/joseph-gonzalez/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/author/joseph-gonzalez/</guid>
       <description>&lt;p&gt;Facilis architecto quis maxime nam at, optio harum a velit nulla repellat ad culpa dolorem ab ducimus, porro enim fugit incidunt expedita. Caut repudiandae a assumenda tempora!&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>muleML - Works, Simply, With Purpose</title>
-      <link>http://localhost:1313/home-2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/home-2/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>muleML - Works, Simply, With Purpose</title>
-      <link>http://localhost:1313/home-2_copia/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/home-2_copia/</guid>
-      <description></description>
     </item>
     <item>
       <title>Our Team</title>
@@ -132,20 +125,6 @@
       <link>http://localhost:1313/pricing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/pricing/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Prova 2</title>
-      <link>http://localhost:1313/prova-2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/prova-2/</guid>
-      <description>&lt;p&gt;Prova 2&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/uploads/500px-happy_smiley_face.png&#34; alt=&#34;face&#34; title=&#34;face&#34;&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Thanks!</title>
-      <link>http://localhost:1313/thanks/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/thanks/</guid>
       <description></description>
     </item>
   </channel>

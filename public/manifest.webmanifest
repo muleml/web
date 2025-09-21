@@ -1,7 +1,7 @@
 {
   "name": "muleML",
   "short_name": "muleML",
-  "lang": "en-us",
+  "lang": "it-it",
   "display": "fullscreen",
   "orientation" : "portrait",
   "start_url": "http://localhost:1313/?utm_source=web_app_manifest",

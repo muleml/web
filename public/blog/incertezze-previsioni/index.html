@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html
-  lang="en-us"
+  lang="it-it"
   itemscope
   itemtype="http://schema.org/WebPage">
   <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     
     <meta charset="utf-8" />
-<title>Why uncertainty matters: the true value of Machine Learning predictions</title>
+<title>Perché l’incertezza conta: il vero valore delle previsioni di Machine Learning</title>
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
@@ -78,7 +78,7 @@
   
 
 
-<title>Why uncertainty matters: the true value of Machine Learning predictions</title>
+<title>Perché l’incertezza conta: il vero valore delle previsioni di Machine Learning</title>
 
 
 
@@ -91,9 +91,9 @@
 
 
   
-    <link rel="alternate" hreflang="en" href="http://localhost:1313/blog/incertezze-previsioni/" />
+    <link rel="alternate" hreflang="it" href="http://localhost:1313/blog/incertezze-previsioni/" />
   
-    <link rel="alternate" hreflang="it" href="http://localhost:1313/it/blog/incertezze-previsioni/" />
+    <link rel="alternate" hreflang="en" href="http://localhost:1313/en/blog/incertezze-previsioni/" />
   
   <link rel="alternate" hreflang="x-default" href="http://localhost:1313/blog/incertezze-previsioni/" />
 
@@ -187,13 +187,13 @@
 
 
 
-<meta property="og:title" content="Why uncertainty matters: the true value of Machine Learning predictions" />
+<meta property="og:title" content="Perché l’incertezza conta: il vero valore delle previsioni di Machine Learning" />
 <meta property="og:description" content="This is meta description" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://localhost:1313/blog/incertezze-previsioni/" />
 
 
-<meta name="twitter:title" content="Why uncertainty matters: the true value of Machine Learning predictions" />
+<meta name="twitter:title" content="Perché l’incertezza conta: il vero valore delle previsioni di Machine Learning" />
 <meta name="twitter:description" content="This is meta description" />
 
 
@@ -399,7 +399,7 @@
           
           
           
-          <option id="en" value="/blog/incertezze-previsioni/" selected>En
+          <option id="it" value="/blog/incertezze-previsioni/" selected>It
           </option>
           
           
@@ -414,7 +414,7 @@
           
           
           
-          <option id="it" value="/it/blog/incertezze-previsioni/">It</option>
+          <option id="en" value="/en/blog/incertezze-previsioni/">En</option>
           
           
           
@@ -440,7 +440,7 @@
           
           <li class="nav-item ">
             <a class="nav-link" 
-              href="/en/">Home</a>
+              href="/it/">Home</a>
           </li>
           
           
@@ -450,7 +450,7 @@
           
           <li class="nav-item ">
             <a class="nav-link" 
-              href="/about/">About</a>
+              href="/about/">Chi siamo</a>
           </li>
           
           
@@ -470,7 +470,7 @@
           
           <li class="nav-item ">
             <a class="nav-link" 
-              href="/contact/">Contact</a>
+              href="/contact/">Contatti</a>
           </li>
           
           
@@ -486,7 +486,7 @@
               
               
               
-              <option id="en" value="/blog/incertezze-previsioni/" selected>En
+              <option id="it" value="/blog/incertezze-previsioni/" selected>It
               </option>
               
               
@@ -501,7 +501,7 @@
               
               
               
-              <option id="it" value="/it/blog/incertezze-previsioni/">It</option>
+              <option id="en" value="/en/blog/incertezze-previsioni/">En</option>
               
               
               
@@ -657,60 +657,60 @@
       </div>
       <div class="col-lg-8">
         <div class="mb-5">
-          <h2 class="mb-3">Why uncertainty matters: the true value of Machine Learning predictions</h2>
-          <span class="text-muted">10 September, 2025 <span class="mx-1 text-dark-50">|</span> 5 Min Read</span>
+          <h2 class="mb-3">Perché l’incertezza conta: il vero valore delle previsioni di Machine Learning</h2>
+          <span class="text-muted">10 September, 2025 <span class="mx-1 text-dark-50">|</span> 5 Minuti di lettura</span>
         </div>
 
         <div class="content">
-          <p>Machine Learning is increasingly used in business and in the management of complex systems such as energy, finance, or healthcare. Yet there is one element that is often overlooked: the uncertainty of predictions.<br>
-A model may seem accurate, but without a measure of confidence in its estimates, it risks turning into a black box that is of little use, if not downright dangerous.</p>
-<h2 id="what-is-uncertainty-and-why-it-is-inevitable">What is uncertainty and why it is inevitable</h2>
-<p>Imagine you want to predict whether it will rain tomorrow. You can check the weather forecast, but you will never have absolute certainty: meteorologists express the forecast in terms of probability (“60% chance of rain”).<br>
-This probability represents uncertainty: we do not know exactly what will happen, but we can estimate how much we should trust the forecast.</p>
-<p>The same is true for Machine Learning models. Every prediction carries a margin of uncertainty. This uncertainty has a dual nature: on one hand, the intrinsic unpredictability of the phenomenon being measured (like rolling a die), on the other, the limitations of our model, linked to the quantity or quality of the data it was trained on. Ignoring these factors means deluding ourselves into thinking we have exact answers in a world that remains, by nature, partially unpredictable.</p>
-<h2 id="why-we-cannot-trust-models-without-uncertainty">Why we cannot trust models without uncertainty</h2>
-<p>A model that provides only a “dry” number is not enough to make business decisions. We also need to know how much we can trust that number.</p>
-<p>Let’s take a concrete example in the energy sector: the management of a Battery Energy Storage System (BESS).<br>
-An operator may decide to charge the batteries when electricity is cheap and discharge them when the price rises, thus maximizing profit.</p>
-<p>If the model predicts that tomorrow the price will rise by 20%, without a confidence interval we do not know whether this estimate is reliable or whether there is a high risk of error. A well-designed model should instead say:</p>
+          <p>Il Machine Learning è sempre più diffuso in ambito aziendale e nella gestione di sistemi complessi come energia, finanza o sanità. Ma c’è un elemento che spesso viene sottovalutato: l’incertezza delle previsioni.
+Un modello può sembrare accurato, ma senza una misura della fiducia nelle sue stime, rischia di trasformarsi in una scatola nera poco utile, se non addirittura pericolosa.</p>
+<h2 id="cosè-lincertezza-e-perché-è-inevitabile">Cos’è l’incertezza e perché è inevitabile</h2>
+<p>Immagina di voler prevedere se domani pioverà. Puoi consultare le previsioni meteo, ma non avrai mai una certezza assoluta: i meteorologi esprimono infatti la previsione in termini di probabilità (“60% di pioggia”).
+Questa probabilità rappresenta l’incertezza: non sappiamo con precisione cosa accadrà, ma possiamo stimare quanto fidarci della previsione.</p>
+<p>Lo stesso vale per i modelli di Machine Learning. Ogni previsione porta con sé un margine di incertezza. Questa incertezza ha una duplice natura: da un lato c&rsquo;è l&rsquo;imprevedibilità intrinseca del fenomeno che stiamo misurando (come il lancio di un dado), dall&rsquo;altro ci sono i limiti del nostro modello, legati alla quantità o qualità dei dati con cui è stato addestrato. Ignorare questi fattori significa illudersi di avere risposte esatte in un mondo che, invece, resta sempre parzialmente imprevedibile.</p>
+<h2 id="perché-senza-incertezza-non-possiamo-fidarci-dei-modelli">Perché senza incertezza non possiamo fidarci dei modelli</h2>
+<p>Un modello che fornisce solo un numero “secco” non basta per prendere decisioni di business. Serve sapere anche quanto possiamo fidarci di quel numero.</p>
+<p>Prendiamo un esempio concreto nel settore energetico: la gestione di un sistema di accumulo (BESS, Battery Energy Storage System).
+Un operatore può decidere di caricare le batterie quando l’elettricità costa poco e di scaricarle quando il prezzo sale, massimizzando così il profitto.</p>
+<p>Se il modello prevede che domani il prezzo salirà del 20%, senza un intervallo di confidenza non sappiamo se questa stima è affidabile o se esiste un alto rischio di errore. Un modello ben progettato dovrebbe invece dire:</p>
 <blockquote>
-<p>Our model predicts a 20% price increase, and we are 90% confident that the actual increase will be between 15% and 25%.</p></blockquote>
-<p>With this information, the operator can assess risk, choose more cautious or diversified strategies, and make informed decisions. Without a measure of uncertainty, the model would not be usable in practice.</p>
-<h2 id="calibration-of-predictions">Calibration of predictions</h2>
-<p>Having an estimate of uncertainty is not enough: that estimate also needs to be calibrated.<br>
-A calibrated model is one in which the stated probability actually corresponds to the real frequency.</p>
-<p>Let’s go back to the BESS example:<br>
-if the model says <em>there is an 80% chance the price will rise</em>, then out of 100 similar cases we expect the price to rise in about 80 of them.<br>
-If this does not happen — for example, if the price rises only in 40 out of 100 cases — then the model is not calibrated and its uncertainty becomes misleading.</p>
-<p>Calibration, therefore, is what turns prediction into a truly useful tool: not just a number, but reliable information with which to make decisions.</p>
-<h2 id="the-limits-of-llms">The limits of LLMs</h2>
-<p>In recent years, Large Language Models (LLMs) have shown impressive capabilities in generating text, code, and complex answers. However, when it comes to making critical decisions, they present a fundamental limitation: they struggle to express their uncertainty in a reliable way.</p>
-<p>LLMs often provide answers with a tone of confidence even when their reliability is low. Moreover, correctly calibrating their “confidence” is much harder than with traditional predictive models. This makes them unsuitable for contexts where we must rely on measurable and responsible predictions, such as energy management or healthcare.</p>
-<h2 id="techniques-to-estimate-and-calibrate-uncertainty">Techniques to estimate and calibrate uncertainty</h2>
-<p>In Machine Learning, there are several approaches to estimate uncertainty:</p>
+<p>Il nostro modello prevede un aumento del prezzo del 20%, e siamo sicuri al 90% che l&rsquo;aumento reale sarà compreso tra il 15% e il 25%</p></blockquote>
+<p>Con questa informazione l’operatore può valutare il rischio, scegliere strategie più caute o diversificate e prendere decisioni consapevoli. Senza una misura di incertezza, il modello non sarebbe utilizzabile in pratica.</p>
+<h2 id="la-calibrazione-delle-previsioni">La calibrazione delle previsioni</h2>
+<p>Avere una stima dell’incertezza non basta: quella stima deve anche essere calibrata.
+Un modello calibrato è un modello in cui la probabilità dichiarata corrisponde effettivamente alla frequenza reale.</p>
+<p>Riprendiamo l’esempio del BESS:
+se il modello dice che <em>c’è l&rsquo; 80% di probabilità che il prezzo salga</em>, allora su 100 casi simili ci aspettiamo che in circa 80 effettivamente il prezzo salga.
+Se invece questo non accade — ad esempio il prezzo sale solo in 40 casi su 100 — allora il modello non è calibrato e la sua incertezza diventa fuorviante.</p>
+<p>La calibrazione, quindi, è ciò che trasforma la previsione in uno strumento realmente utile: non solo un numero, ma un’informazione affidabile con cui prendere decisioni.</p>
+<h2 id="i-limiti-degli-llm">I limiti degli LLM</h2>
+<p>Negli ultimi anni i Large Language Models (LLM) hanno mostrato capacità impressionanti nella generazione di testi, codice e risposte complesse. Tuttavia, quando si tratta di prendere decisioni critiche, presentano un limite fondamentale: faticano a esprimere in modo attendibile la loro incertezza.</p>
+<p>Gli LLM spesso forniscono risposte con tono di sicurezza, anche quando la loro affidabilità è bassa. Inoltre, calibrare correttamente la loro “confidenza” è molto più difficile rispetto ai modelli predittivi tradizionali. Questo li rende inadatti a contesti dove serve affidarsi a previsioni misurabili e responsabili, come la gestione dell’energia o la sanità.</p>
+<h2 id="tecniche-per-stimare-e-calibrare-lincertezza">Tecniche per stimare e calibrare l&rsquo;incertezza</h2>
+<p>Nel Machine Learning esistono diversi approcci per stimare l’incertezza:</p>
 <ul>
-<li>Probabilistic models: algorithms that produce not only a point prediction but also a distribution (for example, Gaussian Processes).</li>
-<li>Ensemble methods: multiple models are trained and their predictions compared; the variability among them is an indicator of uncertainty (a typical example: Random Forest or ensembles of neural networks).</li>
-<li>Quantile regression: instead of predicting a single value, the model estimates different quantiles, thus building a confidence interval.</li>
+<li>Modelli probabilistici: algoritmi che producono non solo una previsione puntuale ma anche una distribuzione (ad esempio, i Gaussian Processes).</li>
+<li>Ensemble methods: si addestrano più modelli e si confrontano le loro previsioni; la variabilità tra modelli è un indicatore di incertezza (tipico esempio: Random Forest o ensemble di reti neurali).</li>
+<li>Quantile regression: invece di prevedere un singolo valore, il modello stima diversi quantili, costruendo così un intervallo di confidenza.</li>
 </ul>
-<p>For calibration, the most widely used methods are:</p>
+<p>Per la calibrazione, i metodi più diffusi sono:</p>
 <ul>
-<li>Platt scaling (based on logistic regression, often used with SVMs and classification models).</li>
-<li>Isotonic regression (more flexible, suitable for large datasets).</li>
-<li>Temperature scaling (particularly effective for neural networks).</li>
+<li>Platt scaling (basato su regressione logistica, molto usato con SVM e modelli di classificazione).</li>
+<li>Isotonic regression (più flessibile, adatta per dataset ampi).</li>
+<li>Temperature scaling (particolarmente efficace per le reti neurali).</li>
 </ul>
-<p>A particularly interesting approach is <strong>Conformal Prediction</strong> (CP):</p>
+<p>Un approccio particolarmente interessante è la <strong>Conformal Prediction</strong> (CP):</p>
 <ul>
-<li>It is model-agnostic, so it can be applied on top of any ML algorithm.</li>
-<li>It does not return only a point prediction but a predictive interval (for continuous variables) or a set of labels (for classification).</li>
-<li>It formally guarantees that, at a chosen level (e.g., 90%), the true value will be contained in that interval at least 90% of the time.</li>
+<li>È agnostica rispetto al modello, quindi può essere applicata sopra qualsiasi algoritmo di ML.</li>
+<li>Non restituisce solo una previsione puntuale, ma un intervallo predittivo (per variabili continue) o un insieme di etichette (per la classificazione).</li>
+<li>Garantisce formalmente che, a un certo livello scelto (es. 90%), il vero valore sarà contenuto in quell’intervallo almeno nel 90% dei casi.</li>
 </ul>
-<p>In the BESS example, instead of simply estimating <em>+20% ± 5%</em>, CP might say: <em>with 90% confidence, the price will vary between +15% and +25%</em>.</p>
-<h2 id="conclusion">Conclusion</h2>
-<p>Every Machine Learning prediction must be accompanied by a measure of uncertainty: without this information we cannot trust the model, nor can we use it in business scenarios, let alone in critical contexts.<br>
-Calibration is what ensures that uncertainty estimates are realistic and usable.</p>
-<p>The final message is clear: the value of Machine Learning lies not only in the accuracy of the prediction but also in the transparency with which it communicates its limits.<br>
-Only in this way can we build reliable, responsible, and sustainable solutions capable of generating real benefits for companies, citizens, and society.</p>
+<p>Nell’esempio del BESS, invece di stimare semplicemente <em>+20% ± 5%</em>, la CP potrebbe dire: <em>con il 90% di confidenza, il prezzo varierà tra +15% e +25%</em>.</p>
+<h2 id="conclusione">Conclusione</h2>
+<p>Ogni previsione di Machine Learning deve essere accompagnata da una misura di incertezza: senza questa informazione non possiamo fidarci del modello, né utilizzarlo in scenari di business, e tanto meno in contesti critici.
+La calibrazione è ciò che garantisce che le stime di incertezza siano realistiche e utilizzabili.</p>
+<p>Il messaggio finale è chiaro: il valore del Machine Learning non sta solo nell’accuratezza della previsione, ma nella trasparenza con cui comunica i suoi limiti.
+Solo così possiamo costruire soluzioni affidabili, responsabili e sostenibili, capaci di generare beneficio reale per imprese, cittadini e società.</p>
 
         </div>
 
@@ -728,7 +728,7 @@ Only in this way can we build reliable, responsible, and sustainable solutions c
           <div>
             <h3 class="h5 title mb-1"><a href="/author/francesco-falcolini/" class="text-dark">Francesco Falcolini</a></h3>
           
-            <div class="content"><p>Physicist, with his head always among data, algorithms, and batteries. After a long career leading projects in banking, business, …</p></div>
+            <div class="content"><p>Fisico, con la testa sempre tra dati, algoritmi e batterie. Dopo una lunga carriera alla guida di progetti in banche, imprese, sanità e …</p></div>
             
             <ul class="list-inline social-links justify-content-start mt-3 mb-0">
               
@@ -753,7 +753,7 @@ Only in this way can we build reliable, responsible, and sustainable solutions c
     <div class="row justify-content-center" data-aos="fade-in">
       <div class="col-12">
         <div class="section-title text-center">
-          <h2 class="title">Related posts</h2>
+          <h2 class="title">Post correlati</h2>
         </div>
       </div>
       
@@ -905,7 +905,7 @@ Only in this way can we build reliable, responsible, and sustainable solutions c
           
         </div>
         <div class="user-info">
-          <p class="font-weight-500 mb-0">by <a
+          <p class="font-weight-500 mb-0">di <a
               href="/author/joseph-gonzalez/">Joseph Gonzalez</a>
           </p>
         </div>
@@ -1057,7 +1057,7 @@ Only in this way can we build reliable, responsible, and sustainable solutions c
           
         </div>
         <div class="user-info">
-          <p class="font-weight-500 mb-0">by <a
+          <p class="font-weight-500 mb-0">di <a
               href="/">muleML - Works, Simply, With Purpose</a>
           </p>
         </div>
@@ -1185,9 +1185,9 @@ Only in this way can we build reliable, responsible, and sustainable solutions c
 
             
             <div class="col text-center text-lg-start">
-              <h4 class="footer-menu-title text-white mb-2">Support</h4>
+              <h4 class="footer-menu-title text-white mb-2">Supporto</h4>
               <ul class="list-unstyled mb-0">
-                <li><a href="/contact/">Contact</a></li><li><a href="/privacy/">Privacy Policy</a></li>
+                <li><a href="/contact/">Contatti</a></li><li><a href="/privacy/">Privacy Policy</a></li>
               </ul>
             </div>
             
@@ -1196,9 +1196,9 @@ Only in this way can we build reliable, responsible, and sustainable solutions c
 
             
             <div class="col text-center text-lg-start">
-              <h4 class="footer-menu-title text-white mb-2">Other Pages</h4>
+              <h4 class="footer-menu-title text-white mb-2">Altre pagine</h4>
               <ul class="list-unstyled mb-0">
-                <li><a href="/blog/">Blog</a></li><li><a href="/career/">Career</a></li>
+                <li><a href="/blog/">Blog</a></li><li><a href="/career/">Lavora con noi</a></li>
               </ul>
             </div>
             
@@ -1215,10 +1215,11 @@ Only in this way can we build reliable, responsible, and sustainable solutions c
           
             <p class="content has-bg-dark text-center small mb-0">
               
-                © 2025 <strong>muleML S.r.l. Società Benefit</strong> – All rights reserved<br>
+                © 2025 <strong>muleML S.r.l. Società Benefit</strong> – Tutti i diritti riservati<br>
 Sede legale: Riva Tommaso Gulli, 12, 34123 – Trieste, Italia<br>
 P.IVA e C.F. 01432920328 – REA TS-216058<br>
-Capitale sociale € 32.350 i.v. – Iscritta al Registro delle Imprese di Trieste<br>
+Capitale sociale € 32.350 i.v.
+<br>Iscritta al Registro delle Imprese di Trieste<br>
 Società iscritta come <em>Startup Innovativa</em> – Sezione speciale<br>
 PEC: muleml@pec.it – Email: <a href="mailto:info@muleml.com">info@muleml.com</a>
 
