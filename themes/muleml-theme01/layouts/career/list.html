@@ -16,9 +16,9 @@
       <div class="col-lg-6 mt-5 mt-lg-0 text-center">
         {{with .image}}
         {{$img:= resources.Get . }}
-        {{$img:= $img.Resize "498x"}}
-        {{$imgWebp:= $img.Resize "498x webp"}}
-        <img loading="lazy" decoding="async" class="img-fluid" width="{{$img.Width}}" height="{{$img.Height}}" src="{{$imgWebp.RelPermalink}}" alt="Banner Image" onerror="this.onerror=null;this.src='{{$img.RelPermalink}}'">
+        {{$img:= $img.Resize "600x"}}
+        {{$imgWebp:= $img.Resize "600x webp"}}
+        <img loading="lazy" decoding="async" class="img-fluid rounded-lg" width="{{$img.Width}}" height="{{$img.Height}}" src="{{$imgWebp.RelPermalink}}" alt="Banner Image" onerror="this.onerror=null;this.src='{{$img.RelPermalink}}'">
         {{end}}
       </div>
     </div>
