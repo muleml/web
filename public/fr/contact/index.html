@@ -91,9 +91,9 @@
 
 
   
-    <link rel="alternate" hreflang="en" href="http://localhost:1313/contact/" />
+    <link rel="alternate" hreflang="it" href="http://localhost:1313/contact/" />
   
-    <link rel="alternate" hreflang="it" href="http://localhost:1313/it/contact/" />
+    <link rel="alternate" hreflang="en" href="http://localhost:1313/en/contact/" />
   
     <link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/contact/" />
   
@@ -102,10 +102,6 @@
 
 
 
-
-  <meta
-    name="keywords"
-    content="Hugo, Themefisher, GetHugoThemes" />
 
 
 
@@ -116,8 +112,6 @@
 
 
 
-  <meta name="author" content="Themefisher" />
-
 
 
 
@@ -137,18 +131,9 @@
 
 
 
-  
-
-  
-  
-  
-
-
-  
-  
-
-
-  
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="http://localhost:1313/" />
+  <meta property="og:image" content="http://localhost:1313/" />
 
 
 
@@ -165,31 +150,6 @@
 
 
 
-  <meta name="twitter:creator" content="@Themefisher" />
-
-
-
-
-
-
-
-
-
-
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-MEASUREMENT_ID"></script>
-      <script>
-        var doNotTrack = false;
-        if ( false ) {
-          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
-          var doNotTrack = (dnt == "1" || dnt == "yes");
-        }
-        if (!doNotTrack) {
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-MEASUREMENT_ID');
-        }
-      </script>
 
 
 
@@ -210,6 +170,22 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+  
+      
+      
+  
 
 
 
@@ -370,7 +346,7 @@
           
           
           
-          <option id="en" value="/contact/">En</option>
+          <option id="it" value="/contact/">It</option>
           
           
           
@@ -386,7 +362,7 @@
           
           
           
-          <option id="it" value="/it/contact/">It</option>
+          <option id="en" value="/en/contact/">En</option>
           
           
           
@@ -606,7 +582,7 @@
               
               
               
-              <option id="en" value="/contact/">En</option>
+              <option id="it" value="/contact/">It</option>
               
               
               
@@ -622,7 +598,7 @@
               
               
               
-              <option id="it" value="/it/contact/">It</option>
+              <option id="en" value="/en/contact/">En</option>
               
               
               
@@ -725,35 +701,35 @@
 
           
           <div class="form-group mb-3">
-            <label class="fw-600 text-dark mb-1" for="interest">What are you interested in</label>
+            <label class="fw-600 text-dark mb-1" for="interest">Motivo del contatto</label>
             <select class="form-control text-dark shadow-none" id="interest" name="interest" required>
-              <option value="" selected disabled>Select…</option>
+              <option value="" selected disabled>Seleziona…</option>
               <option>Demo</option>
-              <option>Product information</option>
-              <option>Partnership opportunity</option>
-              <option>Media inquiry</option>
-              <option>Academic collaboration</option>
-              <option>Other</option>
+              <option>Informazioni sul prodotto</option>
+              <option>Opportunità di partnership</option>
+              <option>Indagine mediatica</option>
+              <option>Collaborazione accademica</option>
+              <option>Altro</option>
             </select>
           </div>
 
           
           <div class="form-group mb-3">
-            <label class="fw-600 text-dark mb-1" for="fname">First name</label>
-            <input class="form-control text-dark shadow-none" type="text" placeholder="First name"
+            <label class="fw-600 text-dark mb-1" for="fname">Nome</label>
+            <input class="form-control text-dark shadow-none" type="text" placeholder="Nome"
                    id="fname" name="first_name" required>
           </div>
 
           
           <div class="form-group mb-3">
-            <label class="fw-600 text-dark mb-1" for="lname">Last name</label>
-            <input class="form-control text-dark shadow-none" type="text" placeholder="Last name"
+            <label class="fw-600 text-dark mb-1" for="lname">Cognome</label>
+            <input class="form-control text-dark shadow-none" type="text" placeholder="Cognome"
                    id="lname" name="last_name" required>
           </div>
 
           
           <div class="form-group mb-3">
-            <label class="fw-600 text-dark mb-1" for="company">Company</label>
+            <label class="fw-600 text-dark mb-1" for="company">Azienda</label>
             <input class="form-control text-dark shadow-none" type="text" placeholder="Acme S.p.A."
                    id="company" name="company" required>
           </div>
@@ -767,7 +743,7 @@
 
           
           <div class="form-group mb-3">
-            <label class="fw-600 text-dark mb-1" for="phone">Phone (optional)</label>
+            <label class="fw-600 text-dark mb-1" for="phone">Telefono (opzionale)</label>
             <input class="form-control text-dark shadow-none" type="tel" id="phone" name="phone"
                    inputmode="tel" placeholder="&#43;39 333 123 4567"
                    pattern="^\+?[0-9\s\-\(\)]{7,}$"
@@ -776,16 +752,16 @@
 
           
           <div class="form-group mb-3">
-            <label class="fw-600 text-dark mb-1" for="message">Message</label>
+            <label class="fw-600 text-dark mb-1" for="message">Messaggio</label>
             <textarea class="form-control text-dark shadow-none" rows="5" id="message" name="message"
-                      required placeholder="Message…"></textarea>
+                      required placeholder="Messaggio…"></textarea>
           </div>
 
           
           <div class="form-group mb-3 form-check">
             <input class="form-check-input" type="checkbox" id="privacy" required>
             <label class="form-check-label" for="privacy">
-              I have read and accept the
+              Ho letto e accetto la
               <a href="/fr/privacy/"
                  target="_blank" rel="noopener">privacy policy</a>.
             </label>
@@ -797,7 +773,7 @@
           </div>
 
           
-          <button class="btn btn-primary w-100" id="submit-btn" type="submit">Submit</button>
+          <button class="btn btn-primary w-100" id="submit-btn" type="submit">Invia</button>
 
         </form>
 
@@ -809,14 +785,14 @@
             let submitting = false;
             form.addEventListener('submit', function (e) {
               const cap = form.querySelector('input[name="h-captcha-response"], textarea[name="h-captcha-response"]');
-              if (!cap || !cap.value) { e.preventDefault(); alert('Please complete the captcha.'); return false; }
+              if (!cap || !cap.value) { e.preventDefault(); alert('Completa il captcha, per favore.'); return false; }
               const now=Date.now(), last=Number(localStorage.getItem('contact_last_submit')||0);
               if (now-last<15000) { e.preventDefault(); return false; }
               localStorage.setItem('contact_last_submit', String(now));
               if (submitting) { e.preventDefault(); return false; }
               submitting = true;
               btn.disabled = true; btn.setAttribute('aria-busy','true'); btn.classList.add('disabled');
-              btn.textContent = 'Submit…';
+              btn.textContent = 'Invia…';
               const ts=document.createElement('input'); ts.type='hidden'; ts.name='submitted_at'; ts.value=new Date().toISOString();
               form.appendChild(ts);
             }, { capture: true });
@@ -989,6 +965,7 @@
       </div>
     </div>
     
+
 
     
     <div class="footer-bottom">

@@ -227,6 +227,18 @@
                 href="http://localhost:1313/en/author/joseph-gonzalez/"
                 />
   </url><url>
+    <loc>http://localhost:1313/en/key-advantages/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="it-it"
+                href="http://localhost:1313/key-advantages/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="http://localhost:1313/en/key-advantages/"
+                />
+  </url><url>
     <loc>http://localhost:1313/en/home-2/</loc>
   </url><url>
     <loc>http://localhost:1313/en/home-2_copia/</loc>

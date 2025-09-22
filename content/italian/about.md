@@ -1,6 +1,6 @@
 ---
 title: "Chi siamo"
-description: "Get fastest loan with smart way a seating home"
+description: "Persone con esperienze diverse, unite da una visione comune: costruire tecnologie che funzionano davvero, in modo semplice e con uno scopo chiaro.<br>Ci impegniamo a trasformare i dati in strumenti al servizio delle imprese, delle comunità e dell’ambiente."
 draft: false
 layout: "about"
 

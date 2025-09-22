@@ -26,20 +26,20 @@ footer_bottom = true
 career_form_action = "mailto:?to=careers@muleml.com" # career form works with https://formspree.io or any formspree-alternatives
 
 # OpenGraph / Twitter Card metadata
-description = "This is meta description"
+description = "Works. Simply. With purpose."
 author = "muleML"
 image = "images/logo.png" # this image will be used as fallback if a page has no image of its own
 
 # Preloader
 [preloader]
 enable = true
-preloader = "images/logo.png" # use jpg, png, svg or gif format.
+preloader = "images/logo.svg" # use jpg, png, svg or gif format.
 
-# contact info
+# contact info NON USATO ATTUALMENTE
 [contact_info]
-address = "9567 Turner Trace Apt. BC C3G8A4"
-mobile = "+211234565523"
-email = "info@email.com"
+address = ""
+mobile = ""
+email = ""
 # contact form action
 contact_form_action = "#!" # contact form works with https://formspree.io or any formspree-alternatives
 
@@ -55,25 +55,12 @@ enable = false
 label = "Sign Up Now"
 link = "#!"
 
-# Call to action
-[call_to_action]
-enable = true
-title = "Shape the future of energy with us"
-subtitle = "Get in touch to discover our solutions, book a demo, or start a conversation about your next project. At muleML, we believe in democratizing data and machine learning, making complex technologies simple and accessible. Our approach is gradual and pragmatic: we start with quick wins within everyone’s reach, while building a path toward long-term transformation."
-button_label = "Contact Us"
-button_link = "contact/"
-image = "images/cta.png"
-
 # Privacy policy page
 [privacy_page]
 url = "/privacy/"
 
 # seo meta data for OpenGraph / Twitter Card
-[metadata]
-keywords = [ "Hugo", "Themefisher", "GetHugoThemes"]
-description = "This is meta description"
-author = "Themefisher"
-image = "images/logo.png" # this image will be used as fallback if a page has no image of its own
+
 
 # matomo tracking: see https://matomo.org/
 [matomo]
@@ -107,7 +94,6 @@ google = "" # Your verification code
 bing = "" # Your verification code
 baidu = "" # Your verification code
 facebook = "" # Your verification code
-
 
 # cookies
 [cookies]

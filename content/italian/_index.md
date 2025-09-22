@@ -60,11 +60,10 @@ fun_facts:
     content: "Possibile estensione <br>della vita delle batterie"
 
 
-    
-# work_process
-work_process:
+# key_advantages
+key_advantages:
   enable: true
-  section: "how-it-works"
+  section: "key-advantages"
 
 # image_and_content_block
 image_and_content_block:

@@ -12,6 +12,29 @@ copyright = "muleML"
 
 # <a target="_blank" rel="noopener noreferrer" href="">
 
+[en.params.metadata]
+description = "muleML is a Benefit Corporation that develops AI solutions for BESS: an intelligent platform for analysis, monitoring, and optimization of energy storage systems"
+keywords = [
+  "muleML",
+  "benefit corporation artificial intelligence",
+  "innovative AI startup",
+  "sustainable machine learning",
+  "open source data engineering",
+  "explainable AI",
+  "BESS",
+  "Battery Energy Storage System",
+  "battery intelligence",
+  "AI energy management systems",
+  "IoT and edge computing",
+  "AI compliance GDPR AI Act",
+  "predictive analytics energy",
+  "digital twin smart grid",
+  "energy data analysis",
+  "open source data analytics"
+]
+author = "muleML SRL Società Benefit"
+image = "images/logo.png" # this image will be used as fallback if a page has no image of its own
+
 ################################### Italian language #####################################
 [it]
 languageName = "It"
@@ -22,6 +45,29 @@ weight = 1
 [it.params]
 # copyright
 copyright = "muleML"
+
+[it.params.metadata]
+description = "muleML è una Società Benefit che sviluppa soluzioni AI per BESS: piattaforma intelligente per analisi, monitoraggio e ottimizzazione dei sistemi di accumulo"
+keywords = [
+"muleML",
+"società benefit intelligenza artificiale",
+"startup innovativa",
+"machine learning sostenibile",
+"ingegneria del dato open source",
+"intelligenza artificiale spiegabile",
+"BESS",
+"Battery Energy Storage System",
+"battery intelligence",
+"sistemi di energy management AI",
+"IoT e edge computing",
+"compliance AI Act",
+"predictive analytics energia",
+"digital twin smart grid",
+"analisi dati energia",
+"data analytics open source"
+]
+author = "muleML SRL Società Benefit"
+image = "images/logo.png" # this image will be used as fallback if a page has no image of its own
 
 ################################### French language #####################################
 [fr]

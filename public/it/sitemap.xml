@@ -284,5 +284,17 @@
                 hreflang="it-it"
                 href="http://localhost:1313/tags/"
                 />
+  </url><url>
+    <loc>http://localhost:1313/key-advantages/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="http://localhost:1313/en/key-advantages/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it-it"
+                href="http://localhost:1313/key-advantages/"
+                />
   </url>
 </urlset>

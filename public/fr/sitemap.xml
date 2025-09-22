@@ -6,13 +6,13 @@
     <lastmod>2021-07-14T00:00:00+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en-us"
+                hreflang="it-it"
                 href="http://localhost:1313/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="it-it"
-                href="http://localhost:1313/it/"
+                hreflang="en-us"
+                href="http://localhost:1313/en/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -24,13 +24,13 @@
     <lastmod>2021-07-14T00:00:00+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en-us"
+                hreflang="it-it"
                 href="http://localhost:1313/blog/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="it-it"
-                href="http://localhost:1313/it/blog/"
+                hreflang="en-us"
+                href="http://localhost:1313/en/blog/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -42,13 +42,13 @@
     <lastmod>2021-07-14T00:00:00+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en-us"
+                hreflang="it-it"
                 href="http://localhost:1313/career/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="it-it"
-                href="http://localhost:1313/it/career/"
+                hreflang="en-us"
+                href="http://localhost:1313/en/career/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -58,28 +58,18 @@
   </url><url>
     <loc>http://localhost:1313/fr/career/digital-marketing-paid-media-manager/</loc>
     <lastmod>2021-07-14T00:00:00+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="http://localhost:1313/career/digital-marketing-paid-media-manager/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr-fr"
-                href="http://localhost:1313/fr/career/digital-marketing-paid-media-manager/"
-                />
   </url><url>
     <loc>http://localhost:1313/fr/blog/post-1/</loc>
     <lastmod>2021-07-14T00:00:00+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en-us"
+                hreflang="it-it"
                 href="http://localhost:1313/blog/post-1/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="it-it"
-                href="http://localhost:1313/it/blog/post-1/"
+                hreflang="en-us"
+                href="http://localhost:1313/en/blog/post-1/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -89,28 +79,18 @@
   </url><url>
     <loc>http://localhost:1313/fr/career/people-program-management-leader/</loc>
     <lastmod>2021-07-13T00:00:00+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="http://localhost:1313/career/people-program-management-leader/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr-fr"
-                href="http://localhost:1313/fr/career/people-program-management-leader/"
-                />
   </url><url>
     <loc>http://localhost:1313/fr/blog/post-2/</loc>
     <lastmod>2021-07-13T00:00:00+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en-us"
+                hreflang="it-it"
                 href="http://localhost:1313/blog/post-2/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="it-it"
-                href="http://localhost:1313/it/blog/post-2/"
+                hreflang="en-us"
+                href="http://localhost:1313/en/blog/post-2/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -120,187 +100,47 @@
   </url><url>
     <loc>http://localhost:1313/fr/career/senior-compensation-programs-manager/</loc>
     <lastmod>2021-07-12T00:00:00+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="http://localhost:1313/career/senior-compensation-programs-manager/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr-fr"
-                href="http://localhost:1313/fr/career/senior-compensation-programs-manager/"
-                />
   </url><url>
     <loc>http://localhost:1313/fr/blog/post-3/</loc>
     <lastmod>2021-07-12T00:00:00+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="http://localhost:1313/blog/post-3/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it-it"
-                href="http://localhost:1313/it/blog/post-3/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr-fr"
-                href="http://localhost:1313/fr/blog/post-3/"
-                />
   </url><url>
     <loc>http://localhost:1313/fr/career/executive-sr-executive-service-assurance/</loc>
     <lastmod>2021-07-11T00:00:00+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="http://localhost:1313/career/executive-sr-executive-service-assurance/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr-fr"
-                href="http://localhost:1313/fr/career/executive-sr-executive-service-assurance/"
-                />
   </url><url>
     <loc>http://localhost:1313/fr/blog/post-4/</loc>
     <lastmod>2021-07-11T00:00:00+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="http://localhost:1313/blog/post-4/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it-it"
-                href="http://localhost:1313/it/blog/post-4/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr-fr"
-                href="http://localhost:1313/fr/blog/post-4/"
-                />
   </url><url>
     <loc>http://localhost:1313/fr/career/programmer-web-developer/</loc>
     <lastmod>2021-07-10T00:00:00+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="http://localhost:1313/career/programmer-web-developer/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr-fr"
-                href="http://localhost:1313/fr/career/programmer-web-developer/"
-                />
   </url><url>
     <loc>http://localhost:1313/fr/blog/post-5/</loc>
     <lastmod>2021-07-10T00:00:00+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="http://localhost:1313/blog/post-5/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it-it"
-                href="http://localhost:1313/it/blog/post-5/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr-fr"
-                href="http://localhost:1313/fr/blog/post-5/"
-                />
   </url><url>
     <loc>http://localhost:1313/fr/blog/post-6/</loc>
     <lastmod>2021-07-09T00:00:00+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="http://localhost:1313/blog/post-6/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it-it"
-                href="http://localhost:1313/it/blog/post-6/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr-fr"
-                href="http://localhost:1313/fr/blog/post-6/"
-                />
   </url><url>
     <loc>http://localhost:1313/fr/career/technology-integration-support/</loc>
     <lastmod>2021-07-09T00:00:00+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="http://localhost:1313/career/technology-integration-support/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr-fr"
-                href="http://localhost:1313/fr/career/technology-integration-support/"
-                />
   </url><url>
     <loc>http://localhost:1313/fr/career/asp-net-software-developer/</loc>
     <lastmod>2021-07-08T00:00:00+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="http://localhost:1313/career/asp-net-software-developer/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr-fr"
-                href="http://localhost:1313/fr/career/asp-net-software-developer/"
-                />
   </url><url>
     <loc>http://localhost:1313/fr/blog/post-7/</loc>
     <lastmod>2021-07-08T00:00:00+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="http://localhost:1313/blog/post-7/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it-it"
-                href="http://localhost:1313/it/blog/post-7/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr-fr"
-                href="http://localhost:1313/fr/blog/post-7/"
-                />
   </url><url>
     <loc>http://localhost:1313/fr/blog/post-8/</loc>
     <lastmod>2021-07-07T00:00:00+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="http://localhost:1313/blog/post-8/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it-it"
-                href="http://localhost:1313/it/blog/post-8/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr-fr"
-                href="http://localhost:1313/fr/blog/post-8/"
-                />
   </url><url>
     <loc>http://localhost:1313/fr/about/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="en-us"
+                hreflang="it-it"
                 href="http://localhost:1313/about/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="it-it"
-                href="http://localhost:1313/it/about/"
+                hreflang="en-us"
+                href="http://localhost:1313/en/about/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -311,13 +151,13 @@
     <loc>http://localhost:1313/fr/author/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="en-us"
+                hreflang="it-it"
                 href="http://localhost:1313/author/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="it-it"
-                href="http://localhost:1313/it/author/"
+                hreflang="en-us"
+                href="http://localhost:1313/en/author/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -328,13 +168,13 @@
     <loc>http://localhost:1313/fr/author/awab-husameldin/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="en-us"
+                hreflang="it-it"
                 href="http://localhost:1313/author/awab-husameldin/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="it-it"
-                href="http://localhost:1313/it/author/awab-husameldin/"
+                hreflang="en-us"
+                href="http://localhost:1313/en/author/awab-husameldin/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -345,13 +185,13 @@
     <loc>http://localhost:1313/fr/categories/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="en-us"
+                hreflang="it-it"
                 href="http://localhost:1313/categories/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="it-it"
-                href="http://localhost:1313/it/categories/"
+                hreflang="en-us"
+                href="http://localhost:1313/en/categories/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -362,13 +202,13 @@
     <loc>http://localhost:1313/fr/contact/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="en-us"
+                hreflang="it-it"
                 href="http://localhost:1313/contact/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="it-it"
-                href="http://localhost:1313/it/contact/"
+                hreflang="en-us"
+                href="http://localhost:1313/en/contact/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -380,7 +220,7 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="http://localhost:1313/home-2/"
+                href="http://localhost:1313/en/home-2/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -391,13 +231,13 @@
     <loc>http://localhost:1313/fr/elements/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="en-us"
+                hreflang="it-it"
                 href="http://localhost:1313/elements/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="it-it"
-                href="http://localhost:1313/it/elements/"
+                hreflang="en-us"
+                href="http://localhost:1313/en/elements/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -408,13 +248,13 @@
     <loc>http://localhost:1313/fr/features/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="en-us"
+                hreflang="it-it"
                 href="http://localhost:1313/features/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="it-it"
-                href="http://localhost:1313/it/features/"
+                hreflang="en-us"
+                href="http://localhost:1313/en/features/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -425,13 +265,13 @@
     <loc>http://localhost:1313/fr/how-it-works/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="en-us"
+                hreflang="it-it"
                 href="http://localhost:1313/how-it-works/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="it-it"
-                href="http://localhost:1313/it/how-it-works/"
+                hreflang="en-us"
+                href="http://localhost:1313/en/how-it-works/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -442,13 +282,13 @@
     <loc>http://localhost:1313/fr/author/joseph-gonzalez/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="en-us"
+                hreflang="it-it"
                 href="http://localhost:1313/author/joseph-gonzalez/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="it-it"
-                href="http://localhost:1313/it/author/joseph-gonzalez/"
+                hreflang="en-us"
+                href="http://localhost:1313/en/author/joseph-gonzalez/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -459,13 +299,13 @@
     <loc>http://localhost:1313/fr/team/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="en-us"
+                hreflang="it-it"
                 href="http://localhost:1313/team/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="it-it"
-                href="http://localhost:1313/it/team/"
+                hreflang="en-us"
+                href="http://localhost:1313/en/team/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -476,13 +316,13 @@
     <loc>http://localhost:1313/fr/pricing/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="en-us"
+                hreflang="it-it"
                 href="http://localhost:1313/pricing/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="it-it"
-                href="http://localhost:1313/it/pricing/"
+                hreflang="en-us"
+                href="http://localhost:1313/en/pricing/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -493,13 +333,13 @@
     <loc>http://localhost:1313/fr/tags/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="en-us"
+                hreflang="it-it"
                 href="http://localhost:1313/tags/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="it-it"
-                href="http://localhost:1313/it/tags/"
+                hreflang="en-us"
+                href="http://localhost:1313/en/tags/"
                 />
     <xhtml:link
                 rel="alternate"
