@@ -2,6 +2,7 @@
   "htmlElements": {
     "tags": [
       "a",
+      "address",
       "article",
       "blockquote",
       "body",
@@ -192,6 +193,7 @@
       "font-weight-500",
       "footer-bottom",
       "footer-brand",
+      "footer-info",
       "footer-menu",
       "footer-menu-title",
       "form-check",

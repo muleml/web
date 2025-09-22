@@ -68,7 +68,7 @@ skills_box:
       content: "Progettiamo sistemi avanzati di monitoraggio e gestione dell’energia (EMS) basati su AI/ML. Offriamo analisi accurate di stato di carica e salute delle batterie, garantendo sicurezza, affidabilità e ritorni economici superiori"
       
     - title: "Materials Engineering"
-      content: "Mettiamo a disposizione un know-how unico su materiali elettrochimici e batterie di nuova generazione. Combiniamo modellazione numerica, progettazione di elettrodi e analisi sperimentali per soluzioni ad alte prestazioni e scalabili"  
+      content: "Abbiamo un know-how unico su materiali elettrochimici e batterie di nuova generazione. Combiniamo modellazione numerica, progettazione di elettrodi e analisi sperimentali per soluzioni ad alte prestazioni"  
   
 
 
