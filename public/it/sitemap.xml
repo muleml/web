@@ -213,18 +213,6 @@
                 href="http://localhost:1313/thanks/"
                 />
   </url><url>
-    <loc>http://localhost:1313/how-it-works/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="http://localhost:1313/en/how-it-works/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it-it"
-                href="http://localhost:1313/how-it-works/"
-                />
-  </url><url>
     <loc>http://localhost:1313/privacy/</loc>
     <xhtml:link
                 rel="alternate"
@@ -247,30 +235,6 @@
                 rel="alternate"
                 hreflang="it-it"
                 href="http://localhost:1313/author/joseph-gonzalez/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/team/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="http://localhost:1313/en/team/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it-it"
-                href="http://localhost:1313/team/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/pricing/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="http://localhost:1313/en/pricing/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it-it"
-                href="http://localhost:1313/pricing/"
                 />
   </url><url>
     <loc>http://localhost:1313/tags/</loc>

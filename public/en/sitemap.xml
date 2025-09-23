@@ -93,8 +93,6 @@
                 href="http://localhost:1313/en/blog/post-2/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/_index_copia/</loc>
-  </url><url>
     <loc>http://localhost:1313/en/about/</loc>
     <xhtml:link
                 rel="alternate"
@@ -203,18 +201,6 @@
                 href="http://localhost:1313/en/author/francesco-falcolini/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/how-it-works/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="it-it"
-                href="http://localhost:1313/how-it-works/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="http://localhost:1313/en/how-it-works/"
-                />
-  </url><url>
     <loc>http://localhost:1313/en/author/joseph-gonzalez/</loc>
     <xhtml:link
                 rel="alternate"
@@ -239,34 +225,6 @@
                 href="http://localhost:1313/en/key-advantages/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/home-2/</loc>
-  </url><url>
-    <loc>http://localhost:1313/en/home-2_copia/</loc>
-  </url><url>
-    <loc>http://localhost:1313/en/team/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="it-it"
-                href="http://localhost:1313/team/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="http://localhost:1313/en/team/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/en/pricing/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="it-it"
-                href="http://localhost:1313/pricing/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="http://localhost:1313/en/pricing/"
-                />
-  </url><url>
     <loc>http://localhost:1313/en/privacy/</loc>
     <xhtml:link
                 rel="alternate"
@@ -278,8 +236,6 @@
                 hreflang="en-us"
                 href="http://localhost:1313/en/privacy/"
                 />
-  </url><url>
-    <loc>http://localhost:1313/en/prova-2/</loc>
   </url><url>
     <loc>http://localhost:1313/en/tags/</loc>
     <xhtml:link

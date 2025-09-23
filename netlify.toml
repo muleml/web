@@ -16,3 +16,11 @@ function = "basic-auth"
 
 [context.branch-deploy.environment]
   HUGO_BASEURL = "/"
+
+#Evitare sia sempre attivo muleml.netlify.app
+[[redirects]]
+  from = "/*"
+  to = "https://www.muleml.com/:splat"
+  status = 301
+  force = true
+  conditions = { Host = ["muleml.netlify.app"] }

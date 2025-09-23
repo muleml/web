@@ -37,13 +37,6 @@
       <description>&lt;p&gt;Laoreet mauris odio ut nec. Nisl, sed adipiscing dignissim arcu placerat ornare pharetra nec in. Ultrices in nisl potenti vitae tempus. Auctor consectetur luctus eu in amet sagittis. Dis urna, vel hendrerit convallis Senectus feugiat faucibus commodo egestas leo vitae in morbi. Enim arcu dignissim mauris, eu, eget&lt;/p&gt;</description>
     </item>
     <item>
-      <title></title>
-      <link>http://localhost:1313/en/_index_copia/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/en/_index_copia/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>About us</title>
       <link>http://localhost:1313/en/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -93,13 +86,6 @@
       <description>&lt;p&gt;Physicist, with his head always among data, algorithms, and batteries. After a long career leading projects in banking, business, healthcare, and public administration, he founded muleML, where he serves as CEO. He believes predictive models should be explainable, useful, and sustainable — and when in doubt, he always prefers a concrete approach over a trendy buzzword.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>How It Works</title>
-      <link>http://localhost:1313/en/how-it-works/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/en/how-it-works/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Joseph Gonzalez</title>
       <link>http://localhost:1313/en/author/joseph-gonzalez/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -114,46 +100,11 @@
       <description></description>
     </item>
     <item>
-      <title>muleML - Works, Simply, With Purpose</title>
-      <link>http://localhost:1313/en/home-2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/en/home-2/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>muleML - Works, Simply, With Purpose</title>
-      <link>http://localhost:1313/en/home-2_copia/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/en/home-2_copia/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Our Team</title>
-      <link>http://localhost:1313/en/team/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/en/team/</guid>
-      <description>&lt;p&gt;This is the start of dummy description text. You can change it whenever you want. This is the start of dummy description text. You can change it whenever you want. This is the start of dummy description text. You can change it whenever you want. This is the start of dummy description text. You can change it whenever you want. This is the start of dummy description text. You can change it whenever you want. This is the start of dummy description text. You can change it whenever you want. This is the start of dummy description text. You can change it whenever you want. This is the start of dummy description text. You can change it whenever you want. This is the start of dummy description text. You can change it whenever you want. This is the start of dummy description text. You can change it whenever you want.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Pricing</title>
-      <link>http://localhost:1313/en/pricing/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/en/pricing/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Privacy Policy</title>
       <link>http://localhost:1313/en/privacy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/en/privacy/</guid>
-      <description>&lt;p&gt;Pursuant to art.13 of Regulation (EU) 2016/679, this page describes how personal data of users who browse the website &lt;a href=&#34;https://www.muleml.com&#34;&#xA;&#xA;&#xA;&#xA;&#xA; target=&#34;_blank&#34;&#xA; &#xA;&#xA;&#xA;&gt;www.muleml.com&lt;/a&gt; of muleML S.r.l. Società Benefit is processed. This information does not concern other websites, pages or online services that may be reached via hyperlinks published on the site but referring to resources outside the muleml.com domain.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Prova 2</title>
-      <link>http://localhost:1313/en/prova-2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/en/prova-2/</guid>
-      <description>&lt;p&gt;Prova 2&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/uploads/500px-happy_smiley_face.png&#34; alt=&#34;face&#34; title=&#34;face&#34;&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;On this page you can find the following privacy notices regarding the processing of personal data:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Thanks!</title>

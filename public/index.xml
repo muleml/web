@@ -93,18 +93,11 @@
       <description></description>
     </item>
     <item>
-      <title>How It Works</title>
-      <link>http://localhost:1313/how-it-works/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/how-it-works/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Informativa sulla privacy</title>
       <link>http://localhost:1313/privacy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/privacy/</guid>
-      <description>&lt;p&gt;Ai sensi dell’art.13 del Regolamento (UE) 2016/679, questa pagina descrive le modalità di trattamento dei dati personali degli utenti che consultano il sito web &lt;a href=&#34;https://www.muleml.com&#34;&#xA;&#xA;&#xA;&#xA;&#xA; target=&#34;_blank&#34;&#xA; &#xA;&#xA;&#xA;&gt;www.muleml.com&lt;/a&gt; di muleML S.r.l. Società Benefit. Le presenti informazioni non riguardano altri siti, pagine o servizi online raggiungibili tramite link ipertestuali eventualmente pubblicati nel sito ma riferiti a risorse esterne al dominio muleml.com&lt;/p&gt;</description>
+      <description>&lt;p&gt;In questa pagina sono raccolte le seguenti informative relative al trattamento dei dati personali;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Joseph Gonzalez</title>
@@ -112,20 +105,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/author/joseph-gonzalez/</guid>
       <description>&lt;p&gt;Facilis architecto quis maxime nam at, optio harum a velit nulla repellat ad culpa dolorem ab ducimus, porro enim fugit incidunt expedita. Caut repudiandae a assumenda tempora!&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Our Team</title>
-      <link>http://localhost:1313/team/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/team/</guid>
-      <description>&lt;p&gt;This is the start of dummy description text. You can change it whenever you want. This is the start of dummy description text. You can change it whenever you want. This is the start of dummy description text. You can change it whenever you want. This is the start of dummy description text. You can change it whenever you want. This is the start of dummy description text. You can change it whenever you want. This is the start of dummy description text. You can change it whenever you want. This is the start of dummy description text. You can change it whenever you want. This is the start of dummy description text. You can change it whenever you want. This is the start of dummy description text. You can change it whenever you want. This is the start of dummy description text. You can change it whenever you want.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Pricing</title>
-      <link>http://localhost:1313/pricing/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/pricing/</guid>
-      <description></description>
     </item>
     <item>
       <title>Vantaggi chiave</title>
