@@ -23,7 +23,7 @@ mainSections= ["blog"]
 footer_bottom = true
 
 # career form action
-career_form_action = "mailto:?to=careers@muleml.com" # career form works with https://formspree.io or any formspree-alternatives
+career_form_action = "careers@muleml.com" #indirizzo a cui inviare cv
 
 # OpenGraph / Twitter Card metadata
 description = "Works. Simply. With purpose."

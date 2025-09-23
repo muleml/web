@@ -607,7 +607,7 @@
 				<div class="sidebar-widget bg-white rounded-md shadow-md">
           <p>Send us your <strong>CV</strong> and a <strong>cover letter</strong>. <br>We’d love to learn more about your story, your aspirations, and the reasons that led you to apply.</p>
 					
-					<form action="mailto:?to=careers@muleml.com&amp;subject=Data&#43;%26&#43;Software&#43;Engineer&#43;for&#43;Battery&#43;Intelligence" method="POST">
+					<form id="job-form">
 
               
             <div class="form-group mb-3 form-check">
@@ -620,6 +620,29 @@
             </div>
 						<button class="btn btn-primary w-100 rounded-sm" type="submit" aria-label="Apply Now">Apply Now</button>
 					</form>
+
+<script>
+document.getElementById("job-form").addEventListener("submit", function (e) {
+  e.preventDefault(); 
+
+  
+  if (!this.checkValidity()) {
+    this.reportValidity();
+    return;
+  }
+
+  
+  const to = "careers@muleml.com";
+  const subject = "Data\u002b%26\u002bSoftware\u002bEngineer\u002bfor\u002bBattery\u002bIntelligence";
+  const body = ""; 
+
+  const mailtoUrl = `mailto:${to}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  window.location.href = mailtoUrl;
+});
+</script>
+
+
+
 					
 					<div class="share-this-post d-flex flex-wrap justify-content-center align-items-center rounded-sm mt-4">
 						<span class="m-1 mt-0 text-dark">Share this job:</span>

@@ -44,7 +44,7 @@
 				<div class="sidebar-widget bg-white rounded-md shadow-md">
           <p>{{ i18n "career_side" | markdownify}}</p>
 					
-					<form action="{{site.Params.career_form_action}}&amp;subject={{ .Title | urlquery }}" method="POST">
+					<form id="job-form">
 
               <!-- Privacy consent -->
             <div class="form-group mb-3 form-check">
@@ -57,6 +57,29 @@
             </div>
 						<button class="btn btn-primary w-100 rounded-sm" type="submit" aria-label="{{i18n `apply_now`}}">{{i18n `apply_now`}}</button>
 					</form>
+
+<script>
+document.getElementById("job-form").addEventListener("submit", function (e) {
+  e.preventDefault(); // impedisce submit tradizionale
+
+  // Se il form non è valido, mostra i messaggi HTML5 standard
+  if (!this.checkValidity()) {
+    this.reportValidity();
+    return;
+  }
+
+  // Se valido, apri il mailto
+  const to = "{{site.Params.career_form_action}}";
+  const subject = "{{ .Title }}";
+  const body = ""; // qui puoi concatenare altri valori dal form se vuoi
+
+  const mailtoUrl = `mailto:${to}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  window.location.href = mailtoUrl;
+});
+</script>
+
+
+
 					
 					<div class="share-this-post d-flex flex-wrap justify-content-center align-items-center rounded-sm mt-4">
 						<span class="m-1 mt-0 text-dark">{{i18n `share_this_job`}}</span>

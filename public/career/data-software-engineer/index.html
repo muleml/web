@@ -607,7 +607,7 @@
 				<div class="sidebar-widget bg-white rounded-md shadow-md">
           <p>Mandaci il tuo <strong>CV</strong> e una <strong>lettera motivazionale</strong>. <br>Ci farà piacere conoscere meglio la tua storia, le tue aspirazioni e le ragioni che ti hanno portato a candidarti.</p>
 					
-					<form action="mailto:?to=careers@muleml.com&amp;subject=Data&#43;%26&#43;Software&#43;Engineer&#43;per&#43;Battery&#43;Intelligence" method="POST">
+					<form id="job-form">
 
               
             <div class="form-group mb-3 form-check">
@@ -620,6 +620,29 @@
             </div>
 						<button class="btn btn-primary w-100 rounded-sm" type="submit" aria-label="Candidati ora">Candidati ora</button>
 					</form>
+
+<script>
+document.getElementById("job-form").addEventListener("submit", function (e) {
+  e.preventDefault(); 
+
+  
+  if (!this.checkValidity()) {
+    this.reportValidity();
+    return;
+  }
+
+  
+  const to = "careers@muleml.com";
+  const subject = "Data \u0026 Software Engineer per Battery Intelligence";
+  const body = ""; 
+
+  const mailtoUrl = `mailto:${to}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  window.location.href = mailtoUrl;
+});
+</script>
+
+
+
 					
 					<div class="share-this-post d-flex flex-wrap justify-content-center align-items-center rounded-sm mt-4">
 						<span class="m-1 mt-0 text-dark">Condividi questo lavoro:</span>
