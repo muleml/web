@@ -6,24 +6,24 @@
     <description>Recent content in Blog on muleML</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 10 Sep 2025 00:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 12 Sep 2025 00:00:00 +0200</lastBuildDate>
     <atom:link href="http://localhost:1313/en/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Why uncertainty matters: the true value of Machine Learning predictions</title>
-      <link>http://localhost:1313/en/blog/incertezze-previsioni-2/</link>
-      <pubDate>Wed, 10 Sep 2025 00:00:00 +0200</pubDate>
-      <guid>http://localhost:1313/en/blog/incertezze-previsioni-2/</guid>
-      <description>&lt;p&gt;Machine Learning is increasingly used in business and in the management of complex systems such as energy, finance, or healthcare. Yet there is one element that is often overlooked: the uncertainty of predictions.&lt;br&gt;&#xA;A model may seem accurate, but without a measure of confidence in its estimates, it risks turning into a black box that is of little use, if not downright dangerous.&lt;/p&gt;</description>
+      <title>Data engineering: the invisible backbone of digital</title>
+      <link>http://localhost:1313/en/blog/data-engineering/</link>
+      <pubDate>Fri, 12 Sep 2025 00:00:00 +0200</pubDate>
+      <guid>http://localhost:1313/en/blog/data-engineering/</guid>
+      <description>&lt;p&gt;Behind every digital application lie data infrastructures that collect, transform, and make information available. Modern architectures, from data lakehouses to ELT pipelines, open new opportunities but require attention to costs and complexity. Proportionality, efficiency, and sustainability become guiding principles for systems that are truly useful and long-lasting.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Why uncertainty matters: the true value of Machine Learning predictions</title>
+      <title>Why uncertainty matters: the true value of predictions</title>
       <link>http://localhost:1313/en/blog/incertezze-previsioni-3/</link>
       <pubDate>Wed, 10 Sep 2025 00:00:00 +0200</pubDate>
       <guid>http://localhost:1313/en/blog/incertezze-previsioni-3/</guid>
       <description>&lt;p&gt;Machine Learning is increasingly used in business and in the management of complex systems such as energy, finance, or healthcare. Yet there is one element that is often overlooked: the uncertainty of predictions.&lt;br&gt;&#xA;A model may seem accurate, but without a measure of confidence in its estimates, it risks turning into a black box that is of little use, if not downright dangerous.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Why uncertainty matters: the true value of Machine Learning predictions</title>
+      <title>Why uncertainty matters: the true value of predictions</title>
       <link>http://localhost:1313/en/blog/incertezze-previsioni/</link>
       <pubDate>Wed, 10 Sep 2025 00:00:00 +0200</pubDate>
       <guid>http://localhost:1313/en/blog/incertezze-previsioni/</guid>

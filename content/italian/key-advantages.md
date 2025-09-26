@@ -1,17 +1,18 @@
 ---
+headless: true
 title: "Vantaggi chiave"
-description: "Libero consequuntur doloremque amet, cum fugiat ipsam blanditiis corrupti praesentium quis."
+description: "Vantaggi chiave"
 draft: false
 layout: "key-advantages"
 
 # banner
 banner:
-  subtitle: "We Are Delta"
-  title: "Design your project with user centered approach"
-  description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, diam nonumy eirmod tempor invidunt ut labore dolore magna"
+  subtitle: ""
+  title: ""
+  description: ""
   button:
     enable: true
-    label: "Get started now"
+    label: ""
     icon: "fas fa-arrow-right"
     link: "contact/"
   
@@ -23,25 +24,34 @@ key_advantages:
   subtitle: "I nostri vantaggi chiave"
   title: "Cosa rende BESS INSIGHT unico"
   advantages_item:
+  - title: "Modelli predittivi affidabili"
+    image: "images/process/01.png"
+    content: "Agenti AI adattivi per decisioni in tempo reale su trading, sicurezza e manutenzione, con previsioni validate sul campo."
 
-  - title: "Modelli predittivi comprovati"
-    image: "images/process/01.jpg"
-    content: "Previsioni SOC e SOH avanzate, comprovate da evidenze e con impatto economico."
+  - title: "OEM agnostic"
+    image: "images/process/05.png"
+    content: "Compatibile con oltre l’80% dei principali fornitori Tier 1 di batterie e PCS, dai progetti commerciali fino a quelli utility-scale."
 
-  - title: "Gestione <br>end-to-end"
-    image: "images/process/02.jpg"
-    content: "Nessun rischio operativo: gestiamo tutto, dalla raccolta dati alla consegna dei risultati."
-    
-  - title: "Piattaforma dati integrata"
-    image: "images/process/03.jpg"
-    content: "Ambiente unificato per data engineering e analytics, basato su tecnologie open source."
-    
+  - title: "AI addestrata su dati reali"
+    image: "images/process/06.png"
+    content: "Algoritmi addestrati su oltre 800 MWh di sistemi operativi da più di 5 anni, sfruttando 900 TB di dati eterogenei da celle e PCS."    
+
+  - title: "Mix di competenze"
+    image: "images/process/02.png"
+    content: "Il nostro team unisce elettrochimica, data & ML engineering e gestione di impianti BESS per ridurre i rischi e accelerare i progetti."
+
+  - title: "Infrastruttura dati integrata"
+    image: "images/process/03.png"
+    content: "Un ambiente unificato che combina data engineering e analytics, basato su tecnologie open-source per garantire trasparenza."
+
   - title: "Basato nell’UE e conforme"
-    image: "images/process/04.jpg"
-    content: "Piena conformità alle normative europee, incluso l’AI Act, con dati gestiti all’interno dell’UE."
+    image: "images/process/04.png"
+    content: "Piena conformità agli standard europei, incluso l’AI Act, con tutti i dati gestiti in modo sicuro all’interno delle giurisdizioni UE."
+    
 
-    Mini-header: "I nostri vantaggi chiave"
 
+
+    Mini-header: I nostri vantaggi chiave
 
 
 ---

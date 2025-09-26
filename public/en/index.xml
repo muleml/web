@@ -6,8 +6,15 @@
     <description>Recent content in muleML - Works, Simply, With Purpose on muleML</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 10 Sep 2025 00:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 12 Sep 2025 00:00:00 +0200</lastBuildDate>
     <atom:link href="http://localhost:1313/en/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Data engineering: the invisible backbone of digital</title>
+      <link>http://localhost:1313/en/blog/data-engineering/</link>
+      <pubDate>Fri, 12 Sep 2025 00:00:00 +0200</pubDate>
+      <guid>http://localhost:1313/en/blog/data-engineering/</guid>
+      <description>&lt;p&gt;Behind every digital application lie data infrastructures that collect, transform, and make information available. Modern architectures, from data lakehouses to ELT pipelines, open new opportunities but require attention to costs and complexity. Proportionality, efficiency, and sustainability become guiding principles for systems that are truly useful and long-lasting.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Data &amp; Software Engineer for Battery Intelligence</title>
       <link>http://localhost:1313/en/career/data-software-engineer/</link>
@@ -16,21 +23,14 @@
       <description>&lt;h3 id=&#34;about-us&#34;&gt;About us&lt;/h3&gt;&#xA;&lt;p&gt;We are an innovative company developing advanced solutions for the intelligent management of energy storage systems (BESS). We work at the intersection of energy, data, and artificial intelligence, with an open-source, scalable, and sustainable approach.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Why uncertainty matters: the true value of Machine Learning predictions</title>
-      <link>http://localhost:1313/en/blog/incertezze-previsioni-2/</link>
-      <pubDate>Wed, 10 Sep 2025 00:00:00 +0200</pubDate>
-      <guid>http://localhost:1313/en/blog/incertezze-previsioni-2/</guid>
-      <description>&lt;p&gt;Machine Learning is increasingly used in business and in the management of complex systems such as energy, finance, or healthcare. Yet there is one element that is often overlooked: the uncertainty of predictions.&lt;br&gt;&#xA;A model may seem accurate, but without a measure of confidence in its estimates, it risks turning into a black box that is of little use, if not downright dangerous.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Why uncertainty matters: the true value of Machine Learning predictions</title>
+      <title>Why uncertainty matters: the true value of predictions</title>
       <link>http://localhost:1313/en/blog/incertezze-previsioni-3/</link>
       <pubDate>Wed, 10 Sep 2025 00:00:00 +0200</pubDate>
       <guid>http://localhost:1313/en/blog/incertezze-previsioni-3/</guid>
       <description>&lt;p&gt;Machine Learning is increasingly used in business and in the management of complex systems such as energy, finance, or healthcare. Yet there is one element that is often overlooked: the uncertainty of predictions.&lt;br&gt;&#xA;A model may seem accurate, but without a measure of confidence in its estimates, it risks turning into a black box that is of little use, if not downright dangerous.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Why uncertainty matters: the true value of Machine Learning predictions</title>
+      <title>Why uncertainty matters: the true value of predictions</title>
       <link>http://localhost:1313/en/blog/incertezze-previsioni/</link>
       <pubDate>Wed, 10 Sep 2025 00:00:00 +0200</pubDate>
       <guid>http://localhost:1313/en/blog/incertezze-previsioni/</guid>
@@ -42,6 +42,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/en/about/</guid>
       <description></description>
+    </item>
+    <item>
+      <title>Andrea Maurano</title>
+      <link>http://localhost:1313/en/author/andrea-maurano/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/author/andrea-maurano/</guid>
+      <description>&lt;p&gt;Physicist and materials engineer, PhD at Imperial College London and post-doc at MIT in Boston. He worked as a researcher in the US at MIT, Samsung, and 24M labs, exploring batteries, photonics, and artificial intelligence. He co-founded muleML, where he now serves as Scientific Advisor, with a simple goal: making energy more reliable and sustainable — and proving that even the most complex research can still have a smiling face.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Contact</title>
@@ -79,11 +86,11 @@
       <description>&lt;p&gt;Physicist, with his head always among data, algorithms, and batteries. After a long career leading projects in banking, business, healthcare, and public administration, he founded muleML, where he serves as CEO. He believes predictive models should be explainable, useful, and sustainable — and when in doubt, he always prefers a concrete approach over a trendy buzzword.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Key advantages</title>
-      <link>http://localhost:1313/en/key-advantages/</link>
+      <title>Pietro Portolani</title>
+      <link>http://localhost:1313/en/author/pietro-portolani/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/en/key-advantages/</guid>
-      <description></description>
+      <guid>http://localhost:1313/en/author/pietro-portolani/</guid>
+      <description>&lt;p&gt;Co-founder and CTO of muleML, a mechanical engineer “converted” to computer science. With a PhD from Politecnico di Milano and years of experience in industrial research and AI, today he leads the company’s technological development. He sees in data and algorithms the key to understanding the complexity around us and making our future more sustainable.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Privacy Policy</title>

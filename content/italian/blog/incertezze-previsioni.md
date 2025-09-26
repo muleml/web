@@ -1,6 +1,6 @@
 ---
 date: "2025-09-10"
-title: "Perché l’incertezza conta: il vero valore delle previsioni di Machine Learning"
+title: "Perché l’incertezza conta: il vero valore delle previsioni"
 image: "images/blog/incertezza.png"
 author: "francesco-falcolini"
 draft: false

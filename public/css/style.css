@@ -21646,3 +21646,12 @@ footer {
 /* opzionale: se la classe .small del tema cambia line-height, neutralizzala qui */
 .footer-info.small {
   line-height: 1 !important; }
+
+.content a {
+  color: #0d6efd;
+  /* blu bootstrap, puoi cambiare */
+  text-decoration: underline; }
+
+.content a:hover {
+  color: #0a58ca;
+  text-decoration: underline; }

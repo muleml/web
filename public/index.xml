@@ -6,8 +6,15 @@
     <description>Recent content in muleML - Works, Simply, With Purpose on muleML</description>
     <generator>Hugo</generator>
     <language>it-it</language>
-    <lastBuildDate>Wed, 10 Sep 2025 00:00:00 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 12 Sep 2025 00:00:00 +0200</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ingegneria del dato: la spina dorsale invisibile del digitale</title>
+      <link>http://localhost:1313/blog/ingegneria-del-dato/</link>
+      <pubDate>Fri, 12 Sep 2025 00:00:00 +0200</pubDate>
+      <guid>http://localhost:1313/blog/ingegneria-del-dato/</guid>
+      <description>&lt;p&gt;Dietro ogni applicazione digitale ci sono infrastrutture di dati che raccolgono, trasformano e rendono disponibili informazioni. Le architetture moderne, dai data lakehouse alle pipeline ELT, aprono nuove opportunità ma richiedono attenzione a costi e complessità. Proporzionalità, efficienza e sostenibilità diventano principi guida per sistemi davvero utili e durevoli.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Data &amp; Software Engineer per Battery Intelligence</title>
       <link>http://localhost:1313/career/data-software-engineer/</link>
@@ -16,25 +23,25 @@
       <description>&lt;h3 id=&#34;chi-siamo&#34;&gt;Chi siamo&lt;/h3&gt;&#xA;&lt;p&gt;Siamo una realtà innovativa che sviluppa soluzioni avanzate per la gestione intelligente dei sistemi di accumulo energetico (BESS). Lavoriamo all’intersezione tra energia, dati e intelligenza artificiale, con un approccio open-source, scalabile e sostenibile.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Perché l’incertezza conta: il vero valore delle previsioni di Machine Learning</title>
-      <link>http://localhost:1313/blog/incertezze-previsioni-2/</link>
-      <pubDate>Wed, 10 Sep 2025 00:00:00 +0200</pubDate>
-      <guid>http://localhost:1313/blog/incertezze-previsioni-2/</guid>
-      <description>&lt;p&gt;Il Machine Learning è sempre più diffuso in ambito aziendale e nella gestione di sistemi complessi come energia, finanza o sanità. Ma c’è un elemento che spesso viene sottovalutato: l’incertezza delle previsioni.&#xA;Un modello può sembrare accurato, ma senza una misura della fiducia nelle sue stime, rischia di trasformarsi in una scatola nera poco utile, se non addirittura pericolosa.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Perché l’incertezza conta: il vero valore delle previsioni di Machine Learning</title>
+      <title>Perché l’incertezza conta: il vero valore delle previsioni</title>
       <link>http://localhost:1313/blog/incertezze-previsioni-3/</link>
       <pubDate>Wed, 10 Sep 2025 00:00:00 +0200</pubDate>
       <guid>http://localhost:1313/blog/incertezze-previsioni-3/</guid>
       <description>&lt;p&gt;Il Machine Learning è sempre più diffuso in ambito aziendale e nella gestione di sistemi complessi come energia, finanza o sanità. Ma c’è un elemento che spesso viene sottovalutato: l’incertezza delle previsioni.&#xA;Un modello può sembrare accurato, ma senza una misura della fiducia nelle sue stime, rischia di trasformarsi in una scatola nera poco utile, se non addirittura pericolosa.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Perché l’incertezza conta: il vero valore delle previsioni di Machine Learning</title>
+      <title>Perché l’incertezza conta: il vero valore delle previsioni</title>
       <link>http://localhost:1313/blog/incertezze-previsioni/</link>
       <pubDate>Wed, 10 Sep 2025 00:00:00 +0200</pubDate>
       <guid>http://localhost:1313/blog/incertezze-previsioni/</guid>
       <description>&lt;p&gt;Il Machine Learning è sempre più diffuso in ambito aziendale e nella gestione di sistemi complessi come energia, finanza o sanità. Ma c’è un elemento che spesso viene sottovalutato: l’incertezza delle previsioni.&#xA;Un modello può sembrare accurato, ma senza una misura della fiducia nelle sue stime, rischia di trasformarsi in una scatola nera poco utile, se non addirittura pericolosa.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Andrea Maurano</title>
+      <link>http://localhost:1313/author/andrea-maurano/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/author/andrea-maurano/</guid>
+      <description>&lt;p&gt;Fisico e ingegnere dei materiali, dottorato all’Imperial College di Londra e post-doc al MIT di Boston. Ha lavorato come ricercatore negli USA nei laboratori del MIT, di Samsung e di 24M, esplorando batterie, fotonica e intelligenza artificiale. Ha fondato muleML, dove oggi è Scientific Advisor, con un obiettivo semplice: rendere l’energia più affidabile e sostenibile — e dimostrare che anche la ricerca più complessa può avere un volto sorridente.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Chi siamo</title>
@@ -93,11 +100,11 @@
       <description>&lt;p&gt;In questa pagina sono raccolte le seguenti informative relative al trattamento dei dati personali;&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Vantaggi chiave</title>
-      <link>http://localhost:1313/key-advantages/</link>
+      <title>Pietro Portolani</title>
+      <link>http://localhost:1313/author/pietro-portolani/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/key-advantages/</guid>
-      <description></description>
+      <guid>http://localhost:1313/author/pietro-portolani/</guid>
+      <description>&lt;p&gt;Co-fondatore e CTO di muleML, ingegnere meccanico “convertito” all&amp;rsquo;informatica. Con un dottorato al Politecnico di Milano e anni di esperienza tra ricerca industriale e AI, oggi guida lo sviluppo tecnologico della società. Vede nei dati e negli algoritmi la chiave per comprendere la complessità che ci circonda e rendere più sostenibile il nostro futuro.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

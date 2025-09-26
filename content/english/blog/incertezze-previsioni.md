@@ -1,6 +1,6 @@
 ---
 date: "2025-09-10"
-title: "Why uncertainty matters: the true value of Machine Learning predictions"
+title: "Why uncertainty matters: the true value of predictions"
 image: "images/blog/incertezza.png"
 author: "francesco-falcolini"
 draft: false

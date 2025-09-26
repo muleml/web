@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/blog/</loc>
-    <lastmod>2025-09-10T00:00:00+02:00</lastmod>
+    <lastmod>2025-09-12T00:00:00+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
@@ -13,6 +13,22 @@
                 rel="alternate"
                 hreflang="it-it"
                 href="http://localhost:1313/blog/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/blog/ingegneria-del-dato/</loc>
+    <lastmod>2025-09-12T00:00:00+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-09-12T00:00:00+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="http://localhost:1313/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it-it"
+                href="http://localhost:1313/"
                 />
   </url><url>
     <loc>http://localhost:1313/career/data-software-engineer/</loc>
@@ -41,17 +57,17 @@
                 href="http://localhost:1313/career/"
                 />
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>http://localhost:1313/blog/incertezze-previsioni-3/</loc>
     <lastmod>2025-09-10T00:00:00+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="http://localhost:1313/en/"
+                href="http://localhost:1313/en/blog/incertezze-previsioni-3/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="it-it"
-                href="http://localhost:1313/"
+                href="http://localhost:1313/blog/incertezze-previsioni-3/"
                 />
   </url><url>
     <loc>http://localhost:1313/blog/incertezze-previsioni/</loc>
@@ -67,30 +83,16 @@
                 href="http://localhost:1313/blog/incertezze-previsioni/"
                 />
   </url><url>
-    <loc>http://localhost:1313/blog/post-1/</loc>
-    <lastmod>2021-07-14T00:00:00+02:00</lastmod>
+    <loc>http://localhost:1313/author/andrea-maurano/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="http://localhost:1313/en/blog/post-1/"
+                href="http://localhost:1313/en/author/andrea-maurano/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="it-it"
-                href="http://localhost:1313/blog/post-1/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/blog/post-2/</loc>
-    <lastmod>2021-07-13T00:00:00+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="http://localhost:1313/en/blog/post-2/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it-it"
-                href="http://localhost:1313/blog/post-2/"
+                href="http://localhost:1313/author/andrea-maurano/"
                 />
   </url><url>
     <loc>http://localhost:1313/author/</loc>
@@ -103,18 +105,6 @@
                 rel="alternate"
                 hreflang="it-it"
                 href="http://localhost:1313/author/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/author/awab-husameldin/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="http://localhost:1313/en/author/awab-husameldin/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it-it"
-                href="http://localhost:1313/author/awab-husameldin/"
                 />
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
@@ -225,16 +215,16 @@
                 href="http://localhost:1313/privacy/"
                 />
   </url><url>
-    <loc>http://localhost:1313/author/joseph-gonzalez/</loc>
+    <loc>http://localhost:1313/author/pietro-portolani/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="http://localhost:1313/en/author/joseph-gonzalez/"
+                href="http://localhost:1313/en/author/pietro-portolani/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="it-it"
-                href="http://localhost:1313/author/joseph-gonzalez/"
+                href="http://localhost:1313/author/pietro-portolani/"
                 />
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
@@ -247,18 +237,6 @@
                 rel="alternate"
                 hreflang="it-it"
                 href="http://localhost:1313/tags/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/key-advantages/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="http://localhost:1313/en/key-advantages/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it-it"
-                href="http://localhost:1313/key-advantages/"
                 />
   </url>
 </urlset>
