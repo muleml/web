@@ -10,24 +10,24 @@
     <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Perché l’incertezza conta: il vero valore delle previsioni di Machine Learning</title>
+      <link>http://localhost:1313/blog/incertezze-previsioni-2/</link>
+      <pubDate>Wed, 10 Sep 2025 00:00:00 +0200</pubDate>
+      <guid>http://localhost:1313/blog/incertezze-previsioni-2/</guid>
+      <description>&lt;p&gt;Il Machine Learning è sempre più diffuso in ambito aziendale e nella gestione di sistemi complessi come energia, finanza o sanità. Ma c’è un elemento che spesso viene sottovalutato: l’incertezza delle previsioni.&#xA;Un modello può sembrare accurato, ma senza una misura della fiducia nelle sue stime, rischia di trasformarsi in una scatola nera poco utile, se non addirittura pericolosa.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Perché l’incertezza conta: il vero valore delle previsioni di Machine Learning</title>
+      <link>http://localhost:1313/blog/incertezze-previsioni-3/</link>
+      <pubDate>Wed, 10 Sep 2025 00:00:00 +0200</pubDate>
+      <guid>http://localhost:1313/blog/incertezze-previsioni-3/</guid>
+      <description>&lt;p&gt;Il Machine Learning è sempre più diffuso in ambito aziendale e nella gestione di sistemi complessi come energia, finanza o sanità. Ma c’è un elemento che spesso viene sottovalutato: l’incertezza delle previsioni.&#xA;Un modello può sembrare accurato, ma senza una misura della fiducia nelle sue stime, rischia di trasformarsi in una scatola nera poco utile, se non addirittura pericolosa.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Perché l’incertezza conta: il vero valore delle previsioni di Machine Learning</title>
       <link>http://localhost:1313/blog/incertezze-previsioni/</link>
       <pubDate>Wed, 10 Sep 2025 00:00:00 +0200</pubDate>
       <guid>http://localhost:1313/blog/incertezze-previsioni/</guid>
       <description>&lt;p&gt;Il Machine Learning è sempre più diffuso in ambito aziendale e nella gestione di sistemi complessi come energia, finanza o sanità. Ma c’è un elemento che spesso viene sottovalutato: l’incertezza delle previsioni.&#xA;Un modello può sembrare accurato, ma senza una misura della fiducia nelle sue stime, rischia di trasformarsi in una scatola nera poco utile, se non addirittura pericolosa.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>The Real Product From the Buyers improvements in Overflow basis.</title>
-      <link>http://localhost:1313/blog/post-1/</link>
-      <pubDate>Wed, 14 Jul 2021 00:00:00 +0200</pubDate>
-      <guid>http://localhost:1313/blog/post-1/</guid>
-      <description>&lt;p&gt;Laoreet mauris odio ut nec. Nisl, sed adipiscing dignissim arcu placerat ornare pharetra nec in. Ultrices in nisl potenti vitae tempus. Auctor consectetur luctus eu in amet sagittis. Dis urna, vel hendrerit convallis Senectus feugiat faucibus commodo egestas leo vitae in morbi. Enim arcu dignissim mauris, eu, eget&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Why you should launch your product in phases not after done</title>
-      <link>http://localhost:1313/blog/post-2/</link>
-      <pubDate>Tue, 13 Jul 2021 00:00:00 +0200</pubDate>
-      <guid>http://localhost:1313/blog/post-2/</guid>
-      <description>&lt;p&gt;Laoreet mauris odio ut nec. Nisl, sed adipiscing dignissim arcu placerat ornare pharetra nec in. Ultrices in nisl potenti vitae tempus. Auctor consectetur luctus eu in amet sagittis. Dis urna, vel hendrerit convallis Senectus feugiat faucibus commodo egestas leo vitae in morbi. Enim arcu dignissim mauris, eu, eget&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

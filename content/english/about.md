@@ -1,6 +1,6 @@
 ---
 title: "About us"
-description: "Get fastest loan with smart way a seating home"
+description: "We are people with diverse experiences, united by a common vision: building technologies that truly work, in a simple way and with a clear purpose"
 draft: false
 layout: "about"
 

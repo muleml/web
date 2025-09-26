@@ -1,6 +1,6 @@
 ---
 title: "Informativa sulla privacy"
-description: "Informativa sulla privacy"
+description: "In questa pagina sono raccolte tutte le informative relative al trattamento dei dati personali"
 draft: false
 layout: "elements"
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Privacy Policy"
-description: "Privacy Policy"
+description: "On this page you can find all privacy notices regarding the processing of personal data"
 draft: false
 layout: "elements"
 ---

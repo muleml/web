@@ -8,25 +8,11 @@
     <language>it-it</language>
     <atom:link href="http://localhost:1313/author/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Awab Husameldin</title>
-      <link>http://localhost:1313/author/awab-husameldin/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/author/awab-husameldin/</guid>
-      <description>&lt;p&gt;Hic dolor cumque quod quas pariatur modi rerum qui consequatur, iusto inventore necessitatibus. Facilis quisquam magni, autem deleniti nobis repellat excepturi id.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Francesco Falcolini</title>
       <link>http://localhost:1313/author/francesco-falcolini/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/author/francesco-falcolini/</guid>
       <description>&lt;p&gt;Fisico, con la testa sempre tra dati, algoritmi e batterie. Dopo una lunga carriera alla guida di progetti in banche, imprese, sanità e pubblica amministrazione, ha fondato muleML, di cui è Amministratore Unico. Crede che i modelli predittivi debbano essere spiegabili, utili e sostenibili — e nel dubbio, preferisce sempre un approccio concreto a una buzzword di moda.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Joseph Gonzalez</title>
-      <link>http://localhost:1313/author/joseph-gonzalez/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/author/joseph-gonzalez/</guid>
-      <description>&lt;p&gt;Facilis architecto quis maxime nam at, optio harum a velit nulla repellat ad culpa dolorem ab ducimus, porro enim fugit incidunt expedita. Caut repudiandae a assumenda tempora!&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

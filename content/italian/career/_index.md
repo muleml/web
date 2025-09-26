@@ -1,6 +1,6 @@
 ---
 title: "Lavora con noi"
-description: "Lavora con noi"
+description: "Scopri le posizioni aperte e trova quella che meglio rispecchia le tue competenze e aspirazioni"
 draft: false
 
 # banner

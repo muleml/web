@@ -1,14 +1,9 @@
 ---
 title: "Contatti"
-description: "Libero consequuntur doloremque amet, cum fugiat ipsam blanditiis corrupti praesentium quis."
+description: "Mettiti in contatto per scoprire le nostre soluzioni, prenotare una demo o avviare una conversazione sul tuo prossimo progetto"
 draft: false
 layout: "contact"
 
-# contact
-contact:
-  #subtitle: "We Are the pioneer"
-  #title: "Schedule a Demo"
-  #description: "Please note: If you need to make a payment or need a copy of a receipt, please call 877-735-2910 and select Option 1."
 
 # Box laterali
 sidebar:

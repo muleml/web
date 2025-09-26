@@ -1,6 +1,6 @@
 ---
 title: "Contact"
-description: "Libero consequuntur doloremque amet, cum fugiat ipsam blanditiis corrupti praesentium quis."
+description: "Get in touch to discover our solutions, book a demo, or start a conversation about your next project"
 draft: false
 layout: "contact"
 
