@@ -28,7 +28,7 @@ Le attività principali includono:
 
 ## 2. Dal tradizionale al moderno
 
-Per lungo tempo, il modello di riferimento è stato l’ETL, con architetture **centralizzate** come i **data warehouse**, dove i dati venivano caricati solo dopo essere stati puliti, aggregati, inseriti all'interno di struttura ben definitia e ottimizzati. Questa scelta garantiva potenza e velocità, ma introduceva anche rigidità e inefficienze: duplicazioni di dati, calcoli ripetuti e inutili, overhead di gestione.
+Per lungo tempo, il modello di riferimento è stato l’ETL, con architetture **centralizzate** come i **data warehouse**, dove i dati venivano caricati solo dopo essere stati puliti, aggregati, inseriti all'interno di una struttura ben definita e ottimizzati. Questa scelta garantiva potenza e velocità, ma introduceva anche rigidità e inefficienze: duplicazioni di dati, calcoli ripetuti e inutili, overhead di gestione.
 
 Negli ultimi anni, lo scenario è cambiato. Oggi si preferisce il modello **ELT (Extract-Load-Transform)**: i dati vengono estratti e **salvati subito** nel contenitore finale, per poi essere trasformati solo quando servono.
 
@@ -50,7 +50,7 @@ Il [*Environment, Social and Governance Report 2025*](https://www.infrastructure
 * **Consumi energetici**: dallo 0.78% del consumo mondiale nel 2019 a circa l’1.16% nel 2024 (310.6 TWh).
 * **Emissioni di CO₂**: da 42.3 milioni di tonnellate nel 2019 a 76.2 milioni nel 2024.
 * **Efficienza**: migliorata, con un calo da 366.9 a 312.7 milioni di tonnellate di CO₂ equivalente per GWh consumato.
-* **Consumo idrico**: passato da 138.7 milioni di m³ nel 2019 a 210.6 milioni nel 2024, usati per il raffreddamento delle rack.
+* **Consumo idrico**: passato da 138.7 milioni di m³ nel 2019 a 219.6 milioni nel 2024, usati per il raffreddamento delle rack.
 
 Questa crescita dei consumi e delle emissioni ha stimolato la ricerca di contromisure: soluzioni emergenti come i sistemi di raffreddamento a circuito chiuso o il recupero del calore dei data center per il riscaldamento urbano stanno diventando parte integrante delle strategie di sostenibilità del settore.
 
@@ -100,4 +100,3 @@ In definitiva, l’ingegneria del dato non deve più essere vista solo come un i
 💰 Abbiamo stimato i costi di overhead (es. servizi accesi h24 non necessari)?
 
 > 👉 **Rispondere a queste domande significa non solo avere sistemi più sostenibili e performanti, ma anche contenere i costi e ridurre rischi strategici.**
-
