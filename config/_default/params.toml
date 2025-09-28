@@ -68,10 +68,10 @@ enable = false
 url = "" # your matomo url
 id = "" # your matomo id
 
-# goatcounter tracking: see https://goatcounter.com
-[goatcounter]
+# umami tracking: see https://umami.is/
+[umami]
 enable = true
-url = "https://muleml.goatcounter.com/count" # your goatcounter url
+id = "9e3769d7-4902-4c96-9427-f909c100f188" # your goatcounter url
 
 # baidu analytics: see https://tongji.baidu.com/
 [baidu]

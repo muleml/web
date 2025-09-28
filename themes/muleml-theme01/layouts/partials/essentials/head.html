@@ -48,12 +48,12 @@
 <!-- Counter Analytics -->
 {{/*  {{ partialCached "counter-analytics.html" . }}  */}}
 
-{{ with site.Params.goatcounter }}
+<!-- umami -->
+{{ with site.Params.umami }}
   {{ if .enable }}
-      <!-- Statistiche di accesso con goatcounter attive solo online -->
+      <!-- Statistiche di accesso con umami attive solo online -->
       {{ if not hugo.IsServer }}
-      <script data-goatcounter="{{.url|safeURL}}"
-              async src="//gc.zgo.at/count.js"></script>
+<script defer src="https://cloud.umami.is/script.js" data-website-id="{{.id}}"></script>
       {{ end }}
   {{ end }}
 {{ end }}
