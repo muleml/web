@@ -71,8 +71,7 @@ image_and_content_block:
   title: "Where science meets industry"
   image: "images/block-image-01.png"
   content_position: "left" # Value will be - "left/right"
-  content: "The company is young, but the team brings a long professional history. Born from the initiative of former MIT researchers with the goal of transferring cutting-edge expertise into the European innovation landscape, we combine strong academic credentials with industry experience in IT consulting, analytics, and project management—creating a unique profile for technology transfer and applied research that bridges scientific knowledge with industrial applications.
-  "
+  content: "The company is young, but the team brings a long professional history. Born connected to the ecosystem of the Massachusetts Institute of Technology, it combines top-level academic credentials with industrial expertise in IT consulting, analytics, and project management, creating a unique profile for technology transfer and applied research, capable of transforming cutting-edge scientific knowledge into concrete solutions for industry."
   button:
     enable: true
     label: "Get to know our story"

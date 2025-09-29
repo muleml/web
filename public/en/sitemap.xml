@@ -171,17 +171,7 @@
                 href="http://localhost:1313/en/author/francesco-falcolini/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/author/mule-ml/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="it-it"
-                href="http://localhost:1313/author/mule-ml/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="http://localhost:1313/en/author/mule-ml/"
-                />
+    <loc>http://localhost:1313/en/author/muleml-editorial-team/</loc>
   </url><url>
     <loc>http://localhost:1313/en/author/pietro-portolani/</loc>
     <xhtml:link

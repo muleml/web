@@ -72,8 +72,7 @@ image_and_content_block:
   title: "Dove la scienza incontra l’industria"
   image: "images/block-image-01.png"
   content_position: "left" # Value will be - "left/right"
-  content: "L’azienda è giovane, ma il team vanta una solida esperienza professionale. Fondata da ex ricercatori del MIT con l’obiettivo di portare competenze all’avanguardia nel panorama dell’innovazione europea, unisce credenziali accademiche di alto livello ed esperienza industriale nella consulenza IT, nell’analisi e nel project management, creando un profilo unico per il trasferimento tecnologico e la ricerca applicata, capace di trasformare la conoscenza scientifica più avanzata in soluzioni concrete per l’industria.
-  "
+  content: "L’azienda è giovane, ma il team vanta una solida esperienza professionale. Nata connessa all’ecosistema del Massachusetts Institute of Technology, unisce credenziali accademiche di alto livello ed esperienza industriale nella consulenza IT, nell’analisi e nel project management, creando un profilo unico per il trasferimento tecnologico e la ricerca applicata, capace di trasformare la conoscenza scientifica più avanzata in soluzioni concrete per l’industria."
   button:
     enable: true
     label: "Scopri la nostra storia"

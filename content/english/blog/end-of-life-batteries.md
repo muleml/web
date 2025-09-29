@@ -2,7 +2,7 @@
 date: "2025-09-12"
 title: "End-of-life batteries, challenge or opportunity?"
 image: "images/blog/end_life.png"
-author: "mule-ml"
+author: "muleml-editorial-team"
 draft: false
 ---
 
@@ -18,7 +18,7 @@ In particular, batteries are considered no longer usable when they have lost abo
 
 ## Economic and market impacts
 
-In market terms, the implications are enormous. The value of these end-of-life batteries could be virtually zero, or even negative, as disposal could have a cost. But these “free” batteries could still provide a monetary benefit, considering an average cost of energy supplied by the battery pack in 2025 of about €60/MWh (purely CAPEX-only estimate).
+In market terms, the implications are enormous. The value of these end-of-life batteries could be virtually zero, or even negative, as disposal could have a cost. But these “free” batteries could still provide a monetary benefit, considering that a BESS installation in 2025 has an average cost of about €170k/MWh (CAPEX-only estimate).
 
 ## Possible applications
 

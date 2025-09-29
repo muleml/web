@@ -2,7 +2,7 @@
 date: "2025-09-12"
 title: "Batterie a fine vita, sfida o opportunità?"
 image: "images/blog/end_life.png"
-author: "mule-ml"
+author: "redazione-muleml"
 draft: false
 ---
 
@@ -18,7 +18,7 @@ In particolare, le batterie sono considerate non più utilizzabili quando hanno 
 
 ## Impatti economici e di mercato
 
-In termini di mercato, le implicazioni sono gigantesche. Il valore di queste batterie a fine vita potrebbe essere virtualmente zero, anzi probabilmente negativo, in quanto lo smaltimento potrebbe avere un costo. Ma queste batterie “gratis” potrebbero fornire ancora un beneficio monetario, considerando un costo medio dell’energia fornita dal pacco batteria nel 2025 di circa 60 €/MWh (stima puramente CAPEX-only).
+In termini di mercato, le implicazioni sono gigantesche. Il valore di queste batterie a fine vita potrebbe essere virtualmente zero, anzi probabilmente negativo, in quanto lo smaltimento potrebbe avere un costo. Ma queste batterie “gratis” potrebbero fornire ancora un beneficio monetario, considerando che un impianto BESS nel 2025 ha un costo medio di circa 170 k€/MWh (stima CAPEX-only).
 
 ## Applicazioni possibili
 

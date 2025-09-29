@@ -207,17 +207,7 @@
                 href="http://localhost:1313/author/pietro-portolani/"
                 />
   </url><url>
-    <loc>http://localhost:1313/author/mule-ml/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="http://localhost:1313/en/author/mule-ml/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it-it"
-                href="http://localhost:1313/author/mule-ml/"
-                />
+    <loc>http://localhost:1313/author/redazione-muleml/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
     <xhtml:link
