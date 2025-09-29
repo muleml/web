@@ -1,2 +1,13 @@
 User-agent: *
-Disallow: /
+Disallow: /drafts/
+Disallow: /private/
+Disallow: /tmp/
+Allow: /
+
+# Evita l'indicizzazione di sottodomini specifici (es. erp.muleml.com)
+User-agent: *
+Disallow: https://erp.muleml.com/
+
+# Sitemap
+Sitemap: https://www.muleml.com/sitemap.xml
+
