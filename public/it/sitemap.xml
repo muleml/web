@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/blog/batterie-fine-vita/</loc>
+    <lastmod>2025-09-12T00:00:00+02:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/blog/</loc>
     <lastmod>2025-09-12T00:00:00+02:00</lastmod>
     <xhtml:link
@@ -14,9 +17,6 @@
                 hreflang="it-it"
                 href="http://localhost:1313/blog/"
                 />
-  </url><url>
-    <loc>http://localhost:1313/blog/ingegneria-del-dato/</loc>
-    <lastmod>2025-09-12T00:00:00+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
     <lastmod>2025-09-12T00:00:00+02:00</lastmod>
@@ -44,6 +44,9 @@
                 href="http://localhost:1313/career/data-software-engineer/"
                 />
   </url><url>
+    <loc>http://localhost:1313/blog/ingegneria-del-dato/</loc>
+    <lastmod>2025-09-10T00:00:00+02:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/career/</loc>
     <lastmod>2025-09-10T00:00:00+02:00</lastmod>
     <xhtml:link
@@ -57,31 +60,8 @@
                 href="http://localhost:1313/career/"
                 />
   </url><url>
-    <loc>http://localhost:1313/blog/incertezze-previsioni-3/</loc>
-    <lastmod>2025-09-10T00:00:00+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="http://localhost:1313/en/blog/incertezze-previsioni-3/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it-it"
-                href="http://localhost:1313/blog/incertezze-previsioni-3/"
-                />
-  </url><url>
     <loc>http://localhost:1313/blog/incertezze-previsioni/</loc>
-    <lastmod>2025-09-10T00:00:00+02:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="http://localhost:1313/en/blog/incertezze-previsioni/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it-it"
-                href="http://localhost:1313/blog/incertezze-previsioni/"
-                />
+    <lastmod>2025-09-08T00:00:00+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/author/andrea-maurano/</loc>
     <xhtml:link
@@ -225,6 +205,18 @@
                 rel="alternate"
                 hreflang="it-it"
                 href="http://localhost:1313/author/pietro-portolani/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/author/mule-ml/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="http://localhost:1313/en/author/mule-ml/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it-it"
+                href="http://localhost:1313/author/mule-ml/"
                 />
   </url><url>
     <loc>http://localhost:1313/tags/</loc>

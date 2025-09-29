@@ -12,7 +12,7 @@
       <link>http://localhost:1313/author/andrea-maurano/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/author/andrea-maurano/</guid>
-      <description>&lt;p&gt;Fisico e ingegnere dei materiali, dottorato all’Imperial College di Londra e post-doc al MIT di Boston. Ha lavorato come ricercatore negli USA nei laboratori del MIT, di Samsung e di 24M, esplorando batterie, fotonica e intelligenza artificiale. Ha fondato muleML, dove oggi è Scientific Advisor, con un obiettivo semplice: rendere l’energia più affidabile e sostenibile — e dimostrare che anche la ricerca più complessa può avere un volto sorridente.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Fisico e ingegnere dei materiali, dottorato all’Imperial College di Londra e post-doc al MIT di Boston. Ha lavorato come ricercatore negli USA nei laboratori del MIT, di Samsung e di 24M, esplorando batterie, fotonica e intelligenza artificiale. Tornato in Italia, ha fondato muleML - dove oggi è Scientific Advisor - con un obiettivo semplice: rendere l’energia più affidabile e sostenibile — e dimostrare che anche la ricerca più complessa può avere un volto sorridente.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Francesco Falcolini</title>
@@ -27,6 +27,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/author/pietro-portolani/</guid>
       <description>&lt;p&gt;Co-fondatore e CTO di muleML, ingegnere meccanico “convertito” all&amp;rsquo;informatica. Con un dottorato al Politecnico di Milano e anni di esperienza tra ricerca industriale e AI, oggi guida lo sviluppo tecnologico della società. Vede nei dati e negli algoritmi la chiave per comprendere la complessità che ci circonda e rendere più sostenibile il nostro futuro.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Redazione muleML</title>
+      <link>http://localhost:1313/author/mule-ml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/author/mule-ml/</guid>
+      <description>&lt;p&gt;&amp;hellip;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -9,11 +9,11 @@
     <lastBuildDate>Fri, 12 Sep 2025 00:00:00 +0200</lastBuildDate>
     <atom:link href="http://localhost:1313/en/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Data engineering: the invisible backbone of digital</title>
-      <link>http://localhost:1313/en/blog/data-engineering/</link>
+      <title>End-of-life batteries, challenge or opportunity?</title>
+      <link>http://localhost:1313/en/blog/end-of-life-batteries/</link>
       <pubDate>Fri, 12 Sep 2025 00:00:00 +0200</pubDate>
-      <guid>http://localhost:1313/en/blog/data-engineering/</guid>
-      <description>&lt;p&gt;Behind every digital application lie data infrastructures that collect, transform, and make information available. Modern architectures, from data lakehouses to ELT pipelines, open new opportunities but require attention to costs and complexity. Proportionality, efficiency, and sustainability become guiding principles for systems that are truly useful and long-lasting.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/en/blog/end-of-life-batteries/</guid>
+      <description>&lt;p&gt;Batteries reaching the end of their life are not necessarily waste: they can open new market opportunities and contribute to a more sustainable energy future. Here are scenarios, challenges, and possibilities related to their reuse.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Data &amp; Software Engineer for Battery Intelligence</title>
@@ -23,17 +23,17 @@
       <description>&lt;h3 id=&#34;about-us&#34;&gt;About us&lt;/h3&gt;&#xA;&lt;p&gt;We are an innovative company developing advanced solutions for the intelligent management of energy storage systems (BESS). We work at the intersection of energy, data, and artificial intelligence, with an open-source, scalable, and sustainable approach.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Why uncertainty matters: the true value of predictions</title>
-      <link>http://localhost:1313/en/blog/incertezze-previsioni-3/</link>
+      <title>Data engineering: the invisible backbone of digital</title>
+      <link>http://localhost:1313/en/blog/data-engineering/</link>
       <pubDate>Wed, 10 Sep 2025 00:00:00 +0200</pubDate>
-      <guid>http://localhost:1313/en/blog/incertezze-previsioni-3/</guid>
-      <description>&lt;p&gt;Machine Learning is increasingly used in business and in the management of complex systems such as energy, finance, or healthcare. Yet there is one element that is often overlooked: the uncertainty of predictions.&lt;br&gt;&#xA;A model may seem accurate, but without a measure of confidence in its estimates, it risks turning into a black box that is of little use, if not downright dangerous.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/en/blog/data-engineering/</guid>
+      <description>&lt;p&gt;Behind every digital application lie data infrastructures that collect, transform, and make information available. Modern architectures, from data lakehouses to ELT pipelines, open new opportunities but require attention to costs and complexity. Proportionality, efficiency, and sustainability become guiding principles for systems that are truly useful and long-lasting.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Why uncertainty matters: the true value of predictions</title>
-      <link>http://localhost:1313/en/blog/incertezze-previsioni/</link>
-      <pubDate>Wed, 10 Sep 2025 00:00:00 +0200</pubDate>
-      <guid>http://localhost:1313/en/blog/incertezze-previsioni/</guid>
+      <link>http://localhost:1313/en/blog/prediction-uncertainty/</link>
+      <pubDate>Mon, 08 Sep 2025 00:00:00 +0200</pubDate>
+      <guid>http://localhost:1313/en/blog/prediction-uncertainty/</guid>
       <description>&lt;p&gt;Machine Learning is increasingly used in business and in the management of complex systems such as energy, finance, or healthcare. Yet there is one element that is often overlooked: the uncertainty of predictions.&lt;br&gt;&#xA;A model may seem accurate, but without a measure of confidence in its estimates, it risks turning into a black box that is of little use, if not downright dangerous.&lt;/p&gt;</description>
     </item>
     <item>
@@ -48,7 +48,7 @@
       <link>http://localhost:1313/en/author/andrea-maurano/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/en/author/andrea-maurano/</guid>
-      <description>&lt;p&gt;Physicist and materials engineer, PhD at Imperial College London and post-doc at MIT in Boston. He worked as a researcher in the US at MIT, Samsung, and 24M labs, exploring batteries, photonics, and artificial intelligence. He co-founded muleML, where he now serves as Scientific Advisor, with a simple goal: making energy more reliable and sustainable — and proving that even the most complex research can still have a smiling face.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Physicist and materials engineer, PhD at Imperial College London and post-doc at MIT in Boston. He worked as a researcher in the US at MIT, Samsung, and 24M labs, exploring batteries, photonics, and artificial intelligence. Back in Italy, he founded muleML — where he now serves as Scientific Advisor — with a simple goal: making energy more reliable and sustainable, and proving that even the most complex research can still have a smiling face.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Contact</title>
@@ -84,6 +84,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/en/author/francesco-falcolini/</guid>
       <description>&lt;p&gt;Physicist, with his head always among data, algorithms, and batteries. After a long career leading projects in banking, business, healthcare, and public administration, he founded muleML, where he serves as CEO. He believes predictive models should be explainable, useful, and sustainable — and when in doubt, he always prefers a concrete approach over a trendy buzzword.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>muleML Editorial Team</title>
+      <link>http://localhost:1313/en/author/mule-ml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/author/mule-ml/</guid>
+      <description>&lt;p&gt;&amp;hellip;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Pietro Portolani</title>

@@ -1,5 +1,5 @@
 ---
-date: "2025-09-10"
+date: "2025-09-08"
 title: "Perché l’incertezza conta: il vero valore delle previsioni"
 image: "images/blog/incertezza.png"
 author: "francesco-falcolini"

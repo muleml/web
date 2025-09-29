@@ -1,5 +1,5 @@
 ---
-date: "2025-09-12"
+date: "2025-09-10"
 title: "Data engineering: the invisible backbone of digital"
 image: "images/blog/ingegneria_dato.png"
 author: "pietro-portolani"

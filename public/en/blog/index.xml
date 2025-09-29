@@ -9,24 +9,24 @@
     <lastBuildDate>Fri, 12 Sep 2025 00:00:00 +0200</lastBuildDate>
     <atom:link href="http://localhost:1313/en/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>End-of-life batteries, challenge or opportunity?</title>
+      <link>http://localhost:1313/en/blog/end-of-life-batteries/</link>
+      <pubDate>Fri, 12 Sep 2025 00:00:00 +0200</pubDate>
+      <guid>http://localhost:1313/en/blog/end-of-life-batteries/</guid>
+      <description>&lt;p&gt;Batteries reaching the end of their life are not necessarily waste: they can open new market opportunities and contribute to a more sustainable energy future. Here are scenarios, challenges, and possibilities related to their reuse.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Data engineering: the invisible backbone of digital</title>
       <link>http://localhost:1313/en/blog/data-engineering/</link>
-      <pubDate>Fri, 12 Sep 2025 00:00:00 +0200</pubDate>
+      <pubDate>Wed, 10 Sep 2025 00:00:00 +0200</pubDate>
       <guid>http://localhost:1313/en/blog/data-engineering/</guid>
       <description>&lt;p&gt;Behind every digital application lie data infrastructures that collect, transform, and make information available. Modern architectures, from data lakehouses to ELT pipelines, open new opportunities but require attention to costs and complexity. Proportionality, efficiency, and sustainability become guiding principles for systems that are truly useful and long-lasting.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Why uncertainty matters: the true value of predictions</title>
-      <link>http://localhost:1313/en/blog/incertezze-previsioni-3/</link>
-      <pubDate>Wed, 10 Sep 2025 00:00:00 +0200</pubDate>
-      <guid>http://localhost:1313/en/blog/incertezze-previsioni-3/</guid>
-      <description>&lt;p&gt;Machine Learning is increasingly used in business and in the management of complex systems such as energy, finance, or healthcare. Yet there is one element that is often overlooked: the uncertainty of predictions.&lt;br&gt;&#xA;A model may seem accurate, but without a measure of confidence in its estimates, it risks turning into a black box that is of little use, if not downright dangerous.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Why uncertainty matters: the true value of predictions</title>
-      <link>http://localhost:1313/en/blog/incertezze-previsioni/</link>
-      <pubDate>Wed, 10 Sep 2025 00:00:00 +0200</pubDate>
-      <guid>http://localhost:1313/en/blog/incertezze-previsioni/</guid>
+      <link>http://localhost:1313/en/blog/prediction-uncertainty/</link>
+      <pubDate>Mon, 08 Sep 2025 00:00:00 +0200</pubDate>
+      <guid>http://localhost:1313/en/blog/prediction-uncertainty/</guid>
       <description>&lt;p&gt;Machine Learning is increasingly used in business and in the management of complex systems such as energy, finance, or healthcare. Yet there is one element that is often overlooked: the uncertainty of predictions.&lt;br&gt;&#xA;A model may seem accurate, but without a measure of confidence in its estimates, it risks turning into a black box that is of little use, if not downright dangerous.&lt;/p&gt;</description>
     </item>
   </channel>

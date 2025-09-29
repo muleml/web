@@ -9,23 +9,23 @@
     <lastBuildDate>Fri, 12 Sep 2025 00:00:00 +0200</lastBuildDate>
     <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Batterie a fine vita, sfida o opportunità?</title>
+      <link>http://localhost:1313/blog/batterie-fine-vita/</link>
+      <pubDate>Fri, 12 Sep 2025 00:00:00 +0200</pubDate>
+      <guid>http://localhost:1313/blog/batterie-fine-vita/</guid>
+      <description>&lt;p&gt;Le batterie giunte a fine vita non sono necessariamente un rifiuto: possono aprire nuove opportunità di mercato e contribuire a un futuro energetico più sostenibile. Ecco scenari, sfide e possibilità legate al loro riutilizzo.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Ingegneria del dato: la spina dorsale invisibile del digitale</title>
       <link>http://localhost:1313/blog/ingegneria-del-dato/</link>
-      <pubDate>Fri, 12 Sep 2025 00:00:00 +0200</pubDate>
+      <pubDate>Wed, 10 Sep 2025 00:00:00 +0200</pubDate>
       <guid>http://localhost:1313/blog/ingegneria-del-dato/</guid>
       <description>&lt;p&gt;Dietro ogni applicazione digitale ci sono infrastrutture di dati che raccolgono, trasformano e rendono disponibili informazioni. Le architetture moderne, dai data lakehouse alle pipeline ELT, aprono nuove opportunità ma richiedono attenzione a costi e complessità. Proporzionalità, efficienza e sostenibilità diventano principi guida per sistemi davvero utili e durevoli.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Perché l’incertezza conta: il vero valore delle previsioni</title>
-      <link>http://localhost:1313/blog/incertezze-previsioni-3/</link>
-      <pubDate>Wed, 10 Sep 2025 00:00:00 +0200</pubDate>
-      <guid>http://localhost:1313/blog/incertezze-previsioni-3/</guid>
-      <description>&lt;p&gt;Il Machine Learning è sempre più diffuso in ambito aziendale e nella gestione di sistemi complessi come energia, finanza o sanità. Ma c’è un elemento che spesso viene sottovalutato: l’incertezza delle previsioni.&#xA;Un modello può sembrare accurato, ma senza una misura della fiducia nelle sue stime, rischia di trasformarsi in una scatola nera poco utile, se non addirittura pericolosa.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Perché l’incertezza conta: il vero valore delle previsioni</title>
       <link>http://localhost:1313/blog/incertezze-previsioni/</link>
-      <pubDate>Wed, 10 Sep 2025 00:00:00 +0200</pubDate>
+      <pubDate>Mon, 08 Sep 2025 00:00:00 +0200</pubDate>
       <guid>http://localhost:1313/blog/incertezze-previsioni/</guid>
       <description>&lt;p&gt;Il Machine Learning è sempre più diffuso in ambito aziendale e nella gestione di sistemi complessi come energia, finanza o sanità. Ma c’è un elemento che spesso viene sottovalutato: l’incertezza delle previsioni.&#xA;Un modello può sembrare accurato, ma senza una misura della fiducia nelle sue stime, rischia di trasformarsi in una scatola nera poco utile, se non addirittura pericolosa.&lt;/p&gt;</description>
     </item>

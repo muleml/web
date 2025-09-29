@@ -12,7 +12,7 @@
       <link>http://localhost:1313/en/author/andrea-maurano/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/en/author/andrea-maurano/</guid>
-      <description>&lt;p&gt;Physicist and materials engineer, PhD at Imperial College London and post-doc at MIT in Boston. He worked as a researcher in the US at MIT, Samsung, and 24M labs, exploring batteries, photonics, and artificial intelligence. He co-founded muleML, where he now serves as Scientific Advisor, with a simple goal: making energy more reliable and sustainable — and proving that even the most complex research can still have a smiling face.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Physicist and materials engineer, PhD at Imperial College London and post-doc at MIT in Boston. He worked as a researcher in the US at MIT, Samsung, and 24M labs, exploring batteries, photonics, and artificial intelligence. Back in Italy, he founded muleML — where he now serves as Scientific Advisor — with a simple goal: making energy more reliable and sustainable, and proving that even the most complex research can still have a smiling face.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Francesco Falcolini</title>
@@ -20,6 +20,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/en/author/francesco-falcolini/</guid>
       <description>&lt;p&gt;Physicist, with his head always among data, algorithms, and batteries. After a long career leading projects in banking, business, healthcare, and public administration, he founded muleML, where he serves as CEO. He believes predictive models should be explainable, useful, and sustainable — and when in doubt, he always prefers a concrete approach over a trendy buzzword.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>muleML Editorial Team</title>
+      <link>http://localhost:1313/en/author/mule-ml/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/author/mule-ml/</guid>
+      <description>&lt;p&gt;&amp;hellip;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Pietro Portolani</title>
