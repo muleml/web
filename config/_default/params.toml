@@ -28,7 +28,7 @@ career_form_action = "careers@muleml.com" #indirizzo a cui inviare cv
 # OpenGraph / Twitter Card metadata
 description = "Works. Simply. With purpose."
 author = "muleML"
-image = "images/logo_opengraph.png" # this image will be used as fallback if a page has no image of its own
+image = "images/logo.png" # this image will be used as fallback if a page has no image of its own
 
 # Preloader
 [preloader]
