@@ -10,6 +10,12 @@
 #path = "/*"
 #function = "basic-auth"
 
+#Redirect da muleml.netlify.app
+[[edge_functions]]
+  path = "/*"
+  function = "redirect-netlify-app"
+
+
 # Impostazioni che servono per la preview
 [context.deploy-preview.environment]
   HUGO_BASEURL = "/"
