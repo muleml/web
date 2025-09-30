@@ -1,11 +1,14 @@
-// netlify/edge-functions/redirect-netlify-app.js
-export default async (req) => {
-    const host = req.headers.get("host") || "";
+export default async (request, context) => {
+    const host = request.headers.get("host") || "";
+
+    // Redirect solo se l'host è il subdomain Netlify
     if (host === "muleml.netlify.app") {
-        const url = new URL(req.url);
-        url.host = "www.muleml.com";
+        const url = new URL(request.url);
         url.protocol = "https:";
+        url.host = "www.muleml.com";
         return Response.redirect(url.toString(), 301);
     }
-    return fetch(req);
+
+    // IMPORTANTE: NON usare fetch(request) qui
+    return context.next();
 };
