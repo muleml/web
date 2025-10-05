@@ -3,6 +3,7 @@ Disallow: /drafts/
 Disallow: /private/
 Disallow: /tmp/
 Disallow: /elements/
+Disallow: /en/elements/
 Disallow: /en/author/andrea-maurano/
 Disallow: /author/andrea-maurano/
 Disallow: /thanks/
