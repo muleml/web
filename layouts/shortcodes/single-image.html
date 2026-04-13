@@ -1,0 +1,23 @@
+{{- $src := .Get "src" -}}
+{{- $alt := .Get "alt" | default "image" -}}
+{{- $class := .Get "class" | default "img-fluid rounded-lg w-100" -}}
+{{- $width := .Get "width" | default "1600x" -}}
+{{- $resource := resources.Get $src -}}
+
+{{- if $resource -}}
+  {{- $img := $resource.Resize $width -}}
+  {{- $imgWebp := $resource.Resize (printf "%s webp" $width) -}}
+  <div class="gallery-item mb-4">
+    <a href="{{ $resource.RelPermalink }}" style="display: block;" class="glightbox">
+      <img
+        loading="lazy"
+        decoding="async"
+        class="{{ $class }}"
+        width="{{ $img.Width }}"
+        height="{{ $img.Height }}"
+        src="{{ $imgWebp.RelPermalink }}"
+        alt="{{ $alt }}"
+        onerror="this.onerror=null;this.src='{{ $img.RelPermalink }}'">
+    </a>
+  </div>
+{{- end -}}

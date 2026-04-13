@@ -9,6 +9,8 @@ Disallow: /author/andrea-maurano/
 Disallow: /thanks/
 Disallow: /en/thanks/
 Disallow: /it/
+Disallow: /project01/
+Disallow: /en/project01/
 Allow: /
 
 # Sitemap

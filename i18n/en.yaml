@@ -59,13 +59,13 @@
   translation: Upload CV
 
 - id: footer_menu_1_title
-  translation: Products
+  translation: Support
 
 - id: footer_menu_2_title
-  translation: Services
+  translation: Other Pages
 
 - id: footer_menu_3_title
-  translation: Support
+  translation: Funded Project
 
 - id: footer_menu_4_title
   translation: Resources

@@ -75,17 +75,6 @@ weight = 8
 # weight = 5
 
 
-# footer_menu_3
-[[footer_menu_3]]
-name = "Contact"
-url = "contact/"
-weight = 1
-
-[[footer_menu_3]]
-name = "Privacy Policy"
-url = "privacy/"
-weight = 2
-
 # [[footer_menu_3]]
 # name = "Terms & Conditions"
 # url = "#!"
@@ -120,22 +109,39 @@ weight = 2
 # url = "author/awab-husameldin/"
 # weight = 1
 
-[[footer_menu_5]]
-name = "Blog"
-url = "blog/"
-weight = 2
 
 # [[footer_menu_5]]
 # name = "Blog Details"
 # url = "blog/post-1/"
 # weight = 3
 
-[[footer_menu_5]]
-name = "Career"
-url = "career/"
-weight = 4
-
 # [[footer_menu_5]]
 # name = "Career Single"
 # url = "career/digital-marketing-paid-media-manager/"
 # weight = 5
+
+
+[[footer_menu_1]]
+name = "Contact"
+url = "contact/"
+weight = 1
+
+[[footer_menu_1]]
+name = "Privacy Policy"
+url = "privacy/"
+weight = 2
+
+[[footer_menu_2]]
+name = "Blog"
+url = "blog/"
+weight = 1
+
+[[footer_menu_2]]
+name = "Career"
+url = "career/"
+weight = 2
+
+[[footer_menu_3]]
+name = "Smart Grid Data Fabric"
+url = "project01/"
+weight = 1
