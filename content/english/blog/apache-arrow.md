@@ -3,7 +3,10 @@ date: "2026-04-21"
 title: "From Rows to Columns: A Journey Through the Evolution of Data Systems"
 image: "images/blog/arrow/front.png"
 author: "pietro-portolani"
-draft: true
+draft: false
+_build:
+  render: always
+  list: never
 ---
 
 The evolution of data management systems is deeply tied to the way data is represented and organized in memory and on disk. In this article, we will examine how the shift from the **row-oriented** model to the **columnar** model has radically changed performance across different application contexts, distinguishing between **transactional (OLTP)** and **analytical (OLAP)** workloads. Building on these foundations, we will introduce the Apache Software Foundation ecosystem, exploring the role of technologies such as **Apache Arrow**, **Arrow Flight**, **Arrow Flight SQL**, **ADBC**, and **Apache Parquet**, highlighting how these components integrate to build modern, efficient, and interoperable data pipelines.

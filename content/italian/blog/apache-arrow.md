@@ -3,7 +3,10 @@ date: "2026-04-21"
 title: "Dalle righe alle colonne: viaggio nell'evoluzione dei sistemi di dati"
 image: "images/blog/arrow/front.png"
 author: "pietro-portolani"
-draft: true
+draft: false
+_build:
+  render: always
+  list: never
 ---
 
 L’evoluzione dei sistemi di gestione dei dati è profondamente legata al modo in cui i dati vengono rappresentati e organizzati in memoria e su disco. In questo articolo analizzeremo come il passaggio dal modello **orientato alle righe** al modello **colonnare** abbia cambiato radicalmente le prestazioni nei diversi contesti applicativi, distinguendo tra carichi **transazionali (OLTP)** e **analitici (OLAP)**. A partire da queste basi, introdurremo l’ecosistema della Apache Software Foundation, esplorando il ruolo di tecnologie come **Apache Arrow**, **Arrow Flight**, **Arrow Flight SQL**, **ADBC** e **Apache Parquet**, evidenziando come queste componenti si integrino per costruire pipeline dati moderne, efficienti e interoperabili.
