@@ -11292,6 +11292,15 @@ iframe.wait-autoplay {
 .gslide-image img {
   border-radius: 1rem; }
 
+.glightbox-clean .gslide-image {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 0.75rem;
+  box-sizing: border-box; }
+
+.glightbox-clean .gslide-image img {
+  background: #fff; }
+
 .gallery .gallery-item {
   margin: 0 0.625rem;
   margin-bottom: 1.25rem;
