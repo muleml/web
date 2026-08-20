@@ -55,3 +55,10 @@ $gutters: (
   color: #0a58ca;
   text-decoration: underline;
 }
+
+@media (min-width: 1200px) {
+  .navigation .dropdown-menu {
+    width: max-content;
+    min-width: 220px;
+  }
+}
