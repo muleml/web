@@ -1,13 +1,13 @@
 {{define "main"}}
 
-<section class="banner bg-tertiary-soft rounded-lg wave-block overflow-hidden">
+<section class="banner {{ if eq .Section `soluzioni` }}bg-quaternary-soft{{ else }}bg-tertiary-soft{{ end }} rounded-lg wave-block overflow-hidden">
   {{ partial "essentials/header.html" . }}
 
   {{with .Params.banner}}
   <div class="container container-delta block">
-    <div class="row align-items-center text-center text-lg-start">
-      <div class="col-lg-6">
-        <div class="pe-0 pe-lg-5">
+    <div class="row align-items-center {{if .image}}text-center text-lg-start{{else}}justify-content-center text-center{{end}}">
+      <div class="{{if .image}}col-lg-6{{else}}col-lg-9{{end}}">
+        <div class="{{if .image}}pe-0 pe-lg-5{{end}}">
           <p class="subtitle">{{.subtitle | markdownify}}</p>
           <h1 class="title text-xl mb-3">{{.title | markdownify}}</h1>
           <p class="mb-4">{{.description | markdownify}}</p>
@@ -29,12 +29,11 @@
           {{end}}
         </div>
       </div>
+      {{with .image}}
       <div class="col-lg-6 mt-5 mt-lg-0">
-        {{with .image}}
         {{ partial "image.html" (dict "Src" . "Alt" "Banner Image"  "Class" "rounded-lg img-fluid") }}
-        {{end}}
-
       </div>
+      {{end}}
     </div>
   </div>
   {{end}}
@@ -66,9 +65,25 @@
       {{range .block}}
       <div class="col-md-6 features-box">
         <div class="block shadow-md rounded-lg">
+          {{ $blockTitle := .title }}
+          {{with .image}}
+          {{$img:= resources.Get . }}
+          {{$img:= $img.Resize "150x"}}
+          {{$imgWebp:= $img.Resize "150x webp"}}
+          <div class="d-flex align-items-center mb-4">
+            <img loading="lazy" decoding="async" class="img-fluid flex-shrink-0 me-3" width="{{$img.Width}}" height="{{$img.Height}}" src="{{$imgWebp.RelPermalink}}" alt="{{$blockTitle | plainify}}" onerror="this.onerror=null;this.src='{{$img.RelPermalink}}'">
+            <h3 class="mb-0">{{ $blockTitle | markdownify }}</h3>
+          </div>
+          {{else}}
           <i class="icon mb-4 bg-transparent {{.icon}}"></i>
           <h3 class="mb-3">{{.title | markdownify}}</h3>
+          {{end}}
           <p>{{.content | markdownify}}</p>
+          {{if and .button_label .button_link}}
+          <a href="{{.button_link | relLangURL}}" class="btn btn-primary mt-2">
+            {{.button_label}} <i class="arrow-right fas fa-arrow-right"></i>
+          </a>
+          {{end}}
         </div>
       </div>
       {{end}}
@@ -92,6 +107,16 @@
         </div>
       </div>
     </div>
+    {{with .image}}
+    <div class="row justify-content-center">
+      <div class="col-lg-12">
+        {{$img:= resources.Get . }}
+        {{$img:= $img.Resize "1800x"}}
+        {{$imgWebp:= $img.Resize "1800x webp"}}
+        <img loading="lazy" decoding="async" class="w-100 rounded-lg img-fluid" width="{{$img.Width}}" height="{{$img.Height}}" src="{{$imgWebp.RelPermalink}}" alt="Soluzioni lungo tutto il ciclo di vita del BESS" onerror="this.onerror=null;this.src='{{$img.RelPermalink}}'">
+      </div>
+    </div>
+    {{else}}
     <div class="row gy-4">
       {{range .skills_box_item}}
       <div class="col-lg-4 col-md-6 features-box">
@@ -103,6 +128,7 @@
       </div>
       {{end}}
     </div>
+    {{end}}
   </div>
   <div class="has-wave alter-position">
     <svg class="wave-left" style="opacity:0.75" width="245" height="280" viewBox="0 0 245 280" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -127,6 +153,9 @@
         <div class="section-title">
           {{with .subtitle}}<p class="subtitle">{{. | markdownify}}</p>{{end}}
           <h2 class="title">{{.title | markdownify}}</h2>
+          {{if eq .style "simple_steps"}}
+          {{with .description}}<p>{{. | markdownify}}</p>{{end}}
+          {{end}}
         </div>
       </div>
       <div class="col-lg-12">
@@ -134,8 +163,17 @@
 
           {{range .approach_box_item}}
 
-          <div class="col-lg-3 col-sm-6">
+          <div class="col-lg-3 col-sm-6{{if eq $.Params.approach_box.style "simple_steps"}} features-box{{end}}">
 
+            {{if eq $.Params.approach_box.style "simple_steps"}}
+            <div class="block shadow-md rounded-lg bg-white h-100 p-4 p-md-5">
+              {{with .icon}}<i class="icon rounded-circle mb-4 {{.}}"></i>{{end}}
+              <h3 class="title h4">
+                {{with .number}}<span class="subtitle mb-0 me-2">{{.}}</span>{{end}}{{.title | markdownify}}
+              </h3>
+              <p class="mb-3">{{.content | markdownify}}</p>
+            </div>
+            {{else}}
             <div class="block pt-4">
               {{with .image}}
               <div class="process-image mb-3">
@@ -148,6 +186,7 @@
               <h3 class="title h4">{{.title | markdownify}}</h3>
               <p class="mb-0">{{.content | markdownify}}</p>
             </div>
+            {{end}}
           </div>
           {{end}}
         </div>
@@ -162,19 +201,20 @@
 <section class="section bg-secondary-soft rounded-lg wave-block">
   <div class="container container-delta">
     <div class="row align-items-center">
-      <div class="col-lg-6 order-1 {{with .content_position}}{{if eq . `right`}}order-lg-1{{else if eq . `left`}}order-lg-0{{else}}order-lg-0{{end}}{{end}}">
+      <div class="{{if eq $.Section `soluzioni`}}col-lg-4{{else}}col-lg-6{{end}} order-1 {{with .content_position}}{{if eq . `right`}}order-lg-1{{else if eq . `left`}}order-lg-0{{else}}order-lg-0{{end}}{{end}}">
         <div class="section-title">
           {{with .subtitle}}<p class="subtitle">{{. | markdownify}}</p>{{end}}
           <h2 class="title">{{.title | markdownify}}</h2>
         </div>
         {{with .content}}<div class="content">{{. | markdownify}}</div>{{end}}
       </div>
-      <div class="col-lg-6 order-0 mb-5 mb-lg-0 {{with .content_position}}{{if eq . `right`}}order-lg-0{{else if eq . `left`}}order-lg-1{{else}}order-lg-1{{end}}{{end}}">
+      <div class="{{if eq $.Section `soluzioni`}}col-lg-8{{else}}col-lg-6{{end}} order-0 mb-5 mb-lg-0 {{with .content_position}}{{if eq . `right`}}order-lg-0{{else if eq . `left`}}order-lg-1{{else}}order-lg-1{{end}}{{end}}">
         {{with .image}}
         {{$img:= resources.Get . }}
-        {{$img:= $img.Resize "570x"}}
-        {{$imgWebp:= $img.Resize "570x webp"}}
-        <img loading="lazy" decoding="async" class="img-fluid px-2" width="{{$img.Width}}" height="{{$img.Height}}" src="{{$imgWebp.RelPermalink}}" alt="image" onerror="this.onerror=null;this.src='{{$img.RelPermalink}}'">
+        {{$imageSize := cond (eq $.Section `soluzioni`) "900x" "570x"}}
+        {{$img:= $img.Resize $imageSize}}
+        {{$imgWebp:= $img.Resize (printf "%s webp" $imageSize)}}
+        <img loading="lazy" decoding="async" class="img-fluid{{if ne $.Section `soluzioni`}} px-2{{end}}" width="{{$img.Width}}" height="{{$img.Height}}" src="{{$imgWebp.RelPermalink}}" alt="image" onerror="this.onerror=null;this.src='{{$img.RelPermalink}}'">
         {{end}}
       </div>
     </div>
