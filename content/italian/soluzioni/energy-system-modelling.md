@@ -92,6 +92,11 @@ approach_box:
     icon: "fas fa-check-circle"
     content: "Confronto delle configurazioni e selezione delle opzioni più robuste per l'investimento."
 
+  - number: "08"
+    title: "Iterazione e affinamento"
+    icon: "fas fa-sync-alt"
+    content: "Revisione ciclica di ipotesi e configurazioni per migliorare progressivamente la soluzione."
+
 # why_mule
 why_mule:
   enable: true
