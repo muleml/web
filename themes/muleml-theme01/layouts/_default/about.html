@@ -124,13 +124,18 @@
         </div>
       </div>
     </div>
+    {{$video := .video}}
     {{with .image}}
     <div class="row justify-content-center">
       <div class="col-lg-12">
         {{$img:= resources.Get . }}
         {{$img:= $img.Resize "1800x"}}
         {{$imgWebp:= $img.Resize "1800x webp"}}
+        {{if $video}}
+        {{partial "video" (dict "Src" $video "Controls" "true" "Autoplay" "true" "Muted" "true" "Loop" "true" "Class" "w-100 rounded-lg" "Poster" $imgWebp.RelPermalink)}}
+        {{else}}
         <img loading="lazy" decoding="async" class="w-100 rounded-lg img-fluid" width="{{$img.Width}}" height="{{$img.Height}}" src="{{$imgWebp.RelPermalink}}" alt="Soluzioni lungo tutto il ciclo di vita del BESS" onerror="this.onerror=null;this.src='{{$img.RelPermalink}}'">
+        {{end}}
       </div>
     </div>
     {{else}}
@@ -278,7 +283,7 @@
     <div class="row gy-4">
       {{range .skills_box_item}}
       <div class="{{if eq $.Params.why_mule.columns 4}}col-lg-3{{else}}col-lg-4{{end}} col-md-6 features-box">
-        <div class="block shadow-md rounded-lg bg-white">
+        <div class="block shadow-md rounded-lg bg-white h-100">
           <i class="icon rounded-circle mb-4 {{.icon}}"></i>
           <h3 class="h4 mb-3">{{.title | markdownify}}</h3>
           <p>{{.content | markdownify}}</p>
