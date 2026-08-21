@@ -1,11 +1,12 @@
 {{define "main"}}
 
-<section class="banner {{ if eq .Section `soluzioni` }}bg-quaternary-soft{{ else }}bg-tertiary-soft{{ end }} rounded-lg wave-block overflow-hidden">
+<section class="banner {{ if eq .Params.banner.variant `home` }}banner-2 bg-primary-soft{{ else if eq .Section `soluzioni` }}bg-quaternary-soft{{ else }}bg-tertiary-soft{{ end }} rounded-lg wave-block overflow-hidden">
   {{ partial "essentials/header.html" . }}
 
   {{with .Params.banner}}
+  {{$homeHero := eq .variant "home"}}
   <div class="container container-delta block">
-    <div class="row align-items-center {{if .image}}text-center text-lg-start{{else}}justify-content-center text-center{{end}}">
+    <div class="row align-items-center {{if $homeHero}}flex-lg-nowrap text-center text-lg-start{{else if .image}}text-center text-lg-start{{else}}justify-content-center text-center{{end}}">
       <div class="{{if .image}}col-lg-6{{else}}col-lg-9{{end}}">
         <div class="{{if .image}}pe-0 pe-lg-5{{end}}">
           <p class="subtitle">{{.subtitle | markdownify}}</p>
@@ -30,8 +31,17 @@
         </div>
       </div>
       {{with .image}}
-      <div class="col-lg-6 mt-5 mt-lg-0">
+      <div class="{{if $homeHero}}col-lg-9{{else}}col-lg-6{{end}} mt-5 mt-lg-0">
+        {{if $homeHero}}
+        <div class="banner-image-2">
+          {{$img:= resources.Get . }}
+          {{$img:= $img.Resize "1000x"}}
+          {{$imgWebp:= $img.Resize "1000x webp"}}
+          <img loading="lazy" decoding="async" class="img-fluid" width="{{$img.Width}}" height="{{$img.Height}}" src="{{$imgWebp.RelPermalink}}" alt="Banner Image" onerror="this.onerror=null;this.src='{{$img.RelPermalink}}'">
+        </div>
+        {{else}}
         {{ partial "image.html" (dict "Src" . "Alt" "Banner Image"  "Class" "rounded-lg img-fluid") }}
+        {{end}}
       </div>
       {{end}}
     </div>
@@ -75,8 +85,15 @@
             <h3 class="mb-0">{{ $blockTitle | markdownify }}</h3>
           </div>
           {{else}}
+          {{if $.Params.benefit_info.inline_title}}
+          <div class="d-flex align-items-center mb-4">
+            <i class="icon mb-0 me-3 bg-transparent flex-shrink-0 {{.icon}}"></i>
+            <h3 class="mb-0">{{.title | markdownify}}</h3>
+          </div>
+          {{else}}
           <i class="icon mb-4 bg-transparent {{.icon}}"></i>
           <h3 class="mb-3">{{.title | markdownify}}</h3>
+          {{end}}
           {{end}}
           <p>{{.content | markdownify}}</p>
           {{if and .button_label .button_link}}
@@ -146,19 +163,66 @@
 
 
 {{with .Params.approach_box}}
-<section class="section">
+<section class="section{{if eq .style `process_flow`}} process-flow-section{{end}}">
   <div class="container container-delta">
     <div class="row justify-content-center text-center">
       <div class="col-lg-8">
         <div class="section-title">
           {{with .subtitle}}<p class="subtitle">{{. | markdownify}}</p>{{end}}
           <h2 class="title">{{.title | markdownify}}</h2>
-          {{if eq .style "simple_steps"}}
+          {{if or (eq .style "simple_steps") (eq .style "process_flow")}}
           {{with .description}}<p>{{. | markdownify}}</p>{{end}}
           {{end}}
         </div>
       </div>
       <div class="col-lg-12">
+        {{if eq .style "process_flow"}}
+        {{$items := .approach_box_item}}
+        <div class="process-flow process-flow-desktop d-none d-lg-block">
+          <div class="row gy-4 gx-xl-4 process-flow-row">
+            {{range $index, $item := first 4 $items}}
+            <div class="col-lg-3 process-flow-item" style="--step-index: {{$index}};">
+              <div class="process-flow-card block shadow-md rounded-lg bg-white text-start p-4 p-md-5">
+                <div class="process-flow-head">
+                  {{with $item.number}}<span class="process-flow-number">{{.}}</span>{{end}}
+                  {{with $item.icon}}<i class="process-flow-icon {{.}}"></i>{{end}}
+                </div>
+                <h3 class="h4 mb-3">{{$item.title | markdownify}}</h3>
+                <p class="mb-0">{{$item.content | markdownify}}</p>
+              </div>
+            </div>
+            {{end}}
+          </div>
+          <div class="row gy-4 gx-xl-4 justify-content-end process-flow-row process-flow-row-reverse">
+            {{range $index, $item := slice (index $items 6) (index $items 5) (index $items 4)}}
+            <div class="col-lg-3 process-flow-item" style="--step-index: {{add $index 4}};">
+              <div class="process-flow-card block shadow-md rounded-lg bg-white text-start p-4 p-md-5">
+                <div class="process-flow-head">
+                  {{with $item.number}}<span class="process-flow-number">{{.}}</span>{{end}}
+                  {{with $item.icon}}<i class="process-flow-icon {{.}}"></i>{{end}}
+                </div>
+                <h3 class="h4 mb-3">{{$item.title | markdownify}}</h3>
+                <p class="mb-0">{{$item.content | markdownify}}</p>
+              </div>
+            </div>
+            {{end}}
+          </div>
+        </div>
+        <div class="row gy-4 gx-xl-4 justify-content-center process-flow process-flow-responsive d-lg-none">
+          {{range $index, $item := $items}}
+          <div class="col-12 col-md-6 process-flow-item" style="--step-index: {{$index}};">
+            <div class="process-flow-card block shadow-md rounded-lg bg-white text-start p-4 p-md-5">
+              <div class="process-flow-head">
+                {{with $item.number}}<span class="process-flow-number">{{.}}</span>{{end}}
+                {{with $item.icon}}<i class="process-flow-icon {{.}}"></i>{{end}}
+              </div>
+              <h3 class="h4 mb-3">{{$item.title | markdownify}}</h3>
+              <p class="mb-0">{{$item.content | markdownify}}</p>
+            </div>
+          </div>
+          {{end}}
+        </div>
+        {{else}}
         <div class="row gy-4">
 
           {{range .approach_box_item}}
@@ -190,6 +254,7 @@
           </div>
           {{end}}
         </div>
+        {{end}}
       </div>
     </div>
   </div>
@@ -198,6 +263,32 @@
 
 {{with .Params.why_mule}}
 {{if .enable}}
+{{if eq .style "skills_box"}}
+<section class="section bg-primary-soft rounded-lg wave-block">
+  <div class="container container-delta">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <div class="section-title">
+          {{with .subtitle}}<p class="subtitle">{{. | markdownify}}</p>{{end}}
+          <h2 class="title mb-3">{{.title | markdownify}}</h2>
+          {{with .description}} <p>{{. | markdownify}}</p> {{end}}
+        </div>
+      </div>
+    </div>
+    <div class="row gy-4">
+      {{range .skills_box_item}}
+      <div class="{{if eq $.Params.why_mule.columns 4}}col-lg-3{{else}}col-lg-4{{end}} col-md-6 features-box">
+        <div class="block shadow-md rounded-lg bg-white">
+          <i class="icon rounded-circle mb-4 {{.icon}}"></i>
+          <h3 class="h4 mb-3">{{.title | markdownify}}</h3>
+          <p>{{.content | markdownify}}</p>
+        </div>
+      </div>
+      {{end}}
+    </div>
+  </div>
+</section>
+{{else}}
 <section class="section bg-secondary-soft rounded-lg wave-block">
   <div class="container container-delta">
     <div class="row align-items-center">
@@ -226,6 +317,7 @@
     </svg>
   </div>
 </section>
+{{end}}
 {{end}}
 {{end}}
 
