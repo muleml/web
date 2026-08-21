@@ -23,13 +23,13 @@ benefit_info:
   description: "Le soluzioni muleML seguono un percorso preciso: simulare il sistema, comprendere la batteria, ottimizzarne l'utilizzo e abilitare tutto il processo attraverso un'infrastruttura dati comune."
 
   block:
-  - image: "images/solutions/battery-intelligence.png"
+  - image: "images/solutions/energy-system-modelling.png"
     title: "Energy System <br>Modelling"
     content: "**Simulare il sistema prima di investire**<br>Ricostruiamo asset, profili e vincoli energetici per confrontare scenari, stimare prestazioni e dimensionare il BESS con criteri tecnici ed economici."
     button_label: "Scopri Energy System Modelling"
     button_link: "soluzioni/energy-system-modelling/"
 
-  - image: "images/solutions/energy-system-modelling.png"
+  - image: "images/solutions/battery-intelligence.png"
     title: "Battery <br>Intelligence"
     content: "**Comprendere il comportamento della batteria**<br>Analizziamo dati operativi, condizioni e segnali di degrado per valutare performance, anomalie e vita utile della batteria durante l'esercizio reale."
     button_label: "Scopri Battery Intelligence"
@@ -64,22 +64,22 @@ approach_box:
   approach_box_item:
   - number: "01"
     title: "Acquisire"
-    icon: "far fa-circle-nodes"
+    icon: "fas fa-database"
     content: "Raccogliere dati da BESS, rete e asset energetici in uno strato coerente e utilizzabile."
 
   - number: "02"
     title: "Simulare"
-    icon: "far fa-chart-line"
+    icon: "fas fa-sliders-h"
     content: "Valutare scenari, vincoli e business case con modelli energetici orientati alle decisioni."
 
   - number: "03"
     title: "Comprendere"
-    icon: "fas fa-battery-full"
+    icon: "fas fa-lightbulb"
     content: "Analizzare prestazioni, condizioni e degrado per trasformare i dati operativi in insight."
 
   - number: "04"
     title: "Ottimizzare"
-    icon: "fas fa-network-wired"
+    icon: "fas fa-gauge-high"
     content: "Combinare previsioni, vincoli fisici e segnali economici in strategie operative efficaci."
 
 # why_mule
