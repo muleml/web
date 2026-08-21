@@ -59,7 +59,7 @@ $gutters: (
 .process-flow-item {
   position: relative;
   display: flex;
-  animation: process-flow-in .45s ease both;
+  animation: process-flow-in .45s ease backwards;
   animation-delay: calc(var(--step-index, 0) * .06s);
 }
 
@@ -130,7 +130,7 @@ $gutters: (
   background: #fff;
   border-radius: 50%;
   box-shadow: 0 .4rem 1.25rem rgba(0, 0, 0, 0.08);
-  font-family: "Font Awesome 5 Free";
+  font-family: "Font Awesome 6 Free";
   font-weight: 900;
   pointer-events: none;
 }
