@@ -125,9 +125,10 @@
       </div>
     </div>
     {{$video := .video}}
+    {{$imageCol := .image_col}}
     {{with .image}}
     <div class="row justify-content-center">
-      <div class="col-lg-12">
+      <div class="{{if $imageCol}}{{$imageCol}}{{else}}col-lg-12{{end}}">
         {{$img:= resources.Get . }}
         {{$img:= $img.Resize "1800x"}}
         {{$imgWebp:= $img.Resize "1800x webp"}}

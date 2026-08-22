@@ -53,6 +53,7 @@ skills_box:
   subtitle: "Ciclo di vita del BESS"
   title: "Soluzioni lungo tutto il ciclo di vita del BESS"
   description: "Dalla comprensione del sistema energetico alla gestione operativa dell'asset, le soluzioni muleML accompagnano le diverse fasi di sviluppo e utilizzo del BESS."
+  image_col: "col-lg-8"
   image: "images/solutions/bess-lifecycle.png"
 
 # approach_box
