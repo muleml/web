@@ -12377,3 +12377,49 @@ footer {
   .navigation .dropdown-menu {
     width: max-content;
     min-width: 220px; } }
+
+html.js .bess-lifecycle-anim {
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow 0.6s ease; }
+  html.js .bess-lifecycle-anim .bess-lifecycle-img {
+    display: block;
+    opacity: 0;
+    transform: translateY(24px);
+    transition: transform 0.6s ease, opacity 0.6s ease;
+    will-change: transform; }
+  html.js .bess-lifecycle-anim.is-visible .bess-lifecycle-img {
+    opacity: 1;
+    transform: translateY(0); }
+  html.js .bess-lifecycle-anim::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    pointer-events: none;
+    background: linear-gradient(105deg, transparent 40%, rgba(255, 255, 255, 0.35) 50%, transparent 60%);
+    transform: translateX(-130%);
+    animation: bess-shine 5.5s ease-in-out infinite; }
+  html.js .bess-lifecycle-anim:hover {
+    box-shadow: 0 18px 40px -12px rgba(20, 39, 101, 0.25); }
+    html.js .bess-lifecycle-anim:hover .bess-lifecycle-img {
+      transform: translateY(0) scale(1.02); }
+
+@keyframes bess-shine {
+  0%,
+  55% {
+    transform: translateX(-130%); }
+  80%,
+  100% {
+    transform: translateX(130%); } }
+
+@media (prefers-reduced-motion: reduce) {
+  html.js .bess-lifecycle-anim .bess-lifecycle-img {
+    opacity: 1;
+    transform: none;
+    transition: none; }
+  html.js .bess-lifecycle-anim::after {
+    display: none; } }

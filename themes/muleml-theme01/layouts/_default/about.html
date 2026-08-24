@@ -128,14 +128,14 @@
     {{$imageCol := .image_col}}
     {{with .image}}
     <div class="row justify-content-center">
-      <div class="{{if $imageCol}}{{$imageCol}}{{else}}col-lg-12{{end}}">
+      <div class="{{if $video}}skills-box-video{{else}}bess-lifecycle-anim rounded-lg{{end}} {{if $imageCol}}{{$imageCol}}{{else}}col-lg-12{{end}}">
         {{$img:= resources.Get . }}
         {{$img:= $img.Resize "1800x"}}
         {{$imgWebp:= $img.Resize "1800x webp"}}
         {{if $video}}
         {{partial "video" (dict "Src" $video "Controls" "true" "Autoplay" "true" "Muted" "true" "Loop" "true" "Class" "w-100 rounded-lg" "Poster" $imgWebp.RelPermalink)}}
         {{else}}
-        <img loading="lazy" decoding="async" class="w-100 rounded-lg img-fluid" width="{{$img.Width}}" height="{{$img.Height}}" src="{{$imgWebp.RelPermalink}}" alt="Soluzioni lungo tutto il ciclo di vita del BESS" onerror="this.onerror=null;this.src='{{$img.RelPermalink}}'">
+        <img loading="lazy" decoding="async" class="bess-lifecycle-img w-100 rounded-lg img-fluid" width="{{$img.Width}}" height="{{$img.Height}}" src="{{$imgWebp.RelPermalink}}" alt="Soluzioni lungo tutto il ciclo di vita del BESS" onerror="this.onerror=null;this.src='{{$img.RelPermalink}}'">
         {{end}}
       </div>
     </div>

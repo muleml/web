@@ -243,3 +243,84 @@ $gutters: (
     min-width: 220px;
   }
 }
+
+// =============================================================================
+// Animazione immagine "Ciclo di vita del BESS" — pagina Soluzioni (skills_box)
+// La classe "bess-lifecycle-anim" è applicata dal layout about.html;
+// la classe "is-visible" è aggiunta da script.js via IntersectionObserver
+// quando la sezione entra nel viewport.
+// Le regole sono attive solo con JavaScript abilitato (classe "js" su <html>):
+// senza JS, o in caso di errore, l'immagine resta semplicemente visibile.
+// =============================================================================
+html.js {
+  .bess-lifecycle-anim {
+    position: relative;
+    overflow: hidden;
+    transition: box-shadow 0.6s ease;
+
+    .bess-lifecycle-img {
+      display: block;
+      opacity: 0;
+      transform: translateY(24px);
+      transition: transform 0.6s ease, opacity 0.6s ease;
+      will-change: transform;
+    }
+
+    // Stato visibile: fade-in + risalita
+    &.is-visible .bess-lifecycle-img {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    // Shine sweep: riflesso diagonale che attraversa l'immagine
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 1;
+      pointer-events: none;
+      background: linear-gradient(105deg, transparent 40%, rgba(255, 255, 255, 0.35) 50%, transparent 60%);
+      transform: translateX(-130%);
+      animation: bess-shine 5.5s ease-in-out infinite;
+    }
+
+    // Hover: leggero zoom dell'immagine + ombra morbida sul contenitore
+    &:hover {
+      box-shadow: 0 18px 40px -12px rgba(20, 39, 101, 0.25);
+
+      .bess-lifecycle-img {
+        transform: translateY(0) scale(1.02);
+      }
+    }
+  }
+}
+
+@keyframes bess-shine {
+  0%,
+  55% {
+    transform: translateX(-130%);
+  }
+  80%,
+  100% {
+    transform: translateX(130%);
+  }
+}
+
+// Accessibilità: disattiva le animazioni se richiesto dal sistema
+@media (prefers-reduced-motion: reduce) {
+  html.js .bess-lifecycle-anim {
+    .bess-lifecycle-img {
+      opacity: 1;
+      transform: none;
+      transition: none;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+}
+

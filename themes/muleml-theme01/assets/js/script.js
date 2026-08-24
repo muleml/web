@@ -29,6 +29,9 @@ $(window).on('load', function () {
 $(document).ready(function () {
 	'use strict';
 
+	// Flag per progressive enhancement: attiva le animazioni CSS condizionate (html.js)
+	document.documentElement.classList.add('js');
+
 	// dropdown height fix
 	function dropdownHeightFix() {
 		var width = $(window).width();
@@ -190,5 +193,24 @@ $(document).ready(function () {
 			clickable: true
 		},
 	});
+
+
+	// Entrata immagine "Ciclo di vita del BESS" allo scroll (pagina Soluzioni)
+	var $lifecycle = $('.bess-lifecycle-anim');
+	if ($lifecycle.length) {
+		if (!('IntersectionObserver' in window)) {
+			$lifecycle.addClass('is-visible');
+		} else {
+			var lifecycleObserver = new IntersectionObserver(function (entries) {
+				entries.forEach(function (entry) {
+					if (entry.isIntersecting) {
+						$(entry.target).addClass('is-visible');
+						lifecycleObserver.disconnect();
+					}
+				});
+			}, { rootMargin: '0px 0px -10% 0px', threshold: 0.1 });
+			lifecycleObserver.observe($lifecycle[0]);
+		}
+	}
 
 });
