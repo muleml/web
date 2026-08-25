@@ -115,30 +115,33 @@ prestazioni:
   enable: true
   subtitle: "Prestazioni"
   title: "Prestazioni elevate con risorse contenute"
-  description: "Un'infrastruttura dati efficiente non dovrebbe richiedere hardware sovradimensionato per svolgere attività analitiche ordinarie. Smart Grid Data Fabric utilizza tecnologie analitiche moderne e formati colonnari per sfruttare in modo efficiente CPU, memoria e storage, rendendo possibile eseguire workload significativi anche su hardware compatto."
+  description: "Un'infrastruttura dati efficiente non dovrebbe richiedere hardware sovradimensionato per svolgere attività analitiche ordinarie. Smart Grid Data Fabric utilizza tecnologie analitiche moderne e formati colonnari per sfruttare in modo efficiente CPU, memoria e storage, rendendo possibile eseguire workload significativi anche su hardware compatto.</br></br>
+  Sotto il cofano, Smart Grid Data Fabric utilizza **DuckDB**, motore OLAP open source progettato per analytics ad alte prestazioni direttamente sui dati, con continuità e indipendenza del progetto tutelate dalla [DuckDB Foundation](https://duckdb.org/foundation/)."
   image: "images/solutions/minipc.png"
 
   hardware:
   - label: "CPU"
-    value: "[placeholder]"
+    value: "Ryzen 7 PRO 6850U"
+  - label: "CPU type"  
+    value: "8 core / 16 thread"
   - label: "RAM"
-    value: "[placeholder]"
+    value: "32 GB DDR5"
   - label: "Storage"
-    value: "[placeholder]"
-  - label: "Consumo/TDP"
-    value: "[placeholder]"
+    value: "1 TB NVMe"
+  - label: "Dimensions"
+    value: "132×125×58 mm"
 
   benchmark:
+  - label: "Scale factor"
+    value: "SF100"
   - label: "Dataset"
-    value: "[placeholder]"
-  - label: "Engine/versione"
-    value: "[placeholder]"
-  - label: "Tempo complessivo 22 query"
-    value: "[placeholder]"
-  - label: "Query mediana"
-    value: "[placeholder]"
-  - label: "Memoria massima"
-    value: "[placeholder]"
+    value: "~26 GB - 22 queries"
+  - label: "Tempo complessivo"
+    value: "~200 s"
+  - label: "Latenza mediana"
+    value: "~7 s"
+  - label: "Limite memoria"
+    value: "8 GB"
 
 # cta — CTA finale
 cta:
