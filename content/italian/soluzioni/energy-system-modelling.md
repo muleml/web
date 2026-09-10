@@ -9,7 +9,7 @@ banner:
   variant: "home"
   subtitle: "Energy System Modelling"
   title: "Simulare prima di investire"
-  description: "**Modellazione bottom-up e analisi tecnico-economica per progettare e gestire il BESS sulla base del comportamento reale del sistema.**<br><br>Ricostruiamo il sistema energetico a partire dai suoi componenti, dai profili di utilizzo e dalle logiche operative. Il modello permette di simulare nel tempo produzione, consumi, elettrificazione, accumulo e interazione con la rete, confrontando configurazioni e strategie differenti prima di prendere decisioni di investimento."
+  description: "**Modellazione bottom-up e analisi tecnico-economica per progettare e gestire il BESS sulla base del comportamento reale del sistema.** <br><br>Ricostruiamo il sistema energetico a partire dai suoi componenti, dai profili di utilizzo e dalle logiche operative. Il modello permette di simulare nel tempo produzione, consumi, elettrificazione, accumulo e interazione con la rete, confrontando configurazioni e strategie differenti prima di prendere decisioni di investimento."
   image: "images/solutions/energy-system-modelling-hero.png"
   button:
     enable: false
@@ -109,15 +109,19 @@ why_mule:
 
   skills_box_item:
   - title: "Degrado della batteria"
+    icon: "fas fa-battery-quarter"
     content: "Il comportamento del BESS può essere valutato considerando l'effetto della strategia operativa sul degrado e sull'evoluzione delle prestazioni nel tempo."
 
   - title: "Analisi di sensitività"
+    icon: "fas fa-sliders-h"
     content: "CAPEX, prezzi energia, crescita dei carichi, rendimento, degrado e altre variabili possono essere modificati per misurarne l'impatto sui risultati."
 
   - title: "Scenari probabilistici"
+    icon: "fas fa-chart-area"
     content: "Quando le variabili future sono incerte, è possibile analizzare distribuzioni di scenari anziché affidarsi a una singola previsione deterministica."
 
-  - title: "Analisi what-if"
+  - title: "Analisi <br>what-if"
+    icon: "fas fa-flask"
     content: "Configurazioni, dimensionamenti e logiche di utilizzo possono essere modificati e confrontati rapidamente per confrontare opzioni tecniche e operative."
 
 # career

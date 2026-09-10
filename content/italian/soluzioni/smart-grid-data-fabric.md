@@ -9,7 +9,7 @@ banner:
   variant: "home"
   subtitle: "Smart Grid Data Fabric"
   title: "Il data layer per analytics, AI ed energia"
-  description: "**Le soluzioni data-driven funzionano solo se i dati sono affidabili, accessibili e utilizzabili.**<br><br>Smart Grid Data Fabric collega dispositivi, storage, trasformazioni e applicazioni in un'unica architettura aperta, progettata per i sistemi energetici."
+  description: "**Le soluzioni data-driven funzionano solo se i dati sono affidabili, accessibili e utilizzabili.** <br><br>Smart Grid Data Fabric collega dispositivi, storage, trasformazioni e applicazioni in un'unica architettura aperta, progettata per i sistemi energetici."
   image: "images/solutions/smart-grid-data-fabric-hero.png"
   button:
     enable: false

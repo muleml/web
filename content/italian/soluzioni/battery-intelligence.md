@@ -9,8 +9,7 @@ banner:
   variant: "home"
   subtitle: "Battery Intelligence"
   title: "Trasformare i dati in evidenze sul valore dell'asset"
-  description: "**Analisi indipendente di stato, prestazioni e rischio per supportare due diligence tecnica e bancabilità del BESS.**<br><br>
-  Battery Intelligence analizza i dati operativi di batterie, BMS e PCS per misurare stato, prestazioni, degrado e rischio del sistema. Trasforma il dato operativo in evidenze tecniche utilizzabili lungo tutto il ciclo di vita dell’asset."
+  description: "**Analisi indipendente di stato, prestazioni e rischio per supportare due diligence tecnica e bancabilità del BESS.** <br><br>Battery Intelligence analizza i dati operativi di batterie, BMS e PCS per misurare stato, prestazioni, degrado e rischio del sistema. Trasforma il dato operativo in evidenze tecniche utilizzabili lungo tutto il ciclo di vita dell’asset."
   image: "images/solutions/battery-intelligence-hero.png"
   button:
     enable: false
