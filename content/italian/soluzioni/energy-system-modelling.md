@@ -10,7 +10,7 @@ banner:
   subtitle: "Energy System Modelling"
   title: "Simulare prima di investire"
   description: "**Modellazione bottom-up e analisi tecnico-economica per progettare e gestire il BESS sulla base del comportamento reale del sistema.**<br><br>Ricostruiamo il sistema energetico a partire dai suoi componenti, dai profili di utilizzo e dalle logiche operative. Il modello permette di simulare nel tempo produzione, consumi, elettrificazione, accumulo e interazione con la rete, confrontando configurazioni e strategie differenti prima di prendere decisioni di investimento."
-  image: "images/solutions/energy-system-modelling-hero.jpeg"
+  image: "images/solutions/energy-system-modelling-hero.png"
   button:
     enable: false
     label: "Parliamo del tuo progetto"

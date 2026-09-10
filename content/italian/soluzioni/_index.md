@@ -87,7 +87,7 @@ why_mule:
   enable: true
   subtitle: "Architettura integrata"
   title: "BESS INSIGHT"
-  image: "images/solutions/bess-insight.png"
+  image: "images/solutions/bess-insight2.png"
   content_position: "left"
   content: "BESS INSIGHT integra infrastruttura dati, Battery Intelligence ed Energy Management System in un unico ecosistema per acquisire dati, generare insight e ottimizzare il BESS. <br>Energy System Modelling rimane più a monte, come strumento di simulazione, progettazione e valutazione."
 
