@@ -48,7 +48,7 @@ skills_box:
   subtitle: "Dimostrazione"
   title: "Guardalo in azione"
   description: "Dalla vista di portafoglio al singolo componente: esplora stato, prestazioni e anomalie del BESS partendo dai dati reali dell'asset."
-  video: "videos/simulazione-demo.mp4"
+  video: "videos/battery-intelligence-demo.mp4"
   image: "images/video-thumb.jpg"
 
 # 3. La bancabilità richiede evidenze, non solo assunzioni

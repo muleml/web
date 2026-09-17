@@ -55,7 +55,7 @@ skills_box:
   subtitle: "Dimostrazione"
   title: "Guardalo in azione"
   description: "Dal dato acquisito sul campo alla query analitica: Smart Grid Data Fabric rende accessibile in un unico ambiente l'intero percorso del dato."
-  video: "videos/smart-grid-data-fabric-demo.mp4"
+  video: "videos/sgdf-demo.mp4"
   image: "images/video-thumb.jpg"
 
 # benefit_info — "I dati sono un asset" (6 blocchi)

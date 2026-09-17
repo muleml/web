@@ -48,7 +48,7 @@ skills_box:
   subtitle: "Ambiente interattivo"
   title: "La simulazione in azione"
   description: "Il modello genera un ambiente interattivo nel quale esplorare il sistema, modificare le ipotesi e confrontare scenari alternativi."
-  video: "videos/simulazione-demo.mp4"
+  video: "videos/energy-system-modelling-demo.mp4"
   image: "images/video-thumb.jpg"
 
 # approach_box
