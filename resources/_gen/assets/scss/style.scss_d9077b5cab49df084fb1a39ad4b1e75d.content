@@ -12378,6 +12378,27 @@ footer {
     width: max-content;
     min-width: 220px; } }
 
+.features-box .block > .d-flex > img {
+  width: 9.375rem;
+  height: auto; }
+
+@media (max-width: 1199.98px) {
+  .features-box .block > .d-flex > img {
+    width: 6.25rem; } }
+
+@media (max-width: 991.98px) {
+  .features-box .block > .d-flex:has(> img) {
+    flex-direction: column;
+    align-items: flex-start; }
+  .features-box .block > .d-flex:has(> img) > img {
+    width: 6rem;
+    height: auto;
+    margin-bottom: 1rem; } }
+
+@media (max-width: 575.98px) {
+  .features-box .block > .d-flex:has(> img) > img {
+    width: 5rem; } }
+
 html.js .bess-lifecycle-anim {
   position: relative;
   overflow: hidden;

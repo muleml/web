@@ -245,6 +245,52 @@ $gutters: (
 }
 
 // =============================================================================
+// Box "soluzione" con icona (Home + pagina /soluzioni/)
+// Il markup (themes/muleml-theme01/layouts/index.html,
+// themes/muleml-theme01/layouts/_default/about.html,
+// themes/muleml-theme01/layouts/_default/smart-grid-data-fabric.html) mette
+// l'icona accanto al titolo in una riga flex. L'immagine ha width/height 150px
+// e la classe "flex-shrink-0": senza regole dedicate resta 150px anche su
+// tablet e cellulare, schiacciando (o facendo uscire) i titoli.
+// Qui l'icona scala con il breakpoint e, sotto i 992px, passa sopra al titolo
+// così il testo ha sempre tutta la larghezza disponibile.
+// =============================================================================
+.features-box .block > .d-flex > img {
+  width: 9.375rem; // 150px, come l'attributo width nel markup
+  height: auto;
+}
+
+// 992-1199px: due colonne, il titolo ha bisogno di più spazio
+@media (max-width: 1199.98px) {
+  .features-box .block > .d-flex > img {
+    width: 6.25rem; // 100px
+  }
+}
+
+// ≤991px: le card sono strette (2 colonne su tablet, 1 su cellulare):
+// l'icona va sopra il titolo e resta di dimensioni contenute.
+// ":has(> img)" limita la regola alle righe con immagine (le card con icona
+// font, es. pagine Battery Intelligence/EMS, restano invariate).
+@media (max-width: 991.98px) {
+  .features-box .block > .d-flex:has(> img) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .features-box .block > .d-flex:has(> img) > img {
+    width: 6rem; // 96px
+    height: auto;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .features-box .block > .d-flex:has(> img) > img {
+    width: 5rem; // 80px
+  }
+}
+
+// =============================================================================
 // Animazione immagine "Ciclo di vita del BESS" — pagina Soluzioni (skills_box)
 // La classe "bess-lifecycle-anim" è applicata dal layout about.html;
 // la classe "is-visible" è aggiunta da script.js via IntersectionObserver
