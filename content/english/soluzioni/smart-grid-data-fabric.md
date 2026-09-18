@@ -37,7 +37,7 @@ approach_box:
   - number: "03"
     title: "Data <br>Transformation"
     icon: "fas fa-gears"
-    content: "Transforms raw data into consistent, validated datasets ready for use by downstream applications."
+    content: "Transforms raw and heterogeneous data into consistent, validated datasets, ready for the analytical applications, dashboards and downstream tools."
 
   - number: "04"
     title: "Analytical Query Engine"
@@ -47,7 +47,7 @@ approach_box:
   - number: "05"
     title: "Analytics & Exploration"
     icon: "fas fa-chart-pie"
-    content: "Makes data available to dashboards, analytical applications, and machine learning and AI models."
+    content: "Makes curated data available to dashboards, analytical applications and machine learning or artificial intelligence models, without duplicating it."
 
 # skills_box — "Guardalo in azione" (video)
 skills_box:
@@ -106,8 +106,8 @@ scalability:
     image: "images/solutions/distribuited-query.png"
 
   - title: "Data federation"
-    bold: "Data can stay where it is generated"
-    content: "Different sites or organizations can keep their data locally and make it available in a controlled way, building a federated view without requiring centralization."
+    bold: "Data can stay where it is generated, without being moved"
+    content: "Different sites or organizations can keep their data locally and make it available in a controlled way, building a federated view without centralization."
     image: "images/solutions/federated-data.png"
 
 # prestazioni — "Prestazioni elevate con risorse contenute"

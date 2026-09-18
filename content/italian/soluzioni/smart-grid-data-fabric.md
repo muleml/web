@@ -32,22 +32,22 @@ approach_box:
   - number: "02"
     title: "Analytical Lakehouse Storage"
     icon: "fas fa-database"
-    content: "Conserva dati storici e operativi in formati analitici aperti, creando una base comune per elaborazioni, query e applicazioni."
+    content: "Conserva dati storici e operativi in formati analitici aperti e indipendenti dal fornitore, creando una base comune per elaborazioni, query e applicazioni."
 
   - number: "03"
     title: "Data <br>Transformation"
     icon: "fas fa-gears"
-    content: "Trasforma i dati grezzi in dataset coerenti, validati e pronti per essere utilizzati dalle applicazioni a valle."
+    content: "Trasforma i dati grezzi e disomogenei in dataset coerenti e documentati, pronti per essere utilizzati dalle applicazioni analitiche, dalle dashboard e dai servizi."
 
   - number: "04"
     title: "Analytical Query Engine"
     icon: "fas fa-magnifying-glass-chart"
-    content: "Permette di interrogare e analizzare grandi quantità di dati direttamente sul layer analitico, riducendo movimenti e duplicazioni non necessarie."
+    content: "Permette di interrogare e analizzare grandi volumi di dati direttamente sul layer analitico, riducendo spostamenti, copie e duplicazioni non necessarie."
 
   - number: "05"
     title: "Analytics & Exploration"
     icon: "fas fa-chart-pie"
-    content: "Rende i dati disponibili a dashboard, applicazioni analitiche e modelli di machine learning e AI."
+    content: "Rende dati curati e documentati disponibili a dashboard, applicazioni analitiche e modelli di machine learning e intelligenza artificiale, senza duplicarli."
 
 # skills_box — "Guardalo in azione" (video)
 skills_box:
@@ -101,7 +101,7 @@ scalability:
 
   block:
   - title: "Scalabilità orizzontale"
-    bold: "Crescere aggiungendo risorse, non sostituendo l'architettura"
+    bold: "Crescere aggiungendo risorse"
     content: "Quando volumi e carichi aumentano, nuovi nodi possono essere aggiunti per distribuire le elaborazioni e aumentare progressivamente la capacità del sistema."
     image: "images/solutions/distribuited-query.png"
 

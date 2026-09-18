@@ -29,7 +29,7 @@ benefit_info:
   block:
   - icon: "fas fa-clock"
     title: "Multi-horizon <br>forecasting"
-    content: "**Anticipate what will happen**<br>Forecasts of prices, loads and renewable generation across different time horizons to support operational decisions."
+    content: "**Anticipate what will happen**<br>Forecasts of prices, loads and renewable generation across different time horizons, supporting operational and market decisions."
 
   - icon: "fas fa-heart-pulse"
     title: "Degradation-aware dispatch"

@@ -60,8 +60,48 @@
   .sgdf-flow::before{content:"";position:absolute;left:9%;right:9%;top:50%;height:2px;background:#4262FF;opacity:.25;border-radius:2px;}
   .sgdf-flow-dot{position:absolute;top:50%;left:9%;width:9px;height:9px;margin-top:-4px;margin-left:-4px;border-radius:50%;background:#4262FF;box-shadow:0 0 0 3px rgba(66,98,255,.15);animation:sgdfFlow 3s linear infinite;animation-delay:var(--d,0s);}
   @keyframes sgdfFlow{0%{left:9%;opacity:0;}15%{opacity:1;}85%{opacity:1;}100%{left:91%;opacity:0;}}
+
+  /* Equalizza i 5 box del percorso del dato (solo versione EN): titolo e testo
+     occupano sempre la stessa altezza, così i contenuti restano allineati a ogni
+     larghezza. L'unità "lh" è l'altezza di riga dell'elemento stesso. */
+  .sgdf-flow-boxes .block h6 { min-height: 2lh; }
+  .sgdf-flow-boxes .block > p { min-height: 4lh; }
+  @media (min-width: 992px) {
+    .sgdf-flow-boxes .block h6 { min-height: 3lh; }
+    .sgdf-flow-boxes .block > p { min-height: 12lh; }
+  }
+  @media (min-width: 1200px) {
+    .sgdf-flow-boxes .block > p { min-height: 9lh; }
+  }
+  @media (min-width: 1280px) {
+    .sgdf-flow-boxes .block > p { min-height: 7lh; }
+  }
+  @media (min-width: 1400px) {
+    .sgdf-flow-boxes .block h6 { min-height: 2lh; }
+  }
+
+  /* Stessa equalizzazione per la versione IT, con valori calibrati sui testi
+     italiani (che occupano qualche riga in più). */
+  .sgdf-flow-boxes-it .block h6 { min-height: 2lh; }
+  .sgdf-flow-boxes-it .block > p { min-height: 4lh; }
+  @media (min-width: 992px) {
+    .sgdf-flow-boxes-it .block h6 { min-height: 3lh; }
+    .sgdf-flow-boxes-it .block > p { min-height: 12lh; }
+  }
+  @media (min-width: 1200px) {
+    .sgdf-flow-boxes-it .block > p { min-height: 9lh; }
+  }
+  @media (min-width: 1280px) {
+    .sgdf-flow-boxes-it .block > p { min-height: 8lh; }
+  }
+  @media (min-width: 1600px) {
+    .sgdf-flow-boxes-it .block > p { min-height: 7lh; }
+  }
+  @media (min-width: 1400px) {
+    .sgdf-flow-boxes-it .block h6 { min-height: 2lh; }
+  }
 </style>
-<section class="section">
+<section class="section{{ if eq site.Language.Lang "en" }} sgdf-flow-boxes{{ else if eq site.Language.Lang "it" }} sgdf-flow-boxes-it{{ end }}">
   <div class="container container-delta">
     <div class="row justify-content-center text-center">
       <div class="col-lg-8">
