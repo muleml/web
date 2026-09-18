@@ -12,6 +12,36 @@ url = "about/"
 weight = 2
 
 [[main]]
+identifier = "soluzioni"
+name = "Solutions"
+url = "soluzioni/"
+weight = 3
+
+[[main]]
+parent = "soluzioni"
+name = "Energy System Modelling"
+url = "soluzioni/energy-system-modelling/"
+weight = 1
+
+[[main]]
+parent = "soluzioni"
+name = "Battery Intelligence"
+url = "soluzioni/battery-intelligence/"
+weight = 2
+
+[[main]]
+parent = "soluzioni"
+name = "Energy Management System"
+url = "soluzioni/energy-management-system/"
+weight = 3
+
+[[main]]
+parent = "soluzioni"
+name = "Smart Grid Data Fabric"
+url = "soluzioni/smart-grid-data-fabric/"
+weight = 4
+
+[[main]]
 name = "Blog"
 url = "blog/"
 weight = 5

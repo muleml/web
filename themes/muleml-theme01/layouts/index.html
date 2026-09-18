@@ -89,7 +89,7 @@
           </div>
           <p class="mb-0">{{.content | markdownify}}</p>
           {{if and .button_label .button_link}}
-          <a href="{{.button_link | relLangURL}}" class="btn btn-primary mt-2">
+          <a href="{{.button_link | relLangURL}}" class="btn btn-primary mt-4">
             {{.button_label}} <i class="arrow-right fas fa-arrow-right"></i>
           </a>
           {{end}}
