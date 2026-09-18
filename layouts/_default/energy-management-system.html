@@ -343,7 +343,7 @@
         {{$img:= $img.Resize "1800x"}}
         {{$imgWebp:= $img.Resize "1800x webp"}}
         {{if $video}}
-        {{partial "video" (dict "Src" $video "Controls" "true" "Autoplay" "true" "Muted" "true" "Loop" "true" "Class" "w-100 rounded-lg" "Poster" $imgWebp.RelPermalink)}}
+        {{partial "video" (dict "Src" $video "Controls" "true" "Autoplay" "true" "Muted" "true" "Loop" "true" "NoDownload" "true" "Class" "w-100 rounded-lg" "Poster" $imgWebp.RelPermalink)}}
         {{else}}
         <img loading="lazy" decoding="async" class="w-100 rounded-lg img-fluid" width="{{$img.Width}}" height="{{$img.Height}}" src="{{$imgWebp.RelPermalink}}" alt="Video demo" onerror="this.onerror=null;this.src='{{$img.RelPermalink}}'">
         {{end}}
