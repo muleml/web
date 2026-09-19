@@ -1,0 +1,357 @@
+{{define "main"}}
+
+<section class="banner {{ if eq .Params.banner.variant `home` }}banner-2 bg-primary-soft{{ else if eq .Section `soluzioni` }}bg-quaternary-soft{{ else }}bg-tertiary-soft{{ end }} rounded-lg wave-block overflow-hidden">
+  {{ partial "essentials/header.html" . }}
+
+  {{with .Params.banner}}
+  {{$homeHero := eq .variant "home"}}
+  <div class="container container-delta block">
+    <div class="row align-items-center {{if $homeHero}}flex-lg-nowrap text-center text-lg-start{{else if .image}}text-center text-lg-start{{else}}justify-content-center text-center{{end}}">
+      <div class="{{if .image}}col-lg-6{{else}}col-lg-9{{end}}">
+        <div class="{{if .image}}pe-0 pe-lg-5{{end}}">
+          <p class="subtitle">{{.subtitle | markdownify}}</p>
+          <h1 class="title text-xl mb-3">{{.title | markdownify}}</h1>
+          <p class="mb-4">{{.description | markdownify}}</p>
+
+          {{with .button}}
+          {{if .enable}}
+          <a href="{{.link | relLangURL}}" class="btn btn-primary m-1">
+            {{.label}} <i class="arrow-right {{.icon}}"></i>
+          </a>
+          {{end}}
+          {{end}}
+        </div>
+      </div>
+      {{with .image}}
+      <div class="{{if $homeHero}}col-lg-9{{else}}col-lg-6{{end}} mt-5 mt-lg-0">
+        {{if $homeHero}}
+        <div class="banner-image-2">
+          {{$img:= resources.Get . }}
+          {{$img:= $img.Resize "1000x"}}
+          {{$imgWebp:= $img.Resize "1000x webp"}}
+          <img loading="lazy" decoding="async" class="img-fluid" width="{{$img.Width}}" height="{{$img.Height}}" src="{{$imgWebp.RelPermalink}}" alt="Banner Image" onerror="this.onerror=null;this.src='{{$img.RelPermalink}}'">
+        </div>
+        {{else}}
+        {{ partial "image.html" (dict "Src" . "Alt" "Banner Image"  "Class" "rounded-lg img-fluid") }}
+        {{end}}
+      </div>
+      {{end}}
+    </div>
+  </div>
+  {{end}}
+
+  <div class="has-wave">
+    <svg class="wave-left" width="274" height="395" viewBox="0 0 274 395" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path opacity="0.6" d="M-160.703 49.9832C-102.183 25.7147 -35.1189 14.7857 26.6255 33.4291C82.7274 50.3045 126.094 93.2164 147.051 147.379C157.53 174.218 162.85 202.826 162.689 231.595C162.528 245.256 162.205 260.364 157.369 273.221C155.273 278.846 151.888 284.311 146.406 287.043C142.537 288.972 136.089 289.936 132.703 286.4C124.643 277.721 133.026 258.756 138.507 251.042C145.762 240.756 157.53 233.041 170.105 231.756C198.8 228.863 223.466 252.81 236.04 276.114C262.963 326.097 249.26 396.492 203.798 431.368C198.639 435.386 195.899 441.654 199.445 447.922C202.347 453.065 210.891 456.119 216.05 452.261C267.477 412.885 287.951 339.919 264.091 279.489C251.517 247.828 225.723 217.291 191.062 209.416C155.273 201.219 119.161 222.756 108.521 257.792C103.524 274.185 104.33 295.722 119.323 306.651C133.348 316.776 153.5 313.401 166.074 302.472C180.261 290.097 183.969 270.328 185.742 252.488C187.516 235.292 187.193 217.934 185.097 200.898C176.714 132.592 140.764 66.6978 80.4704 30.8576C5.66784 -13.6614 -89.4475 -5.46471 -167.152 26.679C-173.117 29.0898 -177.469 34.7149 -175.535 41.465C-173.923 47.2509 -166.829 52.5547 -160.703 49.9832Z" fill="currentColor"/>
+    </svg>
+
+    <svg class="wave-right" width="329" height="366" viewBox="0 0 329 366" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path opacity="0.85" d="M525.288 205.211C475.043 243.798 413.092 271.712 348.627 269.685C290.069 267.905 237.074 237.679 202.812 190.787C185.744 167.573 173.201 141.317 165.911 113.487C162.531 100.25 158.932 85.5736 160.276 71.9025C160.844 65.9266 162.7 59.7721 167.287 55.7143C170.525 52.85 176.505 50.2496 180.69 52.7887C190.722 59.0855 187.533 79.5738 184.235 88.4441C179.89 100.257 170.519 110.755 158.706 115.251C131.737 125.473 101.714 108.725 83.5359 89.4699C44.5941 48.1576 39.6108 -23.385 74.497 -68.839C78.4401 -74.0552 79.465 -80.8191 74.4169 -85.9556C70.2829 -90.1723 61.2394 -90.9104 57.2548 -85.8494C17.7716 -34.5048 16.8803 41.2741 55.5672 93.4698C75.9079 120.798 108.726 143.618 144.244 142.254C180.935 140.909 210.243 110.76 211.452 74.1631C212.036 57.0349 205.684 36.4411 188.373 29.7651C172.205 23.6149 153.614 32.0905 144.296 45.9015C133.796 61.527 135.331 81.5814 138.235 99.2722C140.973 116.342 145.777 133.025 152.211 148.938C177.987 212.746 229.767 267.091 297.282 286.105C381.058 309.747 470.811 276.987 537.548 226.052C542.686 222.179 545.435 215.619 541.819 209.6C538.764 204.428 530.54 201.141 525.288 205.211Z" fill="currentColor"/>
+    </svg>
+  </div>
+</section>
+
+
+<!-- Process: Dal dato grezzo all'applicazione (5 step + flusso animato) -->
+{{with .Params.approach_box}}
+{{if eq .style "data_flow"}}
+<style>
+  .sgdf-flow{position:relative;height:28px;max-width:1120px;margin:0 auto 16px;}
+  .sgdf-flow::before{content:"";position:absolute;left:9%;right:9%;top:50%;height:2px;background:#4262FF;opacity:.25;border-radius:2px;}
+  .sgdf-flow-dot{position:absolute;top:50%;left:9%;width:9px;height:9px;margin-top:-4px;margin-left:-4px;border-radius:50%;background:#4262FF;box-shadow:0 0 0 3px rgba(66,98,255,.15);animation:sgdfFlow 3s linear infinite;animation-delay:var(--d,0s);}
+  @keyframes sgdfFlow{0%{left:9%;opacity:0;}15%{opacity:1;}85%{opacity:1;}100%{left:91%;opacity:0;}}
+
+  /* Equalizza i 5 box del percorso del dato (solo versione EN): titolo e testo
+     occupano sempre la stessa altezza, così i contenuti restano allineati a ogni
+     larghezza. L'unità "lh" è l'altezza di riga dell'elemento stesso. */
+  .sgdf-flow-boxes .block h6 { min-height: 2lh; }
+  .sgdf-flow-boxes .block > p { min-height: 4lh; }
+  @media (min-width: 992px) {
+    .sgdf-flow-boxes .block h6 { min-height: 3lh; }
+    .sgdf-flow-boxes .block > p { min-height: 12lh; }
+  }
+  @media (min-width: 1200px) {
+    .sgdf-flow-boxes .block > p { min-height: 9lh; }
+  }
+  @media (min-width: 1280px) {
+    .sgdf-flow-boxes .block > p { min-height: 7lh; }
+  }
+  @media (min-width: 1400px) {
+    .sgdf-flow-boxes .block h6 { min-height: 2lh; }
+  }
+
+  /* Stessa equalizzazione per la versione IT, con valori calibrati sui testi
+     italiani (che occupano qualche riga in più). */
+  .sgdf-flow-boxes-it .block h6 { min-height: 2lh; }
+  .sgdf-flow-boxes-it .block > p { min-height: 4lh; }
+  @media (min-width: 992px) {
+    .sgdf-flow-boxes-it .block h6 { min-height: 3lh; }
+    .sgdf-flow-boxes-it .block > p { min-height: 12lh; }
+  }
+  @media (min-width: 1200px) {
+    .sgdf-flow-boxes-it .block > p { min-height: 9lh; }
+  }
+  @media (min-width: 1280px) {
+    .sgdf-flow-boxes-it .block > p { min-height: 8lh; }
+  }
+  @media (min-width: 1600px) {
+    .sgdf-flow-boxes-it .block > p { min-height: 7lh; }
+  }
+  @media (min-width: 1400px) {
+    .sgdf-flow-boxes-it .block h6 { min-height: 2lh; }
+  }
+</style>
+<section class="section{{ if eq site.Language.Lang "en" }} sgdf-flow-boxes{{ else if eq site.Language.Lang "it" }} sgdf-flow-boxes-it{{ end }}">
+  <div class="container container-delta">
+    <div class="row justify-content-center text-center">
+      <div class="col-lg-8">
+        <div class="section-title">
+          {{with .subtitle}}<p class="subtitle">{{. | markdownify}}</p>{{end}}
+          <h2 class="title">{{.title | markdownify}}</h2>
+          {{with .description}}<p>{{. | markdownify}}</p>{{end}}
+        </div>
+      </div>
+    </div>
+    <div class="sgdf-flow" aria-hidden="true">
+      <span class="sgdf-flow-dot" style="--d:0s"></span>
+      <span class="sgdf-flow-dot" style="--d:.75s"></span>
+      <span class="sgdf-flow-dot" style="--d:1.5s"></span>
+      <span class="sgdf-flow-dot" style="--d:2.25s"></span>
+    </div>
+    <div class="row gy-4">
+      {{range .approach_box_item}}
+      <div class="col-md-6 col-lg">
+        <div class="block shadow-md rounded-lg bg-white h-100 p-3">
+          <div class="d-flex align-items-center justify-content-between mb-2">
+            {{with .number}}<span class="subtitle mb-0">{{.}}</span>{{end}}
+            {{with .icon}}<i class="process-flow-icon {{.}}"></i>{{end}}
+          </div>
+          <h6 class="mb-2">{{.title | markdownify}}</h6>
+          <p class="mb-0 small">{{.content | markdownify}}</p>
+        </div>
+      </div>
+      {{end}}
+    </div>
+  </div>
+</section>
+{{end}}
+{{end}}
+
+<!-- Video: Guardalo in azione (riusa il rendering di skills_box) -->
+{{if .Params.skills_box.enable}}
+{{with .Params.skills_box}}
+<section class="section bg-primary-soft rounded-lg wave-block">
+  <div class="container container-delta">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <div class="section-title">
+          {{with .subtitle}}<p class="subtitle">{{. | markdownify}}</p>{{end}}
+          <h2 class="title mb-3">{{.title | markdownify}}</h2>
+          {{with .description}} <p>{{. | markdownify}}</p> {{end}}
+        </div>
+      </div>
+    </div>
+    {{$video := .video}}
+    {{with .image}}
+    <div class="row justify-content-center">
+      <div class="col-lg-12">
+        {{$img:= resources.Get . }}
+        {{$img:= $img.Resize "1800x"}}
+        {{$imgWebp:= $img.Resize "1800x webp"}}
+        {{if $video}}
+        {{partial "video" (dict "Src" $video "Controls" "true" "Autoplay" "true" "Muted" "true" "Loop" "true" "NoDownload" "true" "Class" "w-100 rounded-lg" "Poster" $imgWebp.RelPermalink)}}
+        {{else}}
+        <img loading="lazy" decoding="async" class="w-100 rounded-lg img-fluid" width="{{$img.Width}}" height="{{$img.Height}}" src="{{$imgWebp.RelPermalink}}" alt="Video demo" onerror="this.onerror=null;this.src='{{$img.RelPermalink}}'">
+        {{end}}
+      </div>
+    </div>
+    {{end}}
+  </div>
+  <div class="has-wave alter-position">
+    <svg class="wave-left" style="opacity:0.75" width="245" height="280" viewBox="0 0 245 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path opacity="0.75" d="M193.97 -38.8821C157.391 -46.8434 128.867 -7.89509 115.04 20.3438C105.459 39.8887 99.9716 62.2619 106.378 83.6072C109.18 92.9645 114.527 101.934 122.265 108.104C126.855 111.683 136.46 116.764 139.736 109.213C143.28 101.197 137.772 90.897 132.91 84.8394C127.205 77.8303 119.414 72.5579 111.081 69.2951C95.2955 63.1224 69.9647 60.8812 55.8795 72.4081C47.2175 79.6359 51.1561 95.0673 51.9614 104.665C53.1185 117.407 55.0391 130.435 55.0484 143.289C55.1115 155.244 49.4632 165.296 38.0867 169.718C27.76 173.662 17.194 171.587 7.37011 167.153C-3.4496 162.3 -12.9648 155.723 -24.4057 152.213C-35.3152 148.856 -46.4485 147.226 -57.8057 147.325C-80.337 147.475 -102.017 154.461 -120.449 167.349C-131.04 174.701 -140.922 157.231 -130.447 149.812C-89.9485 121.492 -35.6544 120.487 7.1228 144.256C12.9946 147.491 30.4893 158.211 34.4632 147.038C36.4166 141.51 33.9943 132.836 33.554 127.164C32.793 118.83 32.0989 110.38 31.3379 102.046C30.0695 88.156 28.6048 73.5336 37.8355 61.8355C45.5604 52.2092 57.9686 47.6087 69.7999 45.6162C93.6454 41.5821 119.096 46.8333 138.183 62.033C155.382 75.6778 170.298 105.342 152.919 124.719C133.936 145.801 104.753 123.69 94.009 105.567C80.5913 82.9604 80.7654 55.0431 88.839 30.6029C103.703 -13.91 144.925 -70.2942 198.697 -58.5982C211.737 -55.7134 206.546 -36.2654 193.97 -38.8821Z" fill="currentColor"/>
+    </svg>
+  </div>
+</section>
+{{end}}
+{{end}}
+
+
+
+<!-- Asset: I dati sono un asset (6 blocchi, riusa benefit_info) -->
+{{if .Params.benefit_info.enable}}
+{{with .Params.benefit_info}}
+<section class="section">
+  <div class="container container-delta">
+    <div class="row gy-4">
+      <div class="col-lg-12 mx-auto">
+        <div class="section-title text-center mb-2">
+          {{with .subtitle}}<p class="subtitle">{{. | markdownify}}</p>{{end}}
+          <h2 class="title">{{.title | markdownify}}</h2>
+          {{with .description}} <p>{{. | markdownify}}</p> {{end}}
+        </div>
+      </div>
+      {{range .block}}
+      <div class="col-md-6 features-box">
+        <div class="block shadow-md rounded-lg bg-white h-100 p-4 p-md-5">
+          {{ $blockTitle := .title }}
+          {{with .image}}
+          {{$img:= resources.Get . }}
+          {{$img:= $img.Resize "150x"}}
+          {{$imgWebp:= $img.Resize "150x webp"}}
+          <div class="d-flex align-items-center mb-4">
+            <img loading="lazy" decoding="async" class="img-fluid flex-shrink-0 me-3" width="{{$img.Width}}" height="{{$img.Height}}" src="{{$imgWebp.RelPermalink}}" alt="{{$blockTitle | plainify}}" onerror="this.onerror=null;this.src='{{$img.RelPermalink}}'">
+            <h3 class="mb-0">{{ $blockTitle | markdownify }}</h3>
+          </div>
+          {{else}}
+          {{if $.Params.benefit_info.inline_title}}
+          <div class="d-flex align-items-center mb-4">
+            <i class="icon mb-0 me-3 bg-transparent flex-shrink-0 {{.icon}}"></i>
+            <h3 class="mb-0">{{.title | markdownify}}</h3>
+          </div>
+          {{else}}
+          <i class="icon mb-4 bg-transparent {{.icon}}"></i>
+          <h3 class="mb-3">{{.title | markdownify}}</h3>
+          {{end}}
+          {{end}}
+          <p class="mb-0">{{.content | markdownify}}</p>
+        </div>
+      </div>
+      {{end}}
+    </div>
+  </div>
+</section>
+{{end}}
+{{end}}
+
+
+
+<!-- Scalabilità orizzontale e data federation (2 blocchi con figure) -->
+{{with .Params.scalability}}
+{{if .enable}}
+<section class="section bg-primary-soft rounded-lg wave-block">
+  <div class="container container-delta">
+    <div class="row justify-content-center text-center">
+      <div class="col-lg-12">
+        <div class="section-title">
+          {{with .subtitle}}<p class="subtitle">{{. | markdownify}}</p>{{end}}
+          <h2 class="title">{{.title | markdownify}}</h2>
+          {{with .description}}<p>{{. | markdownify}}</p>{{end}}
+        </div>
+      </div>
+    </div>
+    <div class="row gy-4">
+      {{range .block}}
+      <div class="col-md-6">
+        <div class="block shadow-md rounded-lg bg-white h-100 p-4 p-md-5">
+          {{ $blockTitle := .title }}
+          {{with .image}}
+          {{$img:= resources.Get . }}
+          {{$img:= $img.Resize "700x"}}
+          {{$imgWebp:= $img.Resize "700x webp"}}
+          <img loading="lazy" decoding="async" class="w-100 rounded-lg img-fluid mb-4" width="{{$img.Width}}" height="{{$img.Height}}" src="{{$imgWebp.RelPermalink}}" alt="{{$blockTitle | plainify}}" onerror="this.onerror=null;this.src='{{$img.RelPermalink}}'">
+          {{else}}
+          <div class="bg-light rounded-lg text-center text-muted py-5 mb-4">FIGURA PLACEHOLDER</div>
+          {{end}}
+          <h3 class="h4 mb-3">{{.title | markdownify}}</h3>
+          {{with .bold}}<p class="fw-bold mb-2">{{. | markdownify}}</p>{{end}}
+          <p class="mb-0">{{.content | markdownify}}</p>
+        </div>
+      </div>
+      {{end}}
+    </div>
+  </div>
+  <div class="has-wave alter-position">
+    <svg class="wave-left" style="opacity:0.75" width="245" height="280" viewBox="0 0 245 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path opacity="0.75" d="M193.97 -38.8821C157.391 -46.8434 128.867 -7.89509 115.04 20.3438C105.459 39.8887 99.9716 62.2619 106.378 83.6072C109.18 92.9645 114.527 101.934 122.265 108.104C126.855 111.683 136.46 116.764 139.736 109.213C143.28 101.197 137.772 90.897 132.91 84.8394C127.205 77.8303 119.414 72.5579 111.081 69.2951C95.2955 63.1224 69.9647 60.8812 55.8795 72.4081C47.2175 79.6359 51.1561 95.0673 51.9614 104.665C53.1185 117.407 55.0391 130.435 55.0484 143.289C55.1115 155.244 49.4632 165.296 38.0867 169.718C27.76 173.662 17.194 171.587 7.37011 167.153C-3.4496 162.3 -12.9648 155.723 -24.4057 152.213C-35.3152 148.856 -46.4485 147.226 -57.8057 147.325C-80.337 147.475 -102.017 154.461 -120.449 167.349C-131.04 174.701 -140.922 157.231 -130.447 149.812C-89.9485 121.492 -35.6544 120.487 7.1228 144.256C12.9946 147.491 30.4893 158.211 34.4632 147.038C36.4166 141.51 33.9943 132.836 33.554 127.164C32.793 118.83 32.0989 110.38 31.3379 102.046C30.0695 88.156 28.6048 73.5336 37.8355 61.8355C45.5604 52.2092 57.9686 47.6087 69.7999 45.6162C93.6454 41.5821 119.096 46.8333 138.183 62.033C155.382 75.6778 170.298 105.342 152.919 124.719C133.936 145.801 104.753 123.69 94.009 105.567C80.5913 82.9604 80.7654 55.0431 88.839 30.6029C103.703 -13.91 144.925 -70.2942 198.697 -58.5982C211.737 -55.7134 206.546 -36.2654 193.97 -38.8821Z" fill="currentColor"/>
+    </svg>
+  </div>
+</section>
+{{end}}
+{{end}}
+
+<!-- Prestazioni elevate con risorse contenute -->
+{{with .Params.prestazioni}}
+{{if .enable}}
+<section class="section">
+  <div class="container container-delta">
+    <div class="row align-items-center gy-4">
+      <div class="col-lg-5">
+        {{with .image}}
+        {{$img:= resources.Get . }}
+        {{$img:= $img.Resize "700x"}}
+        {{$imgWebp:= $img.Resize "700x webp"}}
+        <img loading="lazy" decoding="async" class="w-100 rounded-lg img-fluid" width="{{$img.Width}}" height="{{$img.Height}}" src="{{$imgWebp.RelPermalink}}" alt="Mini computer" onerror="this.onerror=null;this.src='{{$img.RelPermalink}}'">
+        {{else}}
+        <div class="bg-light rounded-lg d-flex align-items-center justify-content-center text-center text-muted p-5" style="min-height:260px;">IMMAGINE MINI-COMPUTER PLACEHOLDER</div>
+        {{end}}
+      </div>
+      <div class="col-lg-7">
+        <div class="section-title">
+          {{with .subtitle}}<p class="subtitle">{{. | markdownify}}</p>{{end}}
+          <h2 class="title">{{.title | markdownify}}</h2>
+          {{with .description}}<p>{{. | markdownify}}</p>{{end}}
+        </div>
+        <div class="row gy-4">
+          <div class="col-md-6">
+            <div class="block shadow-md rounded-lg bg-white h-100 p-4">
+              <h4 class="mb-3"><i class="fas fa-microchip text-quaternary me-2"></i>Hardware utilizzato</h4>
+              <p class="mb-0">
+                {{range .hardware}}<strong>{{.label}}:</strong> {{.value}}<br>{{end}}
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="block shadow-md rounded-lg bg-white h-100 p-4">
+              <h4 class="mb-3"><i class="fas fa-gauge-high text-quaternary me-2"></i>Benchmark TPC-H</h4>
+              <p class="mb-0">
+                {{range .benchmark}}<strong>{{.label}}:</strong> {{.value}}<br>{{end}}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{end}}
+{{end}}
+
+<!-- CTA finale -->
+{{with .Params.cta}}
+{{if .enable}}
+<section class="section pb-0 pt-0 call-to-action call-to-action-2">
+  <div class="container container-delta">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="block bg-white rounded-lg shadow">
+          <div class="row g-0 align-items-center">
+            <div class="col-lg-8">
+              <div class="content-block">
+                <h3 class="mb-2">{{.title | markdownify}}</h3>
+                <p class="mb-4">{{.description | markdownify}}</p>
+                {{with .button_label}}
+                <a href="{{$.Params.cta.button_link | relLangURL}}" class="btn btn-primary">
+                  {{.}} <i class="arrow-right fas fa-arrow-right"></i>
+                </a>
+                {{end}}
+              </div>
+            </div>
+            {{with .image}}
+            <div class="col-lg-4">
+              {{$img:= resources.Get . }}
+              {{$img:= $img.Resize "425x"}}
+              {{$imgWebp:= $img.Resize "425x webp"}}
+              <img loading="lazy" decoding="async" class="rounded-lg img-fluid" width="{{$img.Width}}" height="{{$img.Height}}" src="{{$imgWebp.RelPermalink}}" alt="CTA Image" onerror="this.onerror=null;this.src='{{$img.RelPermalink}}'">
+            </div>
+            {{end}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{end}}
+{{end}}
+
+{{end}}

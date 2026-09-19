@@ -3,17 +3,17 @@ title: "muleML - Works, Simply, With Purpose"
 
 # banner
 banner:
-  subtitle: "Shaping the intelligence of energy"
+  subtitle: "For a better future"
   title: "Energy <br>from your data"
-  description: "We believe the future of energy lies in data-driven insights. <br>That’s why we democratize machine learning and data engineering in energy storage, helping the world build more sustainable and resilient energy systems."
+  description: "We believe the future of energy is built on insights generated from data. That’s why we democratize machine learning and data engineering in energy storage, helping create more sustainable, intelligent and resilient systems."
   button:
     enable: true
-    label: "Get started now"
+    label: "Get started"
     icon: "fas fa-arrow-right"
     link: "contact/"
   video_button:
     enable: false
-    label: "Watch demo"
+    label: "Watch the demo"
     video_url: "https://www.youtube.com/embed/dyZcRRWiuuw"
   
   image: "images/banner-home.png"
@@ -21,7 +21,7 @@ banner:
 # brands
 brands:
   enable: true
-  title: "800 MWh battery capacity <br>under active management <br> worldwide"
+  title: "800 MWh of battery capacity <br>under active management <br> worldwide"
   images: 
   - "images/clients/01.png"
   - "images/clients/02.png"
@@ -36,7 +36,7 @@ features:
 # fun facts
 fun_facts:
   enable: true
-  title: "A mature and effective technology, <br>proven by numbers"
+  title: "Mature, effective technology, <br>proven by the numbers"
   fact_item:
   - icon: "fas fa-battery-full"
     counter: "800"
@@ -45,18 +45,18 @@ fun_facts:
 
   - icon: "fas fa-user-graduate"
     counter: "8"
-    counter_suffix: "yrs"
+    counter_suffix: "yr"
     content: "Real-world operating <br>experience in energy storage"
 
   - icon: "fas fa-network-wired"
     counter: "80"
     counter_suffix: "%"
-    content: "Integration with Tier 1 OEMs <br>for lower system cost"
+    content: "Integration <br>with Tier 1 OEM hardware"
 
   - icon: "fab fa-pagelines"
     counter: "6"
-    counter_suffix: "yrs"
-    content: "Battery lifetime extension <br>enabled by our technology"
+    counter_suffix: "yr"
+    content: "Potential extension <br>of battery life"
     
     
 # key_advantages
@@ -67,14 +67,14 @@ key_advantages:
 # image_and_content_block
 image_and_content_block:
   enable: true
-  subtitle: "We Are muleML"
+  subtitle: "We are muleML"
   title: "Where science meets industry"
   image: "images/block-image-01.png"
   content_position: "left" # Value will be - "left/right"
-  content: "The company is young, but the team brings a long professional history. Born connected to the ecosystem of the Massachusetts Institute of Technology, it combines top-level academic credentials with industrial expertise in IT consulting, analytics, and project management, creating a unique profile for technology transfer and applied research, capable of transforming cutting-edge scientific knowledge into concrete solutions for industry."
+  content: "The company is young, but the team brings solid professional experience. Founded with ties to the Massachusetts Institute of Technology ecosystem, it combines high-level academic credentials with industry experience in IT consulting, analytics and project management, creating a unique profile for technology transfer and applied research, capable of turning the most advanced scientific knowledge into practical solutions for industry."
   button:
     enable: true
-    label: "Get to know our story"
+    label: "Discover our story"
     icon: "fas fa-arrow-right"
     link: "about/"
 
@@ -82,14 +82,14 @@ image_and_content_block:
 # blog
 blog:
   enable: true
-  subtitle: "Insights & updates"
-  title: "Latest from our blog"
+  subtitle: "Insights and updates"
+  title: "The latest articles from our blog"
   description: "Explore fresh perspectives on energy storage, data, and machine learning shaping the future"
 
   button:
     enable: true
     link: "blog/"
-    label: "Read All Blogs"
+    label: "Read all articles"
     icon: "fas fa-arrow-right"
 
 

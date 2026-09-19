@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>muleML</title>
+  <meta name="robots" content="noindex, nofollow">
+
+  <style>
+    :root {
+      --background: #f7faf9;
+      --background-accent: #edf7f4;
+
+      --text: #173c3b;
+      --muted: #6d817e;
+
+      --primary: #3b8f83;
+      --primary-light: #7bc1b4;
+      --primary-soft: #dcefeb;
+
+      --white: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    body {
+      font-family:
+        Inter,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+
+      color: var(--text);
+
+      background:
+        radial-gradient(
+          circle at 15% 20%,
+          rgba(123, 193, 180, 0.16),
+          transparent 32%
+        ),
+        radial-gradient(
+          circle at 85% 80%,
+          rgba(59, 143, 131, 0.10),
+          transparent 34%
+        ),
+        var(--background);
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      overflow: hidden;
+    }
+
+    /*
+     * Decorative blurred circles
+     */
+    .blob {
+      position: fixed;
+      border-radius: 50%;
+      filter: blur(2px);
+      pointer-events: none;
+      opacity: 0.5;
+    }
+
+    .blob-one {
+      width: 340px;
+      height: 340px;
+      top: -170px;
+      right: -100px;
+      background: var(--primary-soft);
+    }
+
+    .blob-two {
+      width: 260px;
+      height: 260px;
+      bottom: -130px;
+      left: -70px;
+      background: #e9f3ef;
+    }
+
+    /*
+     * Main content
+     */
+    .container {
+      position: relative;
+      z-index: 1;
+
+      width: min(90vw, 540px);
+
+      padding: 54px 42px 46px;
+
+      text-align: center;
+
+      background: rgba(255, 255, 255, 0.78);
+
+      border: 1px solid rgba(59, 143, 131, 0.10);
+      border-radius: 28px;
+
+      box-shadow:
+        0 20px 50px rgba(30, 70, 65, 0.07);
+
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+
+      animation: appear 0.6s ease-out;
+    }
+
+    /*
+     * Logo
+     */
+    .logo-wrapper {
+      margin-bottom: 34px;
+    }
+
+    .logo {
+      display: block;
+      height: auto;
+      margin: 0 auto;
+    }
+
+    /*
+     * Animated loader
+     */
+    .loader {
+      position: relative;
+
+      width: 54px;
+      height: 54px;
+
+      margin: 0 auto 28px;
+    }
+
+    .loader-ring {
+      position: absolute;
+      inset: 0;
+
+      border: 3px solid var(--primary-soft);
+      border-top-color: var(--primary);
+
+      border-radius: 50%;
+
+      animation: rotate 1.05s linear infinite;
+    }
+
+    .loader-dot {
+      position: absolute;
+
+      width: 8px;
+      height: 8px;
+
+      top: 50%;
+      left: 50%;
+
+      margin: -4px 0 0 -4px;
+
+      border-radius: 50%;
+
+      background: var(--primary);
+
+      animation: pulse 1.3s ease-in-out infinite;
+    }
+
+    /*
+     * Text
+     */
+    h1 {
+      margin: 0;
+
+      font-size: clamp(25px, 4vw, 32px);
+      font-weight: 600;
+      letter-spacing: -0.5px;
+    }
+
+    .redirecting {
+      margin-top: 12px;
+
+      font-size: 17px;
+      font-weight: 400;
+
+      color: var(--muted);
+    }
+
+    .dots {
+      display: inline-block;
+      width: 22px;
+      text-align: left;
+    }
+
+    .dots::after {
+      content: "";
+      animation: dots 1.4s steps(4, end) infinite;
+    }
+
+    /*
+     * Progress line
+     */
+    .progress {
+      width: 160px;
+      height: 3px;
+
+      margin: 30px auto 0;
+
+      border-radius: 20px;
+
+      background: var(--primary-soft);
+
+      overflow: hidden;
+    }
+
+    .progress-bar {
+      width: 0%;
+      height: 100%;
+
+      border-radius: 20px;
+
+      background:
+        linear-gradient(
+          90deg,
+          var(--primary-light),
+          var(--primary)
+        );
+
+      animation: progress 3s linear forwards;
+    }
+
+    /*
+     * Fallback link
+     */
+    .fallback {
+      margin-top: 26px;
+
+      font-size: 13px;
+
+      color: #91a09e;
+    }
+
+    .fallback a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .fallback a:hover {
+      text-decoration: underline;
+    }
+
+    /*
+     * Animations
+     */
+    @keyframes rotate {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(0.8);
+        opacity: 0.45;
+      }
+
+      50% {
+        transform: scale(1.25);
+        opacity: 1;
+      }
+    }
+
+    @keyframes dots {
+      0% {
+        content: "";
+      }
+
+      25% {
+        content: ".";
+      }
+
+      50% {
+        content: "..";
+      }
+
+      75% {
+        content: "...";
+      }
+
+      100% {
+        content: "";
+      }
+    }
+
+    @keyframes progress {
+      from {
+        width: 0%;
+      }
+
+      to {
+        width: 100%;
+      }
+    }
+
+    @keyframes appear {
+      from {
+        opacity: 0;
+        transform: translateY(8px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /*
+     * Mobile
+     */
+    @media (max-width: 600px) {
+      .container {
+        width: 88vw;
+        padding: 45px 25px 38px;
+        border-radius: 24px;
+      }
+
+      .logo {
+        width: min(220px, 72%);
+      }
+
+      .logo-wrapper {
+        margin-bottom: 30px;
+      }
+    }
+
+    /*
+     * Accessibility
+     */
+    @media (prefers-reduced-motion: reduce) {
+      .container,
+      .loader-ring,
+      .loader-dot,
+      .progress-bar,
+      .dots::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="blob blob-one"></div>
+  <div class="blob blob-two"></div>
+
+  <main class="container">
+
+    <div class="logo-wrapper">
+      <img
+        class="logo"
+        src="/images/logo.svg"
+        alt="muleML"
+      >
+    </div>
+
+    <div class="loader" aria-hidden="true">
+      <div class="loader-ring"></div>
+      <div class="loader-dot"></div>
+    </div>
+
+    <h1>Almost there</h1>
+
+    <div class="redirecting">
+      Redirecting<span class="dots"></span>
+    </div>
+
+    <div class="progress">
+      <div class="progress-bar"></div>
+    </div>
+
+    <div class="fallback">
+      Not redirected automatically?
+      <a id="continue-link" href="#">Continue</a>
+    </div>
+
+  </main>
+
+  <script>
+    const destination = "/soluzioni";
+
+    const delay = 3000;
+
+    document.getElementById("continue-link").href = destination;
+
+    setTimeout(() => {
+      window.location.replace(destination);
+    }, delay);
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,599 @@
+{{define "main"}}
+
+<!-- ============================================================
+     Layout pagina: Energy Management System
+     Riusa componenti e stili delle altre pagine soluzione:
+     - hero/banner e .has-wave da smart-grid-data-fabric.html
+     - sezioni "benefit_info" / "skills_box" (video) / "cta"
+     - flusso orizzontale ".process-flow" usato in battery-intelligence.html
+     Le uniche aggiunte di pagina sono il blocco <style> e il piccolo <script>
+     della sezione "orchestrazione" (processo visuale HTML + JS).
+     ============================================================ -->
+
+<section class="banner {{ if eq .Params.banner.variant `home` }}banner-2 bg-primary-soft{{ else if eq .Section `soluzioni` }}bg-quaternary-soft{{ else }}bg-tertiary-soft{{ end }} rounded-lg wave-block overflow-hidden">
+  {{ partial "essentials/header.html" . }}
+
+  {{with .Params.banner}}
+  {{$homeHero := eq .variant "home"}}
+  <div class="container container-delta block">
+    <div class="row align-items-center {{if $homeHero}}flex-lg-nowrap text-center text-lg-start{{else if .image}}text-center text-lg-start{{else}}justify-content-center text-center{{end}}">
+      <div class="{{if .image}}col-lg-6{{else}}col-lg-9{{end}}">
+        <div class="{{if .image}}pe-0 pe-lg-5{{end}}">
+          <p class="subtitle">{{.subtitle | markdownify}}</p>
+          <h1 class="title text-xl mb-3">{{.title | markdownify}}</h1>
+          <p class="mb-4">{{.description | markdownify}}</p>
+
+          {{with .button}}
+          {{if .enable}}
+          <a href="{{.link | relLangURL}}" class="btn btn-primary m-1">
+            {{.label}} <i class="arrow-right {{.icon}}"></i>
+          </a>
+          {{end}}
+          {{end}}
+        </div>
+      </div>
+      {{with .image}}
+      <div class="{{if $homeHero}}col-lg-9{{else}}col-lg-6{{end}} mt-5 mt-lg-0">
+        {{if $homeHero}}
+        <div class="banner-image-2">
+          {{$img:= resources.Get .}}
+          {{$img:= $img.Resize "1000x"}}
+          {{$imgWebp:= $img.Resize "1000x webp"}}
+          <img loading="lazy" decoding="async" class="img-fluid" width="{{$img.Width}}" height="{{$img.Height}}" src="{{$imgWebp.RelPermalink}}" alt="Banner Image" onerror="this.onerror=null;this.src='{{$img.RelPermalink}}'">
+        </div>
+        {{else}}
+        {{ partial "image.html" (dict "Src" . "Alt" "Banner Image"  "Class" "rounded-lg img-fluid") }}
+        {{end}}
+      </div>
+      {{end}}
+    </div>
+  </div>
+  {{end}}
+
+  <div class="has-wave">
+    <svg class="wave-left" width="274" height="395" viewBox="0 0 274 395" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path opacity="0.6" d="M-160.703 49.9832C-102.183 25.7147 -35.1189 14.7857 26.6255 33.4291C82.7274 50.3045 126.094 93.2164 147.051 147.379C157.53 174.218 162.85 202.826 162.689 231.595C162.528 245.256 162.205 260.364 157.369 273.221C155.273 278.846 151.888 284.311 146.406 287.043C142.537 288.972 136.089 289.936 132.703 286.4C124.643 277.721 133.026 258.756 138.507 251.042C145.762 240.756 157.53 233.041 170.105 231.756C198.8 228.863 223.466 252.81 236.04 276.114C262.963 326.097 249.26 396.492 203.798 431.368C198.639 435.386 195.899 441.654 199.445 447.922C202.347 453.065 210.891 456.119 216.05 452.261C267.477 412.885 287.951 339.919 264.091 279.489C251.517 247.828 225.723 217.291 191.062 209.416C155.273 201.219 119.161 222.756 108.521 257.792C103.524 274.185 104.33 295.722 119.323 306.651C133.348 316.776 153.5 313.401 166.074 302.472C180.261 290.097 183.969 270.328 185.742 252.488C187.516 235.292 187.193 217.934 185.097 200.898C176.714 132.592 140.764 66.6978 80.4704 30.8576C5.66784 -13.6614 -89.4475 -5.46471 -167.152 26.679C-173.117 29.0898 -177.469 34.7149 -175.535 41.465C-173.923 47.2509 -166.829 52.5547 -160.703 49.9832Z" fill="currentColor"/>
+    </svg>
+    <svg class="wave-right" width="329" height="366" viewBox="0 0 329 366" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path opacity="0.85" d="M525.288 205.211C475.043 243.798 413.092 271.712 348.627 269.685C290.069 267.905 237.074 237.679 202.812 190.787C185.744 167.573 173.201 141.317 165.911 113.487C162.531 100.25 158.932 85.5736 160.276 71.9025C160.844 65.9266 162.7 59.7721 167.287 55.7143C170.525 52.85 176.505 50.2496 180.69 52.7887C190.722 59.0855 187.533 79.5738 184.235 88.4441C179.89 100.257 170.519 110.755 158.706 115.251C131.737 125.473 101.714 108.725 83.5359 89.4699C44.5941 48.1576 39.6108 -23.385 74.497 -68.839C78.4401 -74.0552 79.465 -80.8191 74.4169 -85.9556C70.2829 -90.1723 61.2394 -90.9104 57.2548 -85.8494C17.7716 -34.5048 16.8803 41.2741 55.5672 93.4698C75.9079 120.798 108.726 143.618 144.244 142.254C180.935 140.909 210.243 110.76 211.452 74.1631C212.036 57.0349 205.684 36.4411 188.373 29.7651C172.205 23.6149 153.614 32.0905 144.296 45.9015C133.796 61.527 135.331 81.5814 138.235 99.2722C140.973 116.342 145.777 133.025 152.211 148.938C177.987 212.746 229.767 267.091 297.282 286.105C381.058 309.747 470.811 276.987 537.548 226.052C542.686 222.179 545.435 215.619 541.819 209.6C538.764 204.428 530.54 201.141 525.288 205.211Z" fill="currentColor"/>
+    </svg>
+  </div>
+</section>
+
+<!-- Stili minimi di pagina per le sezioni 3 e 5. Il resto usa le classi del tema. -->
+<style>
+  /* ============================================================
+     Sezione 3 — schema di orchestrazione.
+     Desktop (≥1200px): Mercati e segnali → EMS → Asset energetici.
+     Il blocco centrale rappresenta l'EMS come processo a tre moduli
+     (Forecasting → Optimization Engine → Dispatch & Control) racchiusi
+     da una staffa con etichetta; sotto, la linea di ritorno dagli asset.
+     Sotto i 1200px: linearizzazione verticale.
+     Il JS aggiunge "ems-js"/"is-live" per la comparsa progressiva.
+     ============================================================ */
+  .ems-orch-flow {
+    display: grid;
+    grid-template-columns: 1fr 44px 2.8fr 44px 1fr;
+    grid-template-areas: "in a1 sys a2 out";
+    align-items: stretch;
+  }
+  .ems-orch-box--in { grid-area: in; }
+  .ems-orch-arrow--1 { grid-area: a1; }
+  .ems-orch-system { grid-area: sys; }
+  .ems-orch-arrow--2 { grid-area: a2; }
+  .ems-orch-box--out { grid-area: out; }
+
+  /* comparsa progressiva */
+  .ems-orch-flow.ems-js .ems-orch-box,
+  .ems-orch-flow.ems-js .ems-orch-arrow,
+  .ems-orch-flow.ems-js .ems-orch-system { opacity: 0; transform: translateY(10px); }
+  .ems-orch-flow.ems-js.is-live .ems-orch-box,
+  .ems-orch-flow.ems-js.is-live .ems-orch-arrow,
+  .ems-orch-flow.ems-js.is-live .ems-orch-system {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity .5s ease, transform .5s ease;
+    transition-delay: calc(var(--step-index, 0) * .1s);
+  }
+
+  /* box laterali: Mercati e segnali / Asset energetici */
+  .ems-orch-box {
+    display: flex;
+    flex-direction: column;
+    padding: 1.75rem 1.35rem;
+    text-align: center;
+  }
+  .ems-orch-box-title { font-size: 1.08rem; line-height: 1.3; margin-bottom: 1.35rem; }
+  .ems-orch-icons {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.35rem .6rem;
+    margin-top: auto;
+  }
+  .ems-orch-icon { display: flex; flex-direction: column; align-items: center; gap: .5rem; }
+  .ems-orch-icon i { font-size: 1.75rem; line-height: 1; color: #6E9240; }
+  .ems-orch-icon span { font-size: .84rem; line-height: 1.35; color: #555; }
+
+  /* frecce fra i blocchi */
+  .ems-orch-arrow { position: relative; display: flex; align-items: center; justify-content: center; color: #4262FF; font-size: 1rem; }
+  .ems-orch-arrow::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    height: 2px;
+    margin-top: -1px;
+    background: rgba(66, 98, 255, .3);
+  }
+  .ems-orch-arrow i { position: relative; z-index: 1; background: #fff; padding: 0 .2rem; }
+
+  /* staffa del sistema EMS, con etichetta sul bordo superiore */
+  .ems-orch-system {
+    position: relative;
+    border: 1px solid rgba(66, 98, 255, .3);
+    border-radius: 1.1rem;
+    padding: 2rem 1.5rem 1.25rem;
+  }
+  .ems-orch-system-label {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 0 .85rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-size: .95rem;
+    letter-spacing: .02em;
+    color: #4262FF;
+    white-space: nowrap;
+  }
+
+  /* i tre moduli del processo EMS */
+  .ems-orch-modules { display: flex; align-items: stretch; justify-content: center; }
+  .ems-orch-module {
+    flex: 1 1 0;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.35rem 1rem;
+    background: #fff;
+    border: 1px solid rgba(5, 0, 56, .09);
+    border-radius: .9rem;
+    box-shadow: 0 8px 24px rgba(5, 0, 56, .06);
+    text-align: center;
+  }
+  .ems-orch-module.is-core { border: 2px solid #4262FF; box-shadow: 0 10px 30px rgba(66, 98, 255, .16); }
+  .ems-orch-module-icon { font-size: 1.7rem; line-height: 1; color: #6E9240; margin-bottom: .7rem; }
+  .ems-orch-module.is-core .ems-orch-module-icon { color: #4262FF; }
+  .ems-orch-module-title { font-size: .98rem; line-height: 1.25; margin-bottom: .45rem; }
+  .ems-orch-module-meta { font-size: .78rem; line-height: 1.4; color: #555; margin-bottom: 0; }
+  .ems-orch-module-arrow { display: flex; align-items: center; justify-content: center; flex: 0 0 34px; color: #4262FF; font-size: .9rem; }
+
+  /* flusso di ritorno, interno al box EMS: dagli asset al modulo Forecasting */
+  .ems-orch-feedback { position: relative; height: 72px; }
+  .ems-orch-feedback::before {
+    content: "";
+    position: absolute;
+    /* 68px = le due frecce da 34px tra i moduli: la linea va dal centro
+       del modulo Forecasting al centro del modulo Dispatch & Control */
+    left: calc((100% - 68px) / 6);
+    right: calc((100% - 68px) / 6);
+    top: 50%;
+    height: 2px;
+    margin-top: -1px;
+    background: rgba(66, 98, 255, .3);
+  }
+  .ems-orch-feedback-label {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 0 .85rem;
+    font-size: .8rem;
+    font-weight: 500;
+    color: #555;
+    white-space: nowrap;
+  }
+  .ems-orch-feedback-end { position: absolute; top: 0; bottom: 50%; width: 2px; background: rgba(66, 98, 255, .3); }
+  .ems-orch-feedback-end.is-left { left: calc((100% - 68px) / 6); margin-left: -1px; }
+  .ems-orch-feedback-end.is-right { right: calc((100% - 68px) / 6); margin-right: -1px; }
+  .ems-orch-feedback-end.is-left i {
+    position: absolute;
+    top: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #4262FF;
+    font-size: .7rem;
+    background: #fff;
+    padding: 0 4px;
+  }
+
+  /* linearizzazione verticale (tablet e mobile) */
+  @media (max-width: 1199.98px) {
+    .ems-orch-flow {
+      grid-template-columns: 1fr;
+      grid-template-areas: "in" "a1" "sys" "a2" "out";
+    }
+    .ems-orch-arrow { min-height: 64px; }
+    .ems-orch-arrow::before { left: 50%; right: auto; top: 0; bottom: 0; width: 2px; height: auto; margin: 0 0 0 -1px; }
+    .ems-orch-arrow i { transform: rotate(90deg); }
+    .ems-orch-modules { flex-direction: column; }
+    .ems-orch-module-arrow { flex: 0 0 auto; padding: .6rem 0; }
+    .ems-orch-module-arrow i { transform: rotate(90deg); }
+    .ems-orch-system { padding: 1.75rem 1.25rem 1.25rem; }
+    /* in verticale la linea torna a tutta larghezza, con il rientro a monte */
+    .ems-orch-feedback::before { left: 0; right: 0; }
+    .ems-orch-feedback-end.is-left { left: 0; margin-left: 0; }
+    .ems-orch-feedback-end.is-right { display: none; }
+  }
+
+  /* Sezione 5 — flusso orizzontale su singola riga (come "Verifica delle prestazioni"). */
+  .ems-flow-single .process-flow-item { min-width: 0; display: flex; align-items: stretch; }
+  .ems-flow-single .process-flow-item > * { width: 100%; min-width: 0; height: auto; }
+  .ems-flow-single .process-flow-item:last-child::after { display: none !important; }
+  /* icone più grandi nei 4 box (la utility fs-3, con !important, era troppo piccola) */
+  .ems-flow-single .process-flow-icon,
+  .process-flow-responsive .process-flow-icon { font-size: clamp(2.25rem, 1.75rem + 0.9vw, 2.75rem); }
+  .process-flow-responsive .process-flow-item > * { width: 100%; min-width: 0; }
+
+  /* Sezione 1 — uniforma i 4 blocchi: titolo e descrizione occupano sempre lo
+     stesso spazio, così i blocchi restano allineati a ogni larghezza.
+     L'unità "lh" corrisponde all'altezza di riga dell'elemento. */
+  .ems-balanced .block h3 { min-height: 2lh; }
+  .ems-balanced .block > p { min-height: 4lh; }
+  @media (min-width: 768px) {
+    .ems-balanced .block h3 { min-height: 3lh; }
+    .ems-balanced .block > p { min-height: 6lh; }
+  }
+  @media (min-width: 1200px) {
+    .ems-balanced .block h3 { min-height: 3lh; }
+    .ems-balanced .block > p { min-height: 4lh; }
+  }
+  @media (min-width: 1280px) {
+    .ems-balanced .block h3 { min-height: 2lh; }
+    .ems-balanced .block > p { min-height: 4lh; }
+  }
+
+  /* Sezione 4 — "Un'unica logica, scenari diversi": uniforma i 4 blocchi
+     (stessa logica della sezione 1, con riserve calibrate sui suoi testi). */
+  .ems-balanced-scenarios .block h3 { min-height: 1lh; }
+  .ems-balanced-scenarios .block > p { min-height: 2lh; }
+  @media (min-width: 768px) {
+    .ems-balanced-scenarios .block h3 { min-height: 3lh; }
+    .ems-balanced-scenarios .block > p { min-height: 4lh; }
+  }
+  @media (min-width: 992px) {
+    .ems-balanced-scenarios .block h3 { min-height: 2lh; }
+    .ems-balanced-scenarios .block > p { min-height: 3lh; }
+  }
+  @media (min-width: 1200px) {
+    .ems-balanced-scenarios .block h3 { min-height: 2lh; }
+    .ems-balanced-scenarios .block > p { min-height: 2lh; }
+  }
+  @media (min-width: 1400px) {
+    .ems-balanced-scenarios .block h3 { min-height: 1lh; }
+    .ems-balanced-scenarios .block > p { min-height: 2lh; }
+  }
+
+  /* Titolo sempre centrato verticalmente rispetto all'icona, anche quando
+     occupa meno righe dello spazio riservato (es. titolo su una sola riga). */
+  .ems-balanced .block h3,
+  .ems-balanced-scenarios .block h3 { display: flex; align-items: center; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .ems-orch-flow.ems-js .ems-orch-box,
+    .ems-orch-flow.ems-js .ems-orch-arrow,
+    .ems-orch-flow.ems-js .ems-orch-system { opacity: 1; transform: none; transition: none; }
+  }
+</style>
+
+<!-- 1. Dal dato alla decisione operativa (riusa il componente benefit_info) -->
+{{if .Params.benefit_info.enable}}
+{{with .Params.benefit_info}}
+<section class="section">
+  <div class="container container-delta">
+    <div class="row gy-4 ems-balanced">
+      <div class="col-lg-12 mx-auto">
+        <div class="section-title text-center mb-2">
+          {{with .subtitle}}<p class="subtitle">{{. | markdownify}}</p>{{end}}
+          <h2 class="title">{{.title | markdownify}}</h2>
+          {{with .description}} <p>{{. | markdownify}}</p> {{end}}
+        </div>
+      </div>
+      {{range .block}}
+      <div class="col-md-6 features-box">
+        <div class="block shadow-md rounded-lg bg-white h-100 p-4 p-md-5">
+          <div class="d-flex align-items-center mb-4">
+            <i class="icon mb-0 me-3 bg-transparent flex-shrink-0 {{.icon}}"></i>
+            <h3 class="mb-0">{{.title | markdownify}}</h3>
+          </div>
+          <p class="mb-0">{{.content | markdownify}}</p>
+        </div>
+      </div>
+      {{end}}
+    </div>
+  </div>
+</section>
+{{end}}
+{{end}}
+
+<!-- 2. Guardalo in azione (riusa il rendering video di skills_box) -->
+{{if .Params.skills_box.enable}}
+{{with .Params.skills_box}}
+<section class="section bg-primary-soft rounded-lg wave-block">
+  <div class="container container-delta">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <div class="section-title">
+          {{with .subtitle}}<p class="subtitle">{{. | markdownify}}</p>{{end}}
+          <h2 class="title mb-3">{{.title | markdownify}}</h2>
+          {{with .description}} <p>{{. | markdownify}}</p> {{end}}
+        </div>
+      </div>
+    </div>
+    {{$video := .video}}
+    {{with .image}}
+    <div class="row justify-content-center">
+      <div class="col-lg-12">
+        {{$img:= resources.Get .}}
+        {{$img:= $img.Resize "1800x"}}
+        {{$imgWebp:= $img.Resize "1800x webp"}}
+        {{if $video}}
+        {{partial "video" (dict "Src" $video "Controls" "true" "Autoplay" "true" "Muted" "true" "Loop" "true" "NoDownload" "true" "Class" "w-100 rounded-lg" "Poster" $imgWebp.RelPermalink)}}
+        {{else}}
+        <img loading="lazy" decoding="async" class="w-100 rounded-lg img-fluid" width="{{$img.Width}}" height="{{$img.Height}}" src="{{$imgWebp.RelPermalink}}" alt="Video demo" onerror="this.onerror=null;this.src='{{$img.RelPermalink}}'">
+        {{end}}
+      </div>
+    </div>
+    {{end}}
+  </div>
+  <div class="has-wave alter-position">
+    <svg class="wave-left" style="opacity:0.75" width="245" height="280" viewBox="0 0 245 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path opacity="0.75" d="M193.97 -38.8821C157.391 -46.8434 128.867 -7.89509 115.04 20.3438C105.459 39.8887 99.9716 62.2619 106.378 83.6072C109.18 92.9645 114.527 101.934 122.265 108.104C126.855 111.683 136.46 116.764 139.736 109.213C143.28 101.197 137.772 90.897 132.91 84.8394C127.205 77.8303 119.414 72.5579 111.081 69.2951C95.2955 63.1224 69.9647 60.8812 55.8795 72.4081C47.2175 79.6359 51.1561 95.0673 51.9614 104.665C53.1185 117.407 55.0391 130.435 55.0484 143.289C55.1115 155.244 49.4632 165.296 38.0867 169.718C27.76 173.662 17.194 171.587 7.37011 167.153C-3.4496 162.3 -12.9648 155.723 -24.4057 152.213C-35.3152 148.856 -46.4485 147.226 -57.8057 147.325C-80.337 147.475 -102.017 154.461 -120.449 167.349C-131.04 174.701 -140.922 157.231 -130.447 149.812C-89.9485 121.492 -35.6544 120.487 7.1228 144.256C12.9946 147.491 30.4893 158.211 34.4632 147.038C36.4166 141.51 33.9943 132.836 33.554 127.164C32.793 118.83 32.0989 110.38 31.3379 102.046C30.0695 88.156 28.6048 73.5336 37.8355 61.8355C45.5604 52.2092 57.9686 47.6087 69.7999 45.6162C93.6454 41.5821 119.096 46.8333 138.183 62.033C155.382 75.6778 170.298 105.342 152.919 124.719C133.936 145.801 104.753 123.69 94.009 105.567C80.5913 82.9604 80.7654 55.0431 88.839 30.6029C103.703 -13.91 144.925 -70.2942 198.697 -58.5982C211.737 -55.7134 206.546 -36.2654 193.97 -38.8821Z" fill="currentColor"/>
+    </svg>
+  </div>
+</section>
+{{end}}
+{{end}}
+
+<!-- 3. Dal controllo dell'asset all'orchestrazione energetica (processo visuale HTML + JS) -->
+{{with .Params.orchestration}}
+{{if .enable}}
+<section class="section">
+  <div class="container container-delta">
+    <div class="row justify-content-center text-center">
+      <div class="col-lg-12">
+        <div class="section-title">
+          {{with .subtitle}}<p class="subtitle">{{. | markdownify}}</p>{{end}}
+          <h2 class="title">{{.title | markdownify}}</h2>
+          {{with .description}}<p>{{. | markdownify}}</p>{{end}}
+        </div>
+      </div>
+    </div>
+    <div class="ems-orch-flow" data-ems-orchestration>
+      {{with .input}}
+      <div class="ems-orch-box ems-orch-box--in block shadow-md rounded-lg bg-white" style="--step-index: 0;">
+        <h3 class="ems-orch-box-title">{{.title | markdownify}}</h3>
+        {{with .items}}
+        <div class="ems-orch-icons">
+          {{range .}}
+          <div class="ems-orch-icon">
+            {{with .icon}}<i class="{{.}}" aria-hidden="true"></i>{{end}}
+            <span>{{.label | markdownify}}</span>
+          </div>
+          {{end}}
+        </div>
+        {{end}}
+      </div>
+      {{end}}
+
+      <span class="ems-orch-arrow ems-orch-arrow--1" style="--step-index: 1;" aria-hidden="true"><i class="fas fa-arrow-right"></i></span>
+
+      {{with .system}}
+      <div class="ems-orch-system" style="--step-index: 2;">
+        <span class="ems-orch-system-label">{{.label | markdownify}}</span>
+        <div class="ems-orch-modules">
+          {{range $i, $m := .module}}
+          {{if $i}}<span class="ems-orch-module-arrow" aria-hidden="true"><i class="fas fa-arrow-right"></i></span>{{end}}
+          <div class="ems-orch-module{{if $m.highlight}} is-core{{end}}">
+            {{with $m.icon}}<i class="ems-orch-module-icon {{.}}" aria-hidden="true"></i>{{end}}
+            <h3 class="ems-orch-module-title">{{$m.title | markdownify}}</h3>
+            {{with $m.meta}}<p class="ems-orch-module-meta">{{. | markdownify}}</p>{{end}}
+          </div>
+          {{end}}
+        </div>
+        {{with .feedback}}
+        <div class="ems-orch-feedback">
+          <span class="ems-orch-feedback-end is-left" aria-hidden="true"><i class="fas fa-arrow-up"></i></span>
+          <span class="ems-orch-feedback-label">{{. | markdownify}}</span>
+          <span class="ems-orch-feedback-end is-right" aria-hidden="true"></span>
+        </div>
+        {{end}}
+      </div>
+      {{end}}
+
+      <span class="ems-orch-arrow ems-orch-arrow--2" style="--step-index: 3;" aria-hidden="true"><i class="fas fa-arrow-right"></i></span>
+
+      {{with .output}}
+      <div class="ems-orch-box ems-orch-box--out block shadow-md rounded-lg bg-white" style="--step-index: 4;">
+        <h3 class="ems-orch-box-title">{{.title | markdownify}}</h3>
+        {{with .items}}
+        <div class="ems-orch-icons">
+          {{range .}}
+          <div class="ems-orch-icon">
+            {{with .icon}}<i class="{{.}}" aria-hidden="true"></i>{{end}}
+            <span>{{.label | markdownify}}</span>
+          </div>
+          {{end}}
+        </div>
+        {{end}}
+      </div>
+      {{end}}
+    </div>
+    {{with .footer}}
+    <div class="row justify-content-center text-center mt-5">
+      <div class="col-lg-12">
+        <p class="mb-0 fw-bold">{{. | markdownify}}</p>
+      </div>
+    </div>
+    {{end}}
+  </div>
+</section>
+{{end}}
+{{end}}
+
+<!-- Sezione 3: rivelazione progressiva del flusso (progressive enhancement, vanilla JS) -->
+<script>
+  (function () {
+    var flows = document.querySelectorAll('[data-ems-orchestration]');
+    if (!flows.length) return;
+    var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    Array.prototype.forEach.call(flows, function (flow) {
+      flow.classList.add('ems-js');
+      if (reduceMotion || !('IntersectionObserver' in window)) {
+        flow.classList.add('is-live');
+        return;
+      }
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            flow.classList.add('is-live');
+            observer.disconnect();
+          }
+        });
+      }, { rootMargin: '0px 0px -10% 0px', threshold: 0.15 });
+      observer.observe(flow);
+    });
+  })();
+</script>
+
+<!-- 4. Un'unica logica, scenari diversi (4 blocchi) -->
+{{with .Params.scenarios}}
+{{if .enable}}
+<section class="section bg-primary-soft rounded-lg wave-block">
+  <div class="container container-delta">
+    <div class="row gy-4 ems-balanced-scenarios">
+      <div class="col-lg-12 mx-auto">
+        <div class="section-title text-center mb-2">
+          {{with .subtitle}}<p class="subtitle">{{. | markdownify}}</p>{{end}}
+          <h2 class="title">{{.title | markdownify}}</h2>
+          {{with .description}} <p>{{. | markdownify}}</p> {{end}}
+        </div>
+      </div>
+      {{range .block}}
+      <div class="col-md-6 features-box">
+        <div class="block shadow-md rounded-lg bg-white h-100 p-4 p-md-5">
+          <div class="d-flex align-items-center mb-4">
+            <i class="icon mb-0 me-3 bg-transparent flex-shrink-0 {{.icon}}"></i>
+            <h3 class="mb-0">{{.title | markdownify}}</h3>
+          </div>
+          <p class="mb-0">{{.content | markdownify}}</p>
+        </div>
+      </div>
+      {{end}}
+    </div>
+  </div>
+  <div class="has-wave alter-position">
+    <svg class="wave-left" style="opacity:0.75" width="245" height="280" viewBox="0 0 245 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path opacity="0.75" d="M193.97 -38.8821C157.391 -46.8434 128.867 -7.89509 115.04 20.3438C105.459 39.8887 99.9716 62.2619 106.378 83.6072C109.18 92.9645 114.527 101.934 122.265 108.104C126.855 111.683 136.46 116.764 139.736 109.213C143.28 101.197 137.772 90.897 132.91 84.8394C127.205 77.8303 119.414 72.5579 111.081 69.2951C95.2955 63.1224 69.9647 60.8812 55.8795 72.4081C47.2175 79.6359 51.1561 95.0673 51.9614 104.665C53.1185 117.407 55.0391 130.435 55.0484 143.289C55.1115 155.244 49.4632 165.296 38.0867 169.718C27.76 173.662 17.194 171.587 7.37011 167.153C-3.4496 162.3 -12.9648 155.723 -24.4057 152.213C-35.3152 148.856 -46.4485 147.226 -57.8057 147.325C-80.337 147.475 -102.017 154.461 -120.449 167.349C-131.04 174.701 -140.922 157.231 -130.447 149.812C-89.9485 121.492 -35.6544 120.487 7.1228 144.256C12.9946 147.491 30.4893 158.211 34.4632 147.038C36.4166 141.51 33.9943 132.836 33.554 127.164C32.793 118.83 32.0989 110.38 31.3379 102.046C30.0695 88.156 28.6048 73.5336 37.8355 61.8355C45.5604 52.2092 57.9686 47.6087 69.7999 45.6162C93.6454 41.5821 119.096 46.8333 138.183 62.033C155.382 75.6778 170.298 105.342 152.919 124.719C133.936 145.801 104.753 123.69 94.009 105.567C80.5913 82.9604 80.7654 55.0431 88.839 30.6029C103.703 -13.91 144.925 -70.2942 198.697 -58.5982C211.737 -55.7134 206.546 -36.2654 193.97 -38.8821Z" fill="currentColor"/>
+    </svg>
+  </div>
+</section>
+{{end}}
+{{end}}
+
+<!-- 5. Ottimizzare conoscendo lo stato della batteria (flusso Battery Intelligence -> EMS -> Dispatch -> Valore) -->
+{{with .Params.battery_value}}
+{{if .enable}}
+<section class="section">
+  <div class="container container-delta">
+    <div class="row justify-content-center text-center">
+      <div class="col-lg-12">
+        <div class="section-title">
+          {{with .subtitle}}<p class="subtitle">{{. | markdownify}}</p>{{end}}
+          <h2 class="title">{{.title | markdownify}}</h2>
+          {{with .description}}<p>{{. | markdownify}}</p>{{end}}
+        </div>
+      </div>
+      <div class="col-lg-12">
+        {{$items := .item}}
+        <div class="process-flow process-flow-desktop ems-flow-single d-none d-lg-block">
+          <div class="row gy-4 gx-xl-4 process-flow-row">
+            {{range $index, $item := $items}}
+            <div class="col process-flow-item" style="--step-index: {{$index}};">
+              <div class="process-flow-card block shadow-md rounded-lg bg-white text-center d-flex flex-column align-items-center justify-content-center p-4">
+                {{with $item.icon}}<i class="process-flow-icon mb-3 {{.}}"></i>{{end}}
+                <h3 class="h5 mb-1">{{$item.title | markdownify}}</h3>
+                {{with $item.meta}}<p class="mb-0 small text-muted">{{. | markdownify}}</p>{{end}}
+              </div>
+            </div>
+            {{end}}
+          </div>
+        </div>
+        <div class="row gy-4 gx-xl-4 justify-content-center process-flow process-flow-responsive d-lg-none">
+          {{range $index, $item := $items}}
+          <div class="col-12 col-md-6 process-flow-item" style="--step-index: {{$index}};">
+            <div class="process-flow-card block shadow-md rounded-lg bg-white text-center d-flex flex-column align-items-center justify-content-center p-4">
+              {{with $item.icon}}<i class="process-flow-icon mb-3 {{.}}"></i>{{end}}
+              <h3 class="h5 mb-1">{{$item.title | markdownify}}</h3>
+              {{with $item.meta}}<p class="mb-0 small text-muted">{{. | markdownify}}</p>{{end}}
+            </div>
+          </div>
+          {{end}}
+        </div>
+        {{with .footer}}
+        <div class="row justify-content-center text-center mt-4 mt-lg-5">
+          <div class="col-lg-12">
+            <p class="mb-0 fw-bold">{{. | markdownify}}</p>
+          </div>
+        </div>
+        {{end}}
+      </div>
+    </div>
+  </div>
+</section>
+{{end}}
+{{end}}
+
+<!-- CTA finale (unica CTA della pagina) -->
+{{with .Params.cta}}
+{{if .enable}}
+<section class="section pb-0 pt-0 call-to-action call-to-action-2">
+  <div class="container container-delta">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="block bg-white rounded-lg shadow">
+          <div class="row g-0 align-items-center">
+            <div class="col-lg-8">
+              <div class="content-block">
+                <h3 class="mb-2">{{.title | markdownify}}</h3>
+                <p class="mb-4">{{.description | markdownify}}</p>
+                {{with .button_label}}
+                <a href="{{$.Params.cta.button_link | relLangURL}}" class="btn btn-primary">
+                  {{.}} <i class="arrow-right fas fa-arrow-right"></i>
+                </a>
+                {{end}}
+              </div>
+            </div>
+            {{with .image}}
+            <div class="col-lg-4">
+              {{$img:= resources.Get .}}
+              {{$img:= $img.Resize "425x"}}
+              {{$imgWebp:= $img.Resize "425x webp"}}
+              <img loading="lazy" decoding="async" class="rounded-lg img-fluid" width="{{$img.Width}}" height="{{$img.Height}}" src="{{$imgWebp.RelPermalink}}" alt="CTA Image" onerror="this.onerror=null;this.src='{{$img.RelPermalink}}'">
+            </div>
+            {{end}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{end}}
+{{end}}
+
+{{end}}

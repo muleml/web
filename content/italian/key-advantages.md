@@ -22,7 +22,7 @@ banner:
 key_advantages:
   enable: false
   subtitle: "I nostri vantaggi chiave"
-  title: "Cosa rende BESS INSIGHT unico"
+  title: "Cosa ci rende speciali"
   advantages_item:
   - title: "Modelli predittivi affidabili"
     image: "images/process/01.png"

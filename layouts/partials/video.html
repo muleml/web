@@ -1,0 +1,66 @@
+{{/*
+  Override locale del partial "video" del modulo Hugo
+  github.com/gethugothemes/hugo-modules/videos.
+
+  Perché esiste questo file:
+  il partial originale del modulo genera un <video> con i controlli nativi del
+  browser e su Chrome/Edge compare il pulsante "Scarica" (menu ⋮). Le pagine delle
+  soluzioni usano queste demo video come contenuto commerciale, quindi non vogliamo
+  offrire il download diretto nell'interfaccia del player.
+
+  Parametro opzionale "NoDownload" (stringa "true"/"false", default "false"):
+  quando vale "true" vengono aggiunti all'elemento <video>:
+    - controlsList="nodownload"  -> nasconde il pulsante di download nei controlli
+      nativi (Chrome, Edge e browser basati su Chromium);
+    - oncontextmenu="return false;" -> disabilita il menu contestuale sul video, così
+      anche i browser che ignorano controlsList (es. Firefox/Safari) non propongono
+      "Salva video con nome".
+
+  Nota: nessuna misura lato client rende il file realmente non scaricabile (il video
+  resta una risorsa pubblica raggiungibile via URL); queste impostazioni rimuovono
+  solo l'invito esplicito al download nell'interfaccia del player.
+*/}}
+{{ $Scratch := newScratch }}
+{{ $videoPath:= string .Src }}
+{{ $width:= .Width }}
+{{ $height:= .Height }}
+{{ $autoplay:= .Autoplay | default `false` }}
+{{ $loop:= .Loop | default `false` }}
+{{ $muted:= .Muted | default `false` }}
+{{ $controls:= .Controls | default `true` }}
+{{ $noDownload:= .NoDownload | default `false` }}
+{{ $class:= .Class }}
+{{ $poster:= .Poster }}
+
+
+<!-- checking cdn -->
+{{ if hasPrefix $videoPath "http" }}
+  {{ $Scratch.Set "video_path" $videoPath }}
+
+  <!-- checking assets -->
+{{ else if fileExists (add `assets/` $videoPath) }}
+  {{ $Scratch.Set "video_path" (resources.Get $videoPath).RelPermalink }}
+
+  <!-- checking content/static -->
+{{ else }}
+  {{ $Scratch.Set "video_path" (print "/" $videoPath) }}
+{{ end }}
+
+{{ $videoPath = $Scratch.Get "video_path" }}
+
+{{ if $videoPath }}
+  <video
+    {{ with $width }}width="{{ . }}"{{ end }}
+    {{ with $height }}height="{{ . }}"{{ end }}
+    {{ if eq $autoplay `true` }}autoplay{{ end }}
+    {{ if eq $loop `true` }}loop{{ end }}
+    {{ if eq $muted `true` }}muted{{ end }}
+    {{ if eq $controls `true` }}controls{{ end }}
+    {{ if eq $noDownload `true` }}controlsList="nodownload" oncontextmenu="return false;"{{ end }}
+    {{ with $poster }}poster="{{ . }}"{{ end }}
+    class="{{ $class }}"
+    style="max-width:100%">
+    <source src="{{ $videoPath }}" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+{{ end }}

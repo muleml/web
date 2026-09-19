@@ -73,8 +73,29 @@
     </div>
 
     {{with .features_blocks}}
-    <div class="row gy-3">
+    <div class="row gy-4">
       {{range first 6 .}}
+      {{if .image}}
+      {{/* box "soluzione": immagine + titolo + testo + link (come nella pagina Soluzioni) */}}
+      <div class="col-md-6 features-box">
+        <div class="block shadow-md rounded-lg bg-white h-100">
+          {{$blockTitle := .title}}
+          {{$img:= resources.Get .image}}
+          {{$img:= $img.Resize "150x"}}
+          {{$imgWebp:= $img.Resize "150x webp"}}
+          <div class="d-flex align-items-center mb-4">
+            <img loading="lazy" decoding="async" class="img-fluid flex-shrink-0 me-3" width="{{$img.Width}}" height="{{$img.Height}}" src="{{$imgWebp.RelPermalink}}" alt="{{$blockTitle | plainify}}" onerror="this.onerror=null;this.src='{{$img.RelPermalink}}'">
+            <h3 class="mb-0">{{$blockTitle | markdownify}}</h3>
+          </div>
+          <p class="mb-0">{{.content | markdownify}}</p>
+          {{if and .button_label .button_link}}
+          <a href="{{.button_link | relLangURL}}" class="btn btn-primary mt-4">
+            {{.button_label}} <i class="arrow-right fas fa-arrow-right"></i>
+          </a>
+          {{end}}
+        </div>
+      </div>
+      {{else}}
       <div class="col-xl-4 col-md-6 features-block features-block-2">
         <div class="block h-100 d-block d-sm-flex">
           <i class="icon {{.icon}}"></i>
@@ -84,6 +105,7 @@
           </div>
         </div>
       </div>
+      {{end}}
       {{end}}
     </div>
     {{end}}
