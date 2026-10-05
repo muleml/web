@@ -49,7 +49,7 @@ skills_box:
   subtitle: "Demonstration"
   title: "See it in action"
   description: "From forecasts to the dispatch schedule: explore how the EMS combines data, constraints and economic signals to build an operating strategy."
-  video: "videos/simulazione-demo.mp4"
+  video: "videos/EMS-demo.mp4"
   image: "images/video-thumb.jpg"
 
 # 3. Dal controllo dell'asset all'orchestrazione energetica (processo visuale HTML + JS)

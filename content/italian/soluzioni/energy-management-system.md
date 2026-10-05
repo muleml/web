@@ -49,7 +49,7 @@ skills_box:
   subtitle: "Dimostrazione"
   title: "Guardalo in azione"
   description: "Dalle previsioni al programma di dispatch: esplora come l'EMS combina dati, vincoli e segnali economici per costruire una strategia operativa."
-  video: "videos/simulazione-demo.mp4"
+  video: "videos/EMS-demo.mp4"
   image: "images/video-thumb.jpg"
 
 # 3. Dal controllo dell'asset all'orchestrazione energetica (processo visuale HTML + JS)
